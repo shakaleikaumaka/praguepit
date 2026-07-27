@@ -431,13 +431,14 @@
     "id": "1UkZdDJHndV5kwAsida9sLyB81p6XhI0l",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1UkZdDJHndV5kwAsida9sLyB81p6XhI0l.mp3"
    }
   ],
-  "transcript": null,
-  "duration": null,
+  "transcript": "1UkZdDJHndV5kwAsida9sLyB81p6XhI0l",
+  "duration": "00:28:43",
   "quality": "ok",
-  "transponder": false,
+  "transponder": true,
   "featured": false
  },
  {

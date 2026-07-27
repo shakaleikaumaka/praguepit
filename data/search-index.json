@@ -13685,6 +13685,856 @@
   "e get a round of applause for"
  ],
  [
+  20,
+  0,
+  ". Hi, everyone. How is everyone doing today? I'm going to need your assistance twice per my keynote. So please be assistant when asking the"
+ ],
+ [
+  20,
+  24,
+  "the question so I don't feel left alone here standing in front of you. So I have quite a different topic to bring to you today within the co"
+ ],
+ [
+  20,
+  35,
+  "nference because this is important to me not because I built a tourney which touched this problem that I want to talk about today but also b"
+ ],
+ [
+  20,
+  47,
+  "ecause it touches everyone here sitting in the room"
+ ],
+ [
+  20,
+  51,
+  "and I'm sorry if this will get any uncomfortable during the speech because I will be talking about uncontrolled topics during this. So my na"
+ ],
+ [
+  20,
+  63,
+  "me is Jitka and as I mentioned I'm a founder of Attorney and what started as a simply what became really quickly known as a risk governance "
+ ],
+ [
+  20,
+  75,
+  "because"
+ ],
+ [
+  20,
+  76,
+  "governance is something that we need to talk about, especially when it comes to our data, our financial life and the continuity. And this is"
+ ],
+ [
+  20,
+  88,
+  " because we think that we've built advanced systems. And we did. We built a financial system, identity system, crypto system, obviously."
+ ],
+ [
+  20,
+  100,
+  "And we did it pretty well. I'm not saying it's not advanced, but almost all of the systems rely on one very simple assumption that the user "
+ ],
+ [
+  20,
+  113,
+  "is present. So what actually happens when the user disappears? The system stays. Accounts, data, a lot of finances, we know about a lot of c"
+ ],
+ [
+  20,
+  125,
+  "rypto, we heard some stories,"
+ ],
+ [
+  20,
+  128,
+  "we can talk about some stories that happened. And suddenly the access becomes a problem. The ownership becomes unclear and the continuity be"
+ ],
+ [
+  20,
+  142,
+  "comes manual. It really currently manual And this is the gap that I want to talk about today Because over the last decades we became very go"
+ ],
+ [
+  20,
+  155,
+  "od when building the world when"
+ ],
+ [
+  20,
+  158,
+  "you know, making transactions seamless, just making the systems and all the technology really great. But the continuity is something we stil"
+ ],
+ [
+  20,
+  170,
+  "l suck at. Honestly, it is. And how the system is handled over time is really just saying how it's going to be handled over the next decades"
+ ],
+ [
+  20,
+  183,
+  " when it's going to become critical."
+ ],
+ [
+  20,
+  186,
+  "So here's my first question for you. It's actually going to be two questions. So first question is raise your hand and be honest because I'm"
+ ],
+ [
+  20,
+  195,
+  " going to raise my hand as well. If you ever experienced you lost the key and we're at the ETH conference. And so just stop. Let's talk abou"
+ ],
+ [
+  20,
+  204,
+  "t the crypto key, not the key to your house. Have you ever lost or were looking for a key for a very long time?"
+ ],
+ [
+  20,
+  211,
+  "Great. Thank you for the honesty. I did too. And second question that goes with it. I believe everyone here has some investment in cryptocur"
+ ],
+ [
+  20,
+  224,
+  "rencies, whatever they may be. And the question is, would your family know how to access it if something happens to you tomorrow?"
+ ],
+ [
+  20,
+  236,
+  "Does anyone have a legacy plan? Raise a hand who has a legacy plan. Okay, so that's three of you. So what about the rest? So what happens to"
+ ],
+ [
+  20,
+  248,
+  " the crypto that you're investing over the last decade? that is going just simply a wall. Isn't it like shame that all these money"
+ ],
+ [
+  20,
+  259,
+  "and all these assets are locked in the system? So yeah, so that's, you're not the only one, trust me. We know some, do you see it? We know s"
+ ],
+ [
+  20,
+  271,
+  "ome stories that have been like most talked about and there is going to be even more. We know the story of the Gerald, the founder of Quadri"
+ ],
+ [
+  20,
+  283,
+  "gaCX, who died unexpectedly and with him,"
+ ],
+ [
+  20,
+  287,
+  "$190 million were locked into the system, inaccessible. Do you have a question? Is he really dead I think I read something else He actually "
+ ],
+ [
+  20,
+  299,
+  "not really dead and that it was a big scam and he actually ran away somewhere I cannot prove it 100%, but same for the death."
+ ],
+ [
+  20,
+  309,
+  "It's still very shady, let's say. It is shady, but it's not like, you know, it's a similar case. It's still locked, it's still inaccessible."
+ ],
+ [
+  20,
+  319,
+  " Yeah, definitely. So the ownership relied back then on one person, which is obviously insane as well. So we're not talking about being atta"
+ ],
+ [
+  20,
+  330,
+  "cked or being scammed, there's even more cases"
+ ],
+ [
+  20,
+  333,
+  "like that when we know about the scammers. But we're talking about when it becomes inaccessible. And the important thing to mention is it's "
+ ],
+ [
+  20,
+  345,
+  "not a bug as we know, like a bug's one developing any kind of system. This is not system failing. This is the system where like R perfectly "
+ ],
+ [
+  20,
+  356,
+  "designed. We know that."
+ ],
+ [
+  20,
+  358,
+  "But the problem is that we don't really understand the ownership, and I'm not just talking about the crypto, just to make sure that we do un"
+ ],
+ [
+  20,
+  370,
+  "derstand ownership when it becomes the crypto, but we're not focusing on the continuity. And this is the estimated value of crypto loss toda"
+ ],
+ [
+  20,
+  383,
+  "y, inaccessible."
+ ],
+ [
+  20,
+  384,
+  "and as mentioned, I have somewhere a seat that I put somewhere like 10 years ago. And that was not a small amount 10 years ago that I invest"
+ ],
+ [
+  20,
+  397,
+  "ed in and I still cannot find it, unfortunately. I'm one of the losers and I'm really upset with it"
+ ],
+ [
+  20,
+  407,
+  "and I'm afraid that I wouldn't be able to lose it because I moved like three times since then and it's not going to happen. I'm not going to"
+ ],
+ [
+  20,
+  417,
+  " find it. So how are we going to deal with this when it's locked in the functioning system that is built for protecting it? Just like the tr"
+ ],
+ [
+  20,
+  427,
+  "ansfer are protected. Everything is greatly done. But when it comes to the continuity, it's still"
+ ],
+ [
+  20,
+  434,
+  "lacking the system on top of that. And as I mentioned, this is not just a crypto because what we do with attorney, we're not focusing really"
+ ],
+ [
+  20,
+  443,
+  " on the crypto. The crypto is for us like low hanging fruit but we talking about like the whole financial system We talking about all your a"
+ ],
+ [
+  20,
+  452,
+  "ccounts all your investment when it comes to bank account, shareholding papers, anything that you invested in, anything that you're"
+ ],
+ [
+  20,
+  460,
+  "liable to, it's not just about your financial life. It's about all your accounts that creates that digital footprint that you have behind an"
+ ],
+ [
+  20,
+  472,
+  "d it's becoming a huge issue. Just talking about the numbers, this is the number for the US alone. Globally, the number is much bigger."
+ ],
+ [
+  20,
+  484,
+  "It's over $350 billion that is unmanaged and claimed worldwide. That's in laws, asset, dormant funds, dormant pension, forgotten bank accoun"
+ ],
+ [
+  20,
+  496,
+  "ts, forgotten insurance policies, and obviously as well as the crypto on top of that. Looking at it from the also number perspective to mayb"
+ ],
+ [
+  20,
+  509,
+  "e follow on with another question is that we do"
+ ],
+ [
+  20,
+  513,
+  "have during the life little over a hundred accounts per us. And as I said, it's not only the financial accounts, it's all everywhere we leav"
+ ],
+ [
+  20,
+  523,
+  "e the footprint. And it's not an issue about having the accounts, but it's an issue how we're going to deal with it, not legally, but practi"
+ ],
+ [
+  20,
+  534,
+  "cally. So like when something happens again to you tomorrow, and I don't want to be"
+ ],
+ [
+  20,
+  540,
+  "like really here depressing you all, then how is your family going to handle it? And as I mentioned, legally, not legally, but practically, "
+ ],
+ [
+  20,
+  549,
+  "it becomes like a very aggressive problem. It becomes like such an administrative problem. It takes so much time. It costs like when we were"
+ ],
+ [
+  20,
+  558,
+  " talking about the employees of like a big enterprise"
+ ],
+ [
+  20,
+  562,
+  "companies, we have the number, how much it costs to the companies, because like, if we think about the percentage of how many employees of t"
+ ],
+ [
+  20,
+  572,
+  "hose big enterprises company deal with either inheritance problem or just like a probate problem, then it really costs the company a lot of "
+ ],
+ [
+  20,
+  582,
+  "money because they have to take time off to deal with this."
+ ],
+ [
+  20,
+  586,
+  "They have to deal with it because it's the law. The law says that they have to close all these accounts. And if they don't and they won't pr"
+ ],
+ [
+  20,
+  596,
+  "obably want because they don't have the instruction to do it, then it's brings these skeletons in the closets that will just come back, like"
+ ],
+ [
+  20,
+  606,
+  " returning in six months, in one year, in 18 months, etc."
+ ],
+ [
+  20,
+  610,
+  "And we are seeing it on an everyday basis because it is... 60 million people during the year, once a year, not once a year, during the year."
+ ],
+ [
+  20,
+  634,
+  "And I know it's an ugly number, but this is the number that leaves behind times those hundred accounts and it creates a massive digital beha"
+ ],
+ [
+  20,
+  651,
+  "vioral footprint that the system actually just feeds on. And we don't need more because we have a lot of data on the behavioral patterns."
+ ],
+ [
+  20,
+  667,
+  "We have a lot of data on the financial patterns and transaction patterns. So this is not an edge case, it's an infrastructural problem. And "
+ ],
+ [
+  20,
+  678,
+  "it's going to be even a massive problem because we're looking into the biggest inheritance flow in the next two decades. By 2045, it's going"
+ ],
+ [
+  20,
+  689,
+  " to be really the biggest flow of the multi-generational transfer that"
+ ],
+ [
+  20,
+  694,
+  "we have ever experienced. the system are not ready for it. I talked to the co-founder of Kraken a year ago at one conference and they did bu"
+ ],
+ [
+  20,
+  707,
+  "ild some legacy system, like a feature I would say, for their users to handle this, but that's still not systematically done throughout the "
+ ],
+ [
+  20,
+  720,
+  "whole system."
+ ],
+ [
+  20,
+  721,
+  "it's really now it's a decision on you know who's gonna change the to address this issue for the long-term continuity and how you actually a"
+ ],
+ [
+  20,
+  737,
+  "ccumulated the dead users we know how for example there is no one from the We know how Facebook approached this I talked to one guy at the W"
+ ],
+ [
+  20,
+  753,
+  "arsaw Headquarter"
+ ],
+ [
+  20,
+  755,
+  "and he's like, oh yeah, but we don't want to deal with that. We don't want to give easy access for the family to delete the accounts, becaus"
+ ],
+ [
+  20,
+  764,
+  "e for us, the dead user is still the user. And once all the cases that when you lost someone from your circle or from the Facebook circle, o"
+ ],
+ [
+  20,
+  773,
+  "nce there is any anniversary close to the people, even though he's not with us anymore,"
+ ],
+ [
+  20,
+  779,
+  "the algorithm just feeds on it because all the time someone will write on the post or their page that they're missed or anything like that a"
+ ],
+ [
+  20,
+  792,
+  "nd they will just keep on going the behavioural patterns. Actually, it's interesting that by the end of the century,"
+ ],
+ [
+  20,
+  803,
+  "there's going to be 5 billion of people on the platforms, which means there's going to be more dead users than live. Who just actually is go"
+ ],
+ [
+  20,
+  823,
+  "ing to release a new book on this talk with like AI experts, etc."
+ ],
+ [
+  20,
+  832,
+  "and he's talking about, so he called information carbs, because when you're GAN, your information carbs stays. And as I mentioned, the syste"
+ ],
+ [
+  20,
+  873,
+  "m ...the interactions."
+ ],
+ [
+  20,
+  879,
+  "And I think I'm going to repeat myself a little bit. So when it stops becoming a technical problem as I mentioned at the beginning it become"
+ ],
+ [
+  20,
+  895,
+  "s a government problem It really like who owns the persistent financial and identity records"
+ ],
+ [
+  20,
+  906,
+  "who will get access, who authorize the transfer, and who decides the transfer or like the ownership or the continuity. So this is a really i"
+ ],
+ [
+  20,
+  918,
+  "mportant question that we are seeing. We're talking especially with the banks and insurances. This is a repetitive pattern because even here"
+ ],
+ [
+  20,
+  931,
+  " in the Czech Republic,"
+ ],
+ [
+  20,
+  933,
+  "and I'm not sure how many of you here are from Czech, just raise your hand quickly. Okay, a lot of you. So we have inheritance proceeding ac"
+ ],
+ [
+  20,
+  942,
+  "cording to the law. It's a law that it's old like 30 years and it's very strict. it's being automated for the past three years over the bank"
+ ],
+ [
+  20,
+  952,
+  " accounts. But still, I'm not going to mention the bank, so I'm not going to make them feel"
+ ],
+ [
+  20,
+  958,
+  "bad, but still they have banks that is like, oh yeah, we do still have a lot of accounts that are 120 years old and we're not in Japan to ha"
+ ],
+ [
+  20,
+  970,
+  "ve 120 year old users or owners of the bank accounts. So the system, even though we have inheritance proceeding, other than in the US when i"
+ ],
+ [
+  20,
+  982,
+  "t's"
+ ],
+ [
+  20,
+  982,
+  "even more messy and the financial system and this inheritance system is much more fragmented, it still happens. We're still not having this "
+ ],
+ [
+  20,
+  993,
+  "infrastructure that is thinking about the continuity and the multigenerational wealth transfer. It's an issue because as I mentioned, we're "
+ ],
+ [
+  20,
+  1004,
+  "talking about over 300 billion of dollars lost in assets,"
+ ],
+ [
+  20,
+  1008,
+  "but when it comes to this Czechosakové dítě or the generation now growing and reaching that 2045, then it's going to be in potentially billi"
+ ],
+ [
+  20,
+  1023,
+  "ons that may be lost if this isn't changed. So, as I mentioned, we built the infrastructure for the ownership, but we're trying to solve"
+ ],
+ [
+  20,
+  1038,
+  "this as a new infrastructure layer just trying to connect the financial ecosystem I would say It definitely difficult talking about us what "
+ ],
+ [
+  20,
+  1053,
+  "we do We honestly skipping Europe because of the regulations We not ready for it yet So we now live"
+ ],
+ [
+  20,
+  1064,
+  "in Ireland, UK and the US when it's easier to connect the fragmented data and fragmented financial accounts, but definitely Europe is a next"
+ ],
+ [
+  20,
+  1076,
+  " step because a good example is I've been like a couple of weeks or a couple of months ago at the Czech National Bank at the"
+ ],
+ [
+  20,
+  1087,
+  "discussion. There was all kinds of discussion, like institutions and they invited some of the startup founders. And there was, I don't know "
+ ],
+ [
+  20,
+  1098,
+  "if you heard about FIDA, which is like new regulatory, which would allow the banks, insurances and big financial enterprise companies to sha"
+ ],
+ [
+  20,
+  1110,
+  "re the"
+ ],
+ [
+  20,
+  1110,
+  "financial data of the users between each other. So it would actually help like this sort of edge case like inheritance. And they had ability"
+ ],
+ [
+  20,
+  1120,
+  " from the European Commission to have it connected throughout to Europe, which would definitely ease the system. And it's not any breach of "
+ ],
+ [
+  20,
+  1130,
+  "the financial data of the users that they would just steal the"
+ ],
+ [
+  20,
+  1135,
+  "users or anything. But they declined it. Most of the countries declined it. still want to keep it within one country, because I don't know w"
+ ],
+ [
+  20,
+  1148,
+  "hy actually they didn't explain it, but they voted for keep it within one country. So, talking about Europe, it's a huge issue, especially w"
+ ],
+ [
+  20,
+  1160,
+  "e know that everyone has a lot"
+ ],
+ [
+  20,
+  1163,
+  "of investment hidden somewhere and in other countries. And when there is no system or legacy plan, then your family won't be able to reach i"
+ ],
+ [
+  20,
+  1177,
+  "t because there is just no way how they will know unless you will be really, really prepared for it. So that's just my little advice and may"
+ ],
+ [
+  20,
+  1190,
+  "be a favor to ask"
+ ],
+ [
+  20,
+  1192,
+  "for your future family or your friends or family, whoever will have to deal with legally or practically with not only the digital footprint,"
+ ],
+ [
+  20,
+  1205,
+  " but mainly with the liabilities and the wealth to ask these questions. What actually happens to your wealth when you can and think about it"
+ ],
+ [
+  20,
+  1218,
+  " when building"
+ ],
+ [
+  20,
+  1219,
+  "on and earning the wealth on passing it also, right? So nothing gets lost. So that's all for now. happy to connect with anyone or answer any"
+ ],
+ [
+  20,
+  1235,
+  " questions if you have any. Go ahead. Okay, thank you for the talk. I felt like you talked a lot about the problem,"
+ ],
+ [
+  20,
+  1248,
+  "but do you have a specific solution? Should we share our private keys with our families or something else? So there are different kinds of s"
+ ],
+ [
+  20,
+  1263,
+  "olution especially when it becomes the crypto and as I said like crypto is more of a long-hanger for it for us like in a product Maybe some "
+ ],
+ [
+  20,
+  1278,
+  "guys who would confirm me."
+ ],
+ [
+  20,
+  1281,
+  "Different kinds of approach to this kind of solution. I know like Kasa.io, for example, is really stepping hard in it, not only the multi-st"
+ ],
+ [
+  20,
+  1292,
+  "ate transfer, but all these kinds of potential solutions, how to transfer the keys securely to the family. We don't like in attorney, we don"
+ ],
+ [
+  20,
+  1303,
+  "'t advise users to store the key."
+ ],
+ [
+  20,
+  1306,
+  "We just have like connected crypto wallets in order for the family to have at least some instructions and then we devise them to keep the ke"
+ ],
+ [
+  20,
+  1317,
+  "y like separately. But that doesn't solve the problem. But when it becomes the financial it something that we are working from the banks and"
+ ],
+ [
+  20,
+  1329,
+  " insurers where the most wealth is still held and will be held And we building we integrating our AI we call it sorry we call it AI killer"
+ ],
+ [
+  20,
+  1340,
+  "our agent that sits on top of their whole document management system and it's connecting through their CRM or back office. And it's analyzin"
+ ],
+ [
+  20,
+  1350,
+  "g the risk and sends out the risk to their financial advisors or desks or whoever operates the back office and tells them there are potentia"
+ ],
+ [
+  20,
+  1359,
+  "l risks and they should act on it within their users"
+ ],
+ [
+  20,
+  1363,
+  "to help actually their clients prevent any consequences before they even happen. So this is based on the agentic analysis on top of the fina"
+ ],
+ [
+  20,
+  1378,
+  "ncial portfolio when it comes to more traditional assets. with the crypto, I'm not going to lie, we were not there yet. Okay, thank you. Sur"
+ ],
+ [
+  20,
+  1394,
+  "e."
+ ],
+ [
+  20,
+  1394,
+  "Or even feedback, opinion. I saw some eyebrows raised in the back line. Well, okay. You knew I was talking about you. Anyway, you can hear m"
+ ],
+ [
+  20,
+  1417,
+  "e fine."
+ ],
+ [
+  20,
+  1418,
+  "Thank you for the talk. I'm not really honest. We all knew the problem before we entered this room. So we were looking for the solutions. Th"
+ ],
+ [
+  20,
+  1431,
+  "at's it. Okay. Fair. The presentation we've seen, I can imagine it in many places, such as the bankers over at the Federal Bank of the Repub"
+ ],
+ [
+  20,
+  1444,
+  "lic."
+ ],
+ [
+  20,
+  1444,
+  "But this is not that for us. Fair, fair. I get some instruction not to talk about my startup. to talk. Okay, fair point. I would love to tal"
+ ],
+ [
+  20,
+  1467,
+  "k about my startup more, trust me, because it's also"
+ ],
+ [
+  20,
+  1475,
+  "for me more comfortable talk, how we are approaching the solutions and how we got into this detail of the issue as I mentioned at the beginn"
+ ],
+ [
+  20,
+  1488,
+  "ing, I kind of squeezed it in at the beginning, that we started with a simple vault just for people to consolidate and aggregate all their"
+ ],
+ [
+  20,
+  1500,
+  "financial data. But we saw there is even like a bigger issue that needs to be addressed. So that's why we started a little bit pivoted and s"
+ ],
+ [
+  20,
+  1510,
+  "tarted to work on the agentic version when it actually also, we're not dependent only on the data sets that we're connecting on, like differ"
+ ],
+ [
+  20,
+  1519,
+  "ent kinds of data sets throughout the US. Also we just said it here in Czech throughout the US, like the mortgage rates, insurances,"
+ ],
+ [
+  20,
+  1528,
+  "et cetera. But now how actually also the war affects the taxpayers and how it affects their wealth in the future so it also like you know al"
+ ],
+ [
+  20,
+  1539,
+  "l these all these connected information of like the domain expertise in it talk like we're cooperating with several amounts of advisors on t"
+ ],
+ [
+  20,
+  1551,
+  "hat to"
+ ],
+ [
+  20,
+  1551,
+  "validate these use cases so it's not just something that we come up with like just the idea and then we're gonna do it like this so we have "
+ ],
+ [
+  20,
+  1561,
+  "a different kinds of advisor with like a huge domain expertise from the field on the legal side and on the financial side. And just moving o"
+ ],
+ [
+  20,
+  1570,
+  "n to the agentic side of solving this issue, it's really important for"
+ ],
+ [
+  20,
+  1575,
+  "us to integrate from the bigger institutions where they held the most well and where they still keep the bigger issue onto the smaller one a"
+ ],
+ [
+  20,
+  1588,
+  "nd smaller one and the users And just talking maybe a little bit more in the detail of the solution it really just connect and not to sound "
+ ],
+ [
+  20,
+  1601,
+  "wake or cliche it really just connecting"
+ ],
+ [
+  20,
+  1605,
+  "all the information that are out there on the financial data, from the financial data and from the regulatory data and from the user data an"
+ ],
+ [
+  20,
+  1615,
+  "d just knowing what to look in for. So knowing like the, so that was the main work, like for the past year to know what to look in for, like"
+ ],
+ [
+  20,
+  1624,
+  " when it becomes the, when it comes to the issues, when it comes to the risks, especially, especially when it comes to those skeletons and t"
+ ],
+ [
+  20,
+  1634,
+  "he causes that I was talking about."
+ ],
+ [
+  20,
+  1636,
+  "There's billions that are sitting in the banks and insurances that belongs to the users. Because most of the users have, most of the people "
+ ],
+ [
+  20,
+  1647,
+  "have outdated contracts, outdated insurances, et cetera. And we do get that updated insurance policy or updated policy from the banks in the"
+ ],
+ [
+  20,
+  1657,
+  " email. But who reads it? So we're just like reading through these like gaps that no one is going to like"
+ ],
+ [
+  20,
+  1665,
+  "inform you on and you have no ability to understand it if you're like not really like deeply just reading it through and just focusing on th"
+ ],
+ [
+  20,
+  1676,
+  "ese and then hopefully moving on the investment platforms later. So that's why we're talking, for example, to Kraken and we're planning some"
+ ],
+ [
+  20,
+  1687,
+  "thing with the guys from Trezor, from Satoshi, but as I mentioned to the guy here, that we're"
+ ],
+ [
+  20,
+  1694,
+  "not there yet. So we're focusing on the biggest leak of the finances now, where it sits at the banks and insurances. And I know that Vitalik"
+ ],
+ [
+  20,
+  1717,
+  " is starting now soon, so I think... you"
+ ],
+ [
   21,
   12,
   "Yeah. Good almost evening. It's great to be here. What do you think is one of the biggest but unseen risks in our web three world right now?"
