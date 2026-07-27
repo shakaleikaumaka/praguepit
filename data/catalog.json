@@ -111,13 +111,14 @@
     "id": "1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN.mp3"
    }
   ],
-  "transcript": null,
-  "duration": null,
+  "transcript": "1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN",
+  "duration": "00:26:55",
   "quality": "ok",
-  "transponder": false,
+  "transponder": true,
   "featured": true
  },
  {

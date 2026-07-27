@@ -1,5 +1,950 @@
 [
  [
+  5,
+  11,
+  "Alright. Yep. Thanks for staying here even though Vitalik is speaking. I assume you all heard him plenty. Or you missed that, in that case, "
+ ],
+ [
+  5,
+  21,
+  "feel free to run. Yeah. Also, excuse for the slides. My bot is, annoying. I don't know why it thinks that temporary gatherings are so much m"
+ ],
+ [
+  5,
+  31,
+  "ore important than durable institutions."
+ ],
+ [
+  5,
+  34,
+  "I think it's the other way around. So I want to, open this, talk with a simple observation that is, crypto started with strong digital inten"
+ ],
+ [
+  5,
+  44,
+  "tions and imagination, basically to build institutions that are global, permissionless, composable and do that through digital means, right,"
+ ],
+ [
+  5,
+  54,
+  " through protocols, tokens and DAOs."
+ ],
+ [
+  5,
+  57,
+  "And yet over the last few years, the the most interesting energy for me, at least, has happened in meatspace. So I'm talking about I'm talki"
+ ],
+ [
+  5,
+  68,
+  "ng about the conference, circuit and what came of it, temporary gatherings of longer and longer form, pop up cities, network states, permane"
+ ],
+ [
+  5,
+  80,
+  "nt hubs, cooperative ownership,"
+ ],
+ [
+  5,
+  82,
+  "new experiments with land, housing, governance and shared infrastructure. And the question I'm asking is, why is the movement so focused on "
+ ],
+ [
+  5,
+  91,
+  "digital coordination, rediscovering place and space? And my argument here is that this is not just a lifestyle trend. It's not just that we'"
+ ],
+ [
+  5,
+  100,
+  "re all that many of us are in their late 30s and starting to think about kids and such."
+ ],
+ [
+  5,
+  105,
+  "It's actually it actually reflects a deeper institutional problem. So I come to this topic from two sides. On one hand, I am a researcher. I"
+ ],
+ [
+  5,
+  117,
+  ", I did a doctoral research in political science on crypto commons so that our communities that try to use blockchain infrastructure to, col"
+ ],
+ [
+  5,
+  128,
+  "lectively,"
+ ],
+ [
+  5,
+  129,
+  "steward resources. And from 2018 to '24, I studied several crypto commons projects and their communities in-depth. I looked at the mechanism"
+ ],
+ [
+  5,
+  138,
+  "s they build, at the narratives they develop around these mechanisms and at, their culture, their social ties. And second, and that's what I"
+ ],
+ [
+  5,
+  148,
+  "'m doing more these days, I come, to this talk as a builder."
+ ],
+ [
+  5,
+  152,
+  "Over the last five years, I have been, oops, I have been building, the Commons Hub in the Austrian Alps, which you see on the right side, ri"
+ ],
+ [
+  5,
+  162,
+  "ght, which is a place based experiment in communal living, working and institution building. On the left side, you see me and my brother whe"
+ ],
+ [
+  5,
+  173,
+  "n I just got my, my lawyer."
+ ],
+ [
+  5,
+  175,
+  "And my brother is my my cofounder. Right? So this talk sits between research and practice, and it asks what crypto communities have learned "
+ ],
+ [
+  5,
+  186,
+  "about decentralized institutions and why so many of us are now experimenting with places, gatherings, villages and so on. Now, crypto has al"
+ ],
+ [
+  5,
+  197,
+  "ways had an institutional"
+ ],
+ [
+  5,
+  199,
+  "imagination. It was never just about payments or speculation, and at least in its more ambitious versions, always asked, how can we coordina"
+ ],
+ [
+  5,
+  209,
+  "te without centralized intermediaries? How can we govern shared resources? How can we create credible commitments among strangers? But the f"
+ ],
+ [
+  5,
+  218,
+  "ield has mainly tried to answer these questions through mechanism design."
+ ],
+ [
+  5,
+  223,
+  "Better protocols, better incentive structures, governance modules or voting systems. And I think that, the last decade has shown both the pr"
+ ],
+ [
+  5,
+  233,
+  "omise and the limit of that approach. Mechanisms certainly matter, but mechanisms alone do not create durable institutions. And to explain w"
+ ],
+ [
+  5,
+  243,
+  "hy, I want to briefly clarify what I mean by institutions and by affordances."
+ ],
+ [
+  5,
+  249,
+  "By institutions, I do not mean only formal organizations, and by no means do I mean, the institutions whose institutional money is going soo"
+ ],
+ [
+  5,
+  258,
+  "n come and save all our bags. I mean, rather, by institutions, I mean routine ways of doing things that structure collective life. Instituti"
+ ],
+ [
+  5,
+  267,
+  "ons reduce uncertainty. They lower transaction costs and they tell us what to expect from one another."
+ ],
+ [
+  5,
+  274,
+  "So institutions are not made of rules alone. They shape behavior through several forces at once, and you see them on the quadrant. We have f"
+ ],
+ [
+  5,
+  287,
+  "ormal law, we have architecture, we have social norms and markets. And these four impact on our behaviors and, make us do things in certain "
+ ],
+ [
+  5,
+  300,
+  "ways."
+ ],
+ [
+  5,
+  300,
+  "Now over the last decade, crypto has tended to focus mostly on what it can directly build and affect, so protocols, smart contracts, incenti"
+ ],
+ [
+  5,
+  309,
+  "ve mechanisms, in other words, architecture and some degree of market building. But again, mechanism design alone is not enough to build dur"
+ ],
+ [
+  5,
+  319,
+  "able institutions. And here, the concept of affordances helps, broaden the horizon a bit. An affordance is an actionable property of a techn"
+ ],
+ [
+  5,
+  328,
+  "ology as perceived by an actor."
+ ],
+ [
+  5,
+  330,
+  "That means it's not destiny. It's not abstract technological essence. As technical features lend themselves to certain users, but it depends"
+ ],
+ [
+  5,
+  340,
+  " on who uses them to what ends and in what context. And I find a book is a great example of of an affordance. Right? If you are literate, a "
+ ],
+ [
+  5,
+  349,
+  "book affords reading. If you're illiterate, you can still burn it or throw it at people,"
+ ],
+ [
+  5,
+  355,
+  "or you can show off with it. Again, sorry for my AI slides. So, yeah, when I speak of blockchain's institutional affordances, I do not mean "
+ ],
+ [
+  5,
+  365,
+  "that blockchain automatically creates better institutions. I mean that some of its technical features lend themselves to certain institution"
+ ],
+ [
+  5,
+  376,
+  "al users. And now some examples from my research or, well,"
+ ],
+ [
+  5,
+  380,
+  "examples of such affordances I found in my research, and I think they were on crypto commons, but I think they apply to blockchain at large."
+ ],
+ [
+  5,
+  388,
+  " So first, trustless accountability. I guess you all have an imagination what that could be. Blockchains can make actions permanently visibl"
+ ],
+ [
+  5,
+  397,
+  "e, traceable, auditable. But the challenge that I'm sure all of you also experienced already, in open ended communities, value is heterogene"
+ ],
+ [
+  5,
+  405,
+  "ous."
+ ],
+ [
+  5,
+  405,
+  "The evaluation of an action depends on social judgment. So both the recording of an action is already hard because you have to codify it and"
+ ],
+ [
+  5,
+  415,
+  " then evaluation of how much is your tweet worth as compared to my six months of coding, it's a value judgment. It's very hard to automate. "
+ ],
+ [
+  5,
+  424,
+  "So we end up again with the need for social judgment. That means trust, shared context and the living sense of a group's aims."
+ ],
+ [
+  5,
+  433,
+  "Second, we have found our contractual organizability. Again, we know that dream, at least, from DAOs. Smart contracts allow people to organi"
+ ],
+ [
+  5,
+  442,
+  "ze through automatically executing rule sets. The challenge here is that governance design still has to be guided by the aims and values of "
+ ],
+ [
+  5,
+  450,
+  "a specific community. We know what we want. And this needs to be encodable,"
+ ],
+ [
+  5,
+  455,
+  "thus first known, stable and formalizable, easier for some, settings, or aspirations than for others. And third, the grand dream of permissi"
+ ],
+ [
+  5,
+  465,
+  "onless mechanization. Crypto allows us to prototype institutional patterns or mechanisms without waiting for permission. And that's great, a"
+ ],
+ [
+  5,
+  475,
+  "nd that's what many have been doing for the last decade."
+ ],
+ [
+  5,
+  479,
+  "It lowers implementation costs and accelerates, experimentation. We have a sandbox in which we can play. But it does not solve the deeper qu"
+ ],
+ [
+  5,
+  487,
+  "estion, and that is what institutional design is acceptable in a given situation. What will actually work will be accepted by people and by "
+ ],
+ [
+  5,
+  495,
+  "markets. So in short, trustless accountability runs into the problem of social judgment. Contractual organizability runs into political valu"
+ ],
+ [
+  5,
+  503,
+  "es or the need for"
+ ],
+ [
+  5,
+  504,
+  "encoded known political values. Permissionless mechanization runs into market pressure or acceptance more generally, right? And all three of"
+ ],
+ [
+  5,
+  516,
+  " them point to the social dimension of institutions. Crypto has often underestimated the social dimension of institutions for two reasons. O"
+ ],
+ [
+  5,
+  527,
+  "n the one hand, ideological reasons,"
+ ],
+ [
+  5,
+  530,
+  "part of crypto inherited a quite reductionist libertarian social theory in which centralized institutions are imagined mostly as constraints"
+ ],
+ [
+  5,
+  539,
+  ". And freedom basically essentially means replacing decentralized institutions with contracts, markets and code. We do not look at the socia"
+ ],
+ [
+  5,
+  549,
+  "l. And the other is historical. Early crypto developed in a relatively lawless or extra legal space and thus, rejected law as, or the idea o"
+ ],
+ [
+  5,
+  558,
+  "f law as a as a positive regulatory force."
+ ],
+ [
+  5,
+  561,
+  "Not saying that law has to come back. Right? But that's that's two reasons for me that the social dimension is underrepresented in crypto. B"
+ ],
+ [
+  5,
+  570,
+  "ut the problem is that in the absence of law, and let's say we settle for we do not want the state to interfere there, but in the absence of"
+ ],
+ [
+  5,
+  579,
+  " law, social norms come under pressure from markets. They become harder to establish and to maintain,"
+ ],
+ [
+  5,
+  585,
+  "especially under conditions of systemic anonymity, right? And that's essentially, well, the North Korean hacker problem, that we have now. A"
+ ],
+ [
+  5,
+  597,
+  "nd well, in terms of social norms, behavior will always, risk regression to the code. Basically, whatever is not technically prevented becom"
+ ],
+ [
+  5,
+  609,
+  "es permitted and,"
+ ],
+ [
+  5,
+  610,
+  "in social norms terms, accepted. Code is law. Code permitted doing that. So it's, by default, okay. And that means whatever can be extracted"
+ ],
+ [
+  5,
+  622,
+  " will be extracted. Again, the Codis law versus North Korean hackers drama in a nutshell. Now in my research, I saw communities respond,"
+ ],
+ [
+  5,
+  634,
+  "in two ways to, to this problem of of protecting social norms. On the one hand, technical adaptation. Reshaping technical architecture to ma"
+ ],
+ [
+  5,
+  644,
+  "ke it more compatible with, with your needs, and in their case, it was commons governance. There are many needs. For example, examples I fou"
+ ],
+ [
+  5,
+  655,
+  "nd is replacing pure anonymity with off chain identity,"
+ ],
+ [
+  5,
+  659,
+  "reducing plutocratic influence through quadratic voting or requiring proof of presence, proof of sweat for governance power. And the broader"
+ ],
+ [
+  5,
+  669,
+  " blockchain for good movement has produced many interesting approaches in this realm over the last years. I do think that technical adaptati"
+ ],
+ [
+  5,
+  679,
+  "on also has its limits, though, both in terms of technical feasibility and in terms of market acceptance of those modifications."
+ ],
+ [
+  5,
+  688,
+  "And the second, second response, that I found, and I wanna, focus on more here, is social scaffolding. So what I call social scaffolding is "
+ ],
+ [
+  5,
+  699,
+  "the deliberate cultivation of norms, of relationships, identities, rituals, expectations and informal accountability that make a community g"
+ ],
+ [
+  5,
+  709,
+  "overnable. And here, the token engineering commons,"
+ ],
+ [
+  5,
+  713,
+  "a project that had has been around, I'd say, like, since 2021 maybe until 2425, that was one of my case studies, is, is a good example. For "
+ ],
+ [
+  5,
+  724,
+  "two years, before launching a token, they had a so called cultural build that created a dense social world around the project, so shared lan"
+ ],
+ [
+  5,
+  735,
+  "guage,"
+ ],
+ [
+  5,
+  735,
+  "collective identity, repeated interaction, rituals and a sense that the commons was something to steward and not simply to extract from. Non"
+ ],
+ [
+  5,
+  745,
+  "e of that technically prevented individual profit maximization, but it made pure extraction much less socially legitimate. And that distinct"
+ ],
+ [
+  5,
+  756,
+  "ion matters. So in contrast to simple rule sets, institutions also work by making certain actions"
+ ],
+ [
+  5,
+  763,
+  "unthinkable, shameful, illegitimate or simply out of character, out of role. So in conclusion, my research highlights the need for thicker s"
+ ],
+ [
+  5,
+  774,
+  "ocial worlds around crypto. It highlights the need for communities with memory, towards known members, towards repeated interaction, towards"
+ ],
+ [
+  5,
+  785,
+  " spaces where people do not only coordinate but become accountable to each other over time."
+ ],
+ [
+  5,
+  792,
+  "And this brings us to pop up cities. Pop up cities, pop up villages, residences, this conference circle we're all part of and other forms of"
+ ],
+ [
+  5,
+  802,
+  " gatherings that have been, popping up over the last years. I think that these formats matter precisely because they respond to this missing"
+ ],
+ [
+  5,
+  812,
+  " social layer of the digital realm. They create shared context. They make people known to each other."
+ ],
+ [
+  5,
+  819,
+  "They allow norms, rituals, expectations and informal accountability to emerge much faster than online. And in that sense, pop up cities them"
+ ],
+ [
+  5,
+  828,
+  "selves are a form of social scaffolding. And at their best, they are temporary institutional laboratories. They allow communities to test wh"
+ ],
+ [
+  5,
+  837,
+  "at their values mean in practice, not only in governance forums or smart contracts, but in shared space, shared meals, shared work and somet"
+ ],
+ [
+  5,
+  846,
+  "imes shared conflict."
+ ],
+ [
+  5,
+  847,
+  "But they also reveal the limits of, of temporality. So temporary gatherings can create intensity, trust and inspiration, but precisely becau"
+ ],
+ [
+  5,
+  856,
+  "se they are temporary, they struggle with continuity, with local integration and the gap between vision and practice. So So continuity is ob"
+ ],
+ [
+  5,
+  865,
+  "viously hard because temporary walls do not automatically produce memory, maintenance or accountability over time."
+ ],
+ [
+  5,
+  873,
+  "Local integration is hard because the surrounding place can easily just become a backdrop for a couple of weeks, a beautiful scenery, local "
+ ],
+ [
+  5,
+  882,
+  "flavor, few invited stakeholders, but not, a genuinely participating social world because why should they care about your four week event? R"
+ ],
+ [
+  5,
+  891,
+  "ight? That leaves. They stay. And then the gap between vision and practice is is partially inherent to the format."
+ ],
+ [
+  5,
+  899,
+  "Pop up cities operate often with institution scale ambitions to develop new civic forums, new economies, new ways of living together, UN rec"
+ ],
+ [
+  5,
+  909,
+  "ognition. But they usually do not have the time depth, needed for such cultures and the institutions to actually develop. It always stays an"
+ ],
+ [
+  5,
+  918,
+  " ambition, more or less vague. A pop up can ask, can we create a different social world for a few weeks? And yes, sometimes we can, especial"
+ ],
+ [
+  5,
+  928,
+  "ly if everyone shows their best side for a while and we suppress conflict."
+ ],
+ [
+  5,
+  933,
+  "But a permanent space has to ask harder questions. Can any of this survive repetition? How does culture evolve over time? How does culture e"
+ ],
+ [
+  5,
+  943,
+  "mancipate itself from charismatic individuals from so how do we overcome the founder's problem? How does culture become an invisible layer g"
+ ],
+ [
+  5,
+  952,
+  "uiding interaction into smoother, more expectable paths?"
+ ],
+ [
+  5,
+  956,
+  "And that is a quest for institutions. Permanence, however, does not solve these problems automatically. In fact, it often makes them sharper"
+ ],
+ [
+  5,
+  967,
+  " if they're not addressed. Permanence introduces property, maintenance, neighbors, local law, recurring conflict, governance fatigue and lon"
+ ],
+ [
+  5,
+  978,
+  "g term responsibility."
+ ],
+ [
+  5,
+  980,
+  "And I've been facing all of that over the last five years. I just if you see that, I hit my head two days ago on working on the electric gri"
+ ],
+ [
+  5,
+  989,
+  "d of the house. So it is a different kind of beast. Yes. But precisely for that reason, it is also institutionally interesting. A permanent "
+ ],
+ [
+  5,
+  998,
+  "hub cannot only, live on the vision, cannot, remain a vision only. It It has to become operational. It has to meet the local social world an"
+ ],
+ [
+  5,
+  1007,
+  "d keep on meeting and dealing with the local social world as it does not end after four weeks."
+ ],
+ [
+  5,
+  1013,
+  "It has to develop rhythms, roles, boundaries. It has to deal with conflict rather than suppressing it, and it has to let culture emerge. Now"
+ ],
+ [
+  5,
+  1023,
+  " this, and excuse my shill, is where my own work comes in. Over the last five years, as I mentioned, I have been, co building the Commons Hu"
+ ],
+ [
+  5,
+  1033,
+  "b in the Austrian Alps, which is a place based experiment in communal living,"
+ ],
+ [
+  5,
+  1039,
+  "working and institution building, and Valley of the Commons is our next step in this direction. It will launch as a four week pop up village"
+ ],
+ [
+  5,
+  1050,
+  " in August '26. So formally or initially, it is still a temporary, event, but the intention is to use it as a springboard to our permanent p"
+ ],
+ [
+  5,
+  1060,
+  "lans of seeding the valley of starting to build co workings,"
+ ],
+ [
+  5,
+  1065,
+  "sorry, co living co living, so shared mansions, shared villas, shared housing, either among families. I'm currently looking with, two, three"
+ ],
+ [
+  5,
+  1076,
+  " other families to purchase a house and live there, permanently, but also more for digital nomads that want to have a semi permanent base, s"
+ ],
+ [
+  5,
+  1087,
+  "tuff like that. But then also beyond that, not just living, but also"
+ ],
+ [
+  5,
+  1092,
+  "co working, I said, but also co producing. So we're looking into, cosmological ways of production, into fab labs, into local manufacturing a"
+ ],
+ [
+  5,
+  1101,
+  "nd doing that as much as possible as a common, so as commonly owned property, not as a coworking, company renting out spaces necessarily, ri"
+ ],
+ [
+  5,
+  1111,
+  "ght? And then we also face lots of other questions, but, I'm happy to go into that in more detail if you come by our booth that is over ther"
+ ],
+ [
+  5,
+  1120,
+  "e in the community area. We also have a nice three d printed model of the valley and stuff."
+ ],
+ [
+  5,
+  1126,
+  "But yes, do want to finish this presentation while I derail a bit. The question for me is not only how to host another good gathering, of wh"
+ ],
+ [
+  5,
+  1135,
+  "ich we've done many in the last years. The question is how temporary communities can become entry points into more durable infrastructures, "
+ ],
+ [
+  5,
+  1144,
+  "shared spaces, shared ownership, local production, cooperative housing and commons governance."
+ ],
+ [
+  5,
+  1150,
+  "And for me, in a way, this is also a continuation of my research. I did not want to stay in academia after finishing my PhD. It's too dry an"
+ ],
+ [
+  5,
+  1158,
+  "d boring. I wanna build stuff. But still, I wanna continue in this inquiry. Right? So my PhD looked at how crypto commons try to build decen"
+ ],
+ [
+  5,
+  1166,
+  "tralized institutions and how they use social scaffolding to strengthen social norms against market pressures. Commons Hub and Valley of the"
+ ],
+ [
+  5,
+  1174,
+  " Commons now explore the same question in practice."
+ ],
+ [
+  5,
+  1177,
+  "How can communal life beyond extractive systems grow into durable institutions? By the way, that warning sign should be a QR code. Told you "
+ ],
+ [
+  5,
+  1190,
+  "my bot betrayed me. You can come by. We also put out some flyers here. So, or just come and talk to us. We're at the community booth."
+ ],
+ [
+  5,
+  1202,
+  "These guys are there as well. But I'm gonna make quickly my closing claim, which is simple. Crypto has developed powerful tools for coordina"
+ ],
+ [
+  5,
+  1211,
+  "tion, yes, but coordination is not the same as institution building. Durable institutions need mechanisms, but they also need memory. They n"
+ ],
+ [
+  5,
+  1220,
+  "eed social norms. They need legitimacy, and they need communities that can hold each other accountable over time."
+ ],
+ [
+  5,
+  1227,
+  "Temporary gatherings show that this desire exists. The current move towards hubs and villages asks whether it can endure. Thank you. Thank y"
+ ],
+ [
+  5,
+  1246,
+  "ou, Felix, a great presentation. Do we have any questions from the audience?"
+ ],
+ [
+  5,
+  1256,
+  "If not, there is a question. Perfect. Thank you for the presentation. So I've been around, some of these pop ups for the last, like, three y"
+ ],
+ [
+  5,
+  1267,
+  "ears now. And, you're right in terms of the, like, temporal aspect is good for experimentation. Time bound helps people to get out of their "
+ ],
+ [
+  5,
+  1277,
+  "shell, to connect, to innovate, to iterate very fast. Right? So they serve a purpose."
+ ],
+ [
+  5,
+  1284,
+  "But I I am seeing this trend in terms of moving towards more permanent and then having anchors and routes in addition to traveling to share "
+ ],
+ [
+  5,
+  1294,
+  "information and to share knowledge. So my question is that, are we aren't we over engineering this? Aren't we trying to force community wher"
+ ],
+ [
+  5,
+  1303,
+  "e community should be naturally emerging in terms of the shared values or interest?"
+ ],
+ [
+  5,
+  1309,
+  "Are we aren't we overdoing things? Because sometimes we just need to plan the scaffolding and then just allow people to come come and take o"
+ ],
+ [
+  5,
+  1321,
+  "ver. To some degree, I I certainly agree with you. We can risk overengineering, the social question or or prefiguring"
+ ],
+ [
+  5,
+  1331,
+  "the the institutions, that's or the social side of institutions, institutions, right? Or even, not just the social side, the whole thing. Ye"
+ ],
+ [
+  5,
+  1340,
+  "s, build a community and its culture, its rules and its institutions will come. But I do think that it's also and especially as we are using"
+ ],
+ [
+  5,
+  1349,
+  " technologies to facilitate some of these or for the architectural side of some of these institutions,"
+ ],
+ [
+  5,
+  1356,
+  "and that needs active development and takes time and so on, we need to think about these things. The social side, yes, we need to give it so"
+ ],
+ [
+  5,
+  1367,
+  "me wiggle room to figure itself out and constitute itself. To some degree. I do think that, creates a community or creates a space where peo"
+ ],
+ [
+  5,
+  1377,
+  "ple live together, actively as an intentional community, and they will develop their institutions."
+ ],
+ [
+  5,
+  1385,
+  "Yes. But as we are in a technologically driven sphere, I'd say, this question of choosing the right mechanisms, choosing the right technolog"
+ ],
+ [
+  5,
+  1397,
+  "ical substrate is a relevant one. And, like something like, if we don't look at that consciously, right, we risk, importing"
+ ],
+ [
+  5,
+  1407,
+  "mechanisms developed for elsewhere with different political values baked into them, importing them because it's easy because this code alrea"
+ ],
+ [
+  5,
+  1418,
+  "dy exists, But then we also inherit, the political, baggage with it and the assumptions that went into it. There was some more hand, I think"
+ ],
+ [
+  5,
+  1430,
+  ", here in the front. Yeah."
+ ],
+ [
+  5,
+  1432,
+  "Yeah. Thank you for the talk. And I think it it is indeed, like, a social perspective, interesting to look at permanent hubs. From a sustain"
+ ],
+ [
+  5,
+  1441,
+  "ability perspective, how do you see that changing from doing temporary gatherings in different places to having one place? How do you look a"
+ ],
+ [
+  5,
+  1450,
+  "t that? What sustainability are you talking about? The sustainability"
+ ],
+ [
+  5,
+  1455,
+  "from a from a capital perspective. Well, I guess that, it shifts. I think it could be more sustainable to stay in a place not travel around "
+ ],
+ [
+  5,
+  1469,
+  "and book hotels all the time, if that is what you mean. But, I certainly hope to bring down cost of living as compared to the conference cir"
+ ],
+ [
+  5,
+  1483,
+  "cuit,"
+ ],
+ [
+  5,
+  1483,
+  "but I'm not sure that is exactly what you're asking for. There are so many aspects of sustainability, right? There's the sustainability, soc"
+ ],
+ [
+  5,
+  1491,
+  "ial sustainability of the group. Does our culture, condense? And do we actually build one or does it fall apart? How do we deal with conflic"
+ ],
+ [
+  5,
+  1500,
+  "t and such? So that's one question of sustainability. Then there is the local environmental sustainability."
+ ],
+ [
+  5,
+  1506,
+  "There is global. Is it sustainable to fly around the conference circuit all the time? No. Better to stay in a place. But, yeah, many dimensi"
+ ],
+ [
+  5,
+  1517,
+  "ons. Do you want to specify? Well, I think it allows very different business models to have a permanent place. Absolutely. I I think tempora"
+ ],
+ [
+  5,
+  1528,
+  "ry gatherings are a first step, and many of the temporary gatherings we've seen pop up in the last"
+ ],
+ [
+  5,
+  1536,
+  "years are starting to think about permanence, and that's not by chance. Right? And it's yeah. As I said, it is maybe one reason is that many"
+ ],
+ [
+  5,
+  1545,
+  " of us wanna have kids and such and not travel around all the time, but it's also a more, institutional, reason behind that. And one of them"
+ ],
+ [
+  5,
+  1554,
+  " is also building, building businesses and having stability to build businesses."
+ ],
+ [
+  5,
+  1559,
+  "So this is something I'm also thinking about a lot with commons hub I'm building that for me, the commons hub is first the economic engine t"
+ ],
+ [
+  5,
+  1570,
+  "hat makes the bigger project viable by providing capacity, providing jobs and such. But it's also a platform for future businesses to plug i"
+ ],
+ [
+  5,
+  1581,
+  "nto and to build their"
+ ],
+ [
+  5,
+  1583,
+  "own thing on top. And this stability is something that I think, temporary gatherings cannot provide in that, in that way. Great. Thank you v"
+ ],
+ [
+  5,
+  1605,
+  "ery much. So we can thank the speaker again. Thank you."
+ ],
+ [
   6,
   9,
   "I have, like, a all three view, the hacker, hackathon organizer, judging. So I can share a little bit a gist of, like, what is the common mi"
