@@ -11105,6 +11105,1721 @@
   "ific vault, that's a great thing. It's a win win for everybody. Yeah. Thank you very much. We've run out of time. So we can Thank you."
  ],
  [
+  14,
+  0,
+  "I think it works. Alright. Should we start? Okay. Hello. We are going to start now. Okay."
+ ],
+ [
+  14,
+  25,
+  "Hi, everyone. So this is a panel with the title sustainability in the current age of security. So, for this panel, it might be actually usef"
+ ],
+ [
+  14,
+  38,
+  "ul to define real quick what we mean with security. So briefly framing it would be helpful because in this room alone, I think we have a lot"
+ ],
+ [
+  14,
+  51,
+  " of different"
+ ],
+ [
+  14,
+  52,
+  "approaches to what security is. In the crypto and Ethereum context, security is usually often like protocol security, cryptographic security"
+ ],
+ [
+  14,
+  62,
+  ", what else do we have, protection from attacks, trustless systems, self custody and so on. But today, in this panel though, we want to poin"
+ ],
+ [
+  14,
+  73,
+  "t to a broader political and societal shift."
+ ],
+ [
+  14,
+  76,
+  "Many sustainability questions in the last, few years got completely reframed through the lens of security, and that's what we want to talk t"
+ ],
+ [
+  14,
+  86,
+  "o, about you about today. And for that, we have a very interesting diverse panel. As you notice, we don't have a moderator, so we're moderat"
+ ],
+ [
+  14,
+  96,
+  "ing ourselves in the very decentralized kind of mindset."
+ ],
+ [
+  14,
+  100,
+  "So maybe we start with a little introduction round. Everybody really quickly says something. Let me just say on the framing. So we also don'"
+ ],
+ [
+  14,
+  107,
+  "t have a woman on the panel. And so some of us have signed pledges in the past to not be on mannels, and yet here we are. So that's we're go"
+ ],
+ [
+  14,
+  114,
+  "nna talk about how sustainable that is as well. The just before we do introductions, the way we're gonna break this talk down because we wan"
+ ],
+ [
+  14,
+  121,
+  "na also hear from you, we're gonna ask you a few questions. After we do our introductions, we're gonna ask you three questions."
+ ],
+ [
+  14,
+  127,
+  "But we're gonna break the talk down into three subparts, the past, the present, and the future. So we're gonna organize this by talking a li"
+ ],
+ [
+  14,
+  134,
+  "ttle bit about what's changed in the questions of of sustainability and the world. What do we what does it seem like right now? And then wha"
+ ],
+ [
+  14,
+  141,
+  "t do we expect from four very different vantage points? What do we expect the world to look like in ten years? And so that's the sort of set"
+ ],
+ [
+  14,
+  149,
+  "up of it. We can then start with introductions."
+ ],
+ [
+  14,
+  151,
+  "Do you wanna start? I can start. Hi. I'm Christopher Fabian. I run a project called Giga, which is a an initiative that's a partnership with"
+ ],
+ [
+  14,
+  159,
+  " UNICEF and the International Telecommunications Union, working to connect every school and hospital in the world to the Internet. I'm based"
+ ],
+ [
+  14,
+  166,
+  " in Geneva and we have an office in Barcelona. And we work very closely with the Ethereum Foundation and with many of the groups that you se"
+ ],
+ [
+  14,
+  174,
+  "e outside and in the space here."
+ ],
+ [
+  14,
+  176,
+  "Okay. Thank you. So I'll be next. My name is Bernd Riedel. I run a transdisciplinary design studio in Berlin. We work at the intersection of"
+ ],
+ [
+  14,
+  188,
+  " science, energy, human systems. And we mostly we mostly deal with processes of change, of transformation, mostly in renewable energy, in mo"
+ ],
+ [
+  14,
+  199,
+  "bility, in climate communication."
+ ],
+ [
+  14,
+  202,
+  "And on the side, I also teach speculative design. So I do a lot of future work as well at the Berlin School of Design and Communication. May"
+ ],
+ [
+  14,
+  211,
+  "be yeah. This works. Hi, everyone. My name is Giulio Corci. I'm a researcher, at the University of Cambridge. I mainly work on AI safety, an"
+ ],
+ [
+  14,
+  219,
+  "d my area of expertise is kind of like understanding the impacts of AI on information ecosystems. So looking at everything about, like, how "
+ ],
+ [
+  14,
+  228,
+  "information circulates in society to high stake processes like elections."
+ ],
+ [
+  14,
+  232,
+  "And my research is like, tends to be, like, quite quantitative and about, like, monitoring information ecosystems to to understand those imp"
+ ],
+ [
+  14,
+  243,
+  "acts. Hello. I'm sorry, first of all, because I come from an institution supervisor most of you would like to close, but still, I am. I'm so"
+ ],
+ [
+  14,
+  253,
+  "rt of an expert of green financing."
+ ],
+ [
+  14,
+  256,
+  "So that's, I guess, why why I'm here and why might be interesting to see also point of view from, this kind of expert in institution even th"
+ ],
+ [
+  14,
+  266,
+  "ough I'm not speaking in, in their behalf, not the bank vitae nor the euro system nor the ECB. So you will be, my view and only my view toda"
+ ],
+ [
+  14,
+  275,
+  "y. Thank you. Cool. So as promised, before we start, we're gonna ask you two questions, which is like hand raised questions. One is,"
+ ],
+ [
+  14,
+  284,
+  "sort of just for us to gear our conversations, which which sector, which area are you coming from slash interested in? I'm gonna give three "
+ ],
+ [
+  14,
+  291,
+  "and then four can be other. But can you just raise your hand if you're coming if you can mentally hear more from developer engineering techn"
+ ],
+ [
+  14,
+  299,
+  "ology world? Okay. One, two, three, four, five, six. Oh, the cautious one. Seven. They're like, maybe. I don't know. It could be. What are t"
+ ],
+ [
+  14,
+  306,
+  "he other two?"
+ ],
+ [
+  14,
+  307,
+  "Government? Kinda government big institutional kind of thing? No. That's those are scary people. Okay. Researchers, policy, academia. Okay. "
+ ],
+ [
+  14,
+  315,
+  "And then other? That should be everybody else who didn't raise her. What are you what what do what others are you? What other exist in the w"
+ ],
+ [
+  14,
+  324,
+  "orld? Somebody should shout something out. Like, what's in other? Banking. Okay. That's kind of yeah. That's cool. Banking. Oh, there's a ba"
+ ],
+ [
+  14,
+  332,
+  "nker there."
+ ],
+ [
+  14,
+  333,
+  "Other other other? Marketing. Marketing. Okay. Do we have energy? We haven't gotten that's the next thing. Okay. So question number two is, "
+ ],
+ [
+  14,
+  342,
+  "which field makes you feel really sad or happy when you wake up in the morning? I'm gonna give you three so energy. Okay. I'm gonna give you"
+ ],
+ [
+  14,
+  350,
+  " everyone wants to wait to hear all of them first. It's gonna be energy, connectivity, or AI. So energy."
+ ],
+ [
+  14,
+  357,
+  "Okay. Connectivity, telecoms. Okay. It's just me and thanks. There's two of us. Talk nobody likes telecoms. AI? Everybody's scared about AI."
+ ],
+ [
+  14,
+  367,
+  " Okay. Other? You can't you can't vote twice. This world. Permission this world. Okay. So thanks. That's kind of level sets us a little bit."
+ ],
+ [
+  14,
+  376,
+  " We'll kick off the discussion. So I'll start I'm gonna start with past. Should I do that? Colleagues,"
+ ],
+ [
+  14,
+  383,
+  "in the space of sustainability and all of the things we heard about it in in the opening, what do you think has changed the most in your fie"
+ ],
+ [
+  14,
+  392,
+  "ld in the last five years that makes this discussion important today? What's the biggest macro change that that you think about when you get"
+ ],
+ [
+  14,
+  400,
+  " ready for discussions and wake up in the morning? I know what's the I thought it was the last, but I mean, well, when I think of what I've "
+ ],
+ [
+  14,
+  409,
+  "been studying"
+ ],
+ [
+  14,
+  410,
+  "since last ten years is the the the attitude to the this idea of green transition. We we woke up, after the Paris Agreement, everybody said,"
+ ],
+ [
+  14,
+  420,
+  " well, it's good to do something for the planet. Everybody enjoyed it, to to have some green label, to go there and make some even a shoppin"
+ ],
+ [
+  14,
+  431,
+  "g. Even if you are an investor,"
+ ],
+ [
+  14,
+  433,
+  "you wanted to to buy something green. Even if you are a very brown firm, you wanted to have a green in your name, something like that. So th"
+ ],
+ [
+  14,
+  443,
+  "e the the change was the fact that you started from sort of a knower, and then we all wanted to be green. And this other the reverse of the "
+ ],
+ [
+  14,
+  454,
+  "the coin that was you you had to"
+ ],
+ [
+  14,
+  456,
+  "have a look at it because, I mean, changing your name to brown to green doesn't make any change at all. It's just the fact that you try to c"
+ ],
+ [
+  14,
+  465,
+  "heat people. And we had this sort of big issue that that these are my three minutes. Aren't they? You're good. One and a half. Okay. The the"
+ ],
+ [
+  14,
+  475,
+  " the this idea that you must be scared of this greenwashing, the idea that,"
+ ],
+ [
+  14,
+  480,
+  "everybody was pushing for something that had green in its name, but, was not green at all. And speaking about, I mean, the financing of firm"
+ ],
+ [
+  14,
+  490,
+  "s, the the the money that the the government were raising from the market with this green label, there was some problem because, I mean, eve"
+ ],
+ [
+  14,
+  500,
+  "n, the the first the one of the very first,"
+ ],
+ [
+  14,
+  503,
+  "green bond issue that both, denied the the the green lab was from the reps of the old company. Because, I mean, well, you're you're suggesti"
+ ],
+ [
+  14,
+  513,
+  "ng you're doing something green, but you actually you you you are not. You're just pretending to change the the you're you're greening your "
+ ],
+ [
+  14,
+  523,
+  "or a very tiny bit of your process in a single firm,"
+ ],
+ [
+  14,
+  527,
+  "and then you're you're suggesting you're doing something. So the fact that there were institutions that were born to check on these things, "
+ ],
+ [
+  14,
+  537,
+  "to check on this, dash for for for for for the greenness. So on on the one hand, there was this beautiful thing that we we all agreed that t"
+ ],
+ [
+  14,
+  546,
+  "he war was not going well, and so we should do something"
+ ],
+ [
+  14,
+  550,
+  "to to improve it. I mean, you're aware of this 2.5 Celsius with respect to an average. This is not bullshit, but just a benchmark, just a wa"
+ ],
+ [
+  14,
+  562,
+  "y where to start. But what I want to let you think is, was this kind of changing that in a way introduced the the I'm sorry to say it, some "
+ ],
+ [
+  14,
+  573,
+  "regulatory aspect. The fact that you had to be careful"
+ ],
+ [
+  14,
+  578,
+  "on what you were doing because being green doesn't mean you care about the plant. Doesn't mean you care about moving from given amount of CO"
+ ],
+ [
+  14,
+  590,
+  "2 emission. Doesn't mean I'm done. Okay. So that was the the the largest change even in financial market, this change of both. Thanks,"
+ ],
+ [
+  14,
+  602,
+  "Andrea. Yeah. For me, so what has changed, from the past? So I I started, in research, sort of, like, focusing on disinformation, harmful co"
+ ],
+ [
+  14,
+  612,
+  "ntent, years ago. And at the time, a lot of it was mainly, was very different from how it is how it is today. And I think the main change ha"
+ ],
+ [
+  14,
+  622,
+  "s been AI, which is what I tend to focus on today. So I think for me that has been the sort of like this big shift that we have seen."
+ ],
+ [
+  14,
+  631,
+  "Obviously, I think AI impacts, I mean, almost every sector of society. So, I mean, information is definitely one of those. If you look at, l"
+ ],
+ [
+  14,
+  640,
+  "ike, any online debate or elections today, you will see loads and loads of AI generated content with people, like, fighting and contesting, "
+ ],
+ [
+  14,
+  648,
+  "like, what is what is real and what isn't. I think it's also really, made a dent into, like, a lot of, like, how public processes,"
+ ],
+ [
+  14,
+  656,
+  "work. And this has been something that we we can't ignore anymore. This has been a massive transition in in the past few years. I I also lik"
+ ],
+ [
+  14,
+  665,
+  "e a lot to think about, how, for example, our brains have changed so much, in the past few years, because of this. This is for for me one of"
+ ],
+ [
+  14,
+  674,
+  " the biggest changes that I'm seeing in the way especially as someone who works in, again, in research. Like, my my job is try and and think"
+ ],
+ [
+  14,
+  683,
+  " and answer questions."
+ ],
+ [
+  14,
+  684,
+  "Having access to, like, such powerful tools, I think, has really changed the way, I approach problems and I and I work and think about thing"
+ ],
+ [
+  14,
+  693,
+  "s in a way that also scares me because, I think it it tends to probably lead us in a direction where we were less, autonomous in doing those"
+ ],
+ [
+  14,
+  701,
+  " things. So I think yeah. So for me, that that has been like the this, like, big transitions,"
+ ],
+ [
+  14,
+  707,
+  "transition that we've seen, from from from the past. I don't wanna talk too much about, like, the the present and future because I wanna tak"
+ ],
+ [
+  14,
+  716,
+  "e away from from the rest of the conversation. But yeah. Okay. I'll stop here. Okay. Oh, oh, perfectly in time. So as you see, we time ourse"
+ ],
+ [
+  14,
+  725,
+  "lves. So okay. Yeah. So looking looking in the past, the sustainability,"
+ ],
+ [
+  14,
+  730,
+  "like, as a word, how that it changed for me. I started working in communication, in science communication, and accompanying change processes"
+ ],
+ [
+  14,
+  741,
+  " in the renewable energy field for fifteen years now. Fifteen years ago, it was a hardly, barely professionalised kind of field when it come"
+ ],
+ [
+  14,
+  752,
+  "s to design and communication."
+ ],
+ [
+  14,
+  754,
+  "There was a lot of finger pointing. There was a lot lot of dystopian kind of, future images that were used to kind of talk about the urgency"
+ ],
+ [
+  14,
+  764,
+  " of tackling the climate crisis, but, it was relatively like, it it didn't really reach, the the broader audiences that, should have been ad"
+ ],
+ [
+  14,
+  774,
+  "dressed. That changed drastically over the last fifteen years."
+ ],
+ [
+  14,
+  779,
+  "More and more, we got into a professionalized, discourse about these topics. And just when we hit the sweet spot, when it moved away from th"
+ ],
+ [
+  14,
+  788,
+  "e dystopian thinking towards collective imagination, a utopian thing, like how can a better future for everyone look like and a more sustain"
+ ],
+ [
+  14,
+  797,
+  "able one? That's where all that crazy stuff started to happen that we had for the last few years."
+ ],
+ [
+  14,
+  803,
+  "So, for me, that is the major shift. I don't want to tap too much into the present already because we're getting there. So maybe I'll hand i"
+ ],
+ [
+  14,
+  811,
+  "t off to you, Christopher. Okay. Well, the present looks so scary. So for me, sustainability means, like, how do you keep something going ov"
+ ],
+ [
+  14,
+  818,
+  "er time? And maybe this may be like a dumb reductive thing, like, you have something good or something bad, you wanna keep it going. It's th"
+ ],
+ [
+  14,
+  826,
+  "at's that's sustainability."
+ ],
+ [
+  14,
+  827,
+  "And I think the big change that I've seen over the last five years is that people have stopped talking about building good global things, an"
+ ],
+ [
+  14,
+  834,
+  "d now they're talking about like building bombs pretty much. And so it's hard to think about sustainability of big open source is one exampl"
+ ],
+ [
+  14,
+  841,
+  "e of like a big good global thing that is now for some reason crazily under attack as a concept in various places. So to me, sustainability "
+ ],
+ [
+  14,
+  848,
+  "is really important because if if we are building things, if we're building things like the Ethereum ecosystem, which I very much believe in"
+ ],
+ [
+  14,
+  855,
+  ", how do we make sure that after our attention goes off of it or somebody else's attention goes off or treasury runs out that those things c"
+ ],
+ [
+  14,
+  862,
+  "ontinue to move. And I think you need to have some business built into stuff for it to be sustainable. There has to be cash flow and things "
+ ],
+ [
+  14,
+  869,
+  "like that. And if everybody's interest has gone into building to a business of looking inwards, and I'm talking now about governments, if we"
+ ],
+ [
+  14,
+  876,
+  " think about how governments are across the board pretty much with with very few exceptions, thinking they've gone from a world which five y"
+ ],
+ [
+  14,
+  883,
+  "ears ago was a very multilateral world where governments would collaborate with each other or they'd at least say they would and they would "
+ ],
+ [
+  14,
+  890,
+  "work in through institutions like the UN. And if you look at it right now, like multilateralism is dead. That that whole idea, that whole co"
+ ],
+ [
+  14,
+  897,
+  "ncept of like global collaboration and international orders is gone."
+ ],
+ [
+  14,
+  900,
+  "And if you said that if when I said that a year and a half ago, everybody would kind of laugh at me and be like, why is this crazy person sa"
+ ],
+ [
+  14,
+  907,
+  "ying it? And you say it now and nobody laughs anymore. So for me the big change is that with the end of multilateralism, with the end of a w"
+ ],
+ [
+  14,
+  914,
+  "orld that was at least giving lip service to building things together that had a longer, you know, a longer tail than the immediate and gone"
+ ],
+ [
+  14,
+  921,
+  " to building bombs for themselves and figuring out how to make weapons in their own space to defend themselves from a scary future."
+ ],
+ [
+  14,
+  928,
+  "That means that we need different types of coordination mechanisms if we want to continue good things in the world and make good things grow"
+ ],
+ [
+  14,
+  935,
+  ". And so I'm very concerned about what types of coordination mechanisms we move into. I work in Internet and telecommunications, which I'm t"
+ ],
+ [
+  14,
+  942,
+  "rying to connect every young person to a fair and safe Internet. It's really scary right now. The Internet is a terrible place to be anyway "
+ ],
+ [
+  14,
+  949,
+  "if you're a young person or old Internet's just an awful place in general. But how do we coordinate in a world where there are so many diffe"
+ ],
+ [
+  14,
+  956,
+  "rent sovereign Internet's coming and corporate Internet's that are all,"
+ ],
+ [
+  14,
+  960,
+  "you know, building on their own interest. The open source Internet, the thing that I love so much, is shrinking in its thought space. And so"
+ ],
+ [
+  14,
+  968,
+  " for me, sustainability is how do we take the things that we love and give them the space to have fiscal compatibility with the future. And "
+ ],
+ [
+  14,
+  975,
+  "I'm not sure that the institutions we have, you know, had in the past are ready for that future. I think there's something for you. You name"
+ ],
+ [
+  14,
+  983,
+  " futures next. One minute. So present, present, present. Let let me stand up a bit."
+ ],
+ [
+  14,
+  987,
+  "Yeah. Yes. With respect to the present, Donald Trump. I love him. Why? I'll tell you in just in a second. As a researcher, as an economist, "
+ ],
+ [
+  14,
+  998,
+  "as a statistician, we all look for a structural break, something that changes the things. So the 11/05/2024 when Donald Trump was elected ag"
+ ],
+ [
+  14,
+  1009,
+  "ain is a beautiful day to start"
+ ],
+ [
+  14,
+  1011,
+  "the present, the new world. So what we did at the Bank of Italy or our in the academia is comparing what was before Trump and what was after"
+ ],
+ [
+  14,
+  1022,
+  " after he took office or even he was he won the the electoral campaign. And I have this beautiful piece of work. I mean, don't know whether "
+ ],
+ [
+  14,
+  1033,
+  "you are aware of this American series. It was orange,"
+ ],
+ [
+  14,
+  1037,
+  "isn't it, the new black? Too young. However, I I named my my my my work after the decision that this green is the new black. Now every we we"
+ ],
+ [
+  14,
+  1048,
+  " moved from the this beautiful contact in which you have to control people doing green. That is you are scared of greenwashing to a new worl"
+ ],
+ [
+  14,
+  1060,
+  "d in which you have to look"
+ ],
+ [
+  14,
+  1062,
+  "you're just scared of doing green thing. This is called green hushing. You put your green thing under the carpet. You still do do it because"
+ ],
+ [
+  14,
+  1070,
+  " it's your nature, because it's worth doing, but you pretend not you're not doing. You don't name it in your business saying you you you whe"
+ ],
+ [
+  14,
+  1078,
+  "n I show a bond, you don't call it green anymore because because it's gonna be costly for you. In this very basic analysis I did on on this "
+ ],
+ [
+  14,
+  1087,
+  "Trump effect, I showed that before Trump,"
+ ],
+ [
+  14,
+  1089,
+  "all the green bond, The US green bond, I looked on The US market, they were priced below par. What does it mean? It mean that if you wanna f"
+ ],
+ [
+  14,
+  1098,
+  "inance a green project and use the green lab, then you get a discount on the market. Your bond is cheaper than other companies. So you the t"
+ ],
+ [
+  14,
+  1107,
+  "he investor, are giving a price to you because you're doing this. You're financing a green project."
+ ],
+ [
+  14,
+  1113,
+  "Now after Trump, it's exactly the other way around. If you are going on on a market with a green light, you pay more. You say, I finance I w"
+ ],
+ [
+  14,
+  1124,
+  "ant money from you because I have to improve my I want to reduce my CO2 emission. I want to move from my set of cars all to electric, then t"
+ ],
+ [
+  14,
+  1134,
+  "he market is penalizing. It's asking you more to to,"
+ ],
+ [
+  14,
+  1138,
+  "more more return in order to to to give you money. What's this? What is it's it's very simple because if you change at a high level the atti"
+ ],
+ [
+  14,
+  1147,
+  "tude of the government, of the indication, then even if you're doing good things, the market is penalizing you. Because there is have been t"
+ ],
+ [
+  14,
+  1156,
+  "his sort of change in the attitude, and and that now everybody is scared of,"
+ ],
+ [
+  14,
+  1161,
+  "continuing doing what he was doing. I mean, it's not going to the what was the name of it? The the kill you or support you because you are i"
+ ],
+ [
+  14,
+  1169,
+  "ssuing a green bond. But it's the idea of doing something good for the environment that make make you look weak. So this is the the the this"
+ ],
+ [
+  14,
+  1178,
+  " is, unfortunately, the present in US is not the same in the in the European market. The European market, we still, have this level of being"
+ ],
+ [
+  14,
+  1186,
+  " green, who"
+ ],
+ [
+  14,
+  1187,
+  "wants to issue a green bond? Who wants to place a green bond comes to the European market. It's never been the case. Just one number, The US"
+ ],
+ [
+  14,
+  1197,
+  " is the worst green market ever. It moved to 1.7% of green bond issuance that is already was the second last to 0.6%, meaning that nobody is"
+ ],
+ [
+  14,
+  1206,
+  " issuing any green bond more in The US. Luckily, in your area, are about something like 15% to 20%,"
+ ],
+ [
+  14,
+  1213,
+  "and the number doesn't seem to change. So the current status of the things sorry, of the market is that they're now assessing more carefully"
+ ],
+ [
+  14,
+  1223,
+  " whether to issue with the green lab or not. Thank you. I hope I lost time. Oh, no. No. It's perfect. Okay. I'll, well, I think so be before"
+ ],
+ [
+  14,
+  1232,
+  " I move on to the to the next stage, I think at some point we mentioned, asking,"
+ ],
+ [
+  14,
+  1238,
+  "you guys, what if there's any inputs or anything that you want to bring, into discussion, before, like, each phase. So if there's anything t"
+ ],
+ [
+  14,
+  1246,
+  "hat, you guys want to say or yes. Oh, I love actually, I'll I'll be the moderator as well. Yeah. I think the the topic of, international col"
+ ],
+ [
+  14,
+  1255,
+  "laboration is is really interesting. When you asked in the beginning what what sector we feel belonging to, what I found was missing was gra"
+ ],
+ [
+  14,
+  1263,
+  "ssroots and community, and what's working in international collaboration is people collaborating internationally,"
+ ],
+ [
+  14,
+  1270,
+  "in my opinion. That's not through governments. And I think at the end of the day, that's like, if humans respect each other, that's a lot ea"
+ ],
+ [
+  14,
+  1279,
+  "sier than one country respecting another country on a governmental level. So in my opinion, that is where some of that spirit that you said "
+ ],
+ [
+  14,
+  1289,
+  "you're seeing going missing, is still well and alive. Thank you. Any other inputs"
+ ],
+ [
+  14,
+  1294,
+  "from the room? No one? Okay. Should we just, like, continue and then we'll integrate them? Yeah. So, I mean, from my perspective, so I think"
+ ],
+ [
+  14,
+  1303,
+  " we're obviously getting into the the moment of, like, rapid, AI deployment, as I mentioned. So we're, like, in the present, we're at a poin"
+ ],
+ [
+  14,
+  1311,
+  "t where AI is everywhere, and that is the case for, like, an information ecosystem. So a lot of the content we find online, but also in gene"
+ ],
+ [
+  14,
+  1320,
+  "ral in any type of,"
+ ],
+ [
+  14,
+  1321,
+  "applications, of, like, real world deployments of things we're seeing, we're seeing AI everywhere. So this is the stage of, rapid growth, an"
+ ],
+ [
+  14,
+  1330,
+  "d deployment. I think by connecting to to multilateralism as well, we're also in a very complicated political moment, for AI. You've probabl"
+ ],
+ [
+  14,
+  1339,
+  "y seen a lot of conversations on, arms race scenarios or, like, this race"
+ ],
+ [
+  14,
+  1344,
+  "for, like, who builds AI first, this, like, securitization as well where we were pretty rapidly brought into this conversation of AI is a ve"
+ ],
+ [
+  14,
+  1352,
+  "ry dangerous technology. Who builds it first has a strategic advantage, against everyone else, so we need to build first. And that has very "
+ ],
+ [
+  14,
+  1361,
+  "significant implications for regulation, for example. And you see the world really, like, splitting on this. Like, you've seen the European "
+ ],
+ [
+  14,
+  1369,
+  "Union having pretty aggressive regulation with the EU AI act, and we've seen The US basically saying we don't need any regulation because th"
+ ],
+ [
+  14,
+  1377,
+  "is is a strategic technology, so whoever develops it first has an advantage."
+ ],
+ [
+  14,
+  1382,
+  "So I think from a, again, linking to, like, multilateralism and securitization, this is something like AI is going through a securitization,"
+ ],
+ [
+  14,
+  1390,
+  " like, very heavily. We've seen, like, all major AI companies having moratoria in the past of for, like, military use, for example, and that"
+ ],
+ [
+  14,
+  1397,
+  " was the case for Anthropic, for DeepMind, for OpenAI. And that's also something that is basically gone. So this day, we see AI companies in"
+ ],
+ [
+  14,
+  1405,
+  "tegrated into military and it's like growing securitization."
+ ],
+ [
+  14,
+  1408,
+  "So I think for me that that that's probably like the most, interesting part about the about the present. I'll I'll take it directly from the"
+ ],
+ [
+  14,
+  1417,
+  "re because that was a great keyword for me as well. Securitization is also something I notice very, very drastically in the present. So lot "
+ ],
+ [
+  14,
+  1426,
+  "of, like, renewable energy development work happens through through consortia,"
+ ],
+ [
+  14,
+  1431,
+  "through public funding kind of research projects. Just two years ago, it started and it picked up massively in pace that everything has to b"
+ ],
+ [
+  14,
+  1441,
+  "e now reframed as a security issue. So we're not talking about decentralized energy systems anymore because they will be more sustainable, m"
+ ],
+ [
+  14,
+  1451,
+  "ore green, better for the environment, better for the people. We're talking exclusively how does this protect us, how does it serve our how "
+ ],
+ [
+  14,
+  1461,
+  "does it serve our security, our defence kind of strategy."
+ ],
+ [
+  14,
+  1465,
+  "Now, I personally think it's a double edged sword. You can use it to add urgency. Decision makers, policy makers seem to much more be willin"
+ ],
+ [
+  14,
+  1477,
+  "g to act and to commit as soon as the word defence is dropped. And, of course, you have, like, resilience, like, preparing society for,"
+ ],
+ [
+  14,
+  1488,
+  "like, security feeds into the the same like, the same mechanisms feed that kind of purpose as as you have in sustainability. So you can can "
+ ],
+ [
+  14,
+  1500,
+  "have a double use kind of. But while it adds urgency and more of an incentive to act, it also cuts away a lot of the really amazing benefits"
+ ],
+ [
+  14,
+  1512,
+  "that is also really reflected here in the Ethereum community, transparency, like ownership, co ownership, like all these democratic values t"
+ ],
+ [
+  14,
+  1522,
+  "hat are inherently a part of sustainability kind of get into the second into the second row because the thing that really sells it and how w"
+ ],
+ [
+  14,
+  1532,
+  "e have to adjust our language while selling these green ideas to the broader public is now we have to reframe it in a security context. And "
+ ],
+ [
+  14,
+  1542,
+  "that makes it"
+ ],
+ [
+  14,
+  1543,
+  "difficult to say the least. So one of the things I'm gonna try to show something while I talk. One of the things that I find in the present "
+ ],
+ [
+  14,
+  1551,
+  "is that and you may have noticed this, everything seems to be going faster and faster and faster every day. I think that so this is a map of"
+ ],
+ [
+  14,
+  1559,
+  " the work that we do. This is every school in the world. This is these are the schools in Botswana."
+ ],
+ [
+  14,
+  1565,
+  "All of the dots are schools. All of the ones that are blinking are giving us data every four hours. All of the ones up there that are not bl"
+ ],
+ [
+  14,
+  1573,
+  "inking are not connected to the Internet. And we're able to see in real time how connected the schools are. And we have this map for, you kn"
+ ],
+ [
+  14,
+  1580,
+  "ow, 48 countries and you can click on a school and you can see its specific data, as of the last day and so on, that's 25 Mbps. This is this"
+ ],
+ [
+  14,
+  1588,
+  " project, I mean this is an incredible piece of engineering and this is I think one of the largest deep end projects going in the world righ"
+ ],
+ [
+  14,
+  1595,
+  "t now. And"
+ ],
+ [
+  14,
+  1596,
+  "one of the interesting things about it is how we would have sold this a few years ago is to talk about the impact of people being connected."
+ ],
+ [
+  14,
+  1603,
+  " How many people are the map of the Amazon region was almost not connected at all a few years ago. How many young people are exposed to, you"
+ ],
+ [
+  14,
+  1610,
+  " know, education, how they get opportunity and choice, and how that's going to help them in their life. The way that we pitch this project n"
+ ],
+ [
+  14,
+  1617,
+  "ow is about GDP for a country. We say we know we've proven through some studies with the economists that if you connect every school in Sier"
+ ],
+ [
+  14,
+  1625,
+  "ra Leone to the Internet, GDP will go up by 20%."
+ ],
+ [
+  14,
+  1627,
+  "For example, We talk about how you're gonna have a future ready workforce. We talk about things that are, not exactly values based. Look at "
+ ],
+ [
+  14,
+  1634,
+  "Sierra Leone. Sierra Leone has just a few green dots and they're all over in Freetown. We talk about things that are not necessarily as valu"
+ ],
+ [
+  14,
+  1641,
+  "es based as I would like. And we talk about things that are aggressively linked to national interests or economic interests, and I do not li"
+ ],
+ [
+  14,
+  1649,
+  "ke that. So one of the things that I would say is that as we move into this present,"
+ ],
+ [
+  14,
+  1653,
+  "is full of a different language and maybe a different appetite for certain things, it's easy to get away from values based discourse because"
+ ],
+ [
+  14,
+  1660,
+  " it seems weak or it seems like something from the past. And I think that it's super important to understand that, you know, the technology "
+ ],
+ [
+  14,
+  1667,
+  "that we're working with and our capabilities have to have some link to to values because the even if we're going into a dark ages right now "
+ ],
+ [
+  14,
+  1675,
+  "and the next twenty years look pretty bleak on a lot of levels, the things that we put in will come out at the other end. And so I'm I'm alw"
+ ],
+ [
+  14,
+  1682,
+  "ays a little worried about the swing away from because it just takes us into a place where it's easy to grab language that means something t"
+ ],
+ [
+  14,
+  1689,
+  "hat doesn't necessarily reflect the"
+ ],
+ [
+  14,
+  1691,
+  "the ability for us to connect, maybe connect among people or connect among, among projects that I think are really important. That was an aw"
+ ],
+ [
+  14,
+  1701,
+  "esome transition into the future, I would say. So, maybe maybe we take another question that we can incorporate, in into, like, our statemen"
+ ],
+ [
+  14,
+  1711,
+  "ts about the future. Anybody wants to add something? Maybe it's a hopeful statement."
+ ],
+ [
+  14,
+  1717,
+  "Not so bright, unfortunately. So, I want to ask you your opinion because coming from my opinion, AI crisis. Because, like, green power, very"
+ ],
+ [
+  14,
+  1728,
+  " good, very good, but we all use artificial intelligence. It's user sources, CPU, GPU, power, and stick like this. And all of these products"
+ ],
+ [
+  14,
+  1739,
+  " need time,"
+ ],
+ [
+  14,
+  1740,
+  "energy, and money. And now what I see, like, I'm working in security, faced a lot, but any company just fit as maximum AI in their product e"
+ ],
+ [
+  14,
+  1752,
+  "ven if it's not necessary. It's very unhealthy, unhelping. It's also part. But, it's forced a market, right, for more product because their"
+ ],
+ [
+  14,
+  1763,
+  "market want it. Market want more servers, more VPS, more AI power. But, Zarate resource, would have five five years back. Right? They have a"
+ ],
+ [
+  14,
+  1775,
+  " lot of it, but now they're, they wait, they want much more than company can product, and it's, rise prices up to skies. And I think in next"
+ ],
+ [
+  14,
+  1786,
+  " year, year and a half, will be AI credits as physical,"
+ ],
+ [
+  14,
+  1791,
+  "right, like materials, same as economical because it's much overpriced than this game. Like, I think once you think about it, maybe I have s"
+ ],
+ [
+  14,
+  1803,
+  "ome very very grim point of view. So, like, I'm curious of your opinion from professional side. Thank you. K. Do you want"
+ ],
+ [
+  14,
+  1813,
+  "to jump in with yeah. Should we should we follow the the order? It's the same order. Yeah. Sure. So not the best to answer your question, bu"
+ ],
+ [
+  14,
+  1826,
+  "t I'll run a test. Okay. Suppose you have to lend money to a firm today. Future, one hundred year from now,"
+ ],
+ [
+  14,
+  1836,
+  "who would you lend your money? To a firm working on artificial intelligence, defense, or transition economy? Come on. Transition economy. Tr"
+ ],
+ [
+  14,
+  1853,
+  "ansition economy. Transition. Defense. I love you. Defense. Transition."
+ ],
+ [
+  14,
+  1861,
+  "Transition. Transition. Who who's gonna be in one hundred year? The transition, the world of the AI. Should be already AI. You? Don't know? "
+ ],
+ [
+  14,
+  1879,
+  "You won't let your money to anybody? Transition. Transition. Last one."
+ ],
+ [
+  14,
+  1888,
+  "Never mind. So two months ago, Anthropic issued a one hundred year bond. Anthropic. So this is a bold statement. They want to be there in on"
+ ],
+ [
+  14,
+  1898,
+  "e hundred year. They think they will do all the good with the so power hungry, but they're also money hungry. They're masking money. This bo"
+ ],
+ [
+  14,
+  1908,
+  "nd is a very sort of very, very rare."
+ ],
+ [
+  14,
+  1911,
+  "There have been 10 in the history, one from IBM, one the other one from Coca Cola, and the other eight, they failed. They didn't reach not e"
+ ],
+ [
+  14,
+  1921,
+  "ven ten years after they issued this bond. So artificial intelligence is the hot topic of the moment. It's gonna be in the future. It's gonn"
+ ],
+ [
+  14,
+  1932,
+  "a deplete resources"
+ ],
+ [
+  14,
+  1933,
+  "in many, many, many field. Money, because they have to finance those those due to the center. Power, because they're running they're so powe"
+ ],
+ [
+  14,
+  1943,
+  "r hungry. Water. They need tons, tons, tons of water to refrigerate all the system and making it working. So the idea that in one hundred ye"
+ ],
+ [
+  14,
+  1953,
+  "ars, we're gonna have a firm transitioning."
+ ],
+ [
+  14,
+  1956,
+  "We're gonna have a bad bet many firms dealing with war will still be there because we're human. But the the the only one that would dare to "
+ ],
+ [
+  14,
+  1968,
+  "issue a bond in one hundred year is on Tropical, artificial intelligence. That's it. That that's the future. Is that fully allocated? Yes. O"
+ ],
+ [
+  14,
+  1980,
+  "f course. Yeah. But on the one hand, like, you you can't really, like, overstate Anthropy's capability to to sell things. So they're they're"
+ ],
+ [
+  14,
+  1992,
+  " they're pretty good at it."
+ ],
+ [
+  14,
+  1994,
+  "Yeah. I mean, like, also going to to your question, I think I I agree that in a way, AI is is ending up in this cycle, like, very similar to"
+ ],
+ [
+  14,
+  2002,
+  " greenwashing where everything, like, has to be, AI, even when it isn't. Like, I've seen so many products recently that a few years ago woul"
+ ],
+ [
+  14,
+  2010,
+  "d not be called AI. It would be basically, like, traditional machine learning, and now, like, everything is about, like, AI and selling ever"
+ ],
+ [
+  14,
+  2018,
+  "ything as AI."
+ ],
+ [
+  14,
+  2019,
+  "So there's that side of things, and then there's also the the real AI side of things, which is incredibly compute hungry, incredibly resourc"
+ ],
+ [
+  14,
+  2027,
+  "e intensive. So the more we actually integrate real generative AI into workflows and into society, it becomes challenges challenging for soc"
+ ],
+ [
+  14,
+  2035,
+  "ieties to actually respond to that demand. And energy will definitely be one of the big, discriminants here because a lot of countries will "
+ ],
+ [
+  14,
+  2043,
+  "not have the the energy to run AI at scale even for inference. Like, even though the majority of compute costs come at training, so, like, t"
+ ],
+ [
+  14,
+  2051,
+  "hey're they're not the the the regular"
+ ],
+ [
+  14,
+  2053,
+  "type of of, energy use. But even at inference, we do have a lot of compute that that that we need. I think, like, think think thinking about"
+ ],
+ [
+  14,
+  2063,
+  " the future, something else that is, definitely worth thinking about is, like, how power distributions shift, because of this intense integr"
+ ],
+ [
+  14,
+  2072,
+  "ation of AI into everything. GPU is definitely one of those resources. Like, GPUs are basically dominated by,"
+ ],
+ [
+  14,
+  2080,
+  "at least for AI, a single company, which is very close to The US and the West, getting GPUs from that company is not easy for everyone, whic"
+ ],
+ [
+  14,
+  2088,
+  "h means that you create this world where some countries cannot get GPUs either because of embargoes or just political reasons, while others "
+ ],
+ [
+  14,
+  2096,
+  "do. So you're also creating this kind of inequality where you have people who can have AI and others who cannot have AI. And I think it real"
+ ],
+ [
+  14,
+  2103,
+  "ly mirrors the connectivity,"
+ ],
+ [
+  14,
+  2105,
+  "distribution in a way where you have some people that will have access to, like, really powerful tools and really powerful, like, cheap, int"
+ ],
+ [
+  14,
+  2113,
+  "elligence to use and others will will not. So that will that could impact in the future, like, also, education and and general, like, growth"
+ ],
+ [
+  14,
+  2122,
+  " of countries. Does he have any time? Okay. Perfect. I think, like, the the very other key points that I would like to make that links to th"
+ ],
+ [
+  14,
+  2130,
+  "e to the to my, talk this morning, if anyone was there,"
+ ],
+ [
+  14,
+  2133,
+  "is how basically the future we look for information ecosystems because I think we're approaching a point where it's getting very hard to kno"
+ ],
+ [
+  14,
+  2140,
+  "w what's real and what isn't online. And I think in the future, we're probably gonna have a ceiling of, like, human judgment for AI generate"
+ ],
+ [
+  14,
+  2148,
+  "d content where we we won't be able to tell anymore. So I think for me that is one of the most concerning elements because that impacts a lo"
+ ],
+ [
+  14,
+  2155,
+  "t of functions"
+ ],
+ [
+  14,
+  2156,
+  "of society, so thinking of elections or trials. So all of those things rely on on reliable evidence, and the fact that we can establish what"
+ ],
+ [
+  14,
+  2164,
+  "'s true and what isn't. So thinking about the future that is, I mean, probably also like professional, relationship to it, but it's the one "
+ ],
+ [
+  14,
+  2173,
+  "thing that probably, like, concerns me and worries me the most. Awesome. Okay. Then I will add the energy perspective."
+ ],
+ [
+  14,
+  2180,
+  "I'll also touch the AI topic. So what do you think is the biggest challenge in the energy transition at the moment considering the the energ"
+ ],
+ [
+  14,
+  2191,
+  "y networks? We just continue to do much energy. Well, yes, but it also gets even more. Like, the the major challenge, especially the distrib"
+ ],
+ [
+  14,
+  2202,
+  "ution net providers, so the people who transport the electricity"
+ ],
+ [
+  14,
+  2207,
+  "from where it's produced to where it's used, they are terrified by the upcoming, like, energy consumption or energy need that all the data c"
+ ],
+ [
+  14,
+  2216,
+  "enters that now will be built and are planned everywhere. Like, they are terrified of it because the infrastructure is just not there. First"
+ ],
+ [
+  14,
+  2226,
+  " of all, the capacity to produce that much energy is the one question, but to transport it where it's needed is the next."
+ ],
+ [
+  14,
+  2234,
+  "So most regions are actually not capable of doing that, now. So completely new sets of infrastructure have to be built. Now the second bigge"
+ ],
+ [
+  14,
+  2244,
+  "st issue, of course, regarding the crisis we have at the moment is the gas crisis. So heating is a huge topic as well for the exact same pla"
+ ],
+ [
+  14,
+  2255,
+  "yers because the same distribution net providers usually also take care of the gas net."
+ ],
+ [
+  14,
+  2261,
+  "And funny enough, pointing in that that's my take now on what's what's a nice future outlook is we will be sure, we are in the age of securi"
+ ],
+ [
+  14,
+  2271,
+  "ty, but we will also be entering an age of collective imagination because coming up with fantastic new ideas how to not only mitigate those "
+ ],
+ [
+  14,
+  2281,
+  "challenges in the energy sector, but also come up with solutions that kind of are really clever, really smart,"
+ ],
+ [
+  14,
+  2289,
+  "that's something that needs a lot of imagination. One of my favorite points right there is if you combine those two challenges, data centers"
+ ],
+ [
+  14,
+  2298,
+  " and heating, there's amazing concepts out out there. It's called something like sector coupling. Once you couple you couple one sector of e"
+ ],
+ [
+  14,
+  2307,
+  "nergy with another one, which means electricity with heating, data centers with heating, all the excess heat, like a big data center,"
+ ],
+ [
+  14,
+  2315,
+  "can basically heat a small town, like up to 200,000 people. So if you use really smart systems and add renewable energy into it, and if you "
+ ],
+ [
+  14,
+  2325,
+  "can somehow straighten out the kinks in that's that's energy production has now. I firmly believe even with the high energy demand, there is"
+ ],
+ [
+  14,
+  2335,
+  " ways how to tackle this in a sustainable way."
+ ],
+ [
+  14,
+  2338,
+  "We just have to use our collective imagination and come up with some really clever ideas. The technology is there, and, a huge part of that "
+ ],
+ [
+  14,
+  2346,
+  "is exactly the topic why we are here at this event. Cool. So it's interesting to hear, like, finance, AI, energy. I'll end on telecommunicat"
+ ],
+ [
+  14,
+  2355,
+  "ions. And I'll say two things about five. So I I believe that there are kind of five Internets that are emerging, but maybe I'll come back t"
+ ],
+ [
+  14,
+  2363,
+  "o that in a minute. The first thing about five is there are only five countries that can lay the subsea cable"
+ ],
+ [
+  14,
+  2370,
+  "that connects everybody. So The US can lay it, China can lay it, Japan, Russia, France, because France nationalized Alcatel, the phone compa"
+ ],
+ [
+  14,
+  2378,
+  "ny, and they and it's because these ships the ships to lay cable are really big ships and they're very expensive. The five countries in the "
+ ],
+ [
+  14,
+  2385,
+  "world that are laying subsea cable. They're booked even further out than TSMC is making chips. You cannot get anybody to lay new Internet ca"
+ ],
+ [
+  14,
+  2393,
+  "ble under the ocean for the next eight to ten years."
+ ],
+ [
+  14,
+  2396,
+  "The only people who have those contracts right now are military. Governments are laying cable because the stuff that connects the Internet i"
+ ],
+ [
+  14,
+  2405,
+  "s all being militarized. Okay. The creepy thing I'll have to add to that is who just bought two subsea cable ships? KKR, a big equity invest"
+ ],
+ [
+  14,
+  2414,
+  "ment firm, has two cable laying ships docked off of Indonesia right now. Why do they have those? Either"
+ ],
+ [
+  14,
+  2420,
+  "it's because somebody is going to lay a lot of cable soon or repair a lot of cable because the stuff that all of us take for granted to get "
+ ],
+ [
+  14,
+  2426,
+  "our, you know, whatever food delivered faster is also part of the fundamental infrastructure that manages the world. Interestingly, the type"
+ ],
+ [
+  14,
+  2433,
+  "s of cables that can be built over the next few years are gonna look different to the previous cables in two major ways. One is that for AI,"
+ ],
+ [
+  14,
+  2439,
+  " for agentic stuff to move on the cable, you don't need quite the same construction of cable. The latencies requirements are different. Ther"
+ ],
+ [
+  14,
+  2446,
+  "e's some technical differences on how you can build the cable core."
+ ],
+ [
+  14,
+  2449,
+  "But second, if cable is a militarized extension of a national government, you also put weapons on it. So the cables that are being laid have"
+ ],
+ [
+  14,
+  2455,
+  " sensors and drones on them now, which is pretty scary if you think about it. Not only we put put we'll put data centers under the ocean and"
+ ],
+ [
+  14,
+  2462,
+  " boil all the fish, but there are also gonna be little things that explode under there too if you get too close to somebody else's cable. Th"
+ ],
+ [
+  14,
+  2468,
+  "at really worries me because it means that it's the beginning of the fragmentation of the Internet. I mean, it's already happened, but it's "
+ ],
+ [
+  14,
+  2475,
+  "the beginning of the physical fragmentation of something that was always designed to be a sort of single system with TCP IP running as a coo"
+ ],
+ [
+  14,
+  2481,
+  "rdination layer."
+ ],
+ [
+  14,
+  2482,
+  "If we have this more convoluted distribution network for information, it means we're going to need different types of mechanisms for coordin"
+ ],
+ [
+  14,
+  2490,
+  "ating. And so where I see the next ten years going is in a rethink of how you coordinate the movement of information and and movement of mon"
+ ],
+ [
+  14,
+  2497,
+  "ey, movement of assets across the digital space. It happens that Ethereum has been building exactly towards that goal for many years. I don'"
+ ],
+ [
+  14,
+  2505,
+  "t think we know exactly how good the asset that we've been building is"
+ ],
+ [
+  14,
+  2509,
+  "right now or will how important it will be. And we're starting to get a hint of it because everybody's like, oh, AI has finally given us a u"
+ ],
+ [
+  14,
+  2516,
+  "se case. Oh, the agents are all gonna need their own wallets. Oh, okay. So cool. Maybe AI is finally the first real use case of crypto. That"
+ ],
+ [
+  14,
+  2522,
+  " would be nice, finally. But the fact is we do need better coordination layers and we need a way to talk across multiple different heterogen"
+ ],
+ [
+  14,
+  2529,
+  "eous systems and have hyper converged capacity"
+ ],
+ [
+  14,
+  2531,
+  "at certain points on that network. So where I think things are going over the next ten years is that it will be a very difficult time to be "
+ ],
+ [
+  14,
+  2539,
+  "alive for many reasons, but the tooling that's being built will be able to be repurposed in various ways. And so I'm quite hopeful that the "
+ ],
+ [
+  14,
+  2547,
+  "if we have a values based technology proposition that is about connectivity, is about openness, alignment, and transparency,"
+ ],
+ [
+  14,
+  2554,
+  "that thing can actually propagate even in a world where the network layer is changing enough that the networks themselves may be antagonisti"
+ ],
+ [
+  14,
+  2561,
+  "c to some of the things we hold very valuable. But and I also would just say in terms of the AI changing, like a lot of people I know are fo"
+ ],
+ [
+  14,
+  2568,
+  "cusing on cognitive security now on being able to understand like whether or not the world they're living in is true. I've started printing "
+ ],
+ [
+  14,
+  2575,
+  "a lot of stuff out that I wasn't printing out before. I know how much AI is changing the surface of engagement that I have with the world. A"
+ ],
+ [
+  14,
+  2582,
+  "nd if the smartest tech people I know are also printing all of their stuff out and putting it in boxes,"
+ ],
+ [
+  14,
+  2587,
+  "I don't know. I don't like my, you know, my eye photos real very much anymore, and I think, I I don't trust anything. Yeah. That's it. Shoul"
+ ],
+ [
+  14,
+  2599,
+  "d we should we open up? We have five more minutes. Do you have any thoughts, statements, questions that you want to discuss? What's your vis"
+ ],
+ [
+  14,
+  2612,
+  "ion of the future? Okay."
+ ],
+ [
+  14,
+  2614,
+  "We're I think we're all exhausted. So by the future, by the present, by the past. So thank you very much. For me, this was very amazing to h"
+ ],
+ [
+  14,
+  2625,
+  "ave a panel that diverse, like, as you said, finance, AI, energy, and telecommunications. A very nice powder keg of different perspectives."
+ ],
+ [
+  14,
+  2636,
+  "I learned a lot. So thank you very much, and thank you all for listening. That's it for today, folks."
+ ],
+ [
   15,
   11,
   "Hello, everyone. Thank you very much for the introduction. My name is Fernando Robasco, and I'm a software engineer at OpenSeppelin. And tod"
