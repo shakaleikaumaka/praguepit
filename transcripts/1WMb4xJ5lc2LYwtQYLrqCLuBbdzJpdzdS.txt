@@ -1,0 +1,129 @@
+# Clankers pay their own bills — x402 payments in the wild
+
+Date: 
+Source video: Clankers pay their own bills — x402 payments in the wild
+Drive: https://drive.google.com/file/d/1WMb4xJ5lc2LYwtQYLrqCLuBbdzJpdzdS/view
+Duration: 00:26:44
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:11] Cool. Hi, guys. So, let me talk about the agentic payments and why it actually matters and how it's actually implemented in the wild. It's kinda a hot new topic. Mostly, it's wild in San Francisco, but I think we should also discuss it here back in Europe, and it's also relevant to the blockchain community. So we have an issue.
+
+[00:35] Do you smell it? Something's broken. That's the agentic payments and the autonomous system. Because early this year, an AI agent was able to negotiate, 4 k US dollars discount on a car for a user, but the issue was it couldn't pay. I mean, nobody probably wants an AI agent to buy the car,
+
+[00:59] but the principle still says, there there will be one day use case and there there is many use cases where you want your AI agent to buy stuff for you autonomously. So the agent couldn't pay. That was the issue. And I think we should solve it. Why? Is it, like, even worth solving? Like, what's the scale? Right now, based on, Statista,
+
+[01:23] there is around 28,000,000 enterprise agents, and those are the agents that will actually pay for your services. These are the enterprises. They have the money, and they will spend them. And there's many, many more customer and consumer AI agents running. It may be soon even billions. Imagine every device running local agent, LLM, that does stuff for you. Every search,
+
+[01:46] every query on the Internet can cost a bit. There could be, like, micro microtransaction accessing, like, datasets or ordering ordering something for you. Actually, it's, to some degree happening right now. Right now, Google Chrome installs a small LLM on your device without, user contest. It's mostly used for their prompt API, so you can, like, prompt the browser and it runs the local model. So,
+
+[02:11] actually, we might be approaching this number soon. I wouldn't call this an agent, but the principle is there. The LMs are distributed on the edge devices and the computation will run there. Could you imagine clankers buying few groceries? It's actually quite possible, but we are missing two steps to make it practical. First, handling the inventory. You would need some kind of smart fridge. You could connect to your clanker. It would,
+
+[02:36] fetch the data from the fridge and decide what to buy for you. And then we haven't solved the payments, actually. There is actually a startup from San Francisco that we did like a marketing sketch. So we built like an MCP server with them, and it's essentially a groceries delivery service. So you the agent was able through the MCP server, like, select the groceries, put them into the cart, and then buy them for you, but the final payment always needed to be confirmed by human,
+
+[03:03] which is fine for some use cases, but sucks if you I just for example, I would want, like, tell my clinker, hey, buy me my weekly groceries and it's it should be done. So how do you solve it? Like, do you handle your, credit card to your agent? Probably not. Like, it's not safe. And also, there is some technical and UX issues. There is the three d secure stuff, the confirmations,
+
+[03:26] anti fraud, and everything like that. It could be triggered, and there is still need for a human in the loop. So that's not a solution. What about SaaS services? Like, would you subscribe to every service? It doesn't make sense. Right? Because, like, for example, it could be one time use case. Doesn't make sense paying them, like, $20 a month for that. So it's not scalable. Like, you would have to go manually pay for each service. Doesn't make sense.
+
+[03:52] So the issue, as I mentioned, it's not UX. We build UIs for human. You know? You click the button, you select the payment card, and it it runs, and you pay. Same with blockchain. But we are missing the structure like a protocol, let's say. Let's revise who are the actors of the Internet, the history of the Internet. So first,
+
+[04:16] there was ARPANET in, like, nineteen seventies, let's say. It is it was usually for military governments, universities, and stuff. And the primitive of this network was packets. So governments doing their stuff, government, military exchanging some secret information, universities, some documents, whatever. Then, the worldwide web game, actually. So it was for the average Joe,
+
+[04:42] and we had documents. So we had the HTTP protocol, the hyperlinks, and you browse the web. Then, someone realized, hey, we actually do not work with documents. We work with data. So the APIs APIs came. So the primitive is data now, and it's for mainly services. So you can now communicate with services.
+
+[05:07] They can integrate with each other and exchange the data. And right now, we are approaching new era of the Internet, and it's the agents. And the main primitive will be context and intent. Because when you are prompting agent, you give them essentially two things. All the context you have, so all the knowledge, all the insights,
+
+[05:29] your thoughts, and whys and house, and intent like what are trying to accomplish a task. And given that agent can go and run and do the task, and same goes for agents. The agent will be essentially the consumer and boat service. They will talk to other agents possibly other legacy services that use APIs would be also possible.
+
+[05:53] So we are approaching the age of agentic economy where the agents are going autonomously in future. Right now, we are still so early and they will be most probably the new actors of the Internet. I think there is no going back. Like, we've opened the box and, we only find new use cases. So I mentioned that, when you integrate systems,
+
+[06:19] it's great for us. You see it in nature. For example, you have one human, one unit, one neuron. And on its own, it can like, you can do some stuff, you know, but you cannot do a lot. But if you work together, you are interconnected, interacting, you can accomplish a lot, like, look at, like, all around. Like, we've built this. It's because of the cooperation
+
+[06:41] that we did. No human alone would be able to do to build a city like that, for example, or a civilization. So let's check the, like, most complex system that we have. We do not we do not know how it works. It's the human brain. Like, you have all the neurons, like, single neuron, it doesn't do much. Right? But when you connect them and you have, like, few billions of them,
+
+[07:04] you connect all the synapses, it can do a lot. Like, we don't understand this, but we know you see it in nature, in, like, animals, ants, for example. You have specialized ants that do stuff, and they cooperate together, they can accomplish a lot. Same goes with brains, and you can use it with Internet. If one single service, for example, let's say, what do you do with Stripe alone? Like, not much. Right? But if you have other services you can integrate with,
+
+[07:30] it's super useful. So we are missing the sign ups. We have all the services, but we cannot communicate. We have the services, actors, which will be the agents, actions, essentially, of the new age. So we need a platform. I think we might have the platform, hopefully, that might be Ethereum
+
+[07:54] used for the payments to connect them and allow the agents to pay essentially. So we had a platform, but we are still missing the final piece, the bridge to bridge it all together. So we have the services, the actors, the agents, and the payment platform. But we should have a platform that is programmatic, instant, and ideally permissionless, which I think Ethereum checks the boxes because, for example, imagine Visa doing this, like, centering all the transaction on Mastercard. Like, nobody would like that future. Right? Imagine, like, you getting blocked from buying something. It's not a great future.
+
+[08:30] So we need something that covers all these steps. So the bridge actually is there. And it's still early, but the protocol is there. And I think it would be useful for solving this issue with agenting payments. I've chosen this image. You may recognize it. It's Golden Gate Bridge from San Francisco. I I've chosen that for for a specific purpose. I will explain later.
+
+[08:56] So, if you ever read this RFC, it's the RFC for HTTP 1.1, the protocol that essentially runs the whole Internet that exchanges the documents, the APIs, and so on. It has status codes. Essentially, it communicates the client and server like, it communicates the status between them. So for example, if there is, an error issue, if everything was okay, fine.
+
+[09:20] If you should be ready redirected to somewhere else. And there is this specific, status code, 402. It was reserved for future use, and it means payment required. And from 1999, nobody used that. But then one guy or a bunch of guys from, San Francisco, from Coinbase was like, hey. Okay. The future is now, and we should use this. So they built x four zero two,
+
+[09:49] which essentially builds upon this status code. It's an open standard built by them. And essentially, your service, either API or model context protocol server, which is like an API for AI agents, both running on HTTP, uses protocol, and it allows you to settle the payments on the blockchain. So it's blockchain native. You can use multiple networks. It's supported. Right now, there's Ethereum, all the l two chains, Solana,
+
+[10:19] and I think a bunch more, like near and stuff like that. And, here is essentially the flow. It's it's quite simple. So let's imagine you have the server API. So first, the client calls the API and it is paid API. So the API will return to you like, hey, I need you to pay. So you get all the payment required information in this HTTP header and then you sign a transaction.
+
+[10:43] So you sign the using the transfer rate authorized. You submit it into the server, then the server uses can optionally use the facilitator, which essentially whole handles all the blockchain stuff for you, handles the transaction, you read the computation, settle on blockchain so you actually get the money from the client, and then return the response to the client and both sides are happy. The API, the server gets paid, and the client has the data it it asked for.
+
+[11:12] So if you want to check it out, it's right now open specification. It moved to, open foundation. It's not only like under Coinbase, so the development is gaining traction. And I think it's great to support this and be proline this because it it might be huge in the future. Also, core use case could be and that could be implemented right now
+
+[11:35] is Paywall two point o. So imagine there is like I mentioned 28,000,000 of agents and maybe billion in future, but right now, there's so many crawlers, indexers, and even customers trying to access, let's say, blog posts, index websites like Google, Bing, and so on, you could implement it on your website, the X Pro two, and just accept payments through them. So let's say each crawler would call like, cost them for each article, let's say, $1.
+
+[12:02] And everything would be settled on blockchain and it's much better experience. Imagine browser that we just integrated blockchain wallet. You just fund it and it works, handles all transactions for you and both sides are happy. So how do you implement the x four zero two into existing system and how we sold it and Apify?
+
+[12:25] So for just for context, what we do so you understand the use case, we are like a marketplace of web scraping and web automation tools. So it's marketplace. You can publish tools there as a community developer or some tools are maintained by us, and you can monetize it. You get paid. So for example, there's scrapers for, like, Instagram, Google Maps, socials, ecommerce, and stuff like that. So if marketplace and bunch of tools.
+
+[12:50] And we were like, hey. Okay. Right now with AI agents, the issue with using Shopify is that the user needs to create an account, subscribe, and then provide the AI agent with the API token, which kind of sucks because in future, the AI agents will scout the Internet. You will not give them API token for some specific service. You will just ask them, hey, get me this Instagram post and all the statistics about it. And we'll go search how to do it, maybe to find Apify or some other service, and we'll try to use the Apify. But since it doesn't have credit card, it hasn't it has no email, it cannot, like, create an account and use the service. But with x four zero two, it could just pay with blockchain wallet that the agent can easily have. It can create blockchain wallet. You can fund it as a human. It's one time action that can go and scout the Internet and use the services.
+
+[13:40] So how does it actually work and what what payment schemes does it support? So the first scheme that they implemented, was the exact scheme. Essentially, it means you end expose like an endpoint, API endpoint, or MCP server, and you say, hey. To use this endpoint, you need to, send me, like, $5, let's say, which is cool, but, there's one huge issue with that. And by the way, to use this, as I mentioned, transfer with authorization,
+
+[14:08] ERC, 3,009. So you sign it offline and then provide it to the server without leaking like a private key and stuff like that. And that doesn't work for us, because, for example, let's say, LLM inference. You you prompt LLM and you never know how many tokens will you burn. It can be like 100 or a thousand. You never know. So how would you, like, price it per fixed endpoint price? Like, it can cost, 1¢ or, $2. You never know.
+
+[14:37] And also, that was the issue for us, web scraping marketplace. Like, each tool is priced differently and sometimes you don't know how much it will cost. It can scrape, like, 1,000 results, and there will be, like, only you can set limit to 1,000, and there will be, like, only 30 articles. So it will scrape only 30 of them, and then you won't charge a user for 1,000. Right? So it doesn't make sense. So we wanted to implement this, and we had, like, three
+
+[15:02] ways, three paths we could choose. So, in version two, they are implementing the up to scheme, which uses actually the ERC permit to, smart contract, which essentially is like an allowance. So the client wallet says, hey. You can use up to $5 from my wallet, and it's up to you how much you charge me in that range. So you can just charge $1 up to the 5. And we are like, okay. We can wait for this. Or we can add up the pricing model, which doesn't make sense. It's a marketplace. It should be free. Every developer should be free to choose how the tool is priced. So the option b is like no go, and the c is like hack it somehow together. So we were waiting for quite a long time. We were, like,
+
+[15:47] talking to the guys in San Francisco. It was taking quite a long time, like few months. And then we decided, okay. Let's somehow hack it together. We would like it to be released. So we decided to go with, like hacking solution that we use the exact scheme. So we asked the user to provide us a few dollars in, like, in advance. So let's say we charge the user $1.
+
+[16:09] It actually settles on blockchain. So then we allow them to access our platform. We do the computation, return them the data. And after some idle time, we in second transaction, we return the unused funds, which essentially is like trust based model. You have to trust us. We have to do the second transaction. It's more complex. With up to, it would have been much easier because it would be on, like, a single transaction. So they would provide us the signature.
+
+[16:37] Would run the computation, return the data, and after they charge the user phone only for the specific amount. So it's like a single transaction. So we implemented this solution. It's currently live on Apify. So if you participated in the hackathon, you already know that. And it's available both on API and MCP. So both of these,
+
+[17:00] REST APIs and MCP run on HTTP protocol that supports this x four standard. So now we have all the building blocks. We have the agent. It can be whatever you want. It can be called code, open code, pi. Have the MCP server, and we have the X Pro two, or it could be an API.
+
+[17:24] So how do you actually collect to that and how do you use that? So first, you need a server to connect to. We have the Apify MCP server. The only thing that is, like, specific about this is you need to, express the mark that you pay in the x four zero two payment mode. Then there is a technical issue. How do you connect your wallet to your AI agent? Because, like, given we the giving the agent, like, your private key, it doesn't make any sense. Right? So you first, you leak it to your context.
+
+[17:54] So probably you do not want to trust, with, like, giving and leaking your private key to Anthropic, and the agent could do, like, something malicious. Even if it's like if it's like a temporary wallet, it it's not a great security practice. So this is like no go. So we actually built a custom MCP client for that.
+
+[18:17] It was not the only purpose to build it for x four zero two. Actually, we build it because most of the MCP clients suck, and we wanted our new client that supports all the latest features. And we also implemented, the x four zero two payment support into that. So it's quite simple. We just create a wallet that lives inside the MCPC. It's securely stored in your key chain on your computer.
+
+[18:40] You can find it easily via scanning the QR code, and then just tell your agent to use it. It's just simple batch CLI tool so that you just tell the agent, hey, scrape me, like, three latest posts from Instagram from National Geographic. Use this tool, and it should go and run. So let me show you, like, a quick, quick live demo of this. I'm using PyAgent,
+
+[19:11] which is like a simple, minimalistic agentic harness. And the prompt is like, hey. Use, MCP API server through the MCP c x four zero two mode and, like, scrape meat, regulate this post from, Instagram of National Geographic. So first, it checks if the MCPC is even available, what version is installed. Then it is checking, if I have the agentic wallet and if there is any, like, funds.
+
+[19:37] Now it knows there's, like, 26 USDC. Now it, tries to connect to Apify, but maybe I forgot to close previous sessions. Let me check. Cool. I closed the session from previous test before the demo. So now it will create new session that will connect to the MCP server.
+
+[20:04] In the, notice the x four zero two flag. That essentially means, like, every request that will be done with this, m API call essentially will be signed with this tracks transaction, like transfer with authorization. It will be included in the header, and our server will settle the transaction on the blockchain. So we'll see that soon. I will show you on the blockchain that it actually settled $1.
+
+[20:29] And, like, after an hour of inactivity, we are refunding the rest. Like, the scraping does not cost $1. It costs, like, few cents. So now it's running. It's running on our servers. It is accessing the Instagram, and it should it should it should show us, like, the three latest posts from the profile. So now we see it's, like, some kind of photo,
+
+[20:54] with few few tens of thousands likes. There's like a lava ocean, real from Hawaii. I recommend going there. It's so beautiful. And some Italy posts. So now you can easily scrape, real time web data using your blockchain funds. There's no need to have, account,
+
+[21:16] no subscription. You just pay as you go with the blockchain. So let me go back to the presentation. Same goes with API. Like, I showcased the MCP, but same goes with API. You just include specific header, and it works. And it works the same way. You get paid. You settle a transaction,
+
+[21:44] amplify it back end and refunds the rest of unused funds. Here are some results from previous demos. And, yeah, that's it. For me, I think the future is will be interesting with all these autonomous agents and the payments, and I'm looking forward to it. Like, one day, would love to order groceries
+
+[22:06] by just talking to my clanker and saying, like, hey, go through my fridge, see what's missing. Here is my usual weekly list, what I'm buying, and do the delivery, go through my calendar, find free spot. When I arrive home, I want to just grab the delivery and just eat and vibe and chill. So that's it from me. Here is my LinkedIn. Here is my Telegram. Feel free to reach. We still have a booth here, so feel free to stop by and chat. And that's it from me. Thank you, guys.
+
+[22:41] Does anyone have any questions? No? Okay. Thank you. Oh, there's a question. Hi. Thanks for the demo. Look. God's work with you. Right? Yeah. Anyway, have you experienced any troubles with the x four zero two protocol as as such to can can you give any ideas
+
+[23:03] whether when you try to, access some paywalled paywalled URL that that the the protocol itself would would create some problems for you? Like, I personally did not. The only issue that, we encountered was during the implementation that they did not support the flexible dynamic pricing model, only the fixed ones. So it means, as I mentioned in the talk, you each endpoint needs to have, like, fixed pricing model, which doesn't work for us since we are, a dynamic marketplace.
+
+[23:33] And right now with v two point o, they implemented the up to dynamic scheme, which allows, like, a dynamic payments. So you give the service like an allowance, and you can then, subtract only the amount that you actually charged. So in that range, so that solves our issue. That was the only issue that we encountered. Mhmm. And did you try the x $4.00 2 with only with USDC or with or also with any other ERC 20 tokens, I would say? Yeah. It supports all the ERC 3,009
+
+[24:04] tokens, so they support a transparent authorization. The app two requires the permit two. And, yeah, you can enable any token that supports that. But right now, we are experimenting with that. It's still early, so we enabled only base.org and USDC. But in future, if we see direction, we will enable more tokens. But because of the lack of finance team and so on, we we just enable the stablecoins for now. Mhmm. By the way, RegaNes $3.00 9, there is a new proposal right now that mitigates the problem of the impact on the storage.
+
+[24:38] So for anyone here, yeah, trying to implement the related tokens, that would be really, really, really wise to look at that. Cool. Cool. Thank you for mentioning that. What do you think needs to happen for XPRO two payments to go mainstream? I think we need to solve the issue with AI agents in general because, like,
+
+[25:06] late previous year, early this year, I think we saw breakthrough in coding capabilities. Like, the code they write is not so great, but it works. Like, before, it was, like, kind of usable, but for me, unusable in, like, production. But nowadays nowadays, like, I write majority of, code with AI. You still need to review the code line by line, go through it, reason about it, But now it's usable.
+
+[25:32] And I think we need to see the breakthrough in, like, general capabilities, let's say, like, general web access and so on. So I think and also, like, general adoption by people. Right now, it's mostly tech people using these tools. Like, I mean, norm normal people, like general populations already use ChatGP and stuff like that, but it's still, like, only it scratches the surface. So I I think we need to have more capable agents and, ideally, also solve the local LM issue with,
+
+[26:01] right now, the agents or LLM inference is done in cloud, which a lot of people would be not okay, especially here. If you are a privacy focused person, you don't want to leak out, like, your personal information to Anthropic or some other provider like Google and so on, Microsoft. So I think that's also the issue with the hardware limitations. Any other questions?
+
+[26:28] Well, in that case, let's give him another round of applause, please.

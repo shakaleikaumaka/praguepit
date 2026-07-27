@@ -21220,6 +21220,1006 @@
   "Yeah. Any questions? No? Okay. Then let's give him another round of applause, please."
  ],
  [
+  23,
+  11,
+  "Cool. Hi, guys. So, let me talk about the agentic payments and why it actually matters and how it's actually implemented in the wild. It's k"
+ ],
+ [
+  23,
+  21,
+  "inda a hot new topic. Mostly, it's wild in San Francisco, but I think we should also discuss it here back in Europe, and it's also relevant "
+ ],
+ [
+  23,
+  31,
+  "to the blockchain community. So we have an issue."
+ ],
+ [
+  23,
+  35,
+  "Do you smell it? Something's broken. That's the agentic payments and the autonomous system. Because early this year, an AI agent was able to"
+ ],
+ [
+  23,
+  47,
+  " negotiate, 4 k US dollars discount on a car for a user, but the issue was it couldn't pay. I mean, nobody probably wants an AI agent to buy"
+ ],
+ [
+  23,
+  58,
+  " the car,"
+ ],
+ [
+  23,
+  59,
+  "but the principle still says, there there will be one day use case and there there is many use cases where you want your AI agent to buy stu"
+ ],
+ [
+  23,
+  69,
+  "ff for you autonomously. So the agent couldn't pay. That was the issue. And I think we should solve it. Why? Is it, like, even worth solving"
+ ],
+ [
+  23,
+  79,
+  "? Like, what's the scale? Right now, based on, Statista,"
+ ],
+ [
+  23,
+  83,
+  "there is around 28,000,000 enterprise agents, and those are the agents that will actually pay for your services. These are the enterprises. "
+ ],
+ [
+  23,
+  92,
+  "They have the money, and they will spend them. And there's many, many more customer and consumer AI agents running. It may be soon even bill"
+ ],
+ [
+  23,
+  100,
+  "ions. Imagine every device running local agent, LLM, that does stuff for you. Every search,"
+ ],
+ [
+  23,
+  106,
+  "every query on the Internet can cost a bit. There could be, like, micro microtransaction accessing, like, datasets or ordering ordering some"
+ ],
+ [
+  23,
+  115,
+  "thing for you. Actually, it's, to some degree happening right now. Right now, Google Chrome installs a small LLM on your device without, use"
+ ],
+ [
+  23,
+  124,
+  "r contest. It's mostly used for their prompt API, so you can, like, prompt the browser and it runs the local model. So,"
+ ],
+ [
+  23,
+  131,
+  "actually, we might be approaching this number soon. I wouldn't call this an agent, but the principle is there. The LMs are distributed on th"
+ ],
+ [
+  23,
+  139,
+  "e edge devices and the computation will run there. Could you imagine clankers buying few groceries? It's actually quite possible, but we are"
+ ],
+ [
+  23,
+  147,
+  " missing two steps to make it practical. First, handling the inventory. You would need some kind of smart fridge. You could connect to your "
+ ],
+ [
+  23,
+  155,
+  "clanker. It would,"
+ ],
+ [
+  23,
+  156,
+  "fetch the data from the fridge and decide what to buy for you. And then we haven't solved the payments, actually. There is actually a startu"
+ ],
+ [
+  23,
+  164,
+  "p from San Francisco that we did like a marketing sketch. So we built like an MCP server with them, and it's essentially a groceries deliver"
+ ],
+ [
+  23,
+  172,
+  "y service. So you the agent was able through the MCP server, like, select the groceries, put them into the cart, and then buy them for you, "
+ ],
+ [
+  23,
+  180,
+  "but the final payment always needed to be confirmed by human,"
+ ],
+ [
+  23,
+  183,
+  "which is fine for some use cases, but sucks if you I just for example, I would want, like, tell my clinker, hey, buy me my weekly groceries "
+ ],
+ [
+  23,
+  191,
+  "and it's it should be done. So how do you solve it? Like, do you handle your, credit card to your agent? Probably not. Like, it's not safe. "
+ ],
+ [
+  23,
+  200,
+  "And also, there is some technical and UX issues. There is the three d secure stuff, the confirmations,"
+ ],
+ [
+  23,
+  206,
+  "anti fraud, and everything like that. It could be triggered, and there is still need for a human in the loop. So that's not a solution. What"
+ ],
+ [
+  23,
+  214,
+  " about SaaS services? Like, would you subscribe to every service? It doesn't make sense. Right? Because, like, for example, it could be one "
+ ],
+ [
+  23,
+  222,
+  "time use case. Doesn't make sense paying them, like, $20 a month for that. So it's not scalable. Like, you would have to go manually pay for"
+ ],
+ [
+  23,
+  230,
+  " each service. Doesn't make sense."
+ ],
+ [
+  23,
+  232,
+  "So the issue, as I mentioned, it's not UX. We build UIs for human. You know? You click the button, you select the payment card, and it it ru"
+ ],
+ [
+  23,
+  242,
+  "ns, and you pay. Same with blockchain. But we are missing the structure like a protocol, let's say. Let's revise who are the actors of the I"
+ ],
+ [
+  23,
+  253,
+  "nternet, the history of the Internet. So first,"
+ ],
+ [
+  23,
+  256,
+  "there was ARPANET in, like, nineteen seventies, let's say. It is it was usually for military governments, universities, and stuff. And the p"
+ ],
+ [
+  23,
+  266,
+  "rimitive of this network was packets. So governments doing their stuff, government, military exchanging some secret information, universitie"
+ ],
+ [
+  23,
+  275,
+  "s, some documents, whatever. Then, the worldwide web game, actually. So it was for the average Joe,"
+ ],
+ [
+  23,
+  282,
+  "and we had documents. So we had the HTTP protocol, the hyperlinks, and you browse the web. Then, someone realized, hey, we actually do not w"
+ ],
+ [
+  23,
+  294,
+  "ork with documents. We work with data. So the APIs APIs came. So the primitive is data now, and it's for mainly services. So you can now com"
+ ],
+ [
+  23,
+  305,
+  "municate with services."
+ ],
+ [
+  23,
+  307,
+  "They can integrate with each other and exchange the data. And right now, we are approaching new era of the Internet, and it's the agents. An"
+ ],
+ [
+  23,
+  316,
+  "d the main primitive will be context and intent. Because when you are prompting agent, you give them essentially two things. All the context"
+ ],
+ [
+  23,
+  326,
+  " you have, so all the knowledge, all the insights,"
+ ],
+ [
+  23,
+  329,
+  "your thoughts, and whys and house, and intent like what are trying to accomplish a task. And given that agent can go and run and do the task"
+ ],
+ [
+  23,
+  339,
+  ", and same goes for agents. The agent will be essentially the consumer and boat service. They will talk to other agents possibly other legac"
+ ],
+ [
+  23,
+  349,
+  "y services that use APIs would be also possible."
+ ],
+ [
+  23,
+  353,
+  "So we are approaching the age of agentic economy where the agents are going autonomously in future. Right now, we are still so early and the"
+ ],
+ [
+  23,
+  364,
+  "y will be most probably the new actors of the Internet. I think there is no going back. Like, we've opened the box and, we only find new use"
+ ],
+ [
+  23,
+  375,
+  " cases. So I mentioned that, when you integrate systems,"
+ ],
+ [
+  23,
+  379,
+  "it's great for us. You see it in nature. For example, you have one human, one unit, one neuron. And on its own, it can like, you can do some"
+ ],
+ [
+  23,
+  388,
+  " stuff, you know, but you cannot do a lot. But if you work together, you are interconnected, interacting, you can accomplish a lot, like, lo"
+ ],
+ [
+  23,
+  396,
+  "ok at, like, all around. Like, we've built this. It's because of the cooperation"
+ ],
+ [
+  23,
+  401,
+  "that we did. No human alone would be able to do to build a city like that, for example, or a civilization. So let's check the, like, most co"
+ ],
+ [
+  23,
+  410,
+  "mplex system that we have. We do not we do not know how it works. It's the human brain. Like, you have all the neurons, like, single neuron,"
+ ],
+ [
+  23,
+  418,
+  " it doesn't do much. Right? But when you connect them and you have, like, few billions of them,"
+ ],
+ [
+  23,
+  424,
+  "you connect all the synapses, it can do a lot. Like, we don't understand this, but we know you see it in nature, in, like, animals, ants, fo"
+ ],
+ [
+  23,
+  432,
+  "r example. You have specialized ants that do stuff, and they cooperate together, they can accomplish a lot. Same goes with brains, and you c"
+ ],
+ [
+  23,
+  440,
+  "an use it with Internet. If one single service, for example, let's say, what do you do with Stripe alone? Like, not much. Right? But if you "
+ ],
+ [
+  23,
+  448,
+  "have other services you can integrate with,"
+ ],
+ [
+  23,
+  450,
+  "it's super useful. So we are missing the sign ups. We have all the services, but we cannot communicate. We have the services, actors, which "
+ ],
+ [
+  23,
+  462,
+  "will be the agents, actions, essentially, of the new age. So we need a platform. I think we might have the platform, hopefully, that might b"
+ ],
+ [
+  23,
+  473,
+  "e Ethereum"
+ ],
+ [
+  23,
+  474,
+  "used for the payments to connect them and allow the agents to pay essentially. So we had a platform, but we are still missing the final piec"
+ ],
+ [
+  23,
+  482,
+  "e, the bridge to bridge it all together. So we have the services, the actors, the agents, and the payment platform. But we should have a pla"
+ ],
+ [
+  23,
+  491,
+  "tform that is programmatic, instant, and ideally permissionless, which I think Ethereum checks the boxes because, for example, imagine Visa "
+ ],
+ [
+  23,
+  499,
+  "doing this, like, centering all the transaction on Mastercard. Like, nobody would like that future. Right? Imagine, like, you getting blocke"
+ ],
+ [
+  23,
+  507,
+  "d from buying something. It's not a great future."
+ ],
+ [
+  23,
+  510,
+  "So we need something that covers all these steps. So the bridge actually is there. And it's still early, but the protocol is there. And I th"
+ ],
+ [
+  23,
+  520,
+  "ink it would be useful for solving this issue with agenting payments. I've chosen this image. You may recognize it. It's Golden Gate Bridge "
+ ],
+ [
+  23,
+  530,
+  "from San Francisco. I I've chosen that for for a specific purpose. I will explain later."
+ ],
+ [
+  23,
+  536,
+  "So, if you ever read this RFC, it's the RFC for HTTP 1.1, the protocol that essentially runs the whole Internet that exchanges the documents"
+ ],
+ [
+  23,
+  545,
+  ", the APIs, and so on. It has status codes. Essentially, it communicates the client and server like, it communicates the status between them"
+ ],
+ [
+  23,
+  555,
+  ". So for example, if there is, an error issue, if everything was okay, fine."
+ ],
+ [
+  23,
+  560,
+  "If you should be ready redirected to somewhere else. And there is this specific, status code, 402. It was reserved for future use, and it me"
+ ],
+ [
+  23,
+  571,
+  "ans payment required. And from 1999, nobody used that. But then one guy or a bunch of guys from, San Francisco, from Coinbase was like, hey."
+ ],
+ [
+  23,
+  583,
+  " Okay. The future is now, and we should use this. So they built x four zero two,"
+ ],
+ [
+  23,
+  589,
+  "which essentially builds upon this status code. It's an open standard built by them. And essentially, your service, either API or model cont"
+ ],
+ [
+  23,
+  599,
+  "ext protocol server, which is like an API for AI agents, both running on HTTP, uses protocol, and it allows you to settle the payments on th"
+ ],
+ [
+  23,
+  609,
+  "e blockchain. So it's blockchain native. You can use multiple networks. It's supported. Right now, there's Ethereum, all the l two chains, S"
+ ],
+ [
+  23,
+  619,
+  "olana,"
+ ],
+ [
+  23,
+  619,
+  "and I think a bunch more, like near and stuff like that. And, here is essentially the flow. It's it's quite simple. So let's imagine you hav"
+ ],
+ [
+  23,
+  628,
+  "e the server API. So first, the client calls the API and it is paid API. So the API will return to you like, hey, I need you to pay. So you "
+ ],
+ [
+  23,
+  637,
+  "get all the payment required information in this HTTP header and then you sign a transaction."
+ ],
+ [
+  23,
+  643,
+  "So you sign the using the transfer rate authorized. You submit it into the server, then the server uses can optionally use the facilitator, "
+ ],
+ [
+  23,
+  652,
+  "which essentially whole handles all the blockchain stuff for you, handles the transaction, you read the computation, settle on blockchain so"
+ ],
+ [
+  23,
+  660,
+  " you actually get the money from the client, and then return the response to the client and both sides are happy. The API, the server gets p"
+ ],
+ [
+  23,
+  669,
+  "aid, and the client has the data it it asked for."
+ ],
+ [
+  23,
+  672,
+  "So if you want to check it out, it's right now open specification. It moved to, open foundation. It's not only like under Coinbase, so the d"
+ ],
+ [
+  23,
+  681,
+  "evelopment is gaining traction. And I think it's great to support this and be proline this because it it might be huge in the future. Also, "
+ ],
+ [
+  23,
+  691,
+  "core use case could be and that could be implemented right now"
+ ],
+ [
+  23,
+  695,
+  "is Paywall two point o. So imagine there is like I mentioned 28,000,000 of agents and maybe billion in future, but right now, there's so man"
+ ],
+ [
+  23,
+  703,
+  "y crawlers, indexers, and even customers trying to access, let's say, blog posts, index websites like Google, Bing, and so on, you could imp"
+ ],
+ [
+  23,
+  712,
+  "lement it on your website, the X Pro two, and just accept payments through them. So let's say each crawler would call like, cost them for ea"
+ ],
+ [
+  23,
+  720,
+  "ch article, let's say, $1."
+ ],
+ [
+  23,
+  722,
+  "And everything would be settled on blockchain and it's much better experience. Imagine browser that we just integrated blockchain wallet. Yo"
+ ],
+ [
+  23,
+  732,
+  "u just fund it and it works, handles all transactions for you and both sides are happy. So how do you implement the x four zero two into exi"
+ ],
+ [
+  23,
+  742,
+  "sting system and how we sold it and Apify?"
+ ],
+ [
+  23,
+  745,
+  "So for just for context, what we do so you understand the use case, we are like a marketplace of web scraping and web automation tools. So i"
+ ],
+ [
+  23,
+  753,
+  "t's marketplace. You can publish tools there as a community developer or some tools are maintained by us, and you can monetize it. You get p"
+ ],
+ [
+  23,
+  761,
+  "aid. So for example, there's scrapers for, like, Instagram, Google Maps, socials, ecommerce, and stuff like that. So if marketplace and bunc"
+ ],
+ [
+  23,
+  769,
+  "h of tools."
+ ],
+ [
+  23,
+  770,
+  "And we were like, hey. Okay. Right now with AI agents, the issue with using Shopify is that the user needs to create an account, subscribe, "
+ ],
+ [
+  23,
+  778,
+  "and then provide the AI agent with the API token, which kind of sucks because in future, the AI agents will scout the Internet. You will not"
+ ],
+ [
+  23,
+  786,
+  " give them API token for some specific service. You will just ask them, hey, get me this Instagram post and all the statistics about it. And"
+ ],
+ [
+  23,
+  794,
+  " we'll go search how to do it, maybe to find Apify or some other service, and we'll try to use the Apify. But since it doesn't have credit c"
+ ],
+ [
+  23,
+  802,
+  "ard, it hasn't it has no email, it cannot, like, create an account and use the service. But with x four zero two, it could just pay with blo"
+ ],
+ [
+  23,
+  810,
+  "ckchain wallet that the agent can easily have. It can create blockchain wallet. You can fund it as a human. It's one time action that can go"
+ ],
+ [
+  23,
+  817,
+  " and scout the Internet and use the services."
+ ],
+ [
+  23,
+  820,
+  "So how does it actually work and what what payment schemes does it support? So the first scheme that they implemented, was the exact scheme."
+ ],
+ [
+  23,
+  829,
+  " Essentially, it means you end expose like an endpoint, API endpoint, or MCP server, and you say, hey. To use this endpoint, you need to, se"
+ ],
+ [
+  23,
+  838,
+  "nd me, like, $5, let's say, which is cool, but, there's one huge issue with that. And by the way, to use this, as I mentioned, transfer with"
+ ],
+ [
+  23,
+  847,
+  " authorization,"
+ ],
+ [
+  23,
+  848,
+  "ERC, 3,009. So you sign it offline and then provide it to the server without leaking like a private key and stuff like that. And that doesn'"
+ ],
+ [
+  23,
+  858,
+  "t work for us, because, for example, let's say, LLM inference. You you prompt LLM and you never know how many tokens will you burn. It can b"
+ ],
+ [
+  23,
+  867,
+  "e like 100 or a thousand. You never know. So how would you, like, price it per fixed endpoint price? Like, it can cost, 1¢ or, $2. You never"
+ ],
+ [
+  23,
+  877,
+  " know."
+ ],
+ [
+  23,
+  877,
+  "And also, that was the issue for us, web scraping marketplace. Like, each tool is priced differently and sometimes you don't know how much i"
+ ],
+ [
+  23,
+  885,
+  "t will cost. It can scrape, like, 1,000 results, and there will be, like, only you can set limit to 1,000, and there will be, like, only 30 "
+ ],
+ [
+  23,
+  892,
+  "articles. So it will scrape only 30 of them, and then you won't charge a user for 1,000. Right? So it doesn't make sense. So we wanted to im"
+ ],
+ [
+  23,
+  900,
+  "plement this, and we had, like, three"
+ ],
+ [
+  23,
+  902,
+  "ways, three paths we could choose. So, in version two, they are implementing the up to scheme, which uses actually the ERC permit to, smart "
+ ],
+ [
+  23,
+  911,
+  "contract, which essentially is like an allowance. So the client wallet says, hey. You can use up to $5 from my wallet, and it's up to you ho"
+ ],
+ [
+  23,
+  920,
+  "w much you charge me in that range. So you can just charge $1 up to the 5. And we are like, okay. We can wait for this. Or we can add up the"
+ ],
+ [
+  23,
+  929,
+  " pricing model, which doesn't make sense. It's a marketplace. It should be free. Every developer should be free to choose how the tool is pr"
+ ],
+ [
+  23,
+  938,
+  "iced. So the option b is like no go, and the c is like hack it somehow together. So we were waiting for quite a long time. We were, like,"
+ ],
+ [
+  23,
+  947,
+  "talking to the guys in San Francisco. It was taking quite a long time, like few months. And then we decided, okay. Let's somehow hack it tog"
+ ],
+ [
+  23,
+  955,
+  "ether. We would like it to be released. So we decided to go with, like hacking solution that we use the exact scheme. So we asked the user t"
+ ],
+ [
+  23,
+  964,
+  "o provide us a few dollars in, like, in advance. So let's say we charge the user $1."
+ ],
+ [
+  23,
+  969,
+  "It actually settles on blockchain. So then we allow them to access our platform. We do the computation, return them the data. And after some"
+ ],
+ [
+  23,
+  977,
+  " idle time, we in second transaction, we return the unused funds, which essentially is like trust based model. You have to trust us. We have"
+ ],
+ [
+  23,
+  986,
+  " to do the second transaction. It's more complex. With up to, it would have been much easier because it would be on, like, a single transact"
+ ],
+ [
+  23,
+  994,
+  "ion. So they would provide us the signature."
+ ],
+ [
+  23,
+  997,
+  "Would run the computation, return the data, and after they charge the user phone only for the specific amount. So it's like a single transac"
+ ],
+ [
+  23,
+  1007,
+  "tion. So we implemented this solution. It's currently live on Apify. So if you participated in the hackathon, you already know that. And it'"
+ ],
+ [
+  23,
+  1017,
+  "s available both on API and MCP. So both of these,"
+ ],
+ [
+  23,
+  1020,
+  "REST APIs and MCP run on HTTP protocol that supports this x four standard. So now we have all the building blocks. We have the agent. It can"
+ ],
+ [
+  23,
+  1032,
+  " be whatever you want. It can be called code, open code, pi. Have the MCP server, and we have the X Pro two, or it could be an API."
+ ],
+ [
+  23,
+  1044,
+  "So how do you actually collect to that and how do you use that? So first, you need a server to connect to. We have the Apify MCP server. The"
+ ],
+ [
+  23,
+  1052,
+  " only thing that is, like, specific about this is you need to, express the mark that you pay in the x four zero two payment mode. Then there"
+ ],
+ [
+  23,
+  1061,
+  " is a technical issue. How do you connect your wallet to your AI agent? Because, like, given we the giving the agent, like, your private key"
+ ],
+ [
+  23,
+  1069,
+  ", it doesn't make any sense. Right? So you first, you leak it to your context."
+ ],
+ [
+  23,
+  1074,
+  "So probably you do not want to trust, with, like, giving and leaking your private key to Anthropic, and the agent could do, like, something "
+ ],
+ [
+  23,
+  1084,
+  "malicious. Even if it's like if it's like a temporary wallet, it it's not a great security practice. So this is like no go. So we actually b"
+ ],
+ [
+  23,
+  1095,
+  "uilt a custom MCP client for that."
+ ],
+ [
+  23,
+  1097,
+  "It was not the only purpose to build it for x four zero two. Actually, we build it because most of the MCP clients suck, and we wanted our n"
+ ],
+ [
+  23,
+  1105,
+  "ew client that supports all the latest features. And we also implemented, the x four zero two payment support into that. So it's quite simpl"
+ ],
+ [
+  23,
+  1113,
+  "e. We just create a wallet that lives inside the MCPC. It's securely stored in your key chain on your computer."
+ ],
+ [
+  23,
+  1120,
+  "You can find it easily via scanning the QR code, and then just tell your agent to use it. It's just simple batch CLI tool so that you just t"
+ ],
+ [
+  23,
+  1132,
+  "ell the agent, hey, scrape me, like, three latest posts from Instagram from National Geographic. Use this tool, and it should go and run. So"
+ ],
+ [
+  23,
+  1144,
+  " let me show you, like, a quick, quick live demo of this. I'm using PyAgent,"
+ ],
+ [
+  23,
+  1151,
+  "which is like a simple, minimalistic agentic harness. And the prompt is like, hey. Use, MCP API server through the MCP c x four zero two mod"
+ ],
+ [
+  23,
+  1160,
+  "e and, like, scrape meat, regulate this post from, Instagram of National Geographic. So first, it checks if the MCPC is even available, what"
+ ],
+ [
+  23,
+  1170,
+  " version is installed. Then it is checking, if I have the agentic wallet and if there is any, like, funds."
+ ],
+ [
+  23,
+  1177,
+  "Now it knows there's, like, 26 USDC. Now it, tries to connect to Apify, but maybe I forgot to close previous sessions. Let me check. Cool. I"
+ ],
+ [
+  23,
+  1191,
+  " closed the session from previous test before the demo. So now it will create new session that will connect to the MCP server."
+ ],
+ [
+  23,
+  1204,
+  "In the, notice the x four zero two flag. That essentially means, like, every request that will be done with this, m API call essentially wil"
+ ],
+ [
+  23,
+  1213,
+  "l be signed with this tracks transaction, like transfer with authorization. It will be included in the header, and our server will settle th"
+ ],
+ [
+  23,
+  1222,
+  "e transaction on the blockchain. So we'll see that soon. I will show you on the blockchain that it actually settled $1."
+ ],
+ [
+  23,
+  1229,
+  "And, like, after an hour of inactivity, we are refunding the rest. Like, the scraping does not cost $1. It costs, like, few cents. So now it"
+ ],
+ [
+  23,
+  1239,
+  "'s running. It's running on our servers. It is accessing the Instagram, and it should it should it should show us, like, the three latest po"
+ ],
+ [
+  23,
+  1249,
+  "sts from the profile. So now we see it's, like, some kind of photo,"
+ ],
+ [
+  23,
+  1254,
+  "with few few tens of thousands likes. There's like a lava ocean, real from Hawaii. I recommend going there. It's so beautiful. And some Ital"
+ ],
+ [
+  23,
+  1266,
+  "y posts. So now you can easily scrape, real time web data using your blockchain funds. There's no need to have, account,"
+ ],
+ [
+  23,
+  1276,
+  "no subscription. You just pay as you go with the blockchain. So let me go back to the presentation. Same goes with API. Like, I showcased th"
+ ],
+ [
+  23,
+  1290,
+  "e MCP, but same goes with API. You just include specific header, and it works. And it works the same way. You get paid. You settle a transac"
+ ],
+ [
+  23,
+  1304,
+  "tion,"
+ ],
+ [
+  23,
+  1304,
+  "amplify it back end and refunds the rest of unused funds. Here are some results from previous demos. And, yeah, that's it. For me, I think t"
+ ],
+ [
+  23,
+  1314,
+  "he future is will be interesting with all these autonomous agents and the payments, and I'm looking forward to it. Like, one day, would love"
+ ],
+ [
+  23,
+  1325,
+  " to order groceries"
+ ],
+ [
+  23,
+  1326,
+  "by just talking to my clanker and saying, like, hey, go through my fridge, see what's missing. Here is my usual weekly list, what I'm buying"
+ ],
+ [
+  23,
+  1336,
+  ", and do the delivery, go through my calendar, find free spot. When I arrive home, I want to just grab the delivery and just eat and vibe an"
+ ],
+ [
+  23,
+  1347,
+  "d chill. So that's it from me. Here is my LinkedIn. Here is my Telegram. Feel free to reach. We still have a booth here, so feel free to sto"
+ ],
+ [
+  23,
+  1357,
+  "p by and chat. And that's it from me. Thank you, guys."
+ ],
+ [
+  23,
+  1361,
+  "Does anyone have any questions? No? Okay. Thank you. Oh, there's a question. Hi. Thanks for the demo. Look. God's work with you. Right? Yeah"
+ ],
+ [
+  23,
+  1373,
+  ". Anyway, have you experienced any troubles with the x four zero two protocol as as such to can can you give any ideas"
+ ],
+ [
+  23,
+  1383,
+  "whether when you try to, access some paywalled paywalled URL that that the the protocol itself would would create some problems for you? Lik"
+ ],
+ [
+  23,
+  1392,
+  "e, I personally did not. The only issue that, we encountered was during the implementation that they did not support the flexible dynamic pr"
+ ],
+ [
+  23,
+  1401,
+  "icing model, only the fixed ones. So it means, as I mentioned in the talk, you each endpoint needs to have, like, fixed pricing model, which"
+ ],
+ [
+  23,
+  1409,
+  " doesn't work for us since we are, a dynamic marketplace."
+ ],
+ [
+  23,
+  1413,
+  "And right now with v two point o, they implemented the up to dynamic scheme, which allows, like, a dynamic payments. So you give the service"
+ ],
+ [
+  23,
+  1422,
+  " like an allowance, and you can then, subtract only the amount that you actually charged. So in that range, so that solves our issue. That w"
+ ],
+ [
+  23,
+  1432,
+  "as the only issue that we encountered. Mhmm. And did you try the x $4.00 2 with only with USDC or with or also with any other ERC 20 tokens,"
+ ],
+ [
+  23,
+  1441,
+  " I would say? Yeah. It supports all the ERC 3,009"
+ ],
+ [
+  23,
+  1444,
+  "tokens, so they support a transparent authorization. The app two requires the permit two. And, yeah, you can enable any token that supports "
+ ],
+ [
+  23,
+  1453,
+  "that. But right now, we are experimenting with that. It's still early, so we enabled only base.org and USDC. But in future, if we see direct"
+ ],
+ [
+  23,
+  1462,
+  "ion, we will enable more tokens. But because of the lack of finance team and so on, we we just enable the stablecoins for now. Mhmm. By the "
+ ],
+ [
+  23,
+  1471,
+  "way, RegaNes $3.00 9, there is a new proposal right now that mitigates the problem of the impact on the storage."
+ ],
+ [
+  23,
+  1478,
+  "So for anyone here, yeah, trying to implement the related tokens, that would be really, really, really wise to look at that. Cool. Cool. Tha"
+ ],
+ [
+  23,
+  1490,
+  "nk you for mentioning that. What do you think needs to happen for XPRO two payments to go mainstream? I think we need to solve the issue wit"
+ ],
+ [
+  23,
+  1503,
+  "h AI agents in general because, like,"
+ ],
+ [
+  23,
+  1506,
+  "late previous year, early this year, I think we saw breakthrough in coding capabilities. Like, the code they write is not so great, but it w"
+ ],
+ [
+  23,
+  1515,
+  "orks. Like, before, it was, like, kind of usable, but for me, unusable in, like, production. But nowadays nowadays, like, I write majority o"
+ ],
+ [
+  23,
+  1524,
+  "f, code with AI. You still need to review the code line by line, go through it, reason about it, But now it's usable."
+ ],
+ [
+  23,
+  1532,
+  "And I think we need to see the breakthrough in, like, general capabilities, let's say, like, general web access and so on. So I think and al"
+ ],
+ [
+  23,
+  1540,
+  "so, like, general adoption by people. Right now, it's mostly tech people using these tools. Like, I mean, norm normal people, like general p"
+ ],
+ [
+  23,
+  1549,
+  "opulations already use ChatGP and stuff like that, but it's still, like, only it scratches the surface. So I I think we need to have more ca"
+ ],
+ [
+  23,
+  1557,
+  "pable agents and, ideally, also solve the local LM issue with,"
+ ],
+ [
+  23,
+  1561,
+  "right now, the agents or LLM inference is done in cloud, which a lot of people would be not okay, especially here. If you are a privacy focu"
+ ],
+ [
+  23,
+  1571,
+  "sed person, you don't want to leak out, like, your personal information to Anthropic or some other provider like Google and so on, Microsoft"
+ ],
+ [
+  23,
+  1582,
+  ". So I think that's also the issue with the hardware limitations. Any other questions?"
+ ],
+ [
+  23,
+  1588,
+  "Well, in that case, let's give him another round of applause, please."
+ ],
+ [
   25,
   11,
   "Hey, guys. Great to have you all here. It's wonderful. Like, love it. Love it. So, yeah, I'm Kimo. I'm, like, originally, like, a founder of"
