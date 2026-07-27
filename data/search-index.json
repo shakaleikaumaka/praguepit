@@ -24458,5 +24458,1025 @@
   28,
   1479,
   "Yeah. MVC, minimum viable community. Alright. Thank you, guys. I'll be around after."
+ ],
+ [
+  29,
+  13,
+  "Hey. Sorry. That's loud. My name is Rick, and welcome to this talk. So my background, security auditor at OpenZeppelin for seven years, most"
+ ],
+ [
+  29,
+  26,
+  "ly focused on frontline d five protocols and l twos like Uniswamp, Aave, Compound, Optimism. So today, I'm gonna diagnose Ethereum"
+ ],
+ [
+  29,
+  38,
+  "and propose a solution for the whole, DeFi community to work to look forward to and get out of this messy security problems we currently hav"
+ ],
+ [
+  29,
+  53,
+  "e. If you're wondering if you're wondering, my goggles for my dry eyes. So We have such a bad name outside of crypto."
+ ],
+ [
+  29,
+  66,
+  "I don't talk to my friend about what I do if they don't know crypto at all. I just say I'm a developer. And right now, at the moment, after "
+ ],
+ [
+  29,
+  77,
+  "the hack of RSEs, you're probably all aware of, I have pulled out all my d five positions at the moment. All of my tokens sits on my hard dr"
+ ],
+ [
+  29,
+  87,
+  "ive wallet and earning no yield because I just don't think it is a"
+ ],
+ [
+  29,
+  92,
+  "good idea at the moment to the you get a couple percent for the risk you take on. Yeah. I think it's it's too much. We have a huge problem r"
+ ],
+ [
+  29,
+  106,
+  "ight now in the security space in DeFi as well as the whole Ethereum space. Anyone denying this is either naive"
+ ],
+ [
+  29,
+  117,
+  "or willfully blind, in my opinion. With the assisted AI developing, we have seen way more hacks happening, and and OG protocols get hacked t"
+ ],
+ [
+  29,
+  126,
+  "hat way even security auditors can't even believe. Like, there are protocols that I audited years ago and got hacked to, like, a balancer, f"
+ ],
+ [
+  29,
+  136,
+  "or example. I ordered their first version. They got hacked a couple weeks ago a couple months ago. I was very surprised because their code b"
+ ],
+ [
+  29,
+  145,
+  "ase was strong,"
+ ],
+ [
+  29,
+  146,
+  "and it was a good good team behind it. At the moment, this issue is compounding so quickly with AI assisted hacks as to the point that I thi"
+ ],
+ [
+  29,
+  156,
+  "nk we have to have a proper solution and to look at how we we can move forward as an industry. You see, when we built the decentralized drea"
+ ],
+ [
+  29,
+  166,
+  "m, we took away the central power control,"
+ ],
+ [
+  29,
+  169,
+  "and we say, hey. You guys abuse your power. You print a lot of money, and we don't like that. Yeah. And we don't want you guys anymore. We g"
+ ],
+ [
+  29,
+  181,
+  "ot rid of them, but we never built a proper mechanism to provide the function those centralized entity provides, particularly when it come t"
+ ],
+ [
+  29,
+  193,
+  "o order It's to"
+ ],
+ [
+  29,
+  194,
+  "do nothing. They were supposed to perform certain functions to keep our society going, to keep our, you know, order enforced so the whole th"
+ ],
+ [
+  29,
+  205,
+  "ing could work properly. We got rid of all of them, but we never actually built a replacement for that particular part of those centralized "
+ ],
+ [
+  29,
+  215,
+  "power. We had an attempt early stage called code is law. That was the only attempt Eastern community ever had. So we rely on code,"
+ ],
+ [
+  29,
+  225,
+  "the correctness of a code to enforce the order. But, unfortunately, that hasn't worked out, In my opinion, largely because we need all proje"
+ ],
+ [
+  29,
+  235,
+  "cts, most of them, needs an upgradable mechanism because we need to make things better. We need to fix bugs. This is just like, it's too har"
+ ],
+ [
+  29,
+  244,
+  "sh as a mechanism. And Ethereum in itself has EIPs."
+ ],
+ [
+  29,
+  248,
+  "It keeps on improving in itself, but you're asking a a a protocol built on Ethereum to be completely immutable. It's too much of a ask in my"
+ ],
+ [
+  29,
+  257,
+  " opinion. So that particular, enforcement attempt failed spectacularly, and now we end up with the situation that everybody runs naked on ch"
+ ],
+ [
+  29,
+  266,
+  "ain. There's no protection at all. There's no enforcement layer. If you're lucky if you're unlucky, you get hacked, you're on your own. That"
+ ],
+ [
+  29,
+  275,
+  "'s the end of the story."
+ ],
+ [
+  29,
+  277,
+  "And now the whole Israel community is out of ideas. How can we make the sins better from here onwards? We don't really know. So we stopped b"
+ ],
+ [
+  29,
+  289,
+  "eating dead horses, and we put out, you know, the old things where we already discussed years ago about, you know, putting circuit breakers"
+ ],
+ [
+  29,
+  301,
+  "onto the smart contract. And we want more auditing that need to be done. And we're talking about we're looking forward to privacy brings sol"
+ ],
+ [
+  29,
+  312,
+  "ve the issue. In my opinion, all this will help, but it will not solve the problem, and I'll argue why. All these are preventative measures."
+ ],
+ [
+  29,
+  323,
+  " Preventative measures can solve this particular problem because we have a huge philosophical debt we did not solve at all."
+ ],
+ [
+  29,
+  333,
+  "So, basically, if we look at where we are from a society, unchanged society point of view, it's similar to, say, today, we take Prague as a "
+ ],
+ [
+  29,
+  342,
+  "city. We got rid of the government. We got rid of the police, and we tell everyone you're equal now. And, you know, no one can force close y"
+ ],
+ [
+  29,
+  351,
+  "our bank account. Everyone, you know, look after yourself. Don't do silly things, and now here we go. This is a new society. That's basicall"
+ ],
+ [
+  29,
+  359,
+  "y what we build on channel and Ethereum."
+ ],
+ [
+  29,
+  362,
+  "What do you expect this to happen in this city? Do you think things are gonna go well? Everyone's gonna be happily ever after? Definitely no"
+ ],
+ [
+  29,
+  371,
+  ". First of all, malicious acts is gonna jump out straight away. The robbers, the stealers, they're gonna start attacking innocent people at "
+ ],
+ [
+  29,
+  381,
+  "broad daylight because there's no enforcement here at all. It's gonna turn into a dystopia"
+ ],
+ [
+  29,
+  387,
+  "very, very quickly. And this, it's because the system we built is half baked. We didn't have the enforcement layer, and now there's misalign"
+ ],
+ [
+  29,
+  399,
+  "ed incentives in the system that actively encouraging malicious act on every level possible. This is a fundamental reason why we have so muc"
+ ],
+ [
+  29,
+  411,
+  "h malicious people in our industry."
+ ],
+ [
+  29,
+  414,
+  "It's not because people are bad. It's because we encourage them actively on every level. If you can hack, you get way more money and walk aw"
+ ],
+ [
+  29,
+  424,
+  "ay. If you rug pull your users, you make way more money as a you know, compared to a legit founder that grinds for years and might not even "
+ ],
+ [
+  29,
+  434,
+  "see the light. That's what I call the philosophical debt of Ethereum, and that is a problem that we urgently need to solve right now today f"
+ ],
+ [
+  29,
+  444,
+  "or DeFi to move forward, in my opinion."
+ ],
+ [
+  29,
+  447,
+  "If we don't solve this issue, what's gonna happen? Actually, historically, we have loads loads of experiment like this, half baked system wi"
+ ],
+ [
+  29,
+  459,
+  "th misaligned incentives. We look at, you know, countries with misaligned, half baked ideologies and experiment."
+ ],
+ [
+  29,
+  469,
+  "And then we look at, you know, communities with half baked and, you know, unfinisheddesign,com companies with half baked structure, they alw"
+ ],
+ [
+  29,
+  480,
+  "ays ends up in one direction. That is dystopia, almost guaranteed. And if you take a bird's eye view at the moment where crypto is, it's sli"
+ ],
+ [
+  29,
+  491,
+  "ding towards that dystopia"
+ ],
+ [
+  29,
+  493,
+  "really quickly, particularly with AI assisted hacks. Every single user we lost along the way is not gonna be easy to persuade them to come b"
+ ],
+ [
+  29,
+  503,
+  "ack. So I extremely against the idea of guest lighting ourselves, say, hey. You know, it's okay. We still have the OGs here. Those people la"
+ ],
+ [
+  29,
+  513,
+  "ughed today. You know? It's their problem. No. We need to stop this today and right now."
+ ],
+ [
+  29,
+  519,
+  "Good thing is that we have solution here. We look back of historical experiment of all these structures, how do they do it? How do they enfo"
+ ],
+ [
+  29,
+  529,
+  "rce their orders? So we can actually find, properly researched and documented. Anarcho capitalism is a particular sort of stream of anarchol"
+ ],
+ [
+  29,
+  539,
+  "ism, which is well documented, well researched in history, particularly"
+ ],
+ [
+  29,
+  544,
+  "talks about using how do we design a decentralized enforcement layer to go together with the current, you know, stateless society. This is d"
+ ],
+ [
+  29,
+  554,
+  "octor Marie Roosbach. He is the founder of Anarcho Capitalism, and I'll go into this a little bit more. In general, what we built on Ethereu"
+ ],
+ [
+  29,
+  564,
+  "m is an anarcho society. Everyone is equal. There's no state, no government."
+ ],
+ [
+  29,
+  570,
+  "So similar to any anarcho system that, we can actually use a decentralized entity, particularly insurance and agencies can play the role of "
+ ],
+ [
+  29,
+  581,
+  "order enforcement in the absence of a state. This is the solution of anarcho capitalism. It's crazy when I look what we already have at the "
+ ],
+ [
+  29,
+  591,
+  "moment."
+ ],
+ [
+  29,
+  592,
+  "Take away the abstract of technology layer of Ethereum. What we built is actually a really primitive basic version of anacolism to the point"
+ ],
+ [
+  29,
+  602,
+  " it's actually embarrassing. Because if you look at what history historical research on all kinds of implementation of anacolism, what we ha"
+ ],
+ [
+  29,
+  611,
+  "ve is really, really basic version that based it's there's no, you know, further consideration at all. So in my opinion, this system is not "
+ ],
+ [
+  29,
+  621,
+  "ready at all."
+ ],
+ [
+  29,
+  622,
+  "For us to put put it out to the general public, say, hey. Come and use, you know, put your money on chain with us and expose them to the sop"
+ ],
+ [
+  29,
+  635,
+  "histicated hacks on chain is extremely irresponsible. So I propose a solution. USD 8 is a experimental project trying to solve this particul"
+ ],
+ [
+  29,
+  647,
+  "ar issue at"
+ ],
+ [
+  29,
+  648,
+  "providing two main missing layers for the whole DeFi's ecosystem. First of all, it provides a native insurance for all DeFi users. And secon"
+ ],
+ [
+  29,
+  659,
+  "dly, it provides an enforcement layer to chase those lost funds and, chase those hackers who put malicious actors. The insurance layer works"
+ ],
+ [
+  29,
+  670,
+  " very simple. So USD 8 is a stable coin. You can meet with USDC one to one at any stage, redeem back. It's like a wrapper."
+ ],
+ [
+  29,
+  680,
+  "By holding USD 8 or its LSDs, like any kind of yield, you can use the yield, you accumulate a per block history. That history is gonna be yo"
+ ],
+ [
+  29,
+  693,
+  "ur insurance premium sort of thing, like, use to claim coverage if you got hacked. So the USDA protocol"
+ ],
+ [
+  29,
+  703,
+  "cover a bunch of DeFi DeFi protocols like, for example, Curve. All the ones that we go in individually, vet and select them, We make sure th"
+ ],
+ [
+  29,
+  714,
+  "at smart contracts is safe. We make sure they have good operational sanitation, and then we offer coverage to them. So the more history you "
+ ],
+ [
+  29,
+  726,
+  "have use USDA,"
+ ],
+ [
+  29,
+  727,
+  "the more coverage you will get. So it's good to get an early start build up a a usage history, and there's no expiry on your history. And, t"
+ ],
+ [
+  29,
+  738,
+  "he whole claim process is completely permissionless. I'll explain how it works. So let's say we cover Aave a East Mark, Aave East Market. Yo"
+ ],
+ [
+  29,
+  748,
+  "u are you have a position in Aave East market. You're currently holding a a a East LP token from Aave."
+ ],
+ [
+  29,
+  756,
+  "So the coverage is per LP token address based because that's that gets written into the claim contract. So, okay, anytime you can give the c"
+ ],
+ [
+  29,
+  765,
+  "ontract your Aave AES token, the contract is gonna give you back 80% value on on that particular token at maximum you will get out of that. "
+ ],
+ [
+  29,
+  774,
+  "So this whole process does not need your USD 8 at all. It only needs history. So your USD 8 is separate. You do whatever you want with it. Y"
+ ],
+ [
+  29,
+  782,
+  "ou yield with it. You hold of it just like you would do with your normal,"
+ ],
+ [
+  29,
+  787,
+  "stablecoins. So you provide your hacked LP token to our cover pool. Our cover pool take your address and go to the day one of USD 8 launch b"
+ ],
+ [
+  29,
+  797,
+  "lock and check every block by block how much USDA this guy holds on every block, all the, you know, derivatives of yield token of USD 8, and"
+ ],
+ [
+  29,
+  806,
+  " compute with the score. And then puts everyone's score together,"
+ ],
+ [
+  29,
+  811,
+  "and you're gonna get proportional divider of that to your, coverage from our cover pool, which is where the money come from. We run this ope"
+ ],
+ [
+  29,
+  824,
+  "n vault called cover pool, and it has a pretty high APY from 15 to 30%. It takes a bunch of asset, odds as well."
+ ],
+ [
+  29,
+  834,
+  "So anyone can deposit into a cover pool, but it works very similar to Arve's umbrella if you are familiar. So any this money will be deploye"
+ ],
+ [
+  29,
+  844,
+  "d to cover hacks. So it's a high yield, high risk. So anyone can deploy. It's at your your own risk. The money for this APY coming from the "
+ ],
+ [
+  29,
+  855,
+  "year, from the collateral yield of USD 8."
+ ],
+ [
+  29,
+  858,
+  "So those USD 8 yield goes into seeding this pool. A simple mind model, if you think about USDT, how much money they make, We take a bunch of"
+ ],
+ [
+  29,
+  868,
+  " the money they make. We use that to seed a giant pool to cover all the hacks of the protocol that we think is secure. So how much can we co"
+ ],
+ [
+  29,
+  879,
+  "ver? If we ever get to 1% of USDT supply, we can cover we can have a cover pool of $260,000,000."
+ ],
+ [
+  29,
+  886,
+  "That is enough to cover the Kelpdau hack of the bad debt currently on Aave, which is probably the only protocol we would actually offer cove"
+ ],
+ [
+  29,
+  899,
+  "rage at the moment for all this ones are hacked. But if we ever get 20% of the if USDA gets 20%, supply of USDT,"
+ ],
+ [
+  29,
+  909,
+  "we can sustain a cover pool up up to 5,000,000,000 per year. That's way enough to cover all the DeFi hacks, probably more. That means as a L"
+ ],
+ [
+  29,
+  920,
+  "P, even if a hacks is younger, you're not gonna lose much for your a deposit into the cover pool. And that's the insurance part. The more ex"
+ ],
+ [
+  29,
+  931,
+  "citing part is enforcement part."
+ ],
+ [
+  29,
+  934,
+  "You see, when you claim an insurance from us, you give us your covered LP token. We give you a bunch of we give you the value back. We now s"
+ ],
+ [
+  29,
+  944,
+  "it on a pile of this hacked covered LP token that currently worth nothing. But we will have all the financial incentives to recover this tok"
+ ],
+ [
+  29,
+  955,
+  "en value because they are gonna be our revenue."
+ ],
+ [
+  29,
+  958,
+  "And we become the debt collector for DeFi hacks. We will be able to put up with million dollar bounties. We'll be able use that market to ma"
+ ],
+ [
+  29,
+  968,
+  "ke sure we can recover money from it. We'll use million dollars bounties. We'll work with white hat sponsorship groups and and the legal act"
+ ],
+ [
+  29,
+  979,
+  "ions to forever"
+ ],
+ [
+  29,
+  980,
+  "chase those malicious act up to years to come. Ten years, twenty years, doesn't matter. As long as USDA still operates, we will chase them b"
+ ],
+ [
+  29,
+  990,
+  "ecause for us, we have a huge stake financially. We would love to recover from them. And that is the enforcement layer from this, this whole"
+ ],
+ [
+  29,
+  999,
+  " design. At the moment, one of protocol gets hacked. The individual user lose little too too little to to chase them for, like, twenty years"
+ ],
+ [
+  29,
+  1009,
+  ". The protocol,"
+ ],
+ [
+  29,
+  1010,
+  "they'd actually don't lose much money because this user likely, the user's money gone, so they lose reputation. And then they they might eve"
+ ],
+ [
+  29,
+  1018,
+  "n be, you know, bankrupt because of this, so they wouldn't be chasing the hacker that long. So this is a missing gap in the middle that we w"
+ ],
+ [
+  29,
+  1026,
+  "ill be able to provide as an entity to further chase and put a pressure on those hackers. So if they will ever consider hacking,"
+ ],
+ [
+  29,
+  1033,
+  "they will know someone's gonna chase them for a long time from now onwards to further deter them and reduce the hacks in the future. So just"
+ ],
+ [
+  29,
+  1043,
+  " to recap, we're launching soon the projects to early stage, and, I encourage you to follow us and, participate early. It's good to build up"
+ ],
+ [
+  29,
+  1054,
+  " a history if you're on a free coverage. It doesn't cost you anything."
+ ],
+ [
+  29,
+  1059,
+  "So first of all, the insurance coverage is completely free. You don't have to pay. And, secondly, we we offer competitive yield, so, you kno"
+ ],
+ [
+  29,
+  1068,
+  "w, it's on par with your USDC, USDT yield. Anyway, you really don't lose anything. And the better part is that USD 8 itself is covered by ou"
+ ],
+ [
+  29,
+  1078,
+  "r cover pool. This is to make it better than USDT or USDC because if USD eight ever DPAC,"
+ ],
+ [
+  29,
+  1084,
+  "you will get coverage. But if Tethr tomorrow default, you don't get any coverage on your USDT at all. And you also know by using USD 8, you'"
+ ],
+ [
+  29,
+  1095,
+  "re helping secure the future of DeFi and deter future hacks. I'll leave you with the last quote from Adam Smith. Mercy to the guilty is crue"
+ ],
+ [
+  29,
+  1105,
+  "lty to the innocent. We're gonna have to chase those hackers. We can't have a whole industry open up,"
+ ],
+ [
+  29,
+  1113,
+  "like as a honeypot like this before we gradually descend into a dystopia. Thank you very much. Very great approach. Thank you."
+ ],
+ [
+  29,
+  1139,
+  "One thing is, a challenging thing is, insurances are risk averse. You you calculated with to 30% API. Could be vice versa, could be minus as"
+ ],
+ [
+  29,
+  1148,
+  " well. Right? No. That those, 15 to 30% API is guaranteed. You see, the way it works is very simple. We get our revenue from the, USD 8 coll"
+ ],
+ [
+  29,
+  1158,
+  "ateral yield. Right? And, we calculate how much money we have, and then those money goes into the pool. We limit the pool size to make sure "
+ ],
+ [
+  29,
+  1167,
+  "it's 30%. It just means at the beginning, our cover pool is gonna be small."
+ ],
+ [
+  29,
+  1172,
+  "Let's say we make a $100, right, and then we only have $30 in the pool. That $30 is gonna have a high APY. It makes it's not gonna be open s"
+ ],
+ [
+  29,
+  1180,
+  "ort of forever. It's gonna be controlled size at the beginning and gradually grow until the moment, as I mentioned, if we get to, like, 2% o"
+ ],
+ [
+  29,
+  1189,
+  "f USDT, we'll we'll have, you know, enough money in it. It has to be high APY because the risk is relatively high. But from that point of vi"
+ ],
+ [
+  29,
+  1197,
+  "ew, to be honest,"
+ ],
+ [
+  29,
+  1198,
+  "even though it's high risk, you're actually trusting us as security experts. We are the one that vetting and guarding this process. We don't"
+ ],
+ [
+  29,
+  1206,
+  " offer coverage to any protocols. It's also great for you as a user to use those protocols that we cover because we look into them, like, in"
+ ],
+ [
+  29,
+  1215,
+  " a very serious way because we actually have money behind them. This is better, honestly, than any any audits you will get because there's n"
+ ],
+ [
+  29,
+  1223,
+  "o responsibility in audits anyway. So"
+ ],
+ [
+  29,
+  1225,
+  "Yeah. I got the insurance part, but the enforcement part, you said that, like, there's no everyone has too small of a holding to go after th"
+ ],
+ [
+  29,
+  1233,
+  "em legally. But isn't that the case here because the people who are losing are the ones who've deposited into the cover pool, and they would"
+ ],
+ [
+  29,
+  1241,
+  " again, like, be the ones who lose out in a hack? So isn't it isn't it the same problem that it's too small of an amount in the cover pool f"
+ ],
+ [
+  29,
+  1249,
+  "or me to do legal action for the rest of the No. Actually, it works different. So when a hack happen"
+ ],
+ [
+  29,
+  1255,
+  "and the hacked user get money from the cover pool, and they so they're happy. They walk away. They've they've job's done. Right? The hacker "
+ ],
+ [
+  29,
+  1263,
+  "pool LP, they they take a loss because that's their risk. So they they don't get covered ever. They get the high APY if nothing happened, so"
+ ],
+ [
+  29,
+  1271,
+  " they are also done. So it's us end up with a bunch of hacked LPs because you need to give us your LP for us to cover you if you're a hacked"
+ ],
+ [
+  29,
+  1280,
+  " user. So we own this hacked LPs, a lot of them with us. Like, for capital, we might own, like, you know, maybe half of the hacked value tha"
+ ],
+ [
+  29,
+  1288,
+  "t was a 100,000,000,"
+ ],
+ [
+  29,
+  1289,
+  "and we're gonna use this potential money to chase the hackers for bounties for, you know, payout for our own legal cost and, you know, for d"
+ ],
+ [
+  29,
+  1301,
+  "ebt markets, secondary debt market, that sort of thing to facilitate a white hat economy. We're gonna do, like, anonymous tips, you know, li"
+ ],
+ [
+  29,
+  1312,
+  "ke communications, anything we we can think of with this money facilitated by, you know. No. No. Me. We get it. Because"
+ ],
+ [
+  29,
+  1322,
+  "whoever because let's say you if you're a hacked, user, right, you need to give us your hacked LP, and we give you coverage. Now you're not "
+ ],
+ [
+  29,
+  1331,
+  "hacked anymore. I become hacked because it's a LP token's owner is me. So I am the, you know, the whole data. You walk away with 80% of valu"
+ ],
+ [
+  29,
+  1340,
+  "e. Your job's finished. That's your courage. Right? So not because of my problem. If I can recover this, it's my money, not your money anymo"
+ ],
+ [
+  29,
+  1349,
+  "re."
+ ],
+ [
+  29,
+  1349,
+  "That's why we are encouraged to do so. Yeah. I feel like you really do a good job explaining the problem, which is, like, it's two there's t"
+ ],
+ [
+  29,
+  1357,
+  "wo problems. Right? You have the enforcement layer, and then you also have, like, the preventative layer. And I agree with the problem state"
+ ],
+ [
+  29,
+  1365,
+  "ment, but I just feel like the solution that you're presenting is like a Band Aided, like, solution. Right? Because we're just moving the de"
+ ],
+ [
+  29,
+  1374,
+  "bt around to someone else. Right? So even if I get hacked, someone else just takes on the debt, and you optimize, like, the enforcement laye"
+ ],
+ [
+  29,
+  1382,
+  "r by creating markets,"
+ ],
+ [
+  29,
+  1383,
+  "making it more efficient. But, like, I deeply believe that the enforcement layer is a public goods problem. Like, we have, like, groups like"
+ ],
+ [
+  29,
+  1390,
+  " Seal that that coordinate between different protocols. But if you're a North Korean hacker, you're just gonna basically, like, you know, yo"
+ ],
+ [
+  29,
+  1397,
+  "u're gonna move it over to the Bitcoin network using, like, some third party bridges, which don't really count. They process the payments, a"
+ ],
+ [
+  29,
+  1404,
+  "nd that's usually done within minutes if you're sophisticated enough. Right? So I feel like even with all the money that gets spent to optim"
+ ],
+ [
+  29,
+  1412,
+  "ize it, you're still gonna have the money, like, leave the table, right, and go into a different chain. So,"
+ ],
+ [
+  29,
+  1417,
+  "yeah, I guess I'm, like, curious, like, what you think about that. Yeah. First of all, we work with Sale and on this so they are the white h"
+ ],
+ [
+  29,
+  1424,
+  "at hacker group that we will be sponsoring them to do things. At the moment, SEAL work for free. This actually, in my opinion, is really bad"
+ ],
+ [
+  29,
+  1431,
+  " for the industry. Like, I don't think the industry should rely on heroes. They do a great job. I love them very much. I know that the the g"
+ ],
+ [
+  29,
+  1437,
+  "uys behind it. But for industry to rely on volunteers,"
+ ],
+ [
+  29,
+  1440,
+  "this is not a good design industry because they can't be hold accountable for anything. If tomorrow they decide they don't do it, the whole "
+ ],
+ [
+  29,
+  1447,
+  "industry going to drain. So I I have a whole whole argument we should not be doing that. We should we should design our system better so we "
+ ],
+ [
+  29,
+  1454,
+  "don't rely on heroes like that. We have a proper, you know, incentive. Why this is better? Because we have a financial incentive that's way "
+ ],
+ [
+  29,
+  1461,
+  "stronger than a volunteer to be able to provide that service. And secondly, there's no con contradiction at all. We work with them. You know"
+ ],
+ [
+  29,
+  1467,
+  ", we're just gonna be facilitate."
+ ],
+ [
+  29,
+  1469,
+  "Anyone can participate. If you want, you can also participate. Anyone, you know, with insider information, send us a, you know, on chain ano"
+ ],
+ [
+  29,
+  1477,
+  "nymous message. If we can recover, you pocket away few $100,000. You know? We facilitate. Can we recover all funds? Probably not. But the th"
+ ],
+ [
+  29,
+  1485,
+  "ing is that at the end, we are the one taking the debt, not user. Because user get free coverage. You walk away. Like, the dead mom's saving"
+ ],
+ [
+  29,
+  1494,
+  "s not lost. It's us taking the hit in a sense. Actually, not us. It's the LP."
+ ],
+ [
+  29,
+  1498,
+  "The the LPs into the cover pool, they take the loss. Right? But, like, we are the one that sort of make sure that people walk away with the "
+ ],
+ [
+  29,
+  1508,
+  "whole, And also those LPs get a fair deal. If you want a 30% APY, you know, you take you take the risk. That's in general how it works. It's"
+ ],
+ [
+  29,
+  1517,
+  " not contradiction. Yeah. How would you up from the cost of recovering the bad debt? Let's say, hack happens, you know, there is a million"
+ ],
+ [
+  29,
+  1527,
+  "potential hacked LP that you got on. You have some upfront cost that you have to put up the bounties, put up all the other. What would be th"
+ ],
+ [
+  29,
+  1535,
+  "e way of of actually bootstrapping that that that capital? Yeah. So let's say if we like, at the early stage, we have no money to do anythin"
+ ],
+ [
+  29,
+  1544,
+  "g. First of all, a lot of the bounty will probably be structured to the moment when that money is recovered, and then we will pay out the bo"
+ ],
+ [
+  29,
+  1552,
+  "unty. It's like a immunify sort of thing. You have to actually get the"
+ ],
+ [
+  29,
+  1556,
+  "work done. And secondly, we're gonna facilitate a debt market allowed speculate letters coming with you know, we'll we'll be auctioning, you"
+ ],
+ [
+  29,
+  1567,
+  " know, those hacked LP positions and, you know, like, bonding curve, for example. So you can actually speculate on the fact that we will rec"
+ ],
+ [
+  29,
+  1577,
+  "over that to make a few future profit if you want. So that's how we can re recoup early stage funding to sponsor wide high groups and things"
+ ],
+ [
+  29,
+  1588,
+  " like that."
+ ],
+ [
+  29,
+  1589,
+  "Yeah. So I guess just on this slide that you had oh, oh, sorry. Yeah. No worries. Yeah. So just here, for instance, like, I would feel like "
+ ],
+ [
+  29,
+  1597,
+  "million dollar bounties, white hat sponsorship, those are more preventative layer. Right? They're more of an enforcement layer. And then I g"
+ ],
+ [
+  29,
+  1605,
+  "uess, like, in the preventative layer, it's more structured like a public goods. Right? So people fund it. You people fund it, and then it g"
+ ],
+ [
+  29,
+  1613,
+  "oes into funding. Like, you work with Seal, right, which is a public goods, entity. So you fund them and then they handle all the coordinati"
+ ],
+ [
+  29,
+  1621,
+  "on. Right? But if they fail to even recoup any amount of money, then the bar debt market basically settles to zero. Right? So,"
+ ],
+ [
+  29,
+  1628,
+  "basically, people take on the risk and they're betting on whether the any losses will be get recouped. But if the none of them recoup like m"
+ ],
+ [
+  29,
+  1638,
+  "ost hacks, then debt markets just tend to zero. Right? Yeah. That's why it's speculative. Based on, like, on based on previous data of, like"
+ ],
+ [
+  29,
+  1647,
+  ", with the tax coming to zero? So first of all, the whole,"
+ ],
+ [
+  29,
+  1651,
+  "enforcement layer is on our lost money. Everyone else in this whole system is already being fairly compensated. If you're a hacked, user, yo"
+ ],
+ [
+  29,
+  1660,
+  "u already got 80% of your value. You walk away happily already at this stage before this even happened. And if your LP into the cover pool, "
+ ],
+ [
+  29,
+  1668,
+  "you have a 30% APY, but then you you lost some capital because that's hacked. You're also, you know, fair for you already because that's the"
+ ],
+ [
+  29,
+  1677,
+  " risk you take on. So we are the only one doing this. So there's no no one else is getting any loss through this process. For us, if we can "
+ ],
+ [
+  29,
+  1685,
+  "recover anything, it's a profit for us. If we don't, we don't. There's no loss here at all. And on top of that, I don't consider this preven"
+ ],
+ [
+  29,
+  1694,
+  "tative measures because these are the measures after this thing happened than to try to recover the actual loss. So this, you know, not prev"
+ ],
+ [
+  29,
+  1702,
+  "ent the law hack, but dealing with after hack of chasing those funds back."
+ ],
+ [
+  29,
+  1707,
+  "I would consider things like makes my contract stronger, safer. These are more preventative measures. You know? Okay. Thank you."
  ]
 ]

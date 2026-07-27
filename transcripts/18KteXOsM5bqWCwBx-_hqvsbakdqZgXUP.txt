@@ -1,0 +1,133 @@
+# The Philosophical Debt of Ethereum and the Future of Defi Security
+
+Date: 
+Source video: The Philosophical Debt of Ethereum and the Future of Defi Security
+Drive: https://drive.google.com/file/d/18KteXOsM5bqWCwBx-_hqvsbakdqZgXUP/view
+Duration: 00:28:52
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:13] Hey. Sorry. That's loud. My name is Rick, and welcome to this talk. So my background, security auditor at OpenZeppelin for seven years, mostly focused on frontline d five protocols and l twos like Uniswamp, Aave, Compound, Optimism. So today, I'm gonna diagnose Ethereum
+
+[00:38] and propose a solution for the whole, DeFi community to work to look forward to and get out of this messy security problems we currently have. If you're wondering if you're wondering, my goggles for my dry eyes. So We have such a bad name outside of crypto.
+
+[01:06] I don't talk to my friend about what I do if they don't know crypto at all. I just say I'm a developer. And right now, at the moment, after the hack of RSEs, you're probably all aware of, I have pulled out all my d five positions at the moment. All of my tokens sits on my hard drive wallet and earning no yield because I just don't think it is a
+
+[01:32] good idea at the moment to the you get a couple percent for the risk you take on. Yeah. I think it's it's too much. We have a huge problem right now in the security space in DeFi as well as the whole Ethereum space. Anyone denying this is either naive
+
+[01:57] or willfully blind, in my opinion. With the assisted AI developing, we have seen way more hacks happening, and and OG protocols get hacked that way even security auditors can't even believe. Like, there are protocols that I audited years ago and got hacked to, like, a balancer, for example. I ordered their first version. They got hacked a couple weeks ago a couple months ago. I was very surprised because their code base was strong,
+
+[02:26] and it was a good good team behind it. At the moment, this issue is compounding so quickly with AI assisted hacks as to the point that I think we have to have a proper solution and to look at how we we can move forward as an industry. You see, when we built the decentralized dream, we took away the central power control,
+
+[02:49] and we say, hey. You guys abuse your power. You print a lot of money, and we don't like that. Yeah. And we don't want you guys anymore. We got rid of them, but we never built a proper mechanism to provide the function those centralized entity provides, particularly when it come to order It's to
+
+[03:14] do nothing. They were supposed to perform certain functions to keep our society going, to keep our, you know, order enforced so the whole thing could work properly. We got rid of all of them, but we never actually built a replacement for that particular part of those centralized power. We had an attempt early stage called code is law. That was the only attempt Eastern community ever had. So we rely on code,
+
+[03:45] the correctness of a code to enforce the order. But, unfortunately, that hasn't worked out, In my opinion, largely because we need all projects, most of them, needs an upgradable mechanism because we need to make things better. We need to fix bugs. This is just like, it's too harsh as a mechanism. And Ethereum in itself has EIPs.
+
+[04:08] It keeps on improving in itself, but you're asking a a a protocol built on Ethereum to be completely immutable. It's too much of a ask in my opinion. So that particular, enforcement attempt failed spectacularly, and now we end up with the situation that everybody runs naked on chain. There's no protection at all. There's no enforcement layer. If you're lucky if you're unlucky, you get hacked, you're on your own. That's the end of the story.
+
+[04:37] And now the whole Israel community is out of ideas. How can we make the sins better from here onwards? We don't really know. So we stopped beating dead horses, and we put out, you know, the old things where we already discussed years ago about, you know, putting circuit breakers
+
+[05:01] onto the smart contract. And we want more auditing that need to be done. And we're talking about we're looking forward to privacy brings solve the issue. In my opinion, all this will help, but it will not solve the problem, and I'll argue why. All these are preventative measures. Preventative measures can solve this particular problem because we have a huge philosophical debt we did not solve at all.
+
+[05:33] So, basically, if we look at where we are from a society, unchanged society point of view, it's similar to, say, today, we take Prague as a city. We got rid of the government. We got rid of the police, and we tell everyone you're equal now. And, you know, no one can force close your bank account. Everyone, you know, look after yourself. Don't do silly things, and now here we go. This is a new society. That's basically what we build on channel and Ethereum.
+
+[06:02] What do you expect this to happen in this city? Do you think things are gonna go well? Everyone's gonna be happily ever after? Definitely no. First of all, malicious acts is gonna jump out straight away. The robbers, the stealers, they're gonna start attacking innocent people at broad daylight because there's no enforcement here at all. It's gonna turn into a dystopia
+
+[06:27] very, very quickly. And this, it's because the system we built is half baked. We didn't have the enforcement layer, and now there's misaligned incentives in the system that actively encouraging malicious act on every level possible. This is a fundamental reason why we have so much malicious people in our industry.
+
+[06:54] It's not because people are bad. It's because we encourage them actively on every level. If you can hack, you get way more money and walk away. If you rug pull your users, you make way more money as a you know, compared to a legit founder that grinds for years and might not even see the light. That's what I call the philosophical debt of Ethereum, and that is a problem that we urgently need to solve right now today for DeFi to move forward, in my opinion.
+
+[07:27] If we don't solve this issue, what's gonna happen? Actually, historically, we have loads loads of experiment like this, half baked system with misaligned incentives. We look at, you know, countries with misaligned, half baked ideologies and experiment.
+
+[07:49] And then we look at, you know, communities with half baked and, you know, unfinisheddesign,com companies with half baked structure, they always ends up in one direction. That is dystopia, almost guaranteed. And if you take a bird's eye view at the moment where crypto is, it's sliding towards that dystopia
+
+[08:13] really quickly, particularly with AI assisted hacks. Every single user we lost along the way is not gonna be easy to persuade them to come back. So I extremely against the idea of guest lighting ourselves, say, hey. You know, it's okay. We still have the OGs here. Those people laughed today. You know? It's their problem. No. We need to stop this today and right now.
+
+[08:39] Good thing is that we have solution here. We look back of historical experiment of all these structures, how do they do it? How do they enforce their orders? So we can actually find, properly researched and documented. Anarcho capitalism is a particular sort of stream of anarcholism, which is well documented, well researched in history, particularly
+
+[09:04] talks about using how do we design a decentralized enforcement layer to go together with the current, you know, stateless society. This is doctor Marie Roosbach. He is the founder of Anarcho Capitalism, and I'll go into this a little bit more. In general, what we built on Ethereum is an anarcho society. Everyone is equal. There's no state, no government.
+
+[09:30] So similar to any anarcho system that, we can actually use a decentralized entity, particularly insurance and agencies can play the role of order enforcement in the absence of a state. This is the solution of anarcho capitalism. It's crazy when I look what we already have at the moment.
+
+[09:52] Take away the abstract of technology layer of Ethereum. What we built is actually a really primitive basic version of anacolism to the point it's actually embarrassing. Because if you look at what history historical research on all kinds of implementation of anacolism, what we have is really, really basic version that based it's there's no, you know, further consideration at all. So in my opinion, this system is not ready at all.
+
+[10:22] For us to put put it out to the general public, say, hey. Come and use, you know, put your money on chain with us and expose them to the sophisticated hacks on chain is extremely irresponsible. So I propose a solution. USD 8 is a experimental project trying to solve this particular issue at
+
+[10:48] providing two main missing layers for the whole DeFi's ecosystem. First of all, it provides a native insurance for all DeFi users. And secondly, it provides an enforcement layer to chase those lost funds and, chase those hackers who put malicious actors. The insurance layer works very simple. So USD 8 is a stable coin. You can meet with USDC one to one at any stage, redeem back. It's like a wrapper.
+
+[11:20] By holding USD 8 or its LSDs, like any kind of yield, you can use the yield, you accumulate a per block history. That history is gonna be your insurance premium sort of thing, like, use to claim coverage if you got hacked. So the USDA protocol
+
+[11:43] cover a bunch of DeFi DeFi protocols like, for example, Curve. All the ones that we go in individually, vet and select them, We make sure that smart contracts is safe. We make sure they have good operational sanitation, and then we offer coverage to them. So the more history you have use USDA,
+
+[12:07] the more coverage you will get. So it's good to get an early start build up a a usage history, and there's no expiry on your history. And, the whole claim process is completely permissionless. I'll explain how it works. So let's say we cover Aave a East Mark, Aave East Market. You are you have a position in Aave East market. You're currently holding a a a East LP token from Aave.
+
+[12:36] So the coverage is per LP token address based because that's that gets written into the claim contract. So, okay, anytime you can give the contract your Aave AES token, the contract is gonna give you back 80% value on on that particular token at maximum you will get out of that. So this whole process does not need your USD 8 at all. It only needs history. So your USD 8 is separate. You do whatever you want with it. You yield with it. You hold of it just like you would do with your normal,
+
+[13:07] stablecoins. So you provide your hacked LP token to our cover pool. Our cover pool take your address and go to the day one of USD 8 launch block and check every block by block how much USDA this guy holds on every block, all the, you know, derivatives of yield token of USD 8, and compute with the score. And then puts everyone's score together,
+
+[13:31] and you're gonna get proportional divider of that to your, coverage from our cover pool, which is where the money come from. We run this open vault called cover pool, and it has a pretty high APY from 15 to 30%. It takes a bunch of asset, odds as well.
+
+[13:54] So anyone can deposit into a cover pool, but it works very similar to Arve's umbrella if you are familiar. So any this money will be deployed to cover hacks. So it's a high yield, high risk. So anyone can deploy. It's at your your own risk. The money for this APY coming from the year, from the collateral yield of USD 8.
+
+[14:18] So those USD 8 yield goes into seeding this pool. A simple mind model, if you think about USDT, how much money they make, We take a bunch of the money they make. We use that to seed a giant pool to cover all the hacks of the protocol that we think is secure. So how much can we cover? If we ever get to 1% of USDT supply, we can cover we can have a cover pool of $260,000,000.
+
+[14:46] That is enough to cover the Kelpdau hack of the bad debt currently on Aave, which is probably the only protocol we would actually offer coverage at the moment for all this ones are hacked. But if we ever get 20% of the if USDA gets 20%, supply of USDT,
+
+[15:09] we can sustain a cover pool up up to 5,000,000,000 per year. That's way enough to cover all the DeFi hacks, probably more. That means as a LP, even if a hacks is younger, you're not gonna lose much for your a deposit into the cover pool. And that's the insurance part. The more exciting part is enforcement part.
+
+[15:34] You see, when you claim an insurance from us, you give us your covered LP token. We give you a bunch of we give you the value back. We now sit on a pile of this hacked covered LP token that currently worth nothing. But we will have all the financial incentives to recover this token value because they are gonna be our revenue.
+
+[15:58] And we become the debt collector for DeFi hacks. We will be able to put up with million dollar bounties. We'll be able use that market to make sure we can recover money from it. We'll use million dollars bounties. We'll work with white hat sponsorship groups and and the legal actions to forever
+
+[16:20] chase those malicious act up to years to come. Ten years, twenty years, doesn't matter. As long as USDA still operates, we will chase them because for us, we have a huge stake financially. We would love to recover from them. And that is the enforcement layer from this, this whole design. At the moment, one of protocol gets hacked. The individual user lose little too too little to to chase them for, like, twenty years. The protocol,
+
+[16:50] they'd actually don't lose much money because this user likely, the user's money gone, so they lose reputation. And then they they might even be, you know, bankrupt because of this, so they wouldn't be chasing the hacker that long. So this is a missing gap in the middle that we will be able to provide as an entity to further chase and put a pressure on those hackers. So if they will ever consider hacking,
+
+[17:13] they will know someone's gonna chase them for a long time from now onwards to further deter them and reduce the hacks in the future. So just to recap, we're launching soon the projects to early stage, and, I encourage you to follow us and, participate early. It's good to build up a history if you're on a free coverage. It doesn't cost you anything.
+
+[17:39] So first of all, the insurance coverage is completely free. You don't have to pay. And, secondly, we we offer competitive yield, so, you know, it's on par with your USDC, USDT yield. Anyway, you really don't lose anything. And the better part is that USD 8 itself is covered by our cover pool. This is to make it better than USDT or USDC because if USD eight ever DPAC,
+
+[18:04] you will get coverage. But if Tethr tomorrow default, you don't get any coverage on your USDT at all. And you also know by using USD 8, you're helping secure the future of DeFi and deter future hacks. I'll leave you with the last quote from Adam Smith. Mercy to the guilty is cruelty to the innocent. We're gonna have to chase those hackers. We can't have a whole industry open up,
+
+[18:33] like as a honeypot like this before we gradually descend into a dystopia. Thank you very much. Very great approach. Thank you.
+
+[18:59] One thing is, a challenging thing is, insurances are risk averse. You you calculated with to 30% API. Could be vice versa, could be minus as well. Right? No. That those, 15 to 30% API is guaranteed. You see, the way it works is very simple. We get our revenue from the, USD 8 collateral yield. Right? And, we calculate how much money we have, and then those money goes into the pool. We limit the pool size to make sure it's 30%. It just means at the beginning, our cover pool is gonna be small.
+
+[19:32] Let's say we make a $100, right, and then we only have $30 in the pool. That $30 is gonna have a high APY. It makes it's not gonna be open sort of forever. It's gonna be controlled size at the beginning and gradually grow until the moment, as I mentioned, if we get to, like, 2% of USDT, we'll we'll have, you know, enough money in it. It has to be high APY because the risk is relatively high. But from that point of view, to be honest,
+
+[19:58] even though it's high risk, you're actually trusting us as security experts. We are the one that vetting and guarding this process. We don't offer coverage to any protocols. It's also great for you as a user to use those protocols that we cover because we look into them, like, in a very serious way because we actually have money behind them. This is better, honestly, than any any audits you will get because there's no responsibility in audits anyway. So
+
+[20:25] Yeah. I got the insurance part, but the enforcement part, you said that, like, there's no everyone has too small of a holding to go after them legally. But isn't that the case here because the people who are losing are the ones who've deposited into the cover pool, and they would again, like, be the ones who lose out in a hack? So isn't it isn't it the same problem that it's too small of an amount in the cover pool for me to do legal action for the rest of the No. Actually, it works different. So when a hack happen
+
+[20:55] and the hacked user get money from the cover pool, and they so they're happy. They walk away. They've they've job's done. Right? The hacker pool LP, they they take a loss because that's their risk. So they they don't get covered ever. They get the high APY if nothing happened, so they are also done. So it's us end up with a bunch of hacked LPs because you need to give us your LP for us to cover you if you're a hacked user. So we own this hacked LPs, a lot of them with us. Like, for capital, we might own, like, you know, maybe half of the hacked value that was a 100,000,000,
+
+[21:29] and we're gonna use this potential money to chase the hackers for bounties for, you know, payout for our own legal cost and, you know, for debt markets, secondary debt market, that sort of thing to facilitate a white hat economy. We're gonna do, like, anonymous tips, you know, like communications, anything we we can think of with this money facilitated by, you know. No. No. Me. We get it. Because
+
+[22:02] whoever because let's say you if you're a hacked, user, right, you need to give us your hacked LP, and we give you coverage. Now you're not hacked anymore. I become hacked because it's a LP token's owner is me. So I am the, you know, the whole data. You walk away with 80% of value. Your job's finished. That's your courage. Right? So not because of my problem. If I can recover this, it's my money, not your money anymore.
+
+[22:29] That's why we are encouraged to do so. Yeah. I feel like you really do a good job explaining the problem, which is, like, it's two there's two problems. Right? You have the enforcement layer, and then you also have, like, the preventative layer. And I agree with the problem statement, but I just feel like the solution that you're presenting is like a Band Aided, like, solution. Right? Because we're just moving the debt around to someone else. Right? So even if I get hacked, someone else just takes on the debt, and you optimize, like, the enforcement layer by creating markets,
+
+[23:03] making it more efficient. But, like, I deeply believe that the enforcement layer is a public goods problem. Like, we have, like, groups like Seal that that coordinate between different protocols. But if you're a North Korean hacker, you're just gonna basically, like, you know, you're gonna move it over to the Bitcoin network using, like, some third party bridges, which don't really count. They process the payments, and that's usually done within minutes if you're sophisticated enough. Right? So I feel like even with all the money that gets spent to optimize it, you're still gonna have the money, like, leave the table, right, and go into a different chain. So,
+
+[23:37] yeah, I guess I'm, like, curious, like, what you think about that. Yeah. First of all, we work with Sale and on this so they are the white hat hacker group that we will be sponsoring them to do things. At the moment, SEAL work for free. This actually, in my opinion, is really bad for the industry. Like, I don't think the industry should rely on heroes. They do a great job. I love them very much. I know that the the guys behind it. But for industry to rely on volunteers,
+
+[24:00] this is not a good design industry because they can't be hold accountable for anything. If tomorrow they decide they don't do it, the whole industry going to drain. So I I have a whole whole argument we should not be doing that. We should we should design our system better so we don't rely on heroes like that. We have a proper, you know, incentive. Why this is better? Because we have a financial incentive that's way stronger than a volunteer to be able to provide that service. And secondly, there's no con contradiction at all. We work with them. You know, we're just gonna be facilitate.
+
+[24:29] Anyone can participate. If you want, you can also participate. Anyone, you know, with insider information, send us a, you know, on chain anonymous message. If we can recover, you pocket away few $100,000. You know? We facilitate. Can we recover all funds? Probably not. But the thing is that at the end, we are the one taking the debt, not user. Because user get free coverage. You walk away. Like, the dead mom's savings not lost. It's us taking the hit in a sense. Actually, not us. It's the LP.
+
+[24:58] The the LPs into the cover pool, they take the loss. Right? But, like, we are the one that sort of make sure that people walk away with the whole, And also those LPs get a fair deal. If you want a 30% APY, you know, you take you take the risk. That's in general how it works. It's not contradiction. Yeah. How would you up from the cost of recovering the bad debt? Let's say, hack happens, you know, there is a million
+
+[25:27] potential hacked LP that you got on. You have some upfront cost that you have to put up the bounties, put up all the other. What would be the way of of actually bootstrapping that that that capital? Yeah. So let's say if we like, at the early stage, we have no money to do anything. First of all, a lot of the bounty will probably be structured to the moment when that money is recovered, and then we will pay out the bounty. It's like a immunify sort of thing. You have to actually get the
+
+[25:56] work done. And secondly, we're gonna facilitate a debt market allowed speculate letters coming with you know, we'll we'll be auctioning, you know, those hacked LP positions and, you know, like, bonding curve, for example. So you can actually speculate on the fact that we will recover that to make a few future profit if you want. So that's how we can re recoup early stage funding to sponsor wide high groups and things like that.
+
+[26:29] Yeah. So I guess just on this slide that you had oh, oh, sorry. Yeah. No worries. Yeah. So just here, for instance, like, I would feel like million dollar bounties, white hat sponsorship, those are more preventative layer. Right? They're more of an enforcement layer. And then I guess, like, in the preventative layer, it's more structured like a public goods. Right? So people fund it. You people fund it, and then it goes into funding. Like, you work with Seal, right, which is a public goods, entity. So you fund them and then they handle all the coordination. Right? But if they fail to even recoup any amount of money, then the bar debt market basically settles to zero. Right? So,
+
+[27:08] basically, people take on the risk and they're betting on whether the any losses will be get recouped. But if the none of them recoup like most hacks, then debt markets just tend to zero. Right? Yeah. That's why it's speculative. Based on, like, on based on previous data of, like, with the tax coming to zero? So first of all, the whole,
+
+[27:31] enforcement layer is on our lost money. Everyone else in this whole system is already being fairly compensated. If you're a hacked, user, you already got 80% of your value. You walk away happily already at this stage before this even happened. And if your LP into the cover pool, you have a 30% APY, but then you you lost some capital because that's hacked. You're also, you know, fair for you already because that's the risk you take on. So we are the only one doing this. So there's no no one else is getting any loss through this process. For us, if we can recover anything, it's a profit for us. If we don't, we don't. There's no loss here at all. And on top of that, I don't consider this preventative measures because these are the measures after this thing happened than to try to recover the actual loss. So this, you know, not prevent the law hack, but dealing with after hack of chasing those funds back.
+
+[28:27] I would consider things like makes my contract stronger, safer. These are more preventative measures. You know? Okay. Thank you.
