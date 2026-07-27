@@ -1,0 +1,57 @@
+# How to: Apify × x402
+
+Date: 
+Source video: How to: Apify × x402
+Drive: https://drive.google.com/file/d/1KTpLN2B0YQRVeWg4coAvYeOFTM13NKoR/view
+Duration: 00:10:49
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:12] Cool. Hi, guys. I'm Jacob from Epify. I'm engineer there. And, let me talk today in this, like, short lightning call about Epify and x four zero two. It's mainly how to guide. It's mainly for the hackers there. So if you are participants for the hackathon, it might be useful to you. If not, it's also like you you learn about the x four zero two, how we implemented it, how we how could you use that actually with our services or in general how it works usually.
+
+[00:40] So, let me first introduce the Apify. So if you're a hacker, so we know, what are the use cases is that, and then I'll show you how to use that with our touch points for the client and what is even the export tool, how does it work with our services. So in short, Apify is like a marketplace of tools. We have thousands of tools. Most of them are maintained by the community.
+
+[01:03] Some of them are maintained by us. And in short, it's mostly for web scraping and web automation. So let's suppose you have some kind of project you need to access real time web data from Instagram, socials, Google Maps, ecommerce websites like Amazon, scrape YouTube transcripts, access Twitter data, and so on. You could use our tools for that. So it is the main use cases. People use us for lead generation, also LinkedIn and stuff like that.
+
+[01:30] Also, you could deploy the tool you build and monetize it on our marketplace. That's Apify in short. How do you actually use that? Nowadays with agent encoding, it's quite simple. I think majority of people use coding agents when they are building, especially during the hackathons. So we've prepared, like, simple agents MD file familiar with that. If not, agents MD is like an old standard.
+
+[01:56] It's like a guide for coding agents. So it's made the agent focused file. You give it to your coding agent, point agent to file, and then you build up a file. So there's, like, all the context I need. So there's, like, all the API, the MCP, how to use that and potentially get to use. So we can talk to agent and say, like, build me some project that used up file in this way, and the agent should be able to do that with this file.
+
+[02:26] Essentially, we have to do that API and your services nowadays. So simply, you just do call, include your book, and it's done. Right? You might do it in future slides. Some of you may have out MVP. If not, essentially, it's REST API for agents.
+
+[02:49] So it was introduced by Anthropic, like, I think a year ago. It stands for for model context protocol. Essentially, it's bunch of tools you give to your AI agent and you extend its capability. So, for example, in context of Apify, we give them capability like, hey, scrape me Instagram, scrape me Google Maps. If you are, for example, like blockchain firm, you could be like explore blockchain, fetch me transactions for this address or for this account.
+
+[03:18] So, essentially, think of it as like dynamic REST API for AI agents. You may be asking, okay, why would I do this if I can just use REST API with your agents? Yes. Sometimes you can, but usually, for example, there is cases where you cannot use REST API. For example, to GPT UI. In the web, there's no way to call, REST API because they block the Internet connection, so you cannot do the fetch. You have to use MCP connector. So that's why you need to use MCP. And most of the coding agents actually support MCP, so it's like the easy way to connect.
+
+[03:52] So there's two touch points for our service, API or MCP. But there is the issue. You may have spotted the the curl call, the API call requires API token, which is like, okay. Back in the day, was fine, but, the clankers want to be autonomous. There is there shouldn't be human in the loop. Like, sometimes, yes.
+
+[04:17] But imagine you build, AI agent and then you have to go through each service, create an account, subscribe, then you pass the API tokens. That's not scalable. It doesn't work. Sometimes with open calls and stuff like that, you can easily leak your tokens, which sucks, honestly, and it's just not cool. So let's skip the API tokens, and let me introduce you to X402.
+
+[04:40] So it's the new new it's not actually new. They actually revived the 402 HTTP status code. It is actually the status code that was introduced in HTTP 1.1 RFC. It was reserved for, from 1999, and it was reserved for future use. And the original idea was, for payment required status.
+
+[05:03] So if the service returns you this status code, it requires some payments. There was no use case for this till this day with AI agents and blockchain. The guys from companies came and they told it and they were like, okay. I'll still you'll explore too. Your blockchain with you connect you give yeah. I can, access to your
+
+[05:28] the section, send the service. No need for any account. So it's completely accountless. If you are here or you are participating in the hackathon, I recommend you to scan this QR code. It leads you to documentation page where we explain how to use it with API and MCP. If you have any issues, just stop by the boot. We can help you there.
+
+[05:54] And how do you actually use that? So, the protocol is actually extends the HTTP by adding, like, headers. So it shouldn't interfere with anything else. In the HTTP, you just include this. So you see two blue headers. So for our API, which is like a custom thing, you include a header, hey, I'm using the x four zero two to signal our API that you want to pay in this way.
+
+[06:18] And then the standard way of x four zero two include a payment signature. So you signed it with your private key. You include, like, all the details, and then you present it to our API. We actually have a helper tool for that. Same goes with MCP, but with MCP, it's much easier because you the idea is that you just change the URL and you use our custom client that has actual support built in for the x four zero two, and it just magically works.
+
+[06:46] So that's why we built MCPC, the custom MCP client. So it's MCP client for CLI. So, essentially, if you have any coding agent, like Clothcode, OpenCode, PHY, I don't know what else to do nowadays. You just tell your agent, hey, install me this and use it and connect to the MCP server in x pro two mode. So you just give it the URL like mcp, apify,com,
+
+[07:12] payments equals x 402 that signals the payment mode. And, it will handle everything with the, with the client. So the client actually has a built in wallet. You can create a new wallet or import your existing wallet using the private key. It'll auto sign all the requests, and it will magically work. So, you can use it to MCP. It has also helper functions. So it's also usable if you do, like, raw HTTP calls. You can use the sign function.
+
+[07:42] It will sign the header for you, and you just include it in the request. And this is how you use it. So, essentially, you install it. You do m c p c x four zero two in it or import so that creates, like, a wallet for you, the Ethereum one. Then if you are using MCP, you just, use the connect command and then use the x four zero two switch. And then you can do the cool a tool call. So you can call,
+
+[08:07] Instagram scraper from from the Epify, and you can scrape, like, Instagram post, for example. Same goes with API, but it's more like, let's say, boil boilerplate y. So first, you call the API. It will give you, like, payment required header. It contains all the information, like how much, where to pay, and so on. You can sign it with MCPC,
+
+[08:30] or there's, a helper script you can find online. I can even provide it for you. It outputs and signs, the transaction, like the required header value with the your private key. You send it to our API. We settle everything on chain, and you can use our service without having a Wi Fi account. So that's the goal and the idea that there's no need to have an account.
+
+[08:55] So we are participating in this hackathon as a sponsor. So if you use Apify, here's a list of prizes so you can win some prizes for the first place. There is, like, thousand and thousand bucks in Visa and Shopify credits, $505,100 for second place. And third place, we have $205,100. So the only rule is to use Apify somehow in your project and do x four zero two payment without having Apify account.
+
+[09:27] Again, if you need help, find someone with Apify T shirt or stop by the booth. And there is actually a promo code that you could use in your account to get Shopify credits so you can do the scraping. So I what I recommend is use the standard API keyway for testing. And then final for final demo, we use the x four zero two because it requires, like, real USDC on chain. So we would have to, like, burn through your USDC. It's it, like, gets blocked for, like, an hour, like, dollar. So there's, limited amount amount of calls you could do in an hour.
+
+[09:59] And if needed, we can provide you a few bucks on USDC. And the important point, we are right now supporting only base.orgusdc. So, that's the only limitation. And that's it. There is QR code for the MCPC repository. And, yeah, happy hacking. Thank you very much. I don't know if any Hector got any question for Jakub.
+
+[10:28] Yeah. If not, just find anyone with the Epify t shirt. And we're gonna be moving to a treasurer expert, Nick, with our next
