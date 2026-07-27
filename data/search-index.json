@@ -1453,5 +1453,325 @@
   6,
   2209,
   "on how to improve in Accaton."
+ ],
+ [
+  15,
+  11,
+  "Hello, everyone. Thank you very much for the introduction. My name is Fernando Robasco, and I'm a software engineer at OpenSeppelin. And tod"
+ ],
+ [
+  15,
+  22,
+  "ay, I'm going to present, what is the agentic risk about. But first of all, I wanted to to start by asking how many of you have used Codex, "
+ ],
+ [
+  15,
+  33,
+  "Cloth, Courser this week?"
+ ],
+ [
+  15,
+  35,
+  "Pretty much everyone. And what about MCPs and skills? Still a little bit of people. So as you can see, this is something that we are startin"
+ ],
+ [
+  15,
+  46,
+  "g right now to implement in our process, and the agents are now able to process data. We'll read the the documentation that we should be rea"
+ ],
+ [
+  15,
+  57,
+  "ding, connecting to MCP servers,"
+ ],
+ [
+  15,
+  60,
+  "getting skills, running sub agents. So everything that we could be doing, but it's an agent, and it has access to everything. Signal is the "
+ ],
+ [
+  15,
+  76,
+  "network. So the attack surface is getting much bigger than was before."
+ ],
+ [
+  15,
+  84,
+  "Our entire security model was before based on the smart contract, the code itself, but what does it take for us, the developers? We are able"
+ ],
+ [
+  15,
+  97,
+  " now to be hacked because of our agent context window or MCP server, skills, the docs, and that isn't being, audited right now."
+ ],
+ [
+  15,
+  109,
+  "Like, the attacker is able to break directly now through the developer. And who who is protecting the developer? That's a that's what the re"
+ ],
+ [
+  15,
+  119,
+  "st of the talk is going to be about. And I wanted to introduce a demo that I created, a really easy demo, where we have two pieces two main "
+ ],
+ [
+  15,
+  128,
+  "pieces. The attacker part that contains a documentation"
+ ],
+ [
+  15,
+  132,
+  "server that serves malicious documentation with hidden instructions, and then a listener server that will receive some post request. And the"
+ ],
+ [
+  15,
+  144,
+  " victim is going to just run, its agent, connect to the project, and connect to the documentation server in order to retrieve the the data."
+ ],
+ [
+  15,
+  155,
+  "It is just a fresh funded project because the developer wants to implement a new thing that he that he saw on the on Twitter. And let's get "
+ ],
+ [
+  15,
+  167,
+  "to the demo. So first of all, is you you get to Twitter, you read a tweet, and it says, like, there's a new project right here that will mak"
+ ],
+ [
+  15,
+  179,
+  "e you rich. And you get to your agent. You just go there and give it a prompt. It's a really easy prompt. Just call the docs."
+ ],
+ [
+  15,
+  189,
+  "And we will just have cursor right here to do whatever we should be doing, but it will be your agent. And the very first thing I am asking i"
+ ],
+ [
+  15,
+  199,
+  "t is just to to get the documentation. It is calling the the docs. It will go through the documentation that it is asking the agent to do a "
+ ],
+ [
+  15,
+  209,
+  "few things that doesn't make sense, but it is starting to to do a few things just to"
+ ],
+ [
+  15,
+  215,
+  "get the agent into the wrong direction. And it is just setting and reading the files that we have right there. And then after getting an int"
+ ],
+ [
+  15,
+  225,
+  "roduction of the project, what is it about, it will update the dot m f just because the instructions are asking for it. And then we can see "
+ ],
+ [
+  15,
+  236,
+  "that it did a registration,"
+ ],
+ [
+  15,
+  238,
+  "that it was just sending the environment variables to the server. So the server just received the API key, the private key of the wallet. So"
+ ],
+ [
+  15,
+  249,
+  " you just and drain. And this is in two minutes using agents. So it is hacking an agent with another agent. And the attack flow is just more"
+ ],
+ [
+  15,
+  261,
+  " not more than fetching the docs. The agent fetches the docs, gets the hidden instructions,"
+ ],
+ [
+  15,
+  268,
+  "read the dot m v, and then it creates a post to the attacker. And after that, we can just see that some of the models, the latest models are"
+ ],
+ [
+  15,
+  282,
+  " still failing to just do it without confirming. You can see that 12, 4.7 in low thinking didn't fare for the"
+ ],
+ [
+  15,
+  293,
+  "attack. The the TONET low thinking, but we can see that g p d 5.5 came fell every time. So it doesn't really we we can't just leave the secu"
+ ],
+ [
+  15,
+  306,
+  "rity to the agent neither to the model. So we have to be the ones to be focusing on it. Also, interesting thing is that it doesn't really"
+ ],
+ [
+  15,
+  318,
+  "change much if we give it extra high thinking because we got GPT 5.4 nano to get every time the same attack. And what I've just shown you wa"
+ ],
+ [
+  15,
+  329,
+  "s the simplest of the attacks. Anyone can be doing this in two minutes, as I said. But there are many other variants that we are currently u"
+ ],
+ [
+  15,
+  339,
+  "sing. We are we aren't really focusing on what's behind it. So for example,"
+ ],
+ [
+  15,
+  345,
+  "MCP servers that could be injecting some data or even skills that could be looking, like a real skill or something that you would be needing"
+ ],
+ [
+  15,
+  356,
+  ". But at the end, it will be doing in a background some auto invoking of another agent. So this is something that is happening right now. Ma"
+ ],
+ [
+  15,
+  367,
+  "ybe you've read or heard about the bank that"
+ ],
+ [
+  15,
+  371,
+  "happened, I think, last week. Was working."
+ ],
+ [
+  15,
+  401,
+  "And then on the other hand, there's also happening the same in the tools that we are currently using, like in GitHub. There's, some prompt i"
+ ],
+ [
+  15,
+  411,
+  "njection into the titles, into the issue comments that made some agents to retrieve, or to send to whoever shouldn't be reading the API keys"
+ ],
+ [
+  15,
+  421,
+  " and GitHub tokens. So who do you actually defend against this? There is not a single thing that you may be or must do, but I will give you "
+ ],
+ [
+  15,
+  431,
+  "some recommendations or at least what I like to tell people to do."
+ ],
+ [
+  15,
+  436,
+  "On the habit side, just slow down, read what is the agent going to do, use manual approval because that is going to save you a lot of the ti"
+ ],
+ [
+  15,
+  447,
+  "mes. Also, just stop, breathe, and read again. At the other hand, keys and wallets, please don't use the same, wallet for everything. Just h"
+ ],
+ [
+  15,
+  458,
+  "ave some developer oriented wallet"
+ ],
+ [
+  15,
+  461,
+  "and use some hardware wallet or sign in services, key management processes. There are a lot of services for this, and it will help you a lot"
+ ],
+ [
+  15,
+  472,
+  ". In the environment side, there's also a huge advantage on dockerizing your your agent because it will only have access to whatever you wan"
+ ],
+ [
+  15,
+  482,
+  "t to give it access."
+ ],
+ [
+  15,
+  484,
+  "And finally, some sources, just read the MCP, what is the MCP doing, the skills behind, and don't just trust whatever you read read on the I"
+ ],
+ [
+  15,
+  495,
+  "nternet. Just use the official ones. And every public resource could be some prompt injection, some attack to your services. Common sense is"
+ ],
+ [
+  15,
+  505,
+  " something that we sometimes miss,"
+ ],
+ [
+  15,
+  508,
+  "and it is very important to be applied on everything that we do, not just developing, but also reviewing code, whatever, in everyday everyda"
+ ],
+ [
+  15,
+  520,
+  "y life. So just keep building, but don't rush and take your time and apply common sense. And that's pretty much it. Thank you very much for "
+ ],
+ [
+  15,
+  533,
+  "your attention. I just shared the GitHub repo if you want to reproduce the tag."
+ ],
+ [
+  15,
+  540,
+  "Just know that I use, Cursor for the attack, but maybe I would say that, Codex and Claude have more guardrails for the safety of the prompts"
+ ],
+ [
+  15,
+  553,
+  " not to fail for the attack because it was really easy. Thank you very much. Thank you very much. Does anyone has a question for yeah."
+ ],
+ [
+  15,
+  566,
+  "Yeah. I don't know if you've come across this idea of this, LLM as a judge idea where you have, an agent that sits right at the root, you kn"
+ ],
+ [
+  15,
+  575,
+  "ow, looking after you as a guardian of some sort. You know, you might even run it with this, you know, local AI thing. So what are your thou"
+ ],
+ [
+  15,
+  583,
+  "ghts on how useful these are in mitigating? It should take off some of the load of the 100100%."
+ ],
+ [
+  15,
+  589,
+  "I think that if we just add a new step to the process, it will easily find, at least on my example. But I would say that we still need to re"
+ ],
+ [
+  15,
+  599,
+  "ad every single thing that the agent might be doing or at least giving the security around. Like, for example, dockerizing your agent, if yo"
+ ],
+ [
+  15,
+  609,
+  "u give it, like, accept everything,"
+ ],
+ [
+  15,
+  612,
+  "just have it dockerized, have it secure in an environment that won't be doing any other thing that shouldn't be doing. Does it does it answe"
+ ],
+ [
+  15,
+  627,
+  "r your question? Yes. We got time for one more question if anyone is interested. If not, then thank you very much. Thank you very much."
  ]
 ]
