@@ -1,0 +1,101 @@
+# ENHANCE UXR WITH AI — diverting from fear to empowerment
+
+Date: 
+Source video: ENHANCE UXR WITH AI — diverting from fear to empowerment
+Drive: https://drive.google.com/file/d/1cmPNmO_OQKebWWDRke9ggalv35wZwEHp/view
+Duration: 00:19:37
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:12] Hello, everyone. Thank you for showing up, first of all. I would like to talk about, enhancing user research with AI today. But before I dig into this witty subject, let me introduce myself. I am, Sasha Luca. I'm a user researcher who believes that
+
+[00:37] building a product shouldn't mean driving in the dark without headlights. And I've spent the last seven years, running deep product discovery for teams like Mezzo, Threshold, and Consensus. And that's because I prefer to actually talk to users much rather than guessing what they think. And, my ultimate
+
+[01:00] villain origin story is let's just test it in production. So first of all, I would like us to set the ground rules for today. The talk is not about how AI is going to replace human empathy or take our jobs.
+
+[01:24] It is not a list of 50 random, prompt hacks. This talk is trying to help you answers questions like, where should I use AI in my workflow? What AI tools should I use? When is it safe or low risk to use AI to automate a task? Where does human judgment matter the most? And where AI cannot work at all for me as a researcher?
+
+[01:52] So this talk will hopefully help us in the data janitor and data scrubbing in, era of the UX research. So first of all, I think we need to reset our mindsets. We have to stop looking at AI as the thief
+
+[02:16] trying to steal our job and start looking at it as a Swiss army knife we have in our toolboxes. A master chef doesn't get replaced by a food processor. They just stop wasting time chopping onions so they can focus on the flavor. So AI prepares the ingredients, but we cook.
+
+[02:43] So I think we should talk about this much rather uncomfortable topic. There is a user research value crisis right now, and we are currently trapped by a manual labor tax that turns researchers into data janitors. And, unfortunately, this is creating
+
+[03:05] the bottleneck perception where stakeholders view user research as slow, expensive, luxurious thing much rather than a strategic advantage. So, unfortunately, this has led to a genuine profession crisis, especially in high velocity worlds like Web three where the pressure is to ship now.
+
+[03:31] So, unfortunately, it makes our traditional rigor more of a liability instead of an asset. And before I will show you this framework, I would like to have a quick show of hands of how many of you have used ChadGPT or Claude or Gemini or any other LLM model in
+
+[03:59] this week or last week's work? Sweet. Keep your hands up because I want to ask you, out of all of you who have raised your hands, how many of you fully trusted the output that the model gave you, and how many of you thought about the risk behind what it
+
+[04:23] gave you? It's the same. How many of you have fact checked the output? Wow. You guys are you have just destroyed my entire thesis. No. You're very good. I was expecting this as a at an Ethereum conference. So even more, I think you will will
+
+[04:48] love even more this framework because it will add extra details. So this framework will help you evaluate how to use AI in your day to day processes as a researcher or maybe as a designer as well. It works. We have here a two by two matrix where we're going to evaluate risk, on the y axis, and
+
+[05:12] we will always ask ourselves this question. What is the cost of a mistake? And then on the x axis, this is the complexity one. We are going to ask how hard is the pattern recognition? So this diagram is going to help us map which tasks can be fully automated by AI,
+
+[05:34] which ones need a human check, which ones can be done by human only for now for now. And it's important to always keep in mind when we look at the risk axis to ask ourselves, if the AI hallucinates, how big is it the impact on the study? So by mapping our tasks, here we are going to empower ourselves to know exactly where to let AR run freely
+
+[06:00] and when to keep it strictly human. So I'm going to start with the first quadrant, which is the bottom left part. And this is, low complexity, safe to automate. These are the low stake type of menial and repetitive tasks that actually and unfortunately eat a lot of the researchers'
+
+[06:23] time. This is where AI can run without supervision. So you can let it do interview transcripts, auto schedule study participants, scrub BII, post interview, follow-up emails, raw survey translations, formatting raw data, that's no problem. You you don't have to, keep it on a leash. The second one is,
+
+[06:48] AI assists, human refines. And this is the bottom right quadrant, and this is the realm of collaboration. So think about it like this. The AI helps me start fast, but I provide the meaning and the context. Here, the AI just helps me navigate the messy first draft,
+
+[07:12] the writer's block, the researcher's block. So we can let it do, like, real time tagging and clustering. Dovetail is a really good product for that. Cross study, referencing, continuous support ticket monitoring. But also we can use it, like, for for things like, problem framing and how might we questions, for example.
+
+[07:36] So the AI acts like my junior. This is how I like to call it, my junior. And it does the first pass, proposes themes, but I bring the business context and the product needs. So the AI proposes, but I decide what to validate and what to discard. So we're we're bringing the critical thinking here.
+
+[08:00] And on the third quadrant, which is the upper left corner, this is where the AI drafts and the human verifies. This is where the things get with high stakes. This is the high risk quadrant. So in this quad, we should always keep asking ourselves,
+
+[08:24] how big will be the impact if the AI makes a mistake? And this is why it's important to remember that AI is the a engine, but we are the guardrails. We are the safety check. And we should be always mindful that AI is extremely prone to writing leading questions, and it's extremely biased.
+
+[08:47] And unfortunately, AI is a people pleaser, and it will never ever tell you that you're wrong. So it has been trained mostly on junk surveys. And just like they say it's out there, garbage in, garbage out. And also, it's it's big time affected by the happy path bias. So it's extremely important to have the critical thinking and look at what it provides
+
+[09:20] us. And then even though it gives us the speed, we will be the ones who are the guardians. We are the safety net. So it's very good for drafting screeners and discussion guides, but you cannot just blurt them out afterwards. It's important for you to look through them even for surveys, even for,
+
+[09:45] thematic mapping or raw notes. It's extremely important to look over what you got and not just sent it without any checking. And then the last quadrant, this is a human only for now. Again, I'm only saying for now because times are changing, But for now,
+
+[10:12] this is the part where it's human only. And these are the trust sensitive, strategic tasks that need the human and the AI cannot comprehend. So AI cannot navigate stakeholder politics, of course, or it cannot interpret conflicting data or
+
+[10:35] onboard stakeholders or present live findings and facilitate q and a with leadership. And, yes, you like, there may be out there new products like, outset AI or Hagen who are letting us run a standard standard survey or generate video briefs.
+
+[10:59] But still, you cannot, just let the AI do this type of things. And, it cannot do the facilitation of executive, alignment. It will be very hard for AI to understand emotion or nuance in during an interview and, inside of the looking at the nodes nodes,
+
+[11:25] it will be very hard for AI to evaluate ethical implications, and, definitely, it won't be able to decide killing a feature based on mixed data. So even though AI can do a lot of things, AI cannot read the room with the c suite, and,
+
+[11:49] they will never understand why an exec will push back on a finding. So we learned about the framework. We learned about how can we manage the tasks and see where is high complexity, which ones are low risk, how how to
+
+[12:13] determine what to delegate and automate to AI and where we need to always supervise and keep an eye out there. But how do we improve this process? So, unfortunately, even if we like it or not, we are lifelong learners. We will need to do that. Even if we are developers,
+
+[12:37] researchers, designers, we need to always learn, always be relevant. And empowerment isn't a one time setup. It's a cycle. So you just you don't just install the AI and then you go take a nap. You will have to guide it In and in order to future proof your career,
+
+[13:00] you need to become an AI experimenter. And when a new tool drops, run it through this loop. Explore it, test it, and then evaluate it with these four questions. At least this one's work for me. I'm very happy to learn from you if you have any others. But for me, it's super important to learn. Does this actually save me time?
+
+[13:26] Does it reduce friction? Does it improve quality? And what still needs the human judgment? And if a tool passes and goes with flying colors, after I'm asking all of this, then I will adopt it and embed it in my workflow. If it fails, I will leave it behind
+
+[13:51] and tab it. But most of the time, I will circle back because I did this with Otter dot ai the first time I used it. Unfortunately, it was quite bad, like really bad for transcripts, especially in web three. It didn't understand Ethereum, Bitcoin. This is so bad I had to manually, all of the time, change the notions. And now it's working brilliantly.
+
+[14:16] And then also with Dovetail, it was just adding extra manual labor. Dovetail is a user research repository, if you guys don't know, and it's supposed to be lifting a lot of the work from the researchers' shoulders. But, unfortunately, it was just adding extra labor. So at the time, I just ditched it, but now it has introduced an
+
+[14:45] AI agent that does really good labeling and a lot of other things. And, finally, if you're looking at this and thinking, we need this, but we don't have the time to build it, well, this is my shameless plug. That's exactly what I do. So I'm currently taking on new clients, and I'm open to full time roles. So scan this QR.
+
+[15:12] Let's connect, and let's get your team out of the bottleneck. Thank you. Thank you for the speech. Does anyone have any questions? Well, thanks for the presentation. Sure. Have you considered the that process which you which you described here or, let's say, the segmentation? Yeah.
+
+[15:38] How that would look like when actually AI is the member of the c suite? Oh, that's interesting. And I know that, there are right now I think it's called Paperclip. It's a project that has AI agents that just mirror a company. So they can be the c suite, they can be the product managers, they can be the designers, and they talk to each other. I did not consider that, though.
+
+[16:06] I think it will be interesting. It depends who trained it and what data. So I think that person who owns the model and own fed the data into the AI will have a lot of power if the AI becomes part of the c suite. But very good question. I will this is food for thought.
+
+[16:31] Any other questions? Nope. Okay. One more. Thank you. I have a question more little bit more specific on security, but, how many times you meet with, data poisoning while learning with LLM or working with RAC, as you mentioned, because this issue,
+
+[16:55] our data poisoning is very complex now, and I face it many, many times working with people. I'm curious how you work with it in your researching. With with data poisoning? Yep. Okay. So first of all, I am feeding all my data harvested by me to, different LLMs or they're just like harvested directly. I use the API key and feed it into Claude.
+
+[17:21] I'm not sure if the data poisoning can appear here because it's the data that I'm feeding it. So I'm not sure if I'm answering your question, but in my opinion, I don't think it gets poisoned, hopefully. Yeah. Okay. I understand. Because I think if you use, open
+
+[17:45] Maybe I can use open source models, and then definitely, I I do not have a lot in this talk about how can you add privacy to AI. But if you're interested in that, I recommend you to watch another talk, from Daniel Luca, who is taking everything point by point and how to to help you do that. But if you're like very
+
+[18:12] privacy driven, I recommend you to use open source models and run them locally. And I think if you do this, you are basically digging a moat around your data. So, yeah, that's that's an extremely good question, and I think it would be lovely to see something that does this
+
+[18:36] fully decentralized, then it's just, like, competing against everything that is centralized. I'd love to see that. Yeah. Okay. Thank you. Because I was thinking if you use models, can, like, run, like Mhmm. JGPT, cloud, Gemini, they have proved prompt injection Mhmm. Methods, right, and data, data poisoning. Mhmm. So I was curious if you use them, yeah, like the IP, how you handle this data poisoning if your dataset are poisoned
+
+[19:03] from beginning of learning Yeah. And how it affect your research. But if you use local models with your rack Mhmm. Your data you found yourself, it's much easier and safer for you. Yeah. Totally. Thank you very much. Yeah. Thank you. Sure. Any other questions? No? Okay. In that case, can we get another round of applause for Zacia? Thank you, guys. Thank you so much.

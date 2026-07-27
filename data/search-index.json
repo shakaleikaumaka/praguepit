@@ -2115,6 +2115,581 @@
   "n amazing. Thank you so much. I wish you to have a great day, great rest of the conference, and enjoy. Thank you."
  ],
  [
+  3,
+  12,
+  "Hello, everyone. Thank you for showing up, first of all. I would like to talk about, enhancing user research with AI today. But before I dig"
+ ],
+ [
+  3,
+  26,
+  " into this witty subject, let me introduce myself. I am, Sasha Luca. I'm a user researcher who believes that"
+ ],
+ [
+  3,
+  37,
+  "building a product shouldn't mean driving in the dark without headlights. And I've spent the last seven years, running deep product discover"
+ ],
+ [
+  3,
+  48,
+  "y for teams like Mezzo, Threshold, and Consensus. And that's because I prefer to actually talk to users much rather than guessing what they "
+ ],
+ [
+  3,
+  58,
+  "think. And, my ultimate"
+ ],
+ [
+  3,
+  60,
+  "villain origin story is let's just test it in production. So first of all, I would like us to set the ground rules for today. The talk is no"
+ ],
+ [
+  3,
+  76,
+  "t about how AI is going to replace human empathy or take our jobs."
+ ],
+ [
+  3,
+  84,
+  "It is not a list of 50 random, prompt hacks. This talk is trying to help you answers questions like, where should I use AI in my workflow? W"
+ ],
+ [
+  3,
+  96,
+  "hat AI tools should I use? When is it safe or low risk to use AI to automate a task? Where does human judgment matter the most? And where AI"
+ ],
+ [
+  3,
+  108,
+  " cannot work at all for me as a researcher?"
+ ],
+ [
+  3,
+  112,
+  "So this talk will hopefully help us in the data janitor and data scrubbing in, era of the UX research. So first of all, I think we need to r"
+ ],
+ [
+  3,
+  129,
+  "eset our mindsets. We have to stop looking at AI as the thief"
+ ],
+ [
+  3,
+  136,
+  "trying to steal our job and start looking at it as a Swiss army knife we have in our toolboxes. A master chef doesn't get replaced by a food"
+ ],
+ [
+  3,
+  150,
+  " processor. They just stop wasting time chopping onions so they can focus on the flavor. So AI prepares the ingredients, but we cook."
+ ],
+ [
+  3,
+  163,
+  "So I think we should talk about this much rather uncomfortable topic. There is a user research value crisis right now, and we are currently "
+ ],
+ [
+  3,
+  175,
+  "trapped by a manual labor tax that turns researchers into data janitors. And, unfortunately, this is creating"
+ ],
+ [
+  3,
+  185,
+  "the bottleneck perception where stakeholders view user research as slow, expensive, luxurious thing much rather than a strategic advantage. "
+ ],
+ [
+  3,
+  198,
+  "So, unfortunately, this has led to a genuine profession crisis, especially in high velocity worlds like Web three where the pressure is to s"
+ ],
+ [
+  3,
+  210,
+  "hip now."
+ ],
+ [
+  3,
+  211,
+  "So, unfortunately, it makes our traditional rigor more of a liability instead of an asset. And before I will show you this framework, I woul"
+ ],
+ [
+  3,
+  226,
+  "d like to have a quick show of hands of how many of you have used ChadGPT or Claude or Gemini or any other LLM model in"
+ ],
+ [
+  3,
+  239,
+  "this week or last week's work? Sweet. Keep your hands up because I want to ask you, out of all of you who have raised your hands, how many o"
+ ],
+ [
+  3,
+  252,
+  "f you fully trusted the output that the model gave you, and how many of you thought about the risk behind what it"
+ ],
+ [
+  3,
+  263,
+  "gave you? It's the same. How many of you have fact checked the output? Wow. You guys are you have just destroyed my entire thesis. No. You'r"
+ ],
+ [
+  3,
+  278,
+  "e very good. I was expecting this as a at an Ethereum conference. So even more, I think you will will"
+ ],
+ [
+  3,
+  288,
+  "love even more this framework because it will add extra details. So this framework will help you evaluate how to use AI in your day to day p"
+ ],
+ [
+  3,
+  299,
+  "rocesses as a researcher or maybe as a designer as well. It works. We have here a two by two matrix where we're going to evaluate risk, on t"
+ ],
+ [
+  3,
+  311,
+  "he y axis, and"
+ ],
+ [
+  3,
+  312,
+  "we will always ask ourselves this question. What is the cost of a mistake? And then on the x axis, this is the complexity one. We are going "
+ ],
+ [
+  3,
+  324,
+  "to ask how hard is the pattern recognition? So this diagram is going to help us map which tasks can be fully automated by AI,"
+ ],
+ [
+  3,
+  334,
+  "which ones need a human check, which ones can be done by human only for now for now. And it's important to always keep in mind when we look "
+ ],
+ [
+  3,
+  345,
+  "at the risk axis to ask ourselves, if the AI hallucinates, how big is it the impact on the study? So by mapping our tasks, here we are going"
+ ],
+ [
+  3,
+  355,
+  " to empower ourselves to know exactly where to let AR run freely"
+ ],
+ [
+  3,
+  360,
+  "and when to keep it strictly human. So I'm going to start with the first quadrant, which is the bottom left part. And this is, low complexit"
+ ],
+ [
+  3,
+  371,
+  "y, safe to automate. These are the low stake type of menial and repetitive tasks that actually and unfortunately eat a lot of the researcher"
+ ],
+ [
+  3,
+  383,
+  "s'"
+ ],
+ [
+  3,
+  383,
+  "time. This is where AI can run without supervision. So you can let it do interview transcripts, auto schedule study participants, scrub BII,"
+ ],
+ [
+  3,
+  395,
+  " post interview, follow-up emails, raw survey translations, formatting raw data, that's no problem. You you don't have to, keep it on a leas"
+ ],
+ [
+  3,
+  406,
+  "h. The second one is,"
+ ],
+ [
+  3,
+  408,
+  "AI assists, human refines. And this is the bottom right quadrant, and this is the realm of collaboration. So think about it like this. The A"
+ ],
+ [
+  3,
+  421,
+  "I helps me start fast, but I provide the meaning and the context. Here, the AI just helps me navigate the messy first draft,"
+ ],
+ [
+  3,
+  432,
+  "the writer's block, the researcher's block. So we can let it do, like, real time tagging and clustering. Dovetail is a really good product f"
+ ],
+ [
+  3,
+  442,
+  "or that. Cross study, referencing, continuous support ticket monitoring. But also we can use it, like, for for things like, problem framing "
+ ],
+ [
+  3,
+  453,
+  "and how might we questions, for example."
+ ],
+ [
+  3,
+  456,
+  "So the AI acts like my junior. This is how I like to call it, my junior. And it does the first pass, proposes themes, but I bring the busine"
+ ],
+ [
+  3,
+  467,
+  "ss context and the product needs. So the AI proposes, but I decide what to validate and what to discard. So we're we're bringing the critica"
+ ],
+ [
+  3,
+  479,
+  "l thinking here."
+ ],
+ [
+  3,
+  480,
+  "And on the third quadrant, which is the upper left corner, this is where the AI drafts and the human verifies. This is where the things get "
+ ],
+ [
+  3,
+  494,
+  "with high stakes. This is the high risk quadrant. So in this quad, we should always keep asking ourselves,"
+ ],
+ [
+  3,
+  504,
+  "how big will be the impact if the AI makes a mistake? And this is why it's important to remember that AI is the a engine, but we are the gua"
+ ],
+ [
+  3,
+  515,
+  "rdrails. We are the safety check. And we should be always mindful that AI is extremely prone to writing leading questions, and it's extremel"
+ ],
+ [
+  3,
+  526,
+  "y biased."
+ ],
+ [
+  3,
+  527,
+  "And unfortunately, AI is a people pleaser, and it will never ever tell you that you're wrong. So it has been trained mostly on junk surveys."
+ ],
+ [
+  3,
+  540,
+  " And just like they say it's out there, garbage in, garbage out. And also, it's it's big time affected by the happy path bias. So it's extre"
+ ],
+ [
+  3,
+  553,
+  "mely important to have the critical thinking and look at what it provides"
+ ],
+ [
+  3,
+  560,
+  "us. And then even though it gives us the speed, we will be the ones who are the guardians. We are the safety net. So it's very good for draf"
+ ],
+ [
+  3,
+  572,
+  "ting screeners and discussion guides, but you cannot just blurt them out afterwards. It's important for you to look through them even for su"
+ ],
+ [
+  3,
+  584,
+  "rveys, even for,"
+ ],
+ [
+  3,
+  585,
+  "thematic mapping or raw notes. It's extremely important to look over what you got and not just sent it without any checking. And then the la"
+ ],
+ [
+  3,
+  600,
+  "st quadrant, this is a human only for now. Again, I'm only saying for now because times are changing, But for now,"
+ ],
+ [
+  3,
+  612,
+  "this is the part where it's human only. And these are the trust sensitive, strategic tasks that need the human and the AI cannot comprehend."
+ ],
+ [
+  3,
+  626,
+  " So AI cannot navigate stakeholder politics, of course, or it cannot interpret conflicting data or"
+ ],
+ [
+  3,
+  635,
+  "onboard stakeholders or present live findings and facilitate q and a with leadership. And, yes, you like, there may be out there new product"
+ ],
+ [
+  3,
+  649,
+  "s like, outset AI or Hagen who are letting us run a standard standard survey or generate video briefs."
+ ],
+ [
+  3,
+  659,
+  "But still, you cannot, just let the AI do this type of things. And, it cannot do the facilitation of executive, alignment. It will be very h"
+ ],
+ [
+  3,
+  673,
+  "ard for AI to understand emotion or nuance in during an interview and, inside of the looking at the nodes nodes,"
+ ],
+ [
+  3,
+  685,
+  "it will be very hard for AI to evaluate ethical implications, and, definitely, it won't be able to decide killing a feature based on mixed d"
+ ],
+ [
+  3,
+  699,
+  "ata. So even though AI can do a lot of things, AI cannot read the room with the c suite, and,"
+ ],
+ [
+  3,
+  709,
+  "they will never understand why an exec will push back on a finding. So we learned about the framework. We learned about how can we manage th"
+ ],
+ [
+  3,
+  724,
+  "e tasks and see where is high complexity, which ones are low risk, how how to"
+ ],
+ [
+  3,
+  733,
+  "determine what to delegate and automate to AI and where we need to always supervise and keep an eye out there. But how do we improve this pr"
+ ],
+ [
+  3,
+  745,
+  "ocess? So, unfortunately, even if we like it or not, we are lifelong learners. We will need to do that. Even if we are developers,"
+ ],
+ [
+  3,
+  757,
+  "researchers, designers, we need to always learn, always be relevant. And empowerment isn't a one time setup. It's a cycle. So you just you d"
+ ],
+ [
+  3,
+  769,
+  "on't just install the AI and then you go take a nap. You will have to guide it In and in order to future proof your career,"
+ ],
+ [
+  3,
+  780,
+  "you need to become an AI experimenter. And when a new tool drops, run it through this loop. Explore it, test it, and then evaluate it with t"
+ ],
+ [
+  3,
+  791,
+  "hese four questions. At least this one's work for me. I'm very happy to learn from you if you have any others. But for me, it's super import"
+ ],
+ [
+  3,
+  802,
+  "ant to learn. Does this actually save me time?"
+ ],
+ [
+  3,
+  806,
+  "Does it reduce friction? Does it improve quality? And what still needs the human judgment? And if a tool passes and goes with flying colors,"
+ ],
+ [
+  3,
+  820,
+  " after I'm asking all of this, then I will adopt it and embed it in my workflow. If it fails, I will leave it behind"
+ ],
+ [
+  3,
+  831,
+  "and tab it. But most of the time, I will circle back because I did this with Otter dot ai the first time I used it. Unfortunately, it was qu"
+ ],
+ [
+  3,
+  841,
+  "ite bad, like really bad for transcripts, especially in web three. It didn't understand Ethereum, Bitcoin. This is so bad I had to manually,"
+ ],
+ [
+  3,
+  851,
+  " all of the time, change the notions. And now it's working brilliantly."
+ ],
+ [
+  3,
+  856,
+  "And then also with Dovetail, it was just adding extra manual labor. Dovetail is a user research repository, if you guys don't know, and it's"
+ ],
+ [
+  3,
+  868,
+  " supposed to be lifting a lot of the work from the researchers' shoulders. But, unfortunately, it was just adding extra labor. So at the tim"
+ ],
+ [
+  3,
+  881,
+  "e, I just ditched it, but now it has introduced an"
+ ],
+ [
+  3,
+  885,
+  "AI agent that does really good labeling and a lot of other things. And, finally, if you're looking at this and thinking, we need this, but w"
+ ],
+ [
+  3,
+  897,
+  "e don't have the time to build it, well, this is my shameless plug. That's exactly what I do. So I'm currently taking on new clients, and I'"
+ ],
+ [
+  3,
+  908,
+  "m open to full time roles. So scan this QR."
+ ],
+ [
+  3,
+  912,
+  "Let's connect, and let's get your team out of the bottleneck. Thank you. Thank you for the speech. Does anyone have any questions? Well, tha"
+ ],
+ [
+  3,
+  925,
+  "nks for the presentation. Sure. Have you considered the that process which you which you described here or, let's say, the segmentation? Yea"
+ ],
+ [
+  3,
+  938,
+  "h."
+ ],
+ [
+  3,
+  938,
+  "How that would look like when actually AI is the member of the c suite? Oh, that's interesting. And I know that, there are right now I think"
+ ],
+ [
+  3,
+  948,
+  " it's called Paperclip. It's a project that has AI agents that just mirror a company. So they can be the c suite, they can be the product ma"
+ ],
+ [
+  3,
+  959,
+  "nagers, they can be the designers, and they talk to each other. I did not consider that, though."
+ ],
+ [
+  3,
+  966,
+  "I think it will be interesting. It depends who trained it and what data. So I think that person who owns the model and own fed the data into"
+ ],
+ [
+  3,
+  979,
+  " the AI will have a lot of power if the AI becomes part of the c suite. But very good question. I will this is food for thought."
+ ],
+ [
+  3,
+  991,
+  "Any other questions? Nope. Okay. One more. Thank you. I have a question more little bit more specific on security, but, how many times you m"
+ ],
+ [
+  3,
+  1005,
+  "eet with, data poisoning while learning with LLM or working with RAC, as you mentioned, because this issue,"
+ ],
+ [
+  3,
+  1015,
+  "our data poisoning is very complex now, and I face it many, many times working with people. I'm curious how you work with it in your researc"
+ ],
+ [
+  3,
+  1026,
+  "hing. With with data poisoning? Yep. Okay. So first of all, I am feeding all my data harvested by me to, different LLMs or they're just like"
+ ],
+ [
+  3,
+  1036,
+  " harvested directly. I use the API key and feed it into Claude."
+ ],
+ [
+  3,
+  1041,
+  "I'm not sure if the data poisoning can appear here because it's the data that I'm feeding it. So I'm not sure if I'm answering your question"
+ ],
+ [
+  3,
+  1054,
+  ", but in my opinion, I don't think it gets poisoned, hopefully. Yeah. Okay. I understand. Because I think if you use, open"
+ ],
+ [
+  3,
+  1065,
+  "Maybe I can use open source models, and then definitely, I I do not have a lot in this talk about how can you add privacy to AI. But if you'"
+ ],
+ [
+  3,
+  1077,
+  "re interested in that, I recommend you to watch another talk, from Daniel Luca, who is taking everything point by point and how to to help y"
+ ],
+ [
+  3,
+  1089,
+  "ou do that. But if you're like very"
+ ],
+ [
+  3,
+  1092,
+  "privacy driven, I recommend you to use open source models and run them locally. And I think if you do this, you are basically digging a moat"
+ ],
+ [
+  3,
+  1104,
+  " around your data. So, yeah, that's that's an extremely good question, and I think it would be lovely to see something that does this"
+ ],
+ [
+  3,
+  1116,
+  "fully decentralized, then it's just, like, competing against everything that is centralized. I'd love to see that. Yeah. Okay. Thank you. Be"
+ ],
+ [
+  3,
+  1125,
+  "cause I was thinking if you use models, can, like, run, like Mhmm. JGPT, cloud, Gemini, they have proved prompt injection Mhmm. Methods, rig"
+ ],
+ [
+  3,
+  1134,
+  "ht, and data, data poisoning. Mhmm. So I was curious if you use them, yeah, like the IP, how you handle this data poisoning if your dataset "
+ ],
+ [
+  3,
+  1142,
+  "are poisoned"
+ ],
+ [
+  3,
+  1143,
+  "from beginning of learning Yeah. And how it affect your research. But if you use local models with your rack Mhmm. Your data you found yours"
+ ],
+ [
+  3,
+  1154,
+  "elf, it's much easier and safer for you. Yeah. Totally. Thank you very much. Yeah. Thank you. Sure. Any other questions? No? Okay. In that c"
+ ],
+ [
+  3,
+  1166,
+  "ase, can we get another round of applause for Zacia? Thank you, guys. Thank you so much."
+ ],
+ [
   4,
   11,
   "Thank you for coming today. I'm Nick. I'm from the Trezor expert team at Trezor here in Prague. We are one of the leading manufacturers of h"
