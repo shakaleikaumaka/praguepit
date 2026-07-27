@@ -379,13 +379,14 @@
     "id": "1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD.mp3"
    }
   ],
-  "transcript": null,
-  "duration": null,
+  "transcript": "1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD",
+  "duration": "00:33:18",
   "quality": "ok",
-  "transponder": false,
+  "transponder": true,
   "featured": true
  },
  {
