@@ -1,0 +1,147 @@
+# Risk Ratings — The Missing Piece for DeFi & Onchain Finance Mass Adoption
+
+Date: 
+Source video: Risk Ratings — The Missing Piece for DeFi & Onchain Finance Mass Adoption
+Drive: https://drive.google.com/file/d/1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi/view
+Duration: 00:29:33
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:12] Nice to see you, everybody. I am Mike. As, you know, I was introduced, thank you so much for having me. I am strategic adviser at Reston, head of ATOM and Credora. Today, we're gonna talk about a number of things. Mostly, it's going to be risk, but I want to give you a little bit of an overview of what we've been up to. In the previous talk, we were discussing the roles of oracles briefly
+
+[00:39] and why Oracles are important now. I do think that we should double click on that a little bit. REST ON is the modern blockchain Oracles. We now serve over a 110 chains, over 1,300 assets. It's a big, big player in the Oracle space
+
+[01:03] across all the protocols that you can imagine. Right? So the Camino, Canton, Spark, Morpho, so on and so forth. We are the official Oracle for Securitize, and we've been looking into institutional adoption much more as the whole industry has been looking into, over the past, let's say, couple of years.
+
+[01:27] In summary, what we want to do is we want to be the best Oracle for institution's unified protocols and especially helping institutions tokenize different products. When I started in the Oracle business, it was with Ching and Kraft in about 2022. I've been in just since 2017.
+
+[01:51] The role of the space and the role of an Oracle at the time was very, very different from what it is now. At the time, it was just good enough to just provide reliable, secure price data on different chains and basically call it a day. But now an Oracle is required to do many more things. And we do believe that in order to support the DeFi ecosystem as an Oracle, we should provide many more services.
+
+[02:19] We created some time ago what we call the Redstone Stack, and the Redstone Stack is a is a series of product and services that we have, and in a specific case, a company that we acquired, Credora, to support all of these wave of Trudfi going into DeFi and RWA being tokenized.
+
+[02:43] So this goes from the usual Oracle feeds that you all know and love on protocols like Eoiner, Camino, Morpho, and so on. But, also, we now support ultrafast feeds with, our new product that is specifically for, Hip Tree and and Hyperliquid markets. We do, support NAVA proof of reserve for, for example, RWA
+
+[03:08] and for stablecoin vaults. We have, risk intelligence through Credora, which is what we're gonna talk about today. But also, as of very natively, launched a new product that is called Rest and Settle that is all about liquidation on RWA positions and instead redemption of RWA, but also liquidations with ATOM and recapturing
+
+[03:32] of leaked MEV auto protocols. So as you can see, there's a lot of stuff, right, that an Oracle needs to provide nowadays. And what we want to do is to be the best in class and provide all of this in a single go without people, and especially these institutions, having to go procure five, six different vendors and going through five, six, six, or different acquisition process and regulatory compliance with these people.
+
+[03:55] And, also, from a management perspective, this is actually very difficult when there is an incident that there's a lot of people to put together when it comes to resolving the problem. We had a record of zero mispricing event, zero downtime across the history of production resin, and we're bringing this to all of these new products. Some time ago, this was about September 2025 as you can see,
+
+[04:22] our friend, Vitaly Puterin, tweeted that no risk DeFi can be for Ethereum what search was for Google. Right? And this tweet came in a very, very timely manner because not only institutions were looking more and more to tokenize on Ethereum, and in institutions, risk is just as important, if not more important than APY and then yield and returns.
+
+[04:51] But also, in 2025, Reston acquired Credora Network. This was exactly the same month we acquired Credora in September 2025. And Credora was and is the leading risk rating protocol across the Web3 space.
+
+[05:14] Think about traditional financing. Like, if you invest in an ETF, you usually see a number or a letter rating that is attached to these ETF. Usually, these letters goes from AAA all the way to maybe CCC or sometimes DDD. And there's a lot of parameters that go into this risk assessment in in order to understand how likely
+
+[05:40] an investor is to lose money on the position. Credora does the same thing, but in a completely revolutionary way that is specifically designed for Web3. So in principle, we assess Web3 assets, Web3 markets, and vaults, and eventually also protocols
+
+[06:04] and eventually in the future more. But we do it in a very simple way. We have ratings from a plus to d on half a rating increment, meaning you have a plus, a, a minus, b plus, and so on and so forth, down to d. And we measure a bunch of different metrics. There's, like, hundreds of factors that go into this, but they all come down
+
+[06:30] to one single number, which we call the probability of significant loss, which is effectively what the likelihood of bad debt exceeding 1% of the principal is over the span of a year. And this is measured in percentage as well. And based on this percentage, you get a net rating. This is a very easy, very consumable
+
+[06:53] way to understand how risk is unfinished. There is attached to the Credora rating a big 20 something page PDF report that goes in detail into all of these factors, into all of these metrics that we do measure. But for all intents and purposes, retail investors like myself
+
+[07:16] that are not as experienced with ratings. They can just see the letter. And more experienced institutional investors, they instead are used to this due diligence process, they can read the deal report. So we try to gather in a transparent, impartial, and easy to interpret way to all the broad spectrum of DeFi users from the
+
+[07:40] completely financial illiterate like myself all the way to people that do this for a living, and they believe and breathe rating every day. The way that the rating work is interesting. Like, are you guys familiar with the concept of a vault in a lending protocol? Right? Fantastic.
+
+[08:03] A vault, the way that I always like to explain it, is just a strategy, and it's a connection of different markets and a connection of different assets that effectively produces a certain level of return. We rated 90% of Morpho by TVL or Morpho Vault. We rated a 100% of Spark saving vaults. But in order to rate these vaults, you need to be able to rate the market and the asset that compose the vault. So the Credora rating, I will encourage you to see it as a little bit of a Russian doll type of thing. So each asset
+
+[08:39] in the vault and in the market is rated, each market is rated, and then that comes into one single Vault rating that you can see. This is particularly good because you can catch a lot of these outlier ratings when it comes to the vault strategy itself even if they are like, the positions within the vault are somewhat masked or or skewed in different ways.
+
+[09:07] So for example, if you have a very specifically risky asset within a vault, but it's in a small percentage, the vault can still be deemed more secure if you just do this algorithmically and just rate at the vault without looking at the asset. But what we do is actually we weigh the asset based on a a number of factors, not only how much is utilized and the risk to provide the risk of the vault itself. So it's a much more dynamic. It's a much more curated
+
+[09:38] rating. And the other very, very important thing that makes it completely different from the traditional finance rating is that it's dynamic and always updated. Reson, as you guys probably all know, we are an infrastructure company. What we do best is create infra
+
+[10:01] on blockchain, and Credora is no different. Credora is an infrastructure protocol. We set up infrastructure to monitor these hundreds of parameters. And whenever there is a meaningful change in one of these or more of these that can generate a change in the rating, we actually know it immediately, and the rating gets updated within twenty four hours as opposed to the three to six months that it takes in traditional finance to update the rating.
+
+[10:33] As I was saying, this maps out so this is a very small image on a shift. We can zoom it in. We cannot. So, hopefully, you can see it. But the way that we do the rating maps out pretty much one to one to TRUDFI rating or one to many, I should say. You have, you know, the a plus rating, which has got a probability of significant loss, minimum and maximum, and maps to certain TRUDFI rating. So even people that are quite familiar
+
+[11:03] with how the TRUDFI rating system work, they will be able to understand it. Even if we simplify it a bit so that it's more legible for DeFi people and people that are not used to see rating reports, this really helps when it comes to, the more, you know, institutional side of the rating consumers. And as I was mentioning, we are live, and we launched this in November after the acquisition. We relaunched Credora.
+
+[11:33] And from then, we had a number of success story. This slide actually is not even updated because we just rated the listed DAO as, the last protocol that we did integrate with, so that adds quite a bit to these numbers. But for all intents and purposes, you can see we rated over $10,000,000,000 in TVL. We have a 100% of Spark coverage. We have 90% of Morpho coverage.
+
+[11:58] There is over 250 Morpho markets that are rated by Credora. Because what we do believe and what Morpho believes as well is that the future of DeFi is not just yield and APY, which is the thing that we looked at for the past, I don't know, maybe ten years, but it's also risk. And a lot a lot of APY without
+
+[12:24] an risk assessment is meaningless. Rating actually move markets. Right? A lot of the questions that I get when I speak with people is, okay. You do the rating. Fantastic. That's a great nice to have. But does he actually make a difference? It's not a nice to have because of this.
+
+[12:47] You have in rated markets a proven track record of increased investment. In the five days after we publish our Spark rating, Spark got over $200,000,000 deposit in USDTs and USDS and USDCs across their saving vaults.
+
+[13:10] And this was an immediate spike. You can see it on the graph. You can probably figure out when we publish the rating. And this graph, again, not updated. We are actually actually coming out with another communication with Spark with updated numbers on the case study of this on next week, but this number, I guarantee you, is much, much higher than than 200 millions and it's been over the past month.
+
+[13:34] So it's a very provable trust signal. Same behavior we saw it on MorphoS, same behavior we've seen it on list that even if the rating has been published just a week ago. Especially now, you're obviously all familiar with all the risk and the hacks that have been happening in in defying Italy. Ratings
+
+[13:57] assume a very, very important position when it comes to understanding the risk profile that you're exposed to as an investor. And ratings in a certain way is just the start because in order to consume and utilize the power
+
+[14:20] of the rating, we do believe that you absolutely need as a user a place to compare and see all the ratings against each other. Rating something in isolation is usually not very helpful. When you rate multiple things together, then obviously, that specific number or the specific assessment becomes much more powerful. So we launched
+
+[14:44] the Credora dashboard. And the Credora dashboard is live at app.credora.network. You can see it there. There is all of the risk ratings that we did there all in one place, which is a great thing on its own. Right? This is already good because you can compare it. You can put one rating against each other and seeing, like, why a rating is higher or lower than another.
+
+[15:10] But also and this, I think, is the killer feature of of this particular application. You can simulate a portfolio or even connect your wallet. You can just also give the wallet address. Right? We don't need it necessarily a wallet connection and figure out what is the average calculated risk profile of your portfolio investment. So
+
+[15:34] based on the ratings that we have of the asset and the vaults that we did, which as we said are hundreds, chances are that in your portfolio, there's gonna be those assets. There's gonna be those vols if you invest in DeFi, and you are able to simulate a position on the fly. Even theoretically, you can say, I can just wanna put x amount of USDTs in this particular Morpho Vault and then x amount of this other asset in this Spark Vault or whatever.
+
+[16:02] And finally, out of our launch features, we have alerts. So remember when I was saying the ratings are dynamic. Right? They change. And we do believe that if a rating change, as a user, you should have the knowledge of what's happening. And if you have a specific investment in a specific vault
+
+[16:25] that whose rating changes, you should be notified. So we do have that system of unerting users so that you can see, oh, something is happening. Maybe I want to rebalance my portfolio or maybe I want to, you know, take another look at this particular vault or this particular asset where I invested money in. There's more to come. These are just our launch features.
+
+[16:50] This is very much of a I will not even call it a beta version. This is probably an alpha version of what this is gonna be when it grows up, but we wanted to get something out quickly in order to try and be as helpful and as transparent as possible towards the DeFi ecosystem and towards the space. What is next
+
+[17:13] is a number of utilization and number of algorithmic utilization of our rating as well as some very nice features that we are going to be adding. For example, in the Oracle, you can provide a real time rating update directly on the price feed of a certain asset.
+
+[17:38] This is something that we, as Reson, are uniquely positioned to do, and and it's something that we're considering doing in the future. We are covering already private credit. So some of these rating, you will see actually quite a few. They are still private. They're not publicly exposed rating because maybe the assets are private or maybe some of the liquidity of the asset is private and is confidential and is behind k y b or k y c, so the rating is as well.
+
+[18:06] You are able, as an investor, for example, in the asset to access the rating report, but it's not publicly online, available on the Internet. But, also, we're working with insurance protocols like Catalysis, for example, that are utilizing their PSL as a trigger or as an underlying data to calculate premiums on insurance on certain Morpho vaults.
+
+[18:32] So Catalysis just launched Mainnet a couple of weeks ago, and they are insuring Voalz or Morpho. They're utilizing exclusively Credora data underlying this. The only rating data that they're using, obviously, have their own pieces of data and their own algorithm, but the premium of each of the insurance position comes also from credit rating.
+
+[18:54] As well, we are seeing, for example, agentic applications that are allocating capital in different positions in different vaults based on the rating. We are seeing risk oriented protocol designs. They are using the rating as an underlying factor to even onboard certain assets or onboard center vaults or create vaults in a specific way.
+
+[19:21] Lotus comes to mind. Like, our friends at Lotus, they created a lending protocol that is risk security first. So they create vaults based on what the rating of the specific assets are. And we're seeing, you know, programmatically risk adjusted yield, live risk notifications, so on and so forth. So all of this is coming to DeFi, and we're powering some of this already.
+
+[19:45] Some of these are feature that we're looking into releasing. But the main idea and the message I want to leave you with is we are moving as an industry. We started the one of you that have been around for a while now, we started from a very, I would say, somewhat speculative position of thinking a lot about APY, thinking a lot about return
+
+[20:10] in DeFi. And now we're in a position where we're growing up, and we cannot just think about APY. We cannot just think about return. We need to be thinking about risk as well. And as Credoia, we want to be at the forefront, and we are at the forefront of providing this information in a transparent, in a risk minimized, completely independent
+
+[20:34] way across the system. I am going to leave you with our contact. If you wanna build with us, just go scan the QR code. It goes to our website. There you can find not only all the ways to be in touch with us, all the Twitters and the Telegram groups and so on and so forth, but more importantly,
+
+[20:57] in the documentation section, the Credoa methodology is public. The calculations on the methodology, they are not for security reason, but the factors and what we are figuring out, what we're looking at, how we do the simulations, you find all there. There's a fantastic section that is called auto rate morpho, and it talks about all the process that we use to rate the morpho vaults. Very interesting bedtime read. You want, there's also PDF reports of examples
+
+[21:24] of the ratings that we did. So if you want to look at what a PDF is and what a rating report actually looks like, you can find it there as well. If you have any questions, I'm here to answer them. Otherwise, thank you so much for your time. It was lovely. Thank you. Anyone has a question? Okay. Yeah. Yeah. Thanks. I have a couple of questions about your methodology.
+
+[21:51] So I was wondering, I would maybe read the details, but if you could quickly explain where this number is coming from because I think the PSL, because I think we see that a lot of losses in DeFi come from hacks that are kind of unpredictable and you it's I'm not sure how you could quantify this. So if somebody is looping USD,
+
+[22:15] then maybe that's something you can track and you can raise the evaluation. But for things like recent hack or, I don't know, maybe did you have a PSL for RSEs? Yeah. Excellent question. This boils down to me to what are the factors that you look into, right, when you do the rating, like, and and how you weigh them against each other. That's basically what this question means.
+
+[22:39] The factors are many. So we have two big set of factors. There are on chain factors and and off chain factors. The on chain factors are the one that you can evince from a smart contract. Right? So where's the liquidity, which collateral, how much, and so on and so forth. The off chain factors are much more interesting. Sometimes it's proof of reserve. Sometimes there are factors around custody and who owns that custody or what is the operational security of a certain protocol, what is the governance of a protocol,
+
+[23:08] what is the regulatory profile of a protocol, so on and so forth. So all of these are taken into consideration. If you go to one of our Spark reports, you will see, I don't have Internet connection, so, unfortunately, I cannot show you live. But yeah. So you will see on Spark itself, on app.spark.phi, that we give an individual rating out of five to each one of these
+
+[23:35] individual categories. Within the category itself, there's indicators. And the way that we effectively stack rank these indicators against each other is by running thousands and thousands of simulations at different points by changing different factors so that we simulate scenarios and we calculate risk based on the scenario.
+
+[24:00] Some of this risk calculation is algorithmic and automated, but we always have a quant that is there to verify, like, a person ultimately that looks at the results and verifies the rating and then publishes the rating. So we use automation in AI when it comes to running the simulation and and trying to to move around numbers and and create scenarios.
+
+[24:24] But there's always, like, our quant analysts that ultimately look at the rating and do this process manually. And these scenarios, do they include these types of hacks as well? Yes. So we do again, we cannot disclose a whole lot about what it is, but, yes, we do include operational security. And as you saw, all the recent hacks basically in crypto over the past couple of months, they were all operational security problems.
+
+[24:51] It there was not programmatic hacks on, you know, the actual protocols. It was all about OPSEC. So we already included operational security before, but in light of this, we updated our methodology to to, you know, weight it in a bit more heavy way. Thank you. Also, a couple of questions.
+
+[25:16] I'll tell them right now, and you you decide how to answer them. But, would you like, does your methodology, could have spotted, for example, what happened to Kelpdau layer zero? Like, does the does it considers breach breach risk in the methodologies that they use? And the second question is and I think you addressed it a little bit at the end. How how do you think about the,
+
+[25:40] friction or trade offs between having a transparent methodology versus, that being gamed and, like, you know, security reasons? Yeah. Excellent questions, both of them. The first question is is fairly easy to understand. You as a risk rating agency provide a risk factor. The prediction
+
+[26:03] of an adverse event doesn't exist. And if if people could predict adverse event, by definition, the adverse event will not happen. So you can predict how unlikely something is to break or or how risky something is, which is what we do. You can assess more than predict. I think that's a better word, but you cannot predict on this day there will be there will be this hack, and it will be coming from this particular thing. But
+
+[26:32] at the same time, for example, for the resolve hack that there was, which was probably the first hack that kicked off all of these, like, seasons of hack in, in crypto that we had recently. Credora, before the acquisition even, they rated Resolve at a b minus, which in financial terms is a very bad rating. Like, you don't want to be a b minus. And this was back in, I think, mid twenty twenty five. I think it was June or July 2025.
+
+[26:59] So this was even before we acquired it. So there is indicators, there are things, as I said, that take into consideration the operational security of a specific asset or a specific protocol. And this makes me nicely to your second question, which was around how much, you know, is good to disclose versus how you expose yourself to gamification.
+
+[27:23] Our strategy is what you see in the documentation. So we do disclose the methodology because we want to be transparent, and we think it's important to be transparent. Being a third party rating agency or rating organ removes the the trust me, bro. My product is best and is super safe
+
+[27:46] narrative. Right? If people rated themselves, this is what they will effectively ask you to do. We don't want to do that. And not only we're independent, but we're also public. The way that the calculations happen and the weights of every single individual factor that is not public, for example. So you know what the things are, but if you have a little bit of, you know, common sense,
+
+[28:12] you would know. Like, in this room knows, you know, this about the custody and the collateral asset and the operational security and the compliance and the regulatory profile and so on. Right? The governance of the protocols and so on. So those things are quite public, and we're very happy to explain how we look into those. The specific calculations, they are private so that we reduce
+
+[28:37] the risk of people gamifying the, the system. That said, it's not too bad if someone gamifies the system. So as in, if you look at the rating and it's a rating that you're not happy with and you change something in your protocol or in your asset or in your vault to get a better rating, that's a good thing.
+
+[29:02] So we want that. We don't want people to do it in a nonorganic way or in a in a fake way. But if a rating helps improve the safety of a specific vault, that's a great thing. It's a win win for everybody. Yeah. Thank you very much. We've run out of time. So we can Thank you.
