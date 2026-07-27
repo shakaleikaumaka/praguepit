@@ -1,0 +1,141 @@
+# zk-Based Consensus Proofs — Making Stateless Ethereum Practical
+
+Date: 
+Source video: zk-Based Consensus Proofs — Making Stateless Ethereum Practical
+Drive: https://drive.google.com/file/d/1wfq5x5zRItw4nWexoWLpNC3FnHRA683G/view
+Duration: 00:27:51
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:12] Yeah. Good almost evening. It's great to be here. What do you think is one of the biggest but unseen risks in our web three world right now? Is it the key management? No. Is it maybe the smart contract security?
+
+[00:38] Is this the future with quantum computers which might break our cryptography? No. All of these things are not the biggest things. We are working on this and they need to be, yeah, worked on, but it's not the real biggest thing. So when we talk about risks, it's something which is very, yeah, usual for us, the data we are working with.
+
+[01:07] I don't know if you recognize what happened in the last days. So we had some interesting attacks and hacks. And I will talk a little bit about these things, and then we go a little bit deeper how we can prevent these things from happening. So I hope we are a little bit scared. Not too much. Not too much that we are paralyzed,
+
+[01:32] but that we see what we need to do. Some days ago on the April 18, it's not long ago, it seemed a normal day. But in the background, something happened which was shattering the d five world, and we see it until now. So what happened in
+
+[01:56] on this theme? There was this infamous hacker group, back from North Korea, and they did again an attack, which was a very sophisticated attack. So about thirty at $300,000,000 were stolen or not really stolen, but were
+
+[02:21] created and removed from, yeah, the real owners. And let us look a little bit into this attack to understand what was the problem. So, actually, when I was talking about the same topic one year ago at DEBCON in Berlin,
+
+[02:44] I talked about a theoretical attack vector. And a lot of people ask me, was this happening again? Or did it always happen? I said, no. Not yet. And unfortunately, now we can talk about something which really happened and which was exactly what we said would could be or could happen in the future.
+
+[03:08] I don't know if you know Capdau. This is a risk a liquid restaking protocol and it lies on layer zero to move assets from one chain to another chain. In short, it looks like this. On one chain, tones are locked and then there's a cross chain message created. And when the verifier on a
+
+[03:31] decentralized verifier network is receiving this message, then the new tokens are created on the other side. So normally, this works fine. And we have to look a little bit at these verifiers. So these verifiers need information from the source chain. For instance, that these tokens are locked now.
+
+[03:55] And how do they acquire this information? They are connected to RBC services and ask what is happening on this chain. And normally, they had a security idea. They used several different RBCs, some own hosted RPCs,
+
+[04:17] some external hosted RPCs. And by comparing these RPCs, they thought this is secure enough. So, what happened? The attackers, they manipulated they had an attack to the internal structure and they manipulated some of these RBC servers.
+
+[04:40] Not fully. They did react as they should react for almost all requests, but for some special requests from this verifier in this verifier network, they lied, they gave wrong information. And to complete this attack, they simply
+
+[05:04] did a DDoS attack to all the other RBCs this verifier was connected to. With the result that only the only the RBCs which are manipulated were contacted. And they gave wrong information and based on this wrong information, tokens were created without the backing on the other chain. So let's remove all the details. Let's remove.
+
+[05:30] Let's remove. Even there was a not optimal architecture. Let's put away all of these things. So let's look what really was the problem in this attack. The attack was that the verifier did use data which he had to rely and to trust
+
+[05:53] and which was the the verifier was not able to verify by itself. And this assumption that there is information I receive and this information should be correct without verifying, this was the problem. So internally, it looked like that everything was okay, but ex externally,
+
+[06:17] was not connected to the reality. So nothing seemed wrong, but it was. And there was no way for this verifier to detect what was wrong because the verifier was not verifying. So that means the whole system did not fail
+
+[06:40] because there was a bug in the contract or a bug in the infrastructure. There was it did also not fail because there was something wrong with the cryptography. It did fail because one piece in the software stack did rely on data which was not verified. They trusted data from a other party
+
+[07:03] and because this information was not correct, the system failed. So, that means and we have to have this in our mind. We don't need to break a protocol or the math, the cryptography. We only need to control what is the truth or at least what seems to or what is expected to be the truth.
+
+[07:28] And so with this in mind, we simply need to come to a conclusion, don't trust any information you receive, always verify. And then we look in the ethos from material and other web free applications. This is something we did say from the very beginning. We should verify
+
+[07:50] all information at the place where the information is used. So we have to understand. So the RPCs, how we are using these today, they are not a source of truth. They are handled as this, but they are not. So they are not bad. I'm not talking against RBCs, but we have to think how
+
+[08:14] do we have to handle these RBCs. They are a layer for to transport information, but not more and not less. So and when we need data and we need to rely on this data, we have to verify it locally in our application, in our device.
+
+[08:37] Of course, we know when we run our own full node, we can do this. Not a full node is synchronizing with network. He is doing the consensus synchronization. It knows exactly when it is what is the current block of the blockchain. And it also can prove all the information, the state, and the blocks because it has all this information.
+
+[09:00] But you also know that this is not possible for our applications. Now, you cannot run a web application inside and have inside the application a full node. I don't know who of you remembers the the early days of Ethereum. We had this mist browser. So did some of of you use the Mist browser? One. It was a great tool to this time. This was in like a browser and a full node was running inside this Mist browser. You started it, then it started to synchronize.
+
+[09:34] The first time you had to wait some minutes, hours, days until it was synchronized, but then you had a full node running there and all the application could could rely on this data because it was locally in your application. Application like this would not work anymore. No computer, no laptop would handle
+
+[09:56] the amount of data you need to to run this full load and then beside this, all the other applications. And also, when we think about light clients, they are normally too heavy inside our applications. If you have a smartphone app and the smartphone app is always synchronizing the block headers of the beacon chain, all day, your users will not be happy because
+
+[10:20] it's too much traffic. It's but we will be down very easily and there's nothing we can do. So what we need are stateless clients. So what is a stateless client? A stateless client is a client which is not synchronizing at all, which is not storing any state information, but is fully trustless
+
+[10:43] and is able to verify all the information based on cryptographical proofs. So this is not only something for the future. We have this or the the we talk about status clients for a long time, and it's in the it's your road map often mentioned. It's available now. So we have now status clients available.
+
+[11:07] Could you be status from corpus call, which are we? It works, it's productive, it can be used. What proofs do we need to transform unverified data to trustless data. So we need two types of proofs. First, the execution layer proof, and second, the consensus layer proof. So I will go a little bit deeper into these proofs so that we can understand why we need these proofs and how they work. And then we come to
+
+[11:39] the original topic of the talk, why we are using zero knowledge proofs for this to make it more efficient. So first, execution data proof. Why do we need execution data proof? It's simply to prove that an information is linked to the block or to the block headers. So that I know I have a value from the state and this belongs to this block. Or I have a transaction, it belongs to this block. I have an event, a log, it belongs to to this block. So with this execution proofs, we can prove that this information
+
+[12:14] are part of a blockchain. But what we don't know at this time is if this block is really part of the canonical chain. It could be a manipulated block. Then even the When the execution proofs work, we don't know if this block is really part of the canonical chain. And that's why we need a second proof, which is the consensus proof. And with the consensus proof, we verify
+
+[12:41] that this block is a valid proof a valid block of the blockchain. So we don't have to rely on the RPC service. We don't have to rely on any provider. We just can verify it. And the good thing is, with these two proofs, we are completely trustless. We don't have to rely on any other information and even the ones which provide us these proofs cannot
+
+[13:08] betray us. That means I can get this information from a data provider, For instance, an obvious service. But, it is simply a data provider. It's not a truth provider because I get both the information and the proof and can verify everything by myself. So, let's look a little bit deeper how such a consensus proof works, so to understand why the knowledge proofs are really good solution to make it more efficient.
+
+[13:37] So, when we have to prove the consensus, we start from trusted checkpoint. This could be somewhere in the past. And then, we have to verify all the transitions from the validator committee until we come to the block we are interested in. Right? If I have a checkpoint
+
+[14:00] two weeks in the past, then I have to do all these transitions and I have to check the BLS aggregate signature and that all the newer signatures, newer addresses from the valid data company are correctly in the big blocks. So, this is an easy way, but it might be a little bit complicated. Every about twenty seven hours, two fifty
+
+[14:28] six epochs, we have this change and we have to do all these transitions to make this proof. This works, but it is It might be quite a lot of information and a lot of work to be done to make this proof. So, that's why we introduced a serial knowledge proof for this. So, we are using a serial knowledge proof to first
+
+[14:54] compress this The signature verification and information in the bing block into one serial knowledge proof. So that we have one single proof for this transition. And then we, like, conceived here, put together all these proofs from the trusted checkpoint
+
+[15:17] until we arrive to block we are interested now. So and then we compress it into one single proof. And this makes us very efficient because then if I need to prove my information, I get the execution proof and I get one single knowledge proof. And with this, I'm completely sure and trustless
+
+[15:39] that this information is the correct information. So that means about 260 bytes are enough to prove the consensus. So why does it work efficiently? We only need it every twenty seven hours. That means we don't need to do it in, in real time. We have enough time to produce these proofs, so that's why we don't need to, do all these sophisticated
+
+[16:12] methods with parallelization. You can run it on a simple laptop. Here, it might take about thirty or forty minutes because the BLS signature is hard to prove with a signal knowledge proof. And if you use a proof of network, we are using SP one from Saxingt, it's about
+
+[16:35] a minute, half a little bit more than a minute, costs some cents, and we can produce these proofs very efficiently. So that means, with these proofs, we are now able to verify all the information in client. And if the client is small enough that it can run inside
+
+[16:59] my application, I can do the verification always if I need if I need it. And the good thing, this even works without Internet connection. As I can do this proving off chain or offline. If I have an application, let's say a smart lock with a client in it and with a blockchain state which can open the door lock, I can send the information
+
+[17:26] and the proofs to via Bluetooth to this lock and lock and verify it. I don't need the interaction between the device, the software and the blockchain. I can do it in one way. So that means every dApp, every wallet, every cross cross chain protocol, every bridge, every web free application
+
+[17:51] should be able now to use verified information. And we are now in this in the time where we say this must become the new normal. So right now, ninety nine point x percent of all the depths are using RPCs because it's convenient, because it's easy, and because it works.
+
+[18:14] But as we could see, they kept our attack. It also could be a different. I don't believe that one of the big RBC providers is going to become bad And then, the light for all of the, all of the applications. But we also know they are not better than Google, Adobe, Apple, and all of them were hacked
+
+[18:38] at one another time. So that means we can use this mechanism in all of our applications. With QualiPre stateless, we have different ways to do it. So one way could be locally, so the client can generate these proofs directly by asking all the information from the RBC. It's completely trustless,
+
+[19:02] but it takes a lot of effort because it needs, for instance, for the consensus proof, needs to collect all the information before he can create a proof. Then we can use a remote prover. That means we outsource the generation of the proof to another service. It's still fully trustless, but it's way more efficient. And the way where we need to go is vRPC,
+
+[19:26] verifiable RBC. So that RBC service is not only providing data, but data come in coupled with the company improves. So that means don't trust, verify. And if you don't verify, we don't know what data we are using. So let's recap.
+
+[19:53] So it it must be very clear for all of us. The problem is not using RPC. The problem is using RPC and not verifying the data. So, as I said before, every application we are building should verify the data. For instance, the Codepri client is about two fifty kilobytes.
+
+[20:18] So, there's no application which cannot run such a client. The overhead, it's only in the range of the latency, for for generating the proofs and also verifying the proofs. It doesn't change the UX of our our applications, but increases the security. Thank you very much. I hope that you are aware now.
+
+[20:45] It's so important to verify and the technology to verify is available. If you are interested, check out CDPR Stateless. Yeah. Are there any questions? Do we have time for questions? We have we have. I would just like clap for you because the president Anyone has a question?
+
+[21:09] Thank you. So thank you for the presentation. And, I, this is probably going be a stupid question. I am new to this. But and I I understood, the need for proofs or the two types of proofs. What I would need more help with is understanding why those proofs need to be zero knowledge. As far as I understand, what we are proving is public knowledge in the first place. Yeah. Okay. We don't need zero knowledge at this point because we don't need to hide something.
+
+[21:40] But zero knowledge proofs have another very interesting, characteristics. They can compress the whole process and data into a proof. As I said, when I can do the consensus proof step by step, I start from the checkpoint and do a transition by transition by transition, Verifying the signatures, verifying
+
+[22:04] that the information in the beacon blocks are correct and so on. This could be a complicated act and if I use a serial knowledge proof, I can compress this into a one single proof. I have 260 bytes left, which give me the same security than doing the big chain
+
+[22:27] of proofs on on the way. And that's why we are using it not to hide something, we're using it to compress it and make it more efficient. Did it answer your question? Or yeah. Another one question or we have still want time for one more? Are you familiar with StarkNet?
+
+[22:51] More or less. Yes. How does this compare to how StarkNet works, if if you know? So we we for StarkNet, we have exactly the same problems. StarkNet is a layer two. So they are using proof, the knowledge proofs to anchor the information from the layer two in layer one. But you have the same problem. If you are using StarkNet,
+
+[23:16] then you have a client and this client gets information. And here, we also need the verification on the end. It's always a bad idea to trust someone who gives you the data. So, all blockchains must provide verifiable data. So, we have this in Ethereum. It's fine. Most of the l twos we can do in the same way. It's a little bit more complicated. Maybe additional
+
+[23:42] to the consensus and the execution layer proof, you have a roll up proof which shows that this information is in one of the anchors of the roll up. But it's otherwise, it's completely the same. And with a knowledge based layer tool like, StockNet, it's it's quite easier because you can use this this proof. Thank you.
+
+[24:08] Yeah. Thank you very much. I think we got time for, like, we have four three minutes of even last question. I'll make it first. So according to you, the problem is faulty RPCs and the web two nature of RPCs in general. The RPCs that we use, the RPCs, let's say, UNICEF, for instance. So we cannot rely a 100% on even Infura, which, was acquired by MetaMask. We cannot rely on centralized
+
+[24:32] nature of RPCs. So the whole idea here is that when you try assign an EVM transaction, you're basically signing against a nonce value. So instead of doing that, why not just sign it against a snap checks checkpoint instead? Wouldn't that solve the issue straight up? Yeah. If you only use a signature, we have all of this included in the protocol because some information you cannot prove.
+
+[24:57] But it's also a is is a additional trust vector. You you need to trust the signer and it makes it better than have nothing. But the good thing in Ethereum is you have all the information to prove it without trust. And and that's why we are doing as much as possible without trust. So have you heard of the MENA protocol which uses just a 24 k v final sets? It's the the constant size blockchain.
+
+[25:25] The MENA protocol MENA protocol. The MENA blockchain. Okay. So the idea here is that if it's deterministic, then it's provable that, the current state is derived from the previous states by merging those NOCs altogether and the final state. So you can always trust the SnOCs that you're the the final proof. So if we have a SnOGified chain as
+
+[25:48] a plan for a term, this will make much easier because then we we don't need these, complicated execution proofs. But we cannot wait until the term is is finished with this. This will take two years, five years, ten years, nobody knows. So but here with with Coulipri, we can use what is existing right now and make it fully trustless.
+
+[26:17] Okay. But, sorry again. But you're still not making a transaction against so maybe you are able to verify a proof, like, with the architecture you are showing. But the issue here is that maybe the proof is valid, but the blockchain state is outdated. Maybe there is a new transaction that was brought in or a new block that was mined. In that case, MBB or other other, problematic scenarios can rise.
+
+[26:41] So still the even though we can now rely on RPCs, RPCs might be of, giving out faulty or, malicious malicious output, it might be giving us outdated information. Can this protect against that? What do you mean with outdated information? Oh, box. So so so When I read information, I say, I want information from block
+
+[27:04] one, two, three. So and then I have to prove that this is the correct information in this block. So what I don't know at this point, there might be a new block. Exactly. But but this is something I I cannot prove. There's no way to prove this. No. You can always make a transaction. If you could actually make a transaction against the block, then that would make the job easier. Right? Yes. And and then you can use this information to know what block I need to read. Yes. And then I need this information to make it trustless.
+
+[27:36] Okay. That's all. We can discuss it. Thank you for the presentation again. Okay.

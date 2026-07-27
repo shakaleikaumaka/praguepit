@@ -3953,5 +3953,890 @@
   18,
   1979,
   "Any other questions? Any other questions? No? Okay. Then let's give her another round of applause, please."
+ ],
+ [
+  21,
+  12,
+  "Yeah. Good almost evening. It's great to be here. What do you think is one of the biggest but unseen risks in our web three world right now?"
+ ],
+ [
+  21,
+  29,
+  " Is it the key management? No. Is it maybe the smart contract security?"
+ ],
+ [
+  21,
+  38,
+  "Is this the future with quantum computers which might break our cryptography? No. All of these things are not the biggest things. We are wor"
+ ],
+ [
+  21,
+  50,
+  "king on this and they need to be, yeah, worked on, but it's not the real biggest thing. So when we talk about risks, it's something which is"
+ ],
+ [
+  21,
+  62,
+  " very, yeah, usual for us, the data we are working with."
+ ],
+ [
+  21,
+  67,
+  "I don't know if you recognize what happened in the last days. So we had some interesting attacks and hacks. And I will talk a little bit abo"
+ ],
+ [
+  21,
+  78,
+  "ut these things, and then we go a little bit deeper how we can prevent these things from happening. So I hope we are a little bit scared. No"
+ ],
+ [
+  21,
+  88,
+  "t too much. Not too much that we are paralyzed,"
+ ],
+ [
+  21,
+  92,
+  "but that we see what we need to do. Some days ago on the April 18, it's not long ago, it seemed a normal day. But in the background, somethi"
+ ],
+ [
+  21,
+  106,
+  "ng happened which was shattering the d five world, and we see it until now. So what happened in"
+ ],
+ [
+  21,
+  116,
+  "on this theme? There was this infamous hacker group, back from North Korea, and they did again an attack, which was a very sophisticated att"
+ ],
+ [
+  21,
+  132,
+  "ack. So about thirty at $300,000,000 were stolen or not really stolen, but were"
+ ],
+ [
+  21,
+  141,
+  "created and removed from, yeah, the real owners. And let us look a little bit into this attack to understand what was the problem. So, actua"
+ ],
+ [
+  21,
+  156,
+  "lly, when I was talking about the same topic one year ago at DEBCON in Berlin,"
+ ],
+ [
+  21,
+  164,
+  "I talked about a theoretical attack vector. And a lot of people ask me, was this happening again? Or did it always happen? I said, no. Not y"
+ ],
+ [
+  21,
+  175,
+  "et. And unfortunately, now we can talk about something which really happened and which was exactly what we said would could be or could happ"
+ ],
+ [
+  21,
+  187,
+  "en in the future."
+ ],
+ [
+  21,
+  188,
+  "I don't know if you know Capdau. This is a risk a liquid restaking protocol and it lies on layer zero to move assets from one chain to anoth"
+ ],
+ [
+  21,
+  199,
+  "er chain. In short, it looks like this. On one chain, tones are locked and then there's a cross chain message created. And when the verifier"
+ ],
+ [
+  21,
+  211,
+  " on a"
+ ],
+ [
+  21,
+  211,
+  "decentralized verifier network is receiving this message, then the new tokens are created on the other side. So normally, this works fine. A"
+ ],
+ [
+  21,
+  222,
+  "nd we have to look a little bit at these verifiers. So these verifiers need information from the source chain. For instance, that these toke"
+ ],
+ [
+  21,
+  234,
+  "ns are locked now."
+ ],
+ [
+  21,
+  235,
+  "And how do they acquire this information? They are connected to RBC services and ask what is happening on this chain. And normally, they had"
+ ],
+ [
+  21,
+  249,
+  " a security idea. They used several different RBCs, some own hosted RPCs,"
+ ],
+ [
+  21,
+  257,
+  "some external hosted RPCs. And by comparing these RPCs, they thought this is secure enough. So, what happened? The attackers, they manipulat"
+ ],
+ [
+  21,
+  271,
+  "ed they had an attack to the internal structure and they manipulated some of these RBC servers."
+ ],
+ [
+  21,
+  280,
+  "Not fully. They did react as they should react for almost all requests, but for some special requests from this verifier in this verifier ne"
+ ],
+ [
+  21,
+  295,
+  "twork, they lied, they gave wrong information. And to complete this attack, they simply"
+ ],
+ [
+  21,
+  304,
+  "did a DDoS attack to all the other RBCs this verifier was connected to. With the result that only the only the RBCs which are manipulated we"
+ ],
+ [
+  21,
+  315,
+  "re contacted. And they gave wrong information and based on this wrong information, tokens were created without the backing on the other chai"
+ ],
+ [
+  21,
+  326,
+  "n. So let's remove all the details. Let's remove."
+ ],
+ [
+  21,
+  330,
+  "Let's remove. Even there was a not optimal architecture. Let's put away all of these things. So let's look what really was the problem in th"
+ ],
+ [
+  21,
+  344,
+  "is attack. The attack was that the verifier did use data which he had to rely and to trust"
+ ],
+ [
+  21,
+  353,
+  "and which was the the verifier was not able to verify by itself. And this assumption that there is information I receive and this informatio"
+ ],
+ [
+  21,
+  365,
+  "n should be correct without verifying, this was the problem. So internally, it looked like that everything was okay, but ex externally,"
+ ],
+ [
+  21,
+  377,
+  "was not connected to the reality. So nothing seemed wrong, but it was. And there was no way for this verifier to detect what was wrong becau"
+ ],
+ [
+  21,
+  392,
+  "se the verifier was not verifying. So that means the whole system did not fail"
+ ],
+ [
+  21,
+  400,
+  "because there was a bug in the contract or a bug in the infrastructure. There was it did also not fail because there was something wrong wit"
+ ],
+ [
+  21,
+  411,
+  "h the cryptography. It did fail because one piece in the software stack did rely on data which was not verified. They trusted data from a ot"
+ ],
+ [
+  21,
+  422,
+  "her party"
+ ],
+ [
+  21,
+  423,
+  "and because this information was not correct, the system failed. So, that means and we have to have this in our mind. We don't need to break"
+ ],
+ [
+  21,
+  435,
+  " a protocol or the math, the cryptography. We only need to control what is the truth or at least what seems to or what is expected to be the"
+ ],
+ [
+  21,
+  447,
+  " truth."
+ ],
+ [
+  21,
+  448,
+  "And so with this in mind, we simply need to come to a conclusion, don't trust any information you receive, always verify. And then we look i"
+ ],
+ [
+  21,
+  459,
+  "n the ethos from material and other web free applications. This is something we did say from the very beginning. We should verify"
+ ],
+ [
+  21,
+  470,
+  "all information at the place where the information is used. So we have to understand. So the RPCs, how we are using these today, they are no"
+ ],
+ [
+  21,
+  482,
+  "t a source of truth. They are handled as this, but they are not. So they are not bad. I'm not talking against RBCs, but we have to think how"
+ ],
+ [
+  21,
+  494,
+  "do we have to handle these RBCs. They are a layer for to transport information, but not more and not less. So and when we need data and we n"
+ ],
+ [
+  21,
+  508,
+  "eed to rely on this data, we have to verify it locally in our application, in our device."
+ ],
+ [
+  21,
+  517,
+  "Of course, we know when we run our own full node, we can do this. Not a full node is synchronizing with network. He is doing the consensus s"
+ ],
+ [
+  21,
+  527,
+  "ynchronization. It knows exactly when it is what is the current block of the blockchain. And it also can prove all the information, the stat"
+ ],
+ [
+  21,
+  536,
+  "e, and the blocks because it has all this information."
+ ],
+ [
+  21,
+  540,
+  "But you also know that this is not possible for our applications. Now, you cannot run a web application inside and have inside the applicati"
+ ],
+ [
+  21,
+  550,
+  "on a full node. I don't know who of you remembers the the early days of Ethereum. We had this mist browser. So did some of of you use the Mi"
+ ],
+ [
+  21,
+  561,
+  "st browser? One. It was a great tool to this time. This was in like a browser and a full node was running inside this Mist browser. You star"
+ ],
+ [
+  21,
+  571,
+  "ted it, then it started to synchronize."
+ ],
+ [
+  21,
+  574,
+  "The first time you had to wait some minutes, hours, days until it was synchronized, but then you had a full node running there and all the a"
+ ],
+ [
+  21,
+  584,
+  "pplication could could rely on this data because it was locally in your application. Application like this would not work anymore. No comput"
+ ],
+ [
+  21,
+  594,
+  "er, no laptop would handle"
+ ],
+ [
+  21,
+  596,
+  "the amount of data you need to to run this full load and then beside this, all the other applications. And also, when we think about light c"
+ ],
+ [
+  21,
+  605,
+  "lients, they are normally too heavy inside our applications. If you have a smartphone app and the smartphone app is always synchronizing the"
+ ],
+ [
+  21,
+  615,
+  " block headers of the beacon chain, all day, your users will not be happy because"
+ ],
+ [
+  21,
+  620,
+  "it's too much traffic. It's but we will be down very easily and there's nothing we can do. So what we need are stateless clients. So what is"
+ ],
+ [
+  21,
+  631,
+  " a stateless client? A stateless client is a client which is not synchronizing at all, which is not storing any state information, but is fu"
+ ],
+ [
+  21,
+  642,
+  "lly trustless"
+ ],
+ [
+  21,
+  643,
+  "and is able to verify all the information based on cryptographical proofs. So this is not only something for the future. We have this or the"
+ ],
+ [
+  21,
+  654,
+  " the we talk about status clients for a long time, and it's in the it's your road map often mentioned. It's available now. So we have now st"
+ ],
+ [
+  21,
+  665,
+  "atus clients available."
+ ],
+ [
+  21,
+  667,
+  "Could you be status from corpus call, which are we? It works, it's productive, it can be used. What proofs do we need to transform unverifie"
+ ],
+ [
+  21,
+  678,
+  "d data to trustless data. So we need two types of proofs. First, the execution layer proof, and second, the consensus layer proof. So I will"
+ ],
+ [
+  21,
+  689,
+  " go a little bit deeper into these proofs so that we can understand why we need these proofs and how they work. And then we come to"
+ ],
+ [
+  21,
+  699,
+  "the original topic of the talk, why we are using zero knowledge proofs for this to make it more efficient. So first, execution data proof. W"
+ ],
+ [
+  21,
+  709,
+  "hy do we need execution data proof? It's simply to prove that an information is linked to the block or to the block headers. So that I know "
+ ],
+ [
+  21,
+  718,
+  "I have a value from the state and this belongs to this block. Or I have a transaction, it belongs to this block. I have an event, a log, it "
+ ],
+ [
+  21,
+  728,
+  "belongs to to this block. So with this execution proofs, we can prove that this information"
+ ],
+ [
+  21,
+  734,
+  "are part of a blockchain. But what we don't know at this time is if this block is really part of the canonical chain. It could be a manipula"
+ ],
+ [
+  21,
+  744,
+  "ted block. Then even the When the execution proofs work, we don't know if this block is really part of the canonical chain. And that's why w"
+ ],
+ [
+  21,
+  754,
+  "e need a second proof, which is the consensus proof. And with the consensus proof, we verify"
+ ],
+ [
+  21,
+  761,
+  "that this block is a valid proof a valid block of the blockchain. So we don't have to rely on the RPC service. We don't have to rely on any "
+ ],
+ [
+  21,
+  772,
+  "provider. We just can verify it. And the good thing is, with these two proofs, we are completely trustless. We don't have to rely on any oth"
+ ],
+ [
+  21,
+  783,
+  "er information and even the ones which provide us these proofs cannot"
+ ],
+ [
+  21,
+  788,
+  "betray us. That means I can get this information from a data provider, For instance, an obvious service. But, it is simply a data provider. "
+ ],
+ [
+  21,
+  798,
+  "It's not a truth provider because I get both the information and the proof and can verify everything by myself. So, let's look a little bit "
+ ],
+ [
+  21,
+  808,
+  "deeper how such a consensus proof works, so to understand why the knowledge proofs are really good solution to make it more efficient."
+ ],
+ [
+  21,
+  817,
+  "So, when we have to prove the consensus, we start from trusted checkpoint. This could be somewhere in the past. And then, we have to verify "
+ ],
+ [
+  21,
+  829,
+  "all the transitions from the validator committee until we come to the block we are interested in. Right? If I have a checkpoint"
+ ],
+ [
+  21,
+  840,
+  "two weeks in the past, then I have to do all these transitions and I have to check the BLS aggregate signature and that all the newer signat"
+ ],
+ [
+  21,
+  852,
+  "ures, newer addresses from the valid data company are correctly in the big blocks. So, this is an easy way, but it might be a little bit com"
+ ],
+ [
+  21,
+  864,
+  "plicated. Every about twenty seven hours, two fifty"
+ ],
+ [
+  21,
+  868,
+  "six epochs, we have this change and we have to do all these transitions to make this proof. This works, but it is It might be quite a lot of"
+ ],
+ [
+  21,
+  880,
+  " information and a lot of work to be done to make this proof. So, that's why we introduced a serial knowledge proof for this. So, we are usi"
+ ],
+ [
+  21,
+  891,
+  "ng a serial knowledge proof to first"
+ ],
+ [
+  21,
+  894,
+  "compress this The signature verification and information in the bing block into one serial knowledge proof. So that we have one single proof"
+ ],
+ [
+  21,
+  907,
+  " for this transition. And then we, like, conceived here, put together all these proofs from the trusted checkpoint"
+ ],
+ [
+  21,
+  917,
+  "until we arrive to block we are interested now. So and then we compress it into one single proof. And this makes us very efficient because t"
+ ],
+ [
+  21,
+  928,
+  "hen if I need to prove my information, I get the execution proof and I get one single knowledge proof. And with this, I'm completely sure an"
+ ],
+ [
+  21,
+  938,
+  "d trustless"
+ ],
+ [
+  21,
+  939,
+  "that this information is the correct information. So that means about 260 bytes are enough to prove the consensus. So why does it work effic"
+ ],
+ [
+  21,
+  952,
+  "iently? We only need it every twenty seven hours. That means we don't need to do it in, in real time. We have enough time to produce these p"
+ ],
+ [
+  21,
+  966,
+  "roofs, so that's why we don't need to, do all these sophisticated"
+ ],
+ [
+  21,
+  972,
+  "methods with parallelization. You can run it on a simple laptop. Here, it might take about thirty or forty minutes because the BLS signature"
+ ],
+ [
+  21,
+  984,
+  " is hard to prove with a signal knowledge proof. And if you use a proof of network, we are using SP one from Saxingt, it's about"
+ ],
+ [
+  21,
+  995,
+  "a minute, half a little bit more than a minute, costs some cents, and we can produce these proofs very efficiently. So that means, with thes"
+ ],
+ [
+  21,
+  1008,
+  "e proofs, we are now able to verify all the information in client. And if the client is small enough that it can run inside"
+ ],
+ [
+  21,
+  1019,
+  "my application, I can do the verification always if I need if I need it. And the good thing, this even works without Internet connection. As"
+ ],
+ [
+  21,
+  1030,
+  " I can do this proving off chain or offline. If I have an application, let's say a smart lock with a client in it and with a blockchain stat"
+ ],
+ [
+  21,
+  1041,
+  "e which can open the door lock, I can send the information"
+ ],
+ [
+  21,
+  1046,
+  "and the proofs to via Bluetooth to this lock and lock and verify it. I don't need the interaction between the device, the software and the b"
+ ],
+ [
+  21,
+  1058,
+  "lockchain. I can do it in one way. So that means every dApp, every wallet, every cross cross chain protocol, every bridge, every web free ap"
+ ],
+ [
+  21,
+  1070,
+  "plication"
+ ],
+ [
+  21,
+  1071,
+  "should be able now to use verified information. And we are now in this in the time where we say this must become the new normal. So right no"
+ ],
+ [
+  21,
+  1083,
+  "w, ninety nine point x percent of all the depths are using RPCs because it's convenient, because it's easy, and because it works."
+ ],
+ [
+  21,
+  1094,
+  "But as we could see, they kept our attack. It also could be a different. I don't believe that one of the big RBC providers is going to becom"
+ ],
+ [
+  21,
+  1105,
+  "e bad And then, the light for all of the, all of the applications. But we also know they are not better than Google, Adobe, Apple, and all o"
+ ],
+ [
+  21,
+  1117,
+  "f them were hacked"
+ ],
+ [
+  21,
+  1118,
+  "at one another time. So that means we can use this mechanism in all of our applications. With QualiPre stateless, we have different ways to "
+ ],
+ [
+  21,
+  1129,
+  "do it. So one way could be locally, so the client can generate these proofs directly by asking all the information from the RBC. It's comple"
+ ],
+ [
+  21,
+  1141,
+  "tely trustless,"
+ ],
+ [
+  21,
+  1142,
+  "but it takes a lot of effort because it needs, for instance, for the consensus proof, needs to collect all the information before he can cre"
+ ],
+ [
+  21,
+  1151,
+  "ate a proof. Then we can use a remote prover. That means we outsource the generation of the proof to another service. It's still fully trust"
+ ],
+ [
+  21,
+  1161,
+  "less, but it's way more efficient. And the way where we need to go is vRPC,"
+ ],
+ [
+  21,
+  1166,
+  "verifiable RBC. So that RBC service is not only providing data, but data come in coupled with the company improves. So that means don't trus"
+ ],
+ [
+  21,
+  1183,
+  "t, verify. And if you don't verify, we don't know what data we are using. So let's recap."
+ ],
+ [
+  21,
+  1193,
+  "So it it must be very clear for all of us. The problem is not using RPC. The problem is using RPC and not verifying the data. So, as I said "
+ ],
+ [
+  21,
+  1206,
+  "before, every application we are building should verify the data. For instance, the Codepri client is about two fifty kilobytes."
+ ],
+ [
+  21,
+  1218,
+  "So, there's no application which cannot run such a client. The overhead, it's only in the range of the latency, for for generating the proof"
+ ],
+ [
+  21,
+  1231,
+  "s and also verifying the proofs. It doesn't change the UX of our our applications, but increases the security. Thank you very much. I hope t"
+ ],
+ [
+  21,
+  1243,
+  "hat you are aware now."
+ ],
+ [
+  21,
+  1245,
+  "It's so important to verify and the technology to verify is available. If you are interested, check out CDPR Stateless. Yeah. Are there any "
+ ],
+ [
+  21,
+  1257,
+  "questions? Do we have time for questions? We have we have. I would just like clap for you because the president Anyone has a question?"
+ ],
+ [
+  21,
+  1269,
+  "Thank you. So thank you for the presentation. And, I, this is probably going be a stupid question. I am new to this. But and I I understood,"
+ ],
+ [
+  21,
+  1278,
+  " the need for proofs or the two types of proofs. What I would need more help with is understanding why those proofs need to be zero knowledg"
+ ],
+ [
+  21,
+  1288,
+  "e. As far as I understand, what we are proving is public knowledge in the first place. Yeah. Okay. We don't need zero knowledge at this poin"
+ ],
+ [
+  21,
+  1297,
+  "t because we don't need to hide something."
+ ],
+ [
+  21,
+  1300,
+  "But zero knowledge proofs have another very interesting, characteristics. They can compress the whole process and data into a proof. As I sa"
+ ],
+ [
+  21,
+  1311,
+  "id, when I can do the consensus proof step by step, I start from the checkpoint and do a transition by transition by transition, Verifying t"
+ ],
+ [
+  21,
+  1322,
+  "he signatures, verifying"
+ ],
+ [
+  21,
+  1324,
+  "that the information in the beacon blocks are correct and so on. This could be a complicated act and if I use a serial knowledge proof, I ca"
+ ],
+ [
+  21,
+  1336,
+  "n compress this into a one single proof. I have 260 bytes left, which give me the same security than doing the big chain"
+ ],
+ [
+  21,
+  1347,
+  "of proofs on on the way. And that's why we are using it not to hide something, we're using it to compress it and make it more efficient. Did"
+ ],
+ [
+  21,
+  1360,
+  " it answer your question? Or yeah. Another one question or we have still want time for one more? Are you familiar with StarkNet?"
+ ],
+ [
+  21,
+  1371,
+  "More or less. Yes. How does this compare to how StarkNet works, if if you know? So we we for StarkNet, we have exactly the same problems. St"
+ ],
+ [
+  21,
+  1382,
+  "arkNet is a layer two. So they are using proof, the knowledge proofs to anchor the information from the layer two in layer one. But you have"
+ ],
+ [
+  21,
+  1393,
+  " the same problem. If you are using StarkNet,"
+ ],
+ [
+  21,
+  1396,
+  "then you have a client and this client gets information. And here, we also need the verification on the end. It's always a bad idea to trust"
+ ],
+ [
+  21,
+  1406,
+  " someone who gives you the data. So, all blockchains must provide verifiable data. So, we have this in Ethereum. It's fine. Most of the l tw"
+ ],
+ [
+  21,
+  1416,
+  "os we can do in the same way. It's a little bit more complicated. Maybe additional"
+ ],
+ [
+  21,
+  1422,
+  "to the consensus and the execution layer proof, you have a roll up proof which shows that this information is in one of the anchors of the r"
+ ],
+ [
+  21,
+  1433,
+  "oll up. But it's otherwise, it's completely the same. And with a knowledge based layer tool like, StockNet, it's it's quite easier because y"
+ ],
+ [
+  21,
+  1445,
+  "ou can use this this proof. Thank you."
+ ],
+ [
+  21,
+  1448,
+  "Yeah. Thank you very much. I think we got time for, like, we have four three minutes of even last question. I'll make it first. So according"
+ ],
+ [
+  21,
+  1457,
+  " to you, the problem is faulty RPCs and the web two nature of RPCs in general. The RPCs that we use, the RPCs, let's say, UNICEF, for instan"
+ ],
+ [
+  21,
+  1465,
+  "ce. So we cannot rely a 100% on even Infura, which, was acquired by MetaMask. We cannot rely on centralized"
+ ],
+ [
+  21,
+  1472,
+  "nature of RPCs. So the whole idea here is that when you try assign an EVM transaction, you're basically signing against a nonce value. So in"
+ ],
+ [
+  21,
+  1481,
+  "stead of doing that, why not just sign it against a snap checks checkpoint instead? Wouldn't that solve the issue straight up? Yeah. If you "
+ ],
+ [
+  21,
+  1490,
+  "only use a signature, we have all of this included in the protocol because some information you cannot prove."
+ ],
+ [
+  21,
+  1497,
+  "But it's also a is is a additional trust vector. You you need to trust the signer and it makes it better than have nothing. But the good thi"
+ ],
+ [
+  21,
+  1507,
+  "ng in Ethereum is you have all the information to prove it without trust. And and that's why we are doing as much as possible without trust."
+ ],
+ [
+  21,
+  1517,
+  " So have you heard of the MENA protocol which uses just a 24 k v final sets? It's the the constant size blockchain."
+ ],
+ [
+  21,
+  1525,
+  "The MENA protocol MENA protocol. The MENA blockchain. Okay. So the idea here is that if it's deterministic, then it's provable that, the cur"
+ ],
+ [
+  21,
+  1534,
+  "rent state is derived from the previous states by merging those NOCs altogether and the final state. So you can always trust the SnOCs that "
+ ],
+ [
+  21,
+  1544,
+  "you're the the final proof. So if we have a SnOGified chain as"
+ ],
+ [
+  21,
+  1548,
+  "a plan for a term, this will make much easier because then we we don't need these, complicated execution proofs. But we cannot wait until th"
+ ],
+ [
+  21,
+  1560,
+  "e term is is finished with this. This will take two years, five years, ten years, nobody knows. So but here with with Coulipri, we can use w"
+ ],
+ [
+  21,
+  1572,
+  "hat is existing right now and make it fully trustless."
+ ],
+ [
+  21,
+  1577,
+  "Okay. But, sorry again. But you're still not making a transaction against so maybe you are able to verify a proof, like, with the architectu"
+ ],
+ [
+  21,
+  1585,
+  "re you are showing. But the issue here is that maybe the proof is valid, but the blockchain state is outdated. Maybe there is a new transact"
+ ],
+ [
+  21,
+  1594,
+  "ion that was brought in or a new block that was mined. In that case, MBB or other other, problematic scenarios can rise."
+ ],
+ [
+  21,
+  1601,
+  "So still the even though we can now rely on RPCs, RPCs might be of, giving out faulty or, malicious malicious output, it might be giving us "
+ ],
+ [
+  21,
+  1611,
+  "outdated information. Can this protect against that? What do you mean with outdated information? Oh, box. So so so When I read information, "
+ ],
+ [
+  21,
+  1621,
+  "I say, I want information from block"
+ ],
+ [
+  21,
+  1624,
+  "one, two, three. So and then I have to prove that this is the correct information in this block. So what I don't know at this point, there m"
+ ],
+ [
+  21,
+  1632,
+  "ight be a new block. Exactly. But but this is something I I cannot prove. There's no way to prove this. No. You can always make a transactio"
+ ],
+ [
+  21,
+  1641,
+  "n. If you could actually make a transaction against the block, then that would make the job easier. Right? Yes. And and then you can use thi"
+ ],
+ [
+  21,
+  1649,
+  "s information to know what block I need to read. Yes. And then I need this information to make it trustless."
+ ],
+ [
+  21,
+  1656,
+  "Okay. That's all. We can discuss it. Thank you for the presentation again. Okay."
  ]
 ]
