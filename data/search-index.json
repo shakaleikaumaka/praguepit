@@ -11105,6 +11105,1916 @@
   "ific vault, that's a great thing. It's a win win for everybody. Yeah. Thank you very much. We've run out of time. So we can Thank you."
  ],
  [
+  13,
+  11,
+  "Right. Hello, everyone, and a very warm welcome from my side. My name is Anya Pitkovich Kummel. I am a formal verification researcher at Arg"
+ ],
+ [
+  13,
+  23,
+  "o Collective. And today, I will be telling you a little bit about specifying and verifying smart contracts. And more specifically,"
+ ],
+ [
+  13,
+  35,
+  "I'm going to talk about our tool called ACT that we developed together at Argo. So this is joint work with Zoe, Lefteris, Sophie, who's also"
+ ],
+ [
+  13,
+  45,
+  " there in the audience. Sophie, please wave. If you have any questions after the talk, she's just as likely to answer it very competently as"
+ ],
+ [
+  13,
+  55,
+  " I am. And, of course, Alexis is also one of the developers."
+ ],
+ [
+  13,
+  59,
+  "So a tiny little bit about myself. I actually come from mathematics side. I'm I have a PhD in mathematics. I was working as an academic for "
+ ],
+ [
+  13,
+  68,
+  "a little while, first in Slovenia, then, in Vienna, in Austria as a postdoc. And I was developing these formal verification tools, proof ass"
+ ],
+ [
+  13,
+  77,
+  "istants, and some automated theorem provers. And then, about a year ago, I joined Argo,"
+ ],
+ [
+  13,
+  83,
+  "and I thought it was really cool that I can use some of that and a lot of that knowledge in the real world. And I'm so excited to share this"
+ ],
+ [
+  13,
+  92,
+  " knowledge with you. And hopefully, I will not use too much of my mathematical jargon. But if I do, just, you know, raise your voice and say"
+ ],
+ [
+  13,
+  101,
+  ", hey, what what is she talking about? What is that? So formal verification."
+ ],
+ [
+  13,
+  106,
+  "Let's start a few steps back, and I will now have one slide when I'm preaching to the choir. How do we develop smart contracts in Ethereum? "
+ ],
+ [
+  13,
+  115,
+  "So we write our contract code in one of the source languages. So it's either Solidity, Viper, Fey is another language that is developed at A"
+ ],
+ [
+  13,
+  125,
+  "rgo. And today, we heard a workshop about blank. So I should have used that one, but it's not very old. So I'm very sorry."
+ ],
+ [
+  13,
+  133,
+  "And then what we do is we compile this source code into EVM byte code. We we then deploy on Ethereum blockchain as byte code. And this means"
+ ],
+ [
+  13,
+  151,
+  " that the basically, the code that executes these changes."
+ ],
+ [
+  13,
+  159,
+  "And because contracts manage valuable assets, bugs are very impactful and we want our contract codes to be correct. And that's why we do ver"
+ ],
+ [
+  13,
+  170,
+  "ification. Now when I use the word verification, I mean a very specific thing. I mean formal verification. Now what is that? I will first te"
+ ],
+ [
+  13,
+  181,
+  "ll you what is what it is not. All of"
+ ],
+ [
+  13,
+  184,
+  "although all of these other things that I'll be talking about are very useful. So it's not exactly testing because when you test your code, "
+ ],
+ [
+  13,
+  194,
+  "you run it on very specific inputs. You will think of some bugs and you will try to catch them ahead of time, but you can miss some edge cas"
+ ],
+ [
+  13,
+  203,
+  "es. And then a step further is then fuzzing, which generates some random inputs,"
+ ],
+ [
+  13,
+  209,
+  "but it may be a little bit more difficult to get some inputs that are well formed. But you can find novel bugs, the ones that you didn't thi"
+ ],
+ [
+  13,
+  219,
+  "nk of ahead of time. You can, though, still miss some edge cases. And then because of that, you have one step forward. It's auditing. It's w"
+ ],
+ [
+  13,
+  228,
+  "hen you hire a human expert, does an expert review,"
+ ],
+ [
+  13,
+  232,
+  "and usually, they will they are very good. They will find known attack patterns, maybe even some new ones, but, of course, can miss novel at"
+ ],
+ [
+  13,
+  241,
+  "tacks. We are all humans. We are not machines. What I mean by formal verification is the highest standard. It's mathematical proof. You see,"
+ ],
+ [
+  13,
+  250,
+  " as a mathematician, I'm very biased towards certainty. In mathematical proof, we will prove properties about contracts"
+ ],
+ [
+  13,
+  258,
+  "for all inputs. Okay? No testing, no randomness, all inputs mathematical certainty. And as an additional step, I don't want this proof to be"
+ ],
+ [
+  13,
+  268,
+  " just on paper. I want it to be machine checkable. So we will use software, they're called proof assistants, to check these proofs for us an"
+ ],
+ [
+  13,
+  279,
+  "d give us extra step of certainty. Okay. So we are in this last block when we wanna do,"
+ ],
+ [
+  13,
+  285,
+  "mathematical proofs, and I wanna show you today how we do it with ACT Aware, what we call verification frame framework and specification lan"
+ ],
+ [
+  13,
+  296,
+  "guage. So when I say act, I mean two things. I mean this entire pipeline that is depicted on the screen, and I also mean this yellow bubble "
+ ],
+ [
+  13,
+  306,
+  "in the middle. Okay?"
+ ],
+ [
+  13,
+  308,
+  "When I'm talking about the yellow bubble in the middle, I will mean a typed intermediate verification language. Okay? It's like a concrete s"
+ ],
+ [
+  13,
+  318,
+  "yntax where you write your specification. The specification will sort of describe the state of the contract after every possible public tran"
+ ],
+ [
+  13,
+  328,
+  "sition, public function in Solidity, for example. Okay? And when I mean the entire pipeline, I will mean the verification"
+ ],
+ [
+  13,
+  336,
+  "framework where it's not just the language, but it's all of the front ends and back ends of it. So how does it look like? How do you you use"
+ ],
+ [
+  13,
+  345,
+  " act? So you usually start by looking at a source code, and currently, we support two source languages, Solidity and Viper. So it's source l"
+ ],
+ [
+  13,
+  354,
+  "anguage agnostic. And then you will use a compiler to produce EVM byte code, and this is, you know, where I ended my first slide or second s"
+ ],
+ [
+  13,
+  364,
+  "lide on, then you would deploy it. Right? But before I deploy it,"
+ ],
+ [
+  13,
+  368,
+  "I want to have some guarantees about it. So we will actually reason about the soon to be deployed bytecode bytecode itself, and we will do t"
+ ],
+ [
+  13,
+  379,
+  "his by then writing a specification in our intermediate language act, and then we will prove it equivalent to the byte code. And we can do t"
+ ],
+ [
+  13,
+  389,
+  "his because act actually has on top of,"
+ ],
+ [
+  13,
+  392,
+  "a rigorous type system, also a well defined semantics. And we actually proved, type safety in a mechanized way in a proof assistant. Okay. N"
+ ],
+ [
+  13,
+  403,
+  "ow I've mentioned the word proof assistant a couple of proof assistant a couple of times now. And here it is on the right hand side of this "
+ ],
+ [
+  13,
+  414,
+  "diagram. Proof assistants are pieces of software where you can actually"
+ ],
+ [
+  13,
+  419,
+  "check your mathematical proofs in a very small kernel in a very trusted way, and they also assist you in generating them manually to an exte"
+ ],
+ [
+  13,
+  431,
+  "nt. And, we can export our specification in a high level representation in a proof assistant, specifically in two proof assistants, Rock and"
+ ],
+ [
+  13,
+  443,
+  " Lean."
+ ],
+ [
+  13,
+  444,
+  "And you may have heard of Lean before, and I will be showing you lean today just because I'm hoping that some of you have already seen it an"
+ ],
+ [
+  13,
+  453,
+  "d can relate to part of the syntax of of that. If not, I'm hoping the workshop will still be useful for you. There will not be just lean, th"
+ ],
+ [
+  13,
+  463,
+  "at I will be telling you. Okay. So I want this representation"
+ ],
+ [
+  13,
+  467,
+  "of, of the smart contract that talks about states and how to get from one stage to the other to actually be equivalent to what is deployed o"
+ ],
+ [
+  13,
+  478,
+  "n the bytecode. And this is where this intermediate double arrow comes from, this equivalence. Actually, we use, symbolic execution engine, "
+ ],
+ [
+  13,
+  489,
+  "AGVM, to then obtain"
+ ],
+ [
+  13,
+  491,
+  "an automated mathematical proof that what you specify in ACT is actually equivalent mathematically equivalent to the EVM byte code that you "
+ ],
+ [
+  13,
+  502,
+  "compiled from the source language. So ACT actually, you know, gives you sort of a guarantee that whatever you are proving about is, connecte"
+ ],
+ [
+  13,
+  513,
+  "d to the EVM byte code that you compiled,"
+ ],
+ [
+  13,
+  516,
+  "but it allows you to do it on a high level, not reasoning about all of the nitty gritty EVM details, that you could possibly want to omit in"
+ ],
+ [
+  13,
+  527,
+  " your proof. Okay. So here is how the usual workflow goes if you're using ACT. So you start, of course, here with the source language. You s"
+ ],
+ [
+  13,
+  538,
+  "tart with the source code of your smart contract,"
+ ],
+ [
+  13,
+  542,
+  "and then you will manually create an act specification. And I will show you how to do that today in a minute. So this part is manual here, w"
+ ],
+ [
+  13,
+  552,
+  "rites back, unless you have a very, very smart cat, in which case I envy you very much. I want to adopt her. And then, by a press of a butto"
+ ],
+ [
+  13,
+  562,
+  "n, you get your specification type checked so that it, you know, makes sense as a language."
+ ],
+ [
+  13,
+  569,
+  "And then by a press of another button or the same button, you can, have an automated way to check for equivalence with the byte code. So you"
+ ],
+ [
+  13,
+  578,
+  "'ll give it your byte code. You'll give it your spec, and then it will take a few minutes. And then you will see whether or not it's actuall"
+ ],
+ [
+  13,
+  588,
+  "y equivalent. And if it's not, you will get a counterexample of what is missing. So have some,"
+ ],
+ [
+  13,
+  594,
+  "feedback on why it's not equivalent. And then by pressing a third button, you can get an extracted high level representation in a proof assi"
+ ],
+ [
+  13,
+  604,
+  "stant where you then, unless you have another very smart cat, have to prove the properties about the contracts yourself. But you have a very"
+ ],
+ [
+  13,
+  615,
+  " high level of expressivity"
+ ],
+ [
+  13,
+  617,
+  "because as far as logic goes, like the mathematical foundation, the proof assistance that we extract to have a very high expressivity as a l"
+ ],
+ [
+  13,
+  627,
+  "anguage who can express multiple things, not just linear arithmetics, for instance. Okay. So without further ado, let's try to see how it wo"
+ ],
+ [
+  13,
+  637,
+  "rks. Okay. So here are three links. The first one is"
+ ],
+ [
+  13,
+  641,
+  "the link for to our repository, to our tool. It has the source code. It has examples. It has an issue tracker. It also has the link to our s"
+ ],
+ [
+  13,
+  650,
+  "econd link here, which is the act book. It's our documentation, the language reference, all of the tutorials. We have a very nice tutorial o"
+ ],
+ [
+  13,
+  659,
+  "n how to write your own spec. And today, I will be presenting a slightly simplified example from there. So if you understand anything from w"
+ ],
+ [
+  13,
+  667,
+  "hat I'm saying today, that's where you jump in and continue"
+ ],
+ [
+  13,
+  671,
+  "and get a bit more details. And the third link is actually the one example that I will be dissecting today here with you, hopefully. It's no"
+ ],
+ [
+  13,
+  681,
+  "t merged into the main branch yet, so that's why the link is slightly different. The QR code will take you to this third link so you can fol"
+ ],
+ [
+  13,
+  692,
+  "low along with the code I will be showing. Okay. So let's start, and I'm going to start with solidity"
+ ],
+ [
+  13,
+  699,
+  "and not act. So we will try to figure out how to write the specification, and my cat assistant gladly helped me already, so I have some writ"
+ ],
+ [
+  13,
+  709,
+  "ten already. Okay. I will be presenting now a very toy example. This is solidity code. This is not act yet. And I'm presenting a small examp"
+ ],
+ [
+  13,
+  719,
+  "le so that it's mostly understandable,"
+ ],
+ [
+  13,
+  722,
+  "but we have some more involved case studies that I will show you a little later, and you can browse them in our, GitHub repository. So the i"
+ ],
+ [
+  13,
+  732,
+  "dea of the following two contracts is that we will have an asset that can only be moved if the if the caller of the contract is one of the a"
+ ],
+ [
+  13,
+  743,
+  "dministrators."
+ ],
+ [
+  13,
+  744,
+  "Okay? So very simple. We have, you know, sort of like, you only have permission to transfer money if you're one of these addresses. So that'"
+ ],
+ [
+  13,
+  753,
+  "s why the first contract I'm showing you is the admins, the administrators. It's a super simple contract. It has two storage variables, two "
+ ],
+ [
+  13,
+  763,
+  "addresses that are our future administrators of the contract. And now now the more interesting one is the asset contract."
+ ],
+ [
+  13,
+  771,
+  "It has, again, two storage variables. One is the admins, which is a contract that we specified here. And the other one is a mapping from add"
+ ],
+ [
+  13,
+  782,
+  "resses to integers, the balance of that will track the balance of each address similarly to an ERC 20 token, if you've ever seen one. The co"
+ ],
+ [
+  13,
+  794,
+  "nstructor is, not"
+ ],
+ [
+  13,
+  795,
+  "very involved. It will take a value, and it will assign all of the value to the address of the asset contract, the ones that you just create"
+ ],
+ [
+  13,
+  805,
+  "d. And by default, it will set the administrators to the message sender, so the caller, and the origin of the transaction. This is you know,"
+ ],
+ [
+  13,
+  815,
+  " we could do this differently. You could, like, set administrators as as a"
+ ],
+ [
+  13,
+  820,
+  "as an argument here and choose them yourself. So this is an artificial example, of course, but I just wanted to show you we can do these thi"
+ ],
+ [
+  13,
+  830,
+  "ngs in act as well. Okay. And now the two interesting functions where this permission actually comes into play. The function assets transfer"
+ ],
+ [
+  13,
+  840,
+  " will transfer the amount to the recipient,"
+ ],
+ [
+  13,
+  843,
+  "and this means that here in this block, we will increase, the amount of balance of the recipient and decrease the amount of the asset contra"
+ ],
+ [
+  13,
+  853,
+  "ct itself. But this require here will tell you we can only do it if the one calling the contract is admin one or admin two. So, otherwise, t"
+ ],
+ [
+  13,
+  864,
+  "his will revert and we will not be able to transfer anything."
+ ],
+ [
+  13,
+  868,
+  "And then additionally, just for fun, we can have a function that sets new administrators, and it can also only be executed if the message se"
+ ],
+ [
+  13,
+  879,
+  "nder is one of the two administrators. K? And if it is, then the admins storage variable becomes the new admins with two new addresses given"
+ ],
+ [
+  13,
+  889,
+  " as parameters to the function. Any questions so far?"
+ ],
+ [
+  13,
+  893,
+  "No. Perfect. Everybody speaks fluent Solidity. I'm so happy. Okay. Now this is our start. This is like a simple example, and now I want to s"
+ ],
+ [
+  13,
+  904,
+  "how you how an act specification looks like. So we will start with the functioned asset transfer here, and this is essentially the full code"
+ ],
+ [
+  13,
+  915,
+  " of the specification. Don't look at all of it just now."
+ ],
+ [
+  13,
+  919,
+  "Every function, every public solidity function will become what we call a transition in act. So here I'm saying it's a transition asset tran"
+ ],
+ [
+  13,
+  928,
+  "sfer, and the transition will take arguments just as the public function would. And then first thing we will notice is that this transition "
+ ],
+ [
+  13,
+  938,
+  "distinguishes between two different cases, depending on whether the address of the asset contract is the same as the recipient or whether it"
+ ],
+ [
+  13,
+  947,
+  "'s different."
+ ],
+ [
+  13,
+  948,
+  "And this is relevant because what we do in the spec is describe how the end state looks like after your function has been executed, after th"
+ ],
+ [
+  13,
+  958,
+  "e transition has completed. And these two cases are different because the state looks different in two cases. In particular, if the address "
+ ],
+ [
+  13,
+  967,
+  "of this contract, the asset contract, and the recipient is the same,"
+ ],
+ [
+  13,
+  972,
+  "we are first reducing the amount and then increasing by the same amount to the same address, so nothing actually changed. Right? And here, a"
+ ],
+ [
+  13,
+  982,
+  "ctually, in this case, the, specification just returns true and does nothing. In the other case where it's actually interesting, we would wr"
+ ],
+ [
+  13,
+  992,
+  "ite what we call an updates block in act."
+ ],
+ [
+  13,
+  995,
+  "So in the updates block, we will specify all of the storage variables that have changed. So if I haven't specified it at all, it didn't chan"
+ ],
+ [
+  13,
+  1005,
+  "ge. For instance, the admins, storage variable hasn't changed, so I didn't have to specify it. And the balance off has changed. In this case"
+ ],
+ [
+  13,
+  1015,
+  ", it's unsurprising. It's the previous balance off, but with the address this,"
+ ],
+ [
+  13,
+  1021,
+  "change to the previous balance minus amount, and the address of recipient change to the previous balance plus the same amount. So this is wh"
+ ],
+ [
+  13,
+  1031,
+  "at you would essentially do. You would look at your public function and then describe what the end state looks like. There is another catch "
+ ],
+ [
+  13,
+  1041,
+  "though. Right? Because we want our spec to be equivalent to the actual byte code,"
+ ],
+ [
+  13,
+  1047,
+  "we have an additional what we call preconditions block. So if and only if this I f f, it's if and only if. And here, I'm listing the conditi"
+ ],
+ [
+  13,
+  1056,
+  "ons under which the the transition doesn't revert. The function doesn't revert. And they have to be very precise. Right? Your spec will guid"
+ ],
+ [
+  13,
+  1065,
+  "e you into thinking such certain things through. We know, and this is so the first precondition is the one that comes from the solidities re"
+ ],
+ [
+  13,
+  1074,
+  "quire here. The first precondition is that the caller is either admin one or the admin two. This is the one that we wanted. Right? The permi"
+ ],
+ [
+  13,
+  1084,
+  "ssions,"
+ ],
+ [
+  13,
+  1084,
+  "precondition. The other two happen a little bit more implicitly in Solidity. It's the overflow and underflow check. Right? So here, when we "
+ ],
+ [
+  13,
+  1097,
+  "decrease the balance of the address, this could underflow, and we have to say, uh-huh. It will not revert unless"
+ ],
+ [
+  13,
+  1108,
+  "so if it will not revert if it's in the range of uint to 56. Right? So we explicitly say, uh-huh. This condition has to hold. The other one "
+ ],
+ [
+  13,
+  1118,
+  "is even more interesting. The overflow here when we do the plus amount also has has to be in range. So the balance of plus amount has to be "
+ ],
+ [
+  13,
+  1128,
+  "in range of the u into 56."
+ ],
+ [
+  13,
+  1130,
+  "But this one is only relevant if the address of this and the recipient is different. Why is this the case? Because here, we already subtract"
+ ],
+ [
+  13,
+  1141,
+  "ed something, and then if we increase the amount, it will not create an overflow because the, yeah, because it's already different. And, act"
+ ],
+ [
+  13,
+  1152,
+  "ually, this implication here is necessary"
+ ],
+ [
+  13,
+  1155,
+  "because our equivalence checker will tell you, hey. If I forget forget this part, I will say, hey. It's not equivalent, and this is, the cal"
+ ],
+ [
+  13,
+  1164,
+  "l data that, you can call it with and gives you a different result. So our equivalence check will actually check whether the input spaces of"
+ ],
+ [
+  13,
+  1173,
+  " both the EVM bytecode and your spec are similar or if it if they are so if they're either the same or if they are different."
+ ],
+ [
+  13,
+  1181,
+  "Alright. Now we saw the asset transfer transition. The rest of the code, is also quite intuitive. So for every contract that we have, for ex"
+ ],
+ [
+  13,
+  1191,
+  "ample, the admins and the asset, we have to create a contract in the act language. Every constructor has a matching constructor, and it has "
+ ],
+ [
+  13,
+  1202,
+  "what we call a creates block,"
+ ],
+ [
+  13,
+  1204,
+  "which specify which, storage variable it creates and assigns them what value. I omitted here the set admins, transition, because it's quite "
+ ],
+ [
+  13,
+  1216,
+  "similar to the asset transfer, and we can think of it in a little while. And there's another thing I omitted here, and I've written it in re"
+ ],
+ [
+  13,
+  1227,
+  "d. We have to include"
+ ],
+ [
+  13,
+  1229,
+  "every public function, and this includes also the implicit view functions. Right? So Solidity will give you the view function for every stor"
+ ],
+ [
+  13,
+  1237,
+  "age variable that you can, like, look at it for here here in the admins. For instance, it's the admin one and admin two. You don't have to s"
+ ],
+ [
+  13,
+  1246,
+  "pecify them, but they're there. In AG, because we want it to be every transition, you you should not forget these as well."
+ ],
+ [
+  13,
+  1253,
+  "Okay. So hands on workshop. How do we think the function set admins would look as a transition? Do we have any ideas? Of course, it will aga"
+ ],
+ [
+  13,
+  1270,
+  "in be a transition. Yes. Yes. And the sanity check with the if and only if. Exactly."
+ ],
+ [
+  13,
+  1280,
+  "So here, I have the entire side by side comparison to the contract. So the admin's contract here, it looks the same. And, of course, the vie"
+ ],
+ [
+  13,
+  1292,
+  "w functions are listed here. It's a trivial transition that just returns the value. And then here, the transition set admins, as you can see"
+ ],
+ [
+  13,
+  1304,
+  ","
+ ],
+ [
+  13,
+  1304,
+  "will look the same. Right? The caller is one of the administrators, it will create a new update. If it's not one of the administrators, noth"
+ ],
+ [
+  13,
+  1316,
+  "ing nothing changes. Right? Exactly what we want from such a contract. And, of course, the balance of transition, the view function is also "
+ ],
+ [
+  13,
+  1327,
+  "included. So"
+ ],
+ [
+  13,
+  1328,
+  "I know it's a toy example, I admit, but only 50 lines of code of the transition, and, of course, a bunch of blank lines, I consider this a s"
+ ],
+ [
+  13,
+  1343,
+  "uccess. Okay. Now let's try to see whether or not they are equivalent. And where did my terminal go? Let me check if I can okay. I'll open t"
+ ],
+ [
+  13,
+  1357,
+  "his one."
+ ],
+ [
+  13,
+  1358,
+  "You didn't see this. It was never there. Okay. I want to check whether these two specifications are equivalent. So what I will write is do y"
+ ],
+ [
+  13,
+  1368,
+  "ou see this or should I increase a little bit? This one? Okay. I will say act because I'm invoking the tool act, equip because I'm checking "
+ ],
+ [
+  13,
+  1378,
+  "for equivalence, and then I will give it the solidity file,"
+ ],
+ [
+  13,
+  1382,
+  "which will be admin solve. And then I will give it, the spec, the act spec, which will be the admin sorry. Admin dot act. And then I will pr"
+ ],
+ [
+  13,
+  1395,
+  "ess enter, and stuff starts happening. Right? Okay. First thing I will note is that I did give it the original"
+ ],
+ [
+  13,
+  1405,
+  "source code file instead of the byte code. What will actually happen is it will get compiled to the byte code, and then the byte code will g"
+ ],
+ [
+  13,
+  1414,
+  "et executed. The reason I am specifying which source language it comes from is because the storage layout is slightly different in different"
+ ],
+ [
+  13,
+  1422,
+  " source languages. And for checking equivalence, it's actually relevant how the storage layout is encoded. But I pinky promise we only look "
+ ],
+ [
+  13,
+  1431,
+  "at the byte code and that extra piece of information of the storage layout encoding."
+ ],
+ [
+  13,
+  1436,
+  "Okay. It took a couple of seconds, and then here it says success, success, success, success. So it actually is equivalent what we have just "
+ ],
+ [
+  13,
+  1447,
+  "seen. It will check, you know, if the input spaces are the same, if it's matched by the Ethereum virtual machine, and whether the resulting "
+ ],
+ [
+  13,
+  1459,
+  "state,"
+ ],
+ [
+  13,
+  1459,
+  "can contain aliasing. More on this a little later. So now we have successfully checked for equivalence, and we have a full spec of our toy e"
+ ],
+ [
+  13,
+  1472,
+  "xample. So you could see it's still quite on a high level. Yes. Go ahead. Just to see whether or not it breaks? Yes."
+ ],
+ [
+  13,
+  1483,
+  "Of course. We can try to break it. We have time. So let's try. Address, admin three. And let's just use one of the admins. And then, hopeful"
+ ],
+ [
+  13,
+  1503,
+  "ly, it will break. I didn't"
+ ],
+ [
+  13,
+  1507,
+  "uh-huh. Error. Told you. So what it will give you is, the following input results in different behavior. So it will give you, like, the conc"
+ ],
+ [
+  13,
+  1517,
+  "rete input, the call data in which we actually encountered a bug. Now I admit it's not super readable, but if you know what you are doing an"
+ ],
+ [
+  13,
+  1527,
+  "d you're looking for, like, which addresses should be the same and so on,"
+ ],
+ [
+  13,
+  1532,
+  "it is actually, it can be useful. Okay. Now I will remove it just for my peace of mind and sanity. But, yes, it definitely breaks if you bre"
+ ],
+ [
+  13,
+  1543,
+  "ak it. Good good good catch. Alright. Now after we have written a specification, we did the type check and the equivalence check. We got the"
+ ],
+ [
+  13,
+  1553,
+  " green success lights,"
+ ],
+ [
+  13,
+  1555,
+  "so we got something that is equivalent. And now the best part is that for reasoning, all the information you need is actually what's in the "
+ ],
+ [
+  13,
+  1564,
+  "spec. Right? It's high level. It means also that you cannot reason about the low level byte code details, but also it means you don't have t"
+ ],
+ [
+  13,
+  1572,
+  "o reason about the low level byte code details. And this is where the mathematician in me likes"
+ ],
+ [
+  13,
+  1578,
+  "the result. Okay. Now we go to the other side where we actually want to prove anything. So far, we just described the contract in a specific"
+ ],
+ [
+  13,
+  1587,
+  "ation language that is high enough. I haven't stated any property yet. Haven't done anything, you know, mathematically interesting. Any guar"
+ ],
+ [
+  13,
+  1596,
+  "antee hasn't been produced yet. For that, I extracted to a theorem prover."
+ ],
+ [
+  13,
+  1601,
+  "And I will extract it to lean, and I will show you the very simple thing that I type. I type act lean and then file and, admin dot act. I on"
+ ],
+ [
+  13,
+  1613,
+  "ly have to specify the specification, not the byte code anymore because that has been checked for equivalence separately."
+ ],
+ [
+  13,
+  1624,
+  "And then I will pipe it into admin dot lean, and it produced something. And if I click on my admin dot lean, it produced this whole blob of "
+ ],
+ [
+  13,
+  1639,
+  "almost 500 lines of code of Lean. So this is the entire transition system. Okay."
+ ],
+ [
+  13,
+  1648,
+  "What did this command actually do? Let me show you on a high level what it means. The extraction to a proof assistant, in this case, Lean, w"
+ ],
+ [
+  13,
+  1658,
+  "ill describe what we call a state transition system. Right? Every contract storage will become a state in Lean. It's basically a record. And"
+ ],
+ [
+  13,
+  1668,
+  " for, the assets contract, for instance, which will be"
+ ],
+ [
+  13,
+  1672,
+  "a record with the following four fields, it will have a field for every contract, storage variable, so the admins and the balance of. And th"
+ ],
+ [
+  13,
+  1683,
+  "e admins, as you see, is a contract by itself. It's we need to we needed to specify the other contract as well, and it will have the state o"
+ ],
+ [
+  13,
+  1693,
+  "f that other contract as the storage"
+ ],
+ [
+  13,
+  1696,
+  "here. And then additional two variables that are always present that act outputs. One is the address of the newly created contract, and the "
+ ],
+ [
+  13,
+  1707,
+  "other one is the balance in ETH. So if this is not relevant for this example because we don't have any payable contracts, but if your contra"
+ ],
+ [
+  13,
+  1718,
+  "ct is payable or if you have any payable function, this will become relevant."
+ ],
+ [
+  13,
+  1724,
+  "Also, what you can notice is that here, the z represents the actual mathematical integers. You don't have to reason about modular arithmetic"
+ ],
+ [
+  13,
+  1734,
+  " because we checked for overflows and underflows already. So you can just safely reason with just mathematical integers, forget about the mo"
+ ],
+ [
+  13,
+  1743,
+  "dulus, and if you need to reason about certain ranges,"
+ ],
+ [
+  13,
+  1747,
+  "your predicates from the preconditions are still there available for you, but you don't have to use them. Right? It's, like, guaranteed that"
+ ],
+ [
+  13,
+  1756,
+  " it will work out. And this is actually a consequence of our type system in act. So the type system will ensure that these in ranges get get"
+ ],
+ [
+  13,
+  1765,
+  " preserved. So you can then reason about it just with pure mathematical integers. Okay. So contract storage becomes essentially a record sta"
+ ],
+ [
+  13,
+  1774,
+  "te,"
+ ],
+ [
+  13,
+  1774,
+  "and then the constructor will translate to a predicate characterizing the initial state. So how do the initial state look like? So for our a"
+ ],
+ [
+  13,
+  1783,
+  "sset contract, what they will look like is that we'll have some admins, and the balance of mapping will map the address of the current contr"
+ ],
+ [
+  13,
+  1793,
+  "act to the entire value and the rest to zero. Right? So in this constructor,"
+ ],
+ [
+  13,
+  1798,
+  "predicate, will characterize these initial states. And then transitions, every transition in act, so every public function from your source "
+ ],
+ [
+  13,
+  1807,
+  "will translate to steps between the states. Right? So act actually, every time you call a function, it will, you know, create potentially a "
+ ],
+ [
+  13,
+  1815,
+  "new state. And in the proof assistant, you will get these relations. Right? How do we step from one state to the other? What can happen with"
+ ],
+ [
+  13,
+  1824,
+  " my contract?"
+ ],
+ [
+  13,
+  1825,
+  "Why is this relevant? Because at the end, what you want to reason about is unreachable states. We have this reachable predicate that says a "
+ ],
+ [
+  13,
+  1835,
+  "state is reachable if and only if there is ex exists some initial state, state prime, and there exists, you know, in some steps, we get to, "
+ ],
+ [
+  13,
+  1845,
+  "the state that we are interested in. And that means, uh-huh, my state is reachable, and I'm only interested in states that are reachable bec"
+ ],
+ [
+  13,
+  1855,
+  "ause"
+ ],
+ [
+  13,
+  1855,
+  "we want, only to reason about the states that we can actually get from executing our transitions. And like I say, we want to prove propertie"
+ ],
+ [
+  13,
+  1867,
+  "s over all reachable states. Okay. How do I prove anything about my toy example? What would I want to prove is the best the best example"
+ ],
+ [
+  13,
+  1879,
+  "best question. Sorry. The thing I would want to prove so we said, okay. Our example is only the administrators can change my contract, basic"
+ ],
+ [
+  13,
+  1889,
+  "ally. Right? So the property I would like to prove is, that if you're not an admin, you don't get to change. Right? No admin, no change prop"
+ ],
+ [
+  13,
+  1899,
+  "erty. And here is exactly how I would state it in Lean. Sorry. How I would state it in Lean."
+ ],
+ [
+  13,
+  1906,
+  "I will write it's a theorem. It's called no admin, no change. And it's a theorem on the states. Right? The states of the contract. So I take"
+ ],
+ [
+  13,
+  1916,
+  " two states, state and state prime. And, additionally, it's parameterized by the Ethereum environment. Right? Because I want to say if I ste"
+ ],
+ [
+  13,
+  1926,
+  "p from one state to the other, I will also have certain"
+ ],
+ [
+  13,
+  1930,
+  "Ethereum variables available, like who is the caller, what's the call data, what's the call value, for instance. Okay. And then what I say. "
+ ],
+ [
+  13,
+  1941,
+  "If my state is reachable and the state prime came from a transition from the state, so this is like one step relation, then the state and st"
+ ],
+ [
+  13,
+  1951,
+  "ate prime are exactly the same if the caller is not one of the admins. Right? So here I have the environment dot caller is not equal to stat"
+ ],
+ [
+  13,
+  1962,
+  "e.admins.admin"
+ ],
+ [
+  13,
+  1963,
+  "one. And again, if the caller is not the other administrator, my state becomes intact. Okay? And then caller equals and this by signifies th"
+ ],
+ [
+  13,
+  1973,
+  "e beginning of the proof in lean. And then I wrote three dots because it's about city 60 lines of proofs that I omitted. And you have to kno"
+ ],
+ [
+  13,
+  1983,
+  "w a little bit of lean to be able to see what's going on. Now,"
+ ],
+ [
+  13,
+  1988,
+  "by show of hands, have you ever seen something in lean? Raise your hand. Ah. For the five people here, I will take two minutes to show you t"
+ ],
+ [
+  13,
+  2001,
+  "he proof because it's only 60 line. And after two minutes, I'll call the rest of you back. Please don't leave because it's right here. Okay."
+ ],
+ [
+  13,
+  2015,
+  " So I have a file. It's called admins don't clean. Yes. Question."
+ ],
+ [
+  13,
+  2021,
+  "Uh-huh. Yes. So here, the it says I have a predicate that there is a transition from state to state prime. Thank you for the question. Okay."
+ ],
+ [
+  13,
+  2034,
+  " Sorry. Wrong way. Okay. So this is the no admin, no change. This is exactly what I've shown you so far on the slide. And here are the lines"
+ ],
+ [
+  13,
+  2046,
+  " of proof."
+ ],
+ [
+  13,
+  2047,
+  "Now for the experts in lean here, I will give you the lean info view. What I do here is just first introduce all of the hypothesis that the "
+ ],
+ [
+  13,
+  2056,
+  "state is reachable, that the caller is not one of the admins, that there is a transition between the states, and I want to prove that the st"
+ ],
+ [
+  13,
+  2064,
+  "ates are equal. And what I will do in the proof is very much non interesting. I will case split on all possible transitions."
+ ],
+ [
+  13,
+  2072,
+  "Right? So if it's, so here I have cases each transition with. And then, for example, if it's the one of the asset transitions, I will, again"
+ ],
+ [
+  13,
+  2084,
+  ", case split on which assets transition it is. And if it's the assets transfer transition, I will then, case split on the hypothesis,"
+ ],
+ [
+  13,
+  2096,
+  "la la la, and then I will case split on the conditions, on the preconditions of the transition. And I will see here on this step of the proo"
+ ],
+ [
+  13,
+  2106,
+  "f that I have a precondition that the transition can only happen if the caller is one of the administrators. Right? Env caller equals admin "
+ ],
+ [
+  13,
+  2116,
+  "one or env caller equals admin two. But here, I had a hypothesis that it's neither of them. So, of course, I will conclude with a contradict"
+ ],
+ [
+  13,
+  2126,
+  "ion here. It says"
+ ],
+ [
+  13,
+  2127,
+  "contradiction blop, and the goal is completed. And similarly for all other things, or it will either be a contradiction because I'll have co"
+ ],
+ [
+  13,
+  2137,
+  "ntradicting hypothesis, or I will end with reflexivity because I will end up in an eta expanded same state because no change actually happen"
+ ],
+ [
+  13,
+  2147,
+  "ed. For instance, this is maybe an interesting fact."
+ ],
+ [
+  13,
+  2151,
+  "The transitions here mhmm. Previous slide. The transitions that can happen here are either internal transitions of the contract, so the inte"
+ ],
+ [
+  13,
+  2162,
+  "rnal public functions, or they can be external transitions because here in the asset contract, the admins is also a contract that can have t"
+ ],
+ [
+  13,
+  2173,
+  "ransitions of its own. Right?"
+ ],
+ [
+  13,
+  2175,
+  "This is a trivial one because as we saw, the admins contract didn't have any actual functions. It just had the view functions that did nothi"
+ ],
+ [
+  13,
+  2183,
+  "ng, never changed the state. But, you know, in principle, the admins could be called from somewhere else and could have an internal transiti"
+ ],
+ [
+  13,
+  2192,
+  "on here, which would then reflect in a transition of the asset contract and could affect its state."
+ ],
+ [
+  13,
+  2198,
+  "So in the proof where I have here, actually, I'm I have to take care of the possibility that in the asset contract, I have the admins transi"
+ ],
+ [
+  13,
+  2209,
+  "tion. And, of course, it will just always stay the same, so the proof will be reflexivity at the end. Okay. My point of this about this proo"
+ ],
+ [
+  13,
+  2220,
+  "f is it's very non interesting,"
+ ],
+ [
+  13,
+  2222,
+  "could be automated with LLMs. Actually, I did this proof manually because it was short enough. But with the help of LLMs, if you know what y"
+ ],
+ [
+  13,
+  2231,
+  "ou're doing, you can prompt it away and it will it will just do it for you. And I'm hoping that for other a little bit more complex examples"
+ ],
+ [
+  13,
+  2240,
+  ", we will soon reach a point where it's more automatable than manual. Okay."
+ ],
+ [
+  13,
+  2245,
+  "I promised two case studies. We did two actual case studies. It was a toy example that I showed you here, very simple one. The more complica"
+ ],
+ [
+  13,
+  2256,
+  "ted ones are the ERC 20 token and the, automated market maker, the AMM. The AMM is a simplified core of the Uniswap v two. It's, again, a mu"
+ ],
+ [
+  13,
+  2267,
+  "lticontract example because it includes two ERC tokens"
+ ],
+ [
+  13,
+  2271,
+  "inside. The byte code equivalence is not just a few seconds as it was in the toy example. It actually takes about ten minutes for the ERC 20"
+ ],
+ [
+  13,
+  2281,
+  ", a little longer for the a m m, so almost four hours. But it's so much we can do. It's symbolically executing the code, so it the the searc"
+ ],
+ [
+  13,
+  2292,
+  "h space becomes very large. We extracted into into ROG, but for lean,"
+ ],
+ [
+  13,
+  2297,
+  "the number of locations is the the the lines of code is the same. So it's about 500 for ERC 20, about a thousand and a 100 for the AMM. But "
+ ],
+ [
+  13,
+  2309,
+  "fifth 500 of this is actually the embedded ERC 12 token already. So it's, like, 500 and on top about 600 lines of code."
+ ],
+ [
+  13,
+  2319,
+  "And then the properties that we managed to prove in, like, full formality is for the ERC 20 token that the sum of balances equal the total s"
+ ],
+ [
+  13,
+  2329,
+  "upply that the token tracks. Actually, for our toy example that I showed you, we could also prove something like this because we have the ba"
+ ],
+ [
+  13,
+  2339,
+  "lance of function. And for the AMM, we proved solvency for all liquidity providers. So we proved that the contract"
+ ],
+ [
+  13,
+  2347,
+  "will always have enough tokens to pay out the investors, the liquidity providers if they want to exit. So we can actually, you know, mathema"
+ ],
+ [
+  13,
+  2357,
+  "tically prove that if you invest, you're not gonna get screwed. You can always exit with with enough liquidity. And the proof is actually no"
+ ],
+ [
+  13,
+  2367,
+  "t too long, about 250, lines of code for the ERC 20 token and about a thousand for the AMM."
+ ],
+ [
+  13,
+  2374,
+  "Okay. And then additionally, in our tool, if you try it out, which I'm really hoping you will, you have about 200 plus, specifications that "
+ ],
+ [
+  13,
+  2384,
+  "you can see the full pipeline, all of the, language capabilities, and, the language reference is also quite detailed if you wanna try it out"
+ ],
+ [
+  13,
+  2394,
+  ". Okay. As for the last minute, I wanna tell you a little bit what the limitations are and what we are currently working on within ACT."
+ ],
+ [
+  13,
+  2403,
+  "So we've asked around how people would like to use it, and one of the limitations we have is that we cannot read about normal code. So if yo"
+ ],
+ [
+  13,
+  2414,
+  "u have not specified, the transition system cannot support it just yet. But we have a prototype of how to address this, and it's actually an"
+ ],
+ [
+  13,
+  2424,
+  " open research question"
+ ],
+ [
+  13,
+  2426,
+  "how to address this. So, stay tuned. I'm hoping that in a couple of months, we will be ready to push, the support for reasoning with unknown"
+ ],
+ [
+  13,
+  2435,
+  " code because, essentially, the invariance you prove for your contract could carry on even if another contract may call you and cause, you k"
+ ],
+ [
+  13,
+  2444,
+  "now, reentrancy or something. So reasoning about that is coming up. There are two other limitations."
+ ],
+ [
+  13,
+  2451,
+  "The bottom one listed here is that we cannot reason about unbounded loops or recursion yet. This is a tough question, and, actually, the oth"
+ ],
+ [
+  13,
+  2461,
+  "er tools out there that do formal verification face a similar issue. Of course, when we do symbolic execution for our equivalence check, it'"
+ ],
+ [
+  13,
+  2471,
+  "s actually very hard to reason if we have unbounded loops. But for the proof assistant side, it's much easier."
+ ],
+ [
+  13,
+  2479,
+  "So our bottleneck is actually equivalence check for this for the second one. The first one is, about to be lifted soon, hopefully. But curre"
+ ],
+ [
+  13,
+  2490,
+  "ntly, your local contract state must form a tree you cannot reference, so you cannot share references within your contract. But globally, of"
+ ],
+ [
+  13,
+  2500,
+  " course, the references can be shared."
+ ],
+ [
+  13,
+  2503,
+  "And a slight little peek into the future near future, so to say, we are building an additional back end. So here, just to show you the pipel"
+ ],
+ [
+  13,
+  2513,
+  "ine again, we have a back end that extracts to two proof assistants. Now we are going to extract into something that is not a proof assistan"
+ ],
+ [
+  13,
+  2524,
+  "t, but of, an automated, theorem prover of a different kind."
+ ],
+ [
+  13,
+  2528,
+  "Actually, it's it's a tool that provides automated way to reason about the economic incentives. So, essentially, whether or not it pays off "
+ ],
+ [
+  13,
+  2538,
+  "to cheat and, the game theoretic theories behind it. And it's actually a really cool tool that can, do this reasoning about security propert"
+ ],
+ [
+  13,
+  2549,
+  "ies for the incentives themselves."
+ ],
+ [
+  13,
+  2551,
+  "It can do it automatically. And the idea is that once you've written your act specification, you can essentially use it, what you've already"
+ ],
+ [
+  13,
+  2560,
+  " written, to automatically port and check for incentives as well. So it's coming up. It's, under active development right now. So, check us "
+ ],
+ [
+  13,
+  2569,
+  "out in a few months. We will push it, and I'm very much looking forward to you testing it."
+ ],
+ [
+  13,
+  2575,
+  "Okay. Thanks for your questions and your attention, and please come seek me me and Sophie with questions even after this talk. Thank you so "
+ ],
+ [
+  13,
+  2590,
+  "much. Let's grab everyone. Any questions in the audience? Yeah. Super great talk."
+ ],
+ [
+  13,
+  2598,
+  "Lots of questions. So That means you followed. I'm liking it. How do you believe this, will scale for, like, larger projects? You already me"
+ ],
+ [
+  13,
+  2606,
+  "ntioned the usual limitations of, like, S and T based approaches like loops, etcetera. So, like, for example, a Uniswap v three or v four wi"
+ ],
+ [
+  13,
+  2614,
+  "th what about, like, a v three or v four style contract where, you know, you have the loop to do, the the thick transitions or or different "
+ ],
+ [
+  13,
+  2622,
+  "kinds of contracts? Like, yeah, how do you imagine it it will scale? Yes. So that's an excellent question."
+ ],
+ [
+  13,
+  2628,
+  "The loops are a problem for this equivalence part here, because this equivalence part actually relies on SMT solving at the end. First symbo"
+ ],
+ [
+  13,
+  2638,
+  "lic execution, then SMT solving. What we are currently exploring is to provide some support to do this part at least part of this equivalenc"
+ ],
+ [
+  13,
+  2647,
+  "e check-in a proof assistant where the logic is expressive enough to support recursion fixed points and loops."
+ ],
+ [
+  13,
+  2655,
+  "So we are looking into how to like, currently, you cannot reason about this, unfortunately, with this current release. But because this is a"
+ ],
+ [
+  13,
+  2664,
+  " problem, we are looking into how we could, you know, support some manual proofs here. Now manual proofs and automated proofs are not of the"
+ ],
+ [
+  13,
+  2672,
+  " same scale because automated, you can, like, leave your machine overnight, and it will do stuff for you."
+ ],
+ [
+  13,
+  2679,
+  "But we're actually hoping that, with the help of LLMs, the so we're trying to design this intermediate equivalence check-in a proof assistan"
+ ],
+ [
+  13,
+  2689,
+  "t such that it's LLM friendly so that it has, like, common patterns, how you can prove these things, and then the hypotheses are discharged "
+ ],
+ [
+  13,
+  2698,
+  "easier, so with less of actual manual human effort."
+ ],
+ [
+  13,
+  2702,
+  "Yeah. But, you know, it's only it's only viable if you have some expert who will try to do it. I see. Another question is, do you think in t"
+ ],
+ [
+  13,
+  2709,
+  "he future there'll be easier ways to write the spec? Because to me, as somebody who hasn't done a lot with, formal verification, the the spe"
+ ],
+ [
+  13,
+  2716,
+  "c and the implementation, they look very similar to me, like Mhmm. The requires, the preconditions, all of that. So I wonder, is there a mor"
+ ],
+ [
+  13,
+  2724,
+  "e direct way to just use your implementation"
+ ],
+ [
+  13,
+  2726,
+  "and have that be the spec, or how do you see that moving forward? Yes. This is also one of the desired features for us and for you, the user"
+ ],
+ [
+  13,
+  2735,
+  "s or potential users. We were thinking about several approaches. The more complicated one to be would be to actually decompile byte code int"
+ ],
+ [
+  13,
+  2743,
+  "o a spec directly. That would be great. But, actually, you can still partially"
+ ],
+ [
+  13,
+  2748,
+  "automate the automate that part if you give it the source code and then, you know, the act language reference to an LLM, you can ask it to t"
+ ],
+ [
+  13,
+  2758,
+  "o write it for you, and you can give the equivalence check as, like, a verifier whether or not it did a good job. So you can actually bootst"
+ ],
+ [
+  13,
+  2768,
+  "rap it with an agent to to help you create the the spec for you."
+ ],
+ [
+  13,
+  2772,
+  "Any other questions? So if we look at it as a security feature, very often, I would say in every single case where I have seen, the problem "
+ ],
+ [
+  13,
+  2787,
+  "is usually not that the contract does not fulfill the formal specification,"
+ ],
+ [
+  13,
+  2795,
+  "but that the formal specification does not match the informal specification, that the contract does not do what people think it does. And I'"
+ ],
+ [
+  13,
+  2806,
+  "m wondering if the and this is a little bit on the dovetails of the previous question. So if the specification can be formulated in such a w"
+ ],
+ [
+  13,
+  2816,
+  "ay that it is closer to what is understandable"
+ ],
+ [
+  13,
+  2820,
+  "in terms of being the in terms of something that matches the informal specification that actually is closer to what people would describe wh"
+ ],
+ [
+  13,
+  2830,
+  "at this contract does rather than to the formal specification, which is very similar to the implementation, really. Like, proving that the f"
+ ],
+ [
+  13,
+  2841,
+  "ormal specification"
+ ],
+ [
+  13,
+  2842,
+  "and the implementation match each other, it's super important and it's necessary. But, usually, the problem is not there. Right? Right. So I"
+ ],
+ [
+  13,
+  2852,
+  " will maybe here say an important distinction. Right? When you say we prove equivalence, the specification here in act does not, list any pr"
+ ],
+ [
+  13,
+  2863,
+  "operties. You list properties"
+ ],
+ [
+  13,
+  2865,
+  "in a proof assistant where you use this high level representation where you only have to reason about the contract state. Right? So you don'"
+ ],
+ [
+  13,
+  2874,
+  "t actually have to reason about the code and how you got there, but you have to say, you know, if you want to prove an invariant, it's quite"
+ ],
+ [
+  13,
+  2884,
+  " easy to say for every reachable state, this has to hold. Right? So I agree. It's there is a barrier between English and math, so to say, be"
+ ],
+ [
+  13,
+  2893,
+  "tween a natural language and what what mathematical formula you give it."
+ ],
+ [
+  13,
+  2898,
+  "But I I'm hoping that because you only have to reason about the state transition system, just about the states, that it will become more und"
+ ],
+ [
+  13,
+  2908,
+  "erstandable and it will match better the actual expectation. Yeah. Thank you. Okay. I have a question. Do you what are some other projects t"
+ ],
+ [
+  13,
+  2917,
+  "hat do similar things? Like, could you name some names and maybe compare quickly if there are some"
+ ],
+ [
+  13,
+  2924,
+  "You mean other formal verification projects? Or Yeah. But maybe also the ones that do this equivalence with EVM bytecode, so really for the "
+ ],
+ [
+  13,
+  2934,
+  "EVM. I'm sorry. I don't understand the question. So Yeah. Here in the EVM byte code, we use, a tool called HEVM. So it's also developed in A"
+ ],
+ [
+  13,
+  2944,
+  "rgo Collective. And it actually, what it does is it takes EVM byte code and then symbolically executes it. So it gives you, like, a symbolic"
+ ],
+ [
+  13,
+  2954,
+  " state in the beginning and then describes how this symbolic state changes"
+ ],
+ [
+  13,
+  2959,
+  "when the EVM byte code executes. Right? And then it gives you this representation, this expert representation. It's like a tree, that gives "
+ ],
+ [
+  13,
+  2968,
+  "you all of the possible states that you could end up in given your initial symbolic state, and then you can compare. And this is what we do "
+ ],
+ [
+  13,
+  2976,
+  "for the equivalence check. So AGVM can also, like, compare two different implementations"
+ ],
+ [
+  13,
+  2982,
+  "and their, you know, two different source implementations and their byte code, basically. Yeah. I guess, I mean, some other projects that pe"
+ ],
+ [
+  13,
+  2991,
+  "ople use to formally verify EVM, byte code or EVM's solidity source code, something like this. So you could also there are other things that"
+ ],
+ [
+  13,
+  3000,
+  " are out there. So for instance, you could there is, how do you call it, a deep embedding of EVM in a proof assistant, in Lean, for instance"
+ ],
+ [
+  13,
+  3009,
+  ". Right? So you could, in principle, like, reason about your byte code using this deep embedding of the EVM semantics"
+ ],
+ [
+  13,
+  3016,
+  "itself. Or another project, for example, that does a lot of formal verification is Sartora's, prover where they have this, way to use SMT so"
+ ],
+ [
+  13,
+  3026,
+  "lvers. They start with the EVM byte code. They decompile it to an intermediate representation. They call it TAC. And then you can essentiall"
+ ],
+ [
+  13,
+  3036,
+  "y state your invariance, your properties,"
+ ],
+ [
+  13,
+  3039,
+  "and give it on top of this encoding to an SMT solver, and then it sort of checks whether this EVM byte code satisfies a property. And it's a"
+ ],
+ [
+  13,
+  3048,
+  "ll done automatically, right, in the SMT solver. The reason we are doing it differently is because then the expressivity is limited to what "
+ ],
+ [
+  13,
+  3057,
+  "SMT solvers can do. And if they time out, you got nothing. Right? So,"
+ ],
+ [
+  13,
+  3062,
+  "here, at least, you have some way to reform your proof manually if if that happens. Thank you. Alright. There's still time for one quick que"
+ ],
+ [
+  13,
+  3076,
+  "stion. Thank you. So first, thank you very much for the talk. For someone who never used Lean before, it was very eye opening."
+ ],
+ [
+  13,
+  3088,
+  "And I I'm very happy to hear. No. No. No. And I was really getting hyped up up until the point where you showed us the 60 lines. And not bec"
+ ],
+ [
+  13,
+  3099,
+  "ause of the 60 lines, but, to me, it seems like the point of failure might be, that proof part for someone who I'm not not into this formal "
+ ],
+ [
+  13,
+  3110,
+  "verification"
+ ],
+ [
+  13,
+  3111,
+  "at all. And if if I would love love to use it for I see the value in the result, for example so the specific question, what would happen if "
+ ],
+ [
+  13,
+  3122,
+  "the case, the cases that you named in those 60 lines, if you missed one? Would like, how would that wouldn't I be wouldn't it be a false, ne"
+ ],
+ [
+  13,
+  3132,
+  "gative or a false positive in this case? Like, it would say, yeah, you proved the property."
+ ],
+ [
+  13,
+  3139,
+  "That would be the result. But in reality, I'm perhaps missed, some cases that I should have had in those 60 lines. Yes. So wanted to prove s"
+ ],
+ [
+  13,
+  3148,
+  "omething else. Right? Right. So if your statement is correct, then the proof will not go through unless you included all of the cases. That'"
+ ],
+ [
+  13,
+  3156,
+  "s the beauty of the mathematical proof assistant. It checks the proof for you. Lean will check it for me? Yes. Lean will check if you have a"
+ ],
+ [
+  13,
+  3165,
+  " missing case. Okay. I gotta check this Lean thing now. That sounds amazing. Thank you. And even, like, when you so I used, you know, Copilo"
+ ],
+ [
+  13,
+  3173,
+  "t when I did the proof, and then Lean was kind of smart. It,"
+ ],
+ [
+  13,
+  3177,
+  "also, like, when I tried to check the proof and if it was wrong, it suggested some, you know, oh, maybe you could case split on this. Right?"
+ ],
+ [
+  13,
+  3185,
+  " So it gave me even you know, when testing the proof, it gave me useful feedback. Alright. But it definite like, I can guarantee you, unless"
+ ],
+ [
+  13,
+  3194,
+  " there is a bug in the lean kernel, which is very small and it's designed to be very small, it will make sure that your pattern matched all "
+ ],
+ [
+  13,
+  3202,
+  "of the cases"
+ ],
+ [
+  13,
+  3203,
+  "and that the logic is sound. As long as it says no more goals, you're finished, and you didn't cheat by typing in sorry, which is in lean, I"
+ ],
+ [
+  13,
+  3216,
+  " will do it later, then then you it's for sure. Excellent. I'm even more excited. Thank you. And thank you again, Anya, for answering all th"
+ ],
+ [
+  13,
+  3229,
+  "e questions so we can clap one more time."
+ ],
+ [
   14,
   0,
   "I think it works. Alright. Should we start? Okay. Hello. We are going to start now. Okay."

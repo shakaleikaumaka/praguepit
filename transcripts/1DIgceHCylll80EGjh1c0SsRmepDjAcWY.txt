@@ -1,0 +1,261 @@
+# Specifying and Verifying Smart Contracts
+
+Date: 
+Source video: Specifying and Verifying Smart Contracts
+Drive: https://drive.google.com/file/d/1DIgceHCylll80EGjh1c0SsRmepDjAcWY/view
+Duration: 00:53:56
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:11] Right. Hello, everyone, and a very warm welcome from my side. My name is Anya Pitkovich Kummel. I am a formal verification researcher at Argo Collective. And today, I will be telling you a little bit about specifying and verifying smart contracts. And more specifically,
+
+[00:35] I'm going to talk about our tool called ACT that we developed together at Argo. So this is joint work with Zoe, Lefteris, Sophie, who's also there in the audience. Sophie, please wave. If you have any questions after the talk, she's just as likely to answer it very competently as I am. And, of course, Alexis is also one of the developers.
+
+[00:59] So a tiny little bit about myself. I actually come from mathematics side. I'm I have a PhD in mathematics. I was working as an academic for a little while, first in Slovenia, then, in Vienna, in Austria as a postdoc. And I was developing these formal verification tools, proof assistants, and some automated theorem provers. And then, about a year ago, I joined Argo,
+
+[01:23] and I thought it was really cool that I can use some of that and a lot of that knowledge in the real world. And I'm so excited to share this knowledge with you. And hopefully, I will not use too much of my mathematical jargon. But if I do, just, you know, raise your voice and say, hey, what what is she talking about? What is that? So formal verification.
+
+[01:46] Let's start a few steps back, and I will now have one slide when I'm preaching to the choir. How do we develop smart contracts in Ethereum? So we write our contract code in one of the source languages. So it's either Solidity, Viper, Fey is another language that is developed at Argo. And today, we heard a workshop about blank. So I should have used that one, but it's not very old. So I'm very sorry.
+
+[02:13] And then what we do is we compile this source code into EVM byte code. We we then deploy on Ethereum blockchain as byte code. And this means that the basically, the code that executes these changes.
+
+[02:39] And because contracts manage valuable assets, bugs are very impactful and we want our contract codes to be correct. And that's why we do verification. Now when I use the word verification, I mean a very specific thing. I mean formal verification. Now what is that? I will first tell you what is what it is not. All of
+
+[03:04] although all of these other things that I'll be talking about are very useful. So it's not exactly testing because when you test your code, you run it on very specific inputs. You will think of some bugs and you will try to catch them ahead of time, but you can miss some edge cases. And then a step further is then fuzzing, which generates some random inputs,
+
+[03:29] but it may be a little bit more difficult to get some inputs that are well formed. But you can find novel bugs, the ones that you didn't think of ahead of time. You can, though, still miss some edge cases. And then because of that, you have one step forward. It's auditing. It's when you hire a human expert, does an expert review,
+
+[03:52] and usually, they will they are very good. They will find known attack patterns, maybe even some new ones, but, of course, can miss novel attacks. We are all humans. We are not machines. What I mean by formal verification is the highest standard. It's mathematical proof. You see, as a mathematician, I'm very biased towards certainty. In mathematical proof, we will prove properties about contracts
+
+[04:18] for all inputs. Okay? No testing, no randomness, all inputs mathematical certainty. And as an additional step, I don't want this proof to be just on paper. I want it to be machine checkable. So we will use software, they're called proof assistants, to check these proofs for us and give us extra step of certainty. Okay. So we are in this last block when we wanna do,
+
+[04:45] mathematical proofs, and I wanna show you today how we do it with ACT Aware, what we call verification frame framework and specification language. So when I say act, I mean two things. I mean this entire pipeline that is depicted on the screen, and I also mean this yellow bubble in the middle. Okay?
+
+[05:08] When I'm talking about the yellow bubble in the middle, I will mean a typed intermediate verification language. Okay? It's like a concrete syntax where you write your specification. The specification will sort of describe the state of the contract after every possible public transition, public function in Solidity, for example. Okay? And when I mean the entire pipeline, I will mean the verification
+
+[05:36] framework where it's not just the language, but it's all of the front ends and back ends of it. So how does it look like? How do you you use act? So you usually start by looking at a source code, and currently, we support two source languages, Solidity and Viper. So it's source language agnostic. And then you will use a compiler to produce EVM byte code, and this is, you know, where I ended my first slide or second slide on, then you would deploy it. Right? But before I deploy it,
+
+[06:08] I want to have some guarantees about it. So we will actually reason about the soon to be deployed bytecode bytecode itself, and we will do this by then writing a specification in our intermediate language act, and then we will prove it equivalent to the byte code. And we can do this because act actually has on top of,
+
+[06:32] a rigorous type system, also a well defined semantics. And we actually proved, type safety in a mechanized way in a proof assistant. Okay. Now I've mentioned the word proof assistant a couple of proof assistant a couple of times now. And here it is on the right hand side of this diagram. Proof assistants are pieces of software where you can actually
+
+[06:59] check your mathematical proofs in a very small kernel in a very trusted way, and they also assist you in generating them manually to an extent. And, we can export our specification in a high level representation in a proof assistant, specifically in two proof assistants, Rock and Lean.
+
+[07:24] And you may have heard of Lean before, and I will be showing you lean today just because I'm hoping that some of you have already seen it and can relate to part of the syntax of of that. If not, I'm hoping the workshop will still be useful for you. There will not be just lean, that I will be telling you. Okay. So I want this representation
+
+[07:47] of, of the smart contract that talks about states and how to get from one stage to the other to actually be equivalent to what is deployed on the bytecode. And this is where this intermediate double arrow comes from, this equivalence. Actually, we use, symbolic execution engine, AGVM, to then obtain
+
+[08:11] an automated mathematical proof that what you specify in ACT is actually equivalent mathematically equivalent to the EVM byte code that you compiled from the source language. So ACT actually, you know, gives you sort of a guarantee that whatever you are proving about is, connected to the EVM byte code that you compiled,
+
+[08:36] but it allows you to do it on a high level, not reasoning about all of the nitty gritty EVM details, that you could possibly want to omit in your proof. Okay. So here is how the usual workflow goes if you're using ACT. So you start, of course, here with the source language. You start with the source code of your smart contract,
+
+[09:02] and then you will manually create an act specification. And I will show you how to do that today in a minute. So this part is manual here, writes back, unless you have a very, very smart cat, in which case I envy you very much. I want to adopt her. And then, by a press of a button, you get your specification type checked so that it, you know, makes sense as a language.
+
+[09:29] And then by a press of another button or the same button, you can, have an automated way to check for equivalence with the byte code. So you'll give it your byte code. You'll give it your spec, and then it will take a few minutes. And then you will see whether or not it's actually equivalent. And if it's not, you will get a counterexample of what is missing. So have some,
+
+[09:54] feedback on why it's not equivalent. And then by pressing a third button, you can get an extracted high level representation in a proof assistant where you then, unless you have another very smart cat, have to prove the properties about the contracts yourself. But you have a very high level of expressivity
+
+[10:17] because as far as logic goes, like the mathematical foundation, the proof assistance that we extract to have a very high expressivity as a language who can express multiple things, not just linear arithmetics, for instance. Okay. So without further ado, let's try to see how it works. Okay. So here are three links. The first one is
+
+[10:41] the link for to our repository, to our tool. It has the source code. It has examples. It has an issue tracker. It also has the link to our second link here, which is the act book. It's our documentation, the language reference, all of the tutorials. We have a very nice tutorial on how to write your own spec. And today, I will be presenting a slightly simplified example from there. So if you understand anything from what I'm saying today, that's where you jump in and continue
+
+[11:11] and get a bit more details. And the third link is actually the one example that I will be dissecting today here with you, hopefully. It's not merged into the main branch yet, so that's why the link is slightly different. The QR code will take you to this third link so you can follow along with the code I will be showing. Okay. So let's start, and I'm going to start with solidity
+
+[11:39] and not act. So we will try to figure out how to write the specification, and my cat assistant gladly helped me already, so I have some written already. Okay. I will be presenting now a very toy example. This is solidity code. This is not act yet. And I'm presenting a small example so that it's mostly understandable,
+
+[12:02] but we have some more involved case studies that I will show you a little later, and you can browse them in our, GitHub repository. So the idea of the following two contracts is that we will have an asset that can only be moved if the if the caller of the contract is one of the administrators.
+
+[12:24] Okay? So very simple. We have, you know, sort of like, you only have permission to transfer money if you're one of these addresses. So that's why the first contract I'm showing you is the admins, the administrators. It's a super simple contract. It has two storage variables, two addresses that are our future administrators of the contract. And now now the more interesting one is the asset contract.
+
+[12:51] It has, again, two storage variables. One is the admins, which is a contract that we specified here. And the other one is a mapping from addresses to integers, the balance of that will track the balance of each address similarly to an ERC 20 token, if you've ever seen one. The constructor is, not
+
+[13:15] very involved. It will take a value, and it will assign all of the value to the address of the asset contract, the ones that you just created. And by default, it will set the administrators to the message sender, so the caller, and the origin of the transaction. This is you know, we could do this differently. You could, like, set administrators as as a
+
+[13:40] as an argument here and choose them yourself. So this is an artificial example, of course, but I just wanted to show you we can do these things in act as well. Okay. And now the two interesting functions where this permission actually comes into play. The function assets transfer will transfer the amount to the recipient,
+
+[14:03] and this means that here in this block, we will increase, the amount of balance of the recipient and decrease the amount of the asset contract itself. But this require here will tell you we can only do it if the one calling the contract is admin one or admin two. So, otherwise, this will revert and we will not be able to transfer anything.
+
+[14:28] And then additionally, just for fun, we can have a function that sets new administrators, and it can also only be executed if the message sender is one of the two administrators. K? And if it is, then the admins storage variable becomes the new admins with two new addresses given as parameters to the function. Any questions so far?
+
+[14:53] No. Perfect. Everybody speaks fluent Solidity. I'm so happy. Okay. Now this is our start. This is like a simple example, and now I want to show you how an act specification looks like. So we will start with the functioned asset transfer here, and this is essentially the full code of the specification. Don't look at all of it just now.
+
+[15:19] Every function, every public solidity function will become what we call a transition in act. So here I'm saying it's a transition asset transfer, and the transition will take arguments just as the public function would. And then first thing we will notice is that this transition distinguishes between two different cases, depending on whether the address of the asset contract is the same as the recipient or whether it's different.
+
+[15:48] And this is relevant because what we do in the spec is describe how the end state looks like after your function has been executed, after the transition has completed. And these two cases are different because the state looks different in two cases. In particular, if the address of this contract, the asset contract, and the recipient is the same,
+
+[16:12] we are first reducing the amount and then increasing by the same amount to the same address, so nothing actually changed. Right? And here, actually, in this case, the, specification just returns true and does nothing. In the other case where it's actually interesting, we would write what we call an updates block in act.
+
+[16:35] So in the updates block, we will specify all of the storage variables that have changed. So if I haven't specified it at all, it didn't change. For instance, the admins, storage variable hasn't changed, so I didn't have to specify it. And the balance off has changed. In this case, it's unsurprising. It's the previous balance off, but with the address this,
+
+[17:01] change to the previous balance minus amount, and the address of recipient change to the previous balance plus the same amount. So this is what you would essentially do. You would look at your public function and then describe what the end state looks like. There is another catch though. Right? Because we want our spec to be equivalent to the actual byte code,
+
+[17:27] we have an additional what we call preconditions block. So if and only if this I f f, it's if and only if. And here, I'm listing the conditions under which the the transition doesn't revert. The function doesn't revert. And they have to be very precise. Right? Your spec will guide you into thinking such certain things through. We know, and this is so the first precondition is the one that comes from the solidities require here. The first precondition is that the caller is either admin one or the admin two. This is the one that we wanted. Right? The permissions,
+
+[18:04] precondition. The other two happen a little bit more implicitly in Solidity. It's the overflow and underflow check. Right? So here, when we decrease the balance of the address, this could underflow, and we have to say, uh-huh. It will not revert unless
+
+[18:28] so if it will not revert if it's in the range of uint to 56. Right? So we explicitly say, uh-huh. This condition has to hold. The other one is even more interesting. The overflow here when we do the plus amount also has has to be in range. So the balance of plus amount has to be in range of the u into 56.
+
+[18:50] But this one is only relevant if the address of this and the recipient is different. Why is this the case? Because here, we already subtracted something, and then if we increase the amount, it will not create an overflow because the, yeah, because it's already different. And, actually, this implication here is necessary
+
+[19:15] because our equivalence checker will tell you, hey. If I forget forget this part, I will say, hey. It's not equivalent, and this is, the call data that, you can call it with and gives you a different result. So our equivalence check will actually check whether the input spaces of both the EVM bytecode and your spec are similar or if it if they are so if they're either the same or if they are different.
+
+[19:41] Alright. Now we saw the asset transfer transition. The rest of the code, is also quite intuitive. So for every contract that we have, for example, the admins and the asset, we have to create a contract in the act language. Every constructor has a matching constructor, and it has what we call a creates block,
+
+[20:04] which specify which, storage variable it creates and assigns them what value. I omitted here the set admins, transition, because it's quite similar to the asset transfer, and we can think of it in a little while. And there's another thing I omitted here, and I've written it in red. We have to include
+
+[20:29] every public function, and this includes also the implicit view functions. Right? So Solidity will give you the view function for every storage variable that you can, like, look at it for here here in the admins. For instance, it's the admin one and admin two. You don't have to specify them, but they're there. In AG, because we want it to be every transition, you you should not forget these as well.
+
+[20:53] Okay. So hands on workshop. How do we think the function set admins would look as a transition? Do we have any ideas? Of course, it will again be a transition. Yes. Yes. And the sanity check with the if and only if. Exactly.
+
+[21:20] So here, I have the entire side by side comparison to the contract. So the admin's contract here, it looks the same. And, of course, the view functions are listed here. It's a trivial transition that just returns the value. And then here, the transition set admins, as you can see,
+
+[21:44] will look the same. Right? The caller is one of the administrators, it will create a new update. If it's not one of the administrators, nothing nothing changes. Right? Exactly what we want from such a contract. And, of course, the balance of transition, the view function is also included. So
+
+[22:08] I know it's a toy example, I admit, but only 50 lines of code of the transition, and, of course, a bunch of blank lines, I consider this a success. Okay. Now let's try to see whether or not they are equivalent. And where did my terminal go? Let me check if I can okay. I'll open this one.
+
+[22:38] You didn't see this. It was never there. Okay. I want to check whether these two specifications are equivalent. So what I will write is do you see this or should I increase a little bit? This one? Okay. I will say act because I'm invoking the tool act, equip because I'm checking for equivalence, and then I will give it the solidity file,
+
+[23:02] which will be admin solve. And then I will give it, the spec, the act spec, which will be the admin sorry. Admin dot act. And then I will press enter, and stuff starts happening. Right? Okay. First thing I will note is that I did give it the original
+
+[23:25] source code file instead of the byte code. What will actually happen is it will get compiled to the byte code, and then the byte code will get executed. The reason I am specifying which source language it comes from is because the storage layout is slightly different in different source languages. And for checking equivalence, it's actually relevant how the storage layout is encoded. But I pinky promise we only look at the byte code and that extra piece of information of the storage layout encoding.
+
+[23:56] Okay. It took a couple of seconds, and then here it says success, success, success, success. So it actually is equivalent what we have just seen. It will check, you know, if the input spaces are the same, if it's matched by the Ethereum virtual machine, and whether the resulting state,
+
+[24:19] can contain aliasing. More on this a little later. So now we have successfully checked for equivalence, and we have a full spec of our toy example. So you could see it's still quite on a high level. Yes. Go ahead. Just to see whether or not it breaks? Yes.
+
+[24:43] Of course. We can try to break it. We have time. So let's try. Address, admin three. And let's just use one of the admins. And then, hopefully, it will break. I didn't
+
+[25:07] uh-huh. Error. Told you. So what it will give you is, the following input results in different behavior. So it will give you, like, the concrete input, the call data in which we actually encountered a bug. Now I admit it's not super readable, but if you know what you are doing and you're looking for, like, which addresses should be the same and so on,
+
+[25:32] it is actually, it can be useful. Okay. Now I will remove it just for my peace of mind and sanity. But, yes, it definitely breaks if you break it. Good good good catch. Alright. Now after we have written a specification, we did the type check and the equivalence check. We got the green success lights,
+
+[25:55] so we got something that is equivalent. And now the best part is that for reasoning, all the information you need is actually what's in the spec. Right? It's high level. It means also that you cannot reason about the low level byte code details, but also it means you don't have to reason about the low level byte code details. And this is where the mathematician in me likes
+
+[26:18] the result. Okay. Now we go to the other side where we actually want to prove anything. So far, we just described the contract in a specification language that is high enough. I haven't stated any property yet. Haven't done anything, you know, mathematically interesting. Any guarantee hasn't been produced yet. For that, I extracted to a theorem prover.
+
+[26:41] And I will extract it to lean, and I will show you the very simple thing that I type. I type act lean and then file and, admin dot act. I only have to specify the specification, not the byte code anymore because that has been checked for equivalence separately.
+
+[27:04] And then I will pipe it into admin dot lean, and it produced something. And if I click on my admin dot lean, it produced this whole blob of almost 500 lines of code of Lean. So this is the entire transition system. Okay.
+
+[27:28] What did this command actually do? Let me show you on a high level what it means. The extraction to a proof assistant, in this case, Lean, will describe what we call a state transition system. Right? Every contract storage will become a state in Lean. It's basically a record. And for, the assets contract, for instance, which will be
+
+[27:52] a record with the following four fields, it will have a field for every contract, storage variable, so the admins and the balance of. And the admins, as you see, is a contract by itself. It's we need to we needed to specify the other contract as well, and it will have the state of that other contract as the storage
+
+[28:16] here. And then additional two variables that are always present that act outputs. One is the address of the newly created contract, and the other one is the balance in ETH. So if this is not relevant for this example because we don't have any payable contracts, but if your contract is payable or if you have any payable function, this will become relevant.
+
+[28:44] Also, what you can notice is that here, the z represents the actual mathematical integers. You don't have to reason about modular arithmetic because we checked for overflows and underflows already. So you can just safely reason with just mathematical integers, forget about the modulus, and if you need to reason about certain ranges,
+
+[29:07] your predicates from the preconditions are still there available for you, but you don't have to use them. Right? It's, like, guaranteed that it will work out. And this is actually a consequence of our type system in act. So the type system will ensure that these in ranges get get preserved. So you can then reason about it just with pure mathematical integers. Okay. So contract storage becomes essentially a record state,
+
+[29:34] and then the constructor will translate to a predicate characterizing the initial state. So how do the initial state look like? So for our asset contract, what they will look like is that we'll have some admins, and the balance of mapping will map the address of the current contract to the entire value and the rest to zero. Right? So in this constructor,
+
+[29:58] predicate, will characterize these initial states. And then transitions, every transition in act, so every public function from your source will translate to steps between the states. Right? So act actually, every time you call a function, it will, you know, create potentially a new state. And in the proof assistant, you will get these relations. Right? How do we step from one state to the other? What can happen with my contract?
+
+[30:25] Why is this relevant? Because at the end, what you want to reason about is unreachable states. We have this reachable predicate that says a state is reachable if and only if there is ex exists some initial state, state prime, and there exists, you know, in some steps, we get to, the state that we are interested in. And that means, uh-huh, my state is reachable, and I'm only interested in states that are reachable because
+
+[30:55] we want, only to reason about the states that we can actually get from executing our transitions. And like I say, we want to prove properties over all reachable states. Okay. How do I prove anything about my toy example? What would I want to prove is the best the best example
+
+[31:19] best question. Sorry. The thing I would want to prove so we said, okay. Our example is only the administrators can change my contract, basically. Right? So the property I would like to prove is, that if you're not an admin, you don't get to change. Right? No admin, no change property. And here is exactly how I would state it in Lean. Sorry. How I would state it in Lean.
+
+[31:46] I will write it's a theorem. It's called no admin, no change. And it's a theorem on the states. Right? The states of the contract. So I take two states, state and state prime. And, additionally, it's parameterized by the Ethereum environment. Right? Because I want to say if I step from one state to the other, I will also have certain
+
+[32:10] Ethereum variables available, like who is the caller, what's the call data, what's the call value, for instance. Okay. And then what I say. If my state is reachable and the state prime came from a transition from the state, so this is like one step relation, then the state and state prime are exactly the same if the caller is not one of the admins. Right? So here I have the environment dot caller is not equal to state.admins.admin
+
+[32:43] one. And again, if the caller is not the other administrator, my state becomes intact. Okay? And then caller equals and this by signifies the beginning of the proof in lean. And then I wrote three dots because it's about city 60 lines of proofs that I omitted. And you have to know a little bit of lean to be able to see what's going on. Now,
+
+[33:08] by show of hands, have you ever seen something in lean? Raise your hand. Ah. For the five people here, I will take two minutes to show you the proof because it's only 60 line. And after two minutes, I'll call the rest of you back. Please don't leave because it's right here. Okay. So I have a file. It's called admins don't clean. Yes. Question.
+
+[33:41] Uh-huh. Yes. So here, the it says I have a predicate that there is a transition from state to state prime. Thank you for the question. Okay. Sorry. Wrong way. Okay. So this is the no admin, no change. This is exactly what I've shown you so far on the slide. And here are the lines of proof.
+
+[34:07] Now for the experts in lean here, I will give you the lean info view. What I do here is just first introduce all of the hypothesis that the state is reachable, that the caller is not one of the admins, that there is a transition between the states, and I want to prove that the states are equal. And what I will do in the proof is very much non interesting. I will case split on all possible transitions.
+
+[34:32] Right? So if it's, so here I have cases each transition with. And then, for example, if it's the one of the asset transitions, I will, again, case split on which assets transition it is. And if it's the assets transfer transition, I will then, case split on the hypothesis,
+
+[34:56] la la la, and then I will case split on the conditions, on the preconditions of the transition. And I will see here on this step of the proof that I have a precondition that the transition can only happen if the caller is one of the administrators. Right? Env caller equals admin one or env caller equals admin two. But here, I had a hypothesis that it's neither of them. So, of course, I will conclude with a contradiction here. It says
+
+[35:27] contradiction blop, and the goal is completed. And similarly for all other things, or it will either be a contradiction because I'll have contradicting hypothesis, or I will end with reflexivity because I will end up in an eta expanded same state because no change actually happened. For instance, this is maybe an interesting fact.
+
+[35:51] The transitions here mhmm. Previous slide. The transitions that can happen here are either internal transitions of the contract, so the internal public functions, or they can be external transitions because here in the asset contract, the admins is also a contract that can have transitions of its own. Right?
+
+[36:15] This is a trivial one because as we saw, the admins contract didn't have any actual functions. It just had the view functions that did nothing, never changed the state. But, you know, in principle, the admins could be called from somewhere else and could have an internal transition here, which would then reflect in a transition of the asset contract and could affect its state.
+
+[36:38] So in the proof where I have here, actually, I'm I have to take care of the possibility that in the asset contract, I have the admins transition. And, of course, it will just always stay the same, so the proof will be reflexivity at the end. Okay. My point of this about this proof is it's very non interesting,
+
+[37:02] could be automated with LLMs. Actually, I did this proof manually because it was short enough. But with the help of LLMs, if you know what you're doing, you can prompt it away and it will it will just do it for you. And I'm hoping that for other a little bit more complex examples, we will soon reach a point where it's more automatable than manual. Okay.
+
+[37:25] I promised two case studies. We did two actual case studies. It was a toy example that I showed you here, very simple one. The more complicated ones are the ERC 20 token and the, automated market maker, the AMM. The AMM is a simplified core of the Uniswap v two. It's, again, a multicontract example because it includes two ERC tokens
+
+[37:51] inside. The byte code equivalence is not just a few seconds as it was in the toy example. It actually takes about ten minutes for the ERC 20, a little longer for the a m m, so almost four hours. But it's so much we can do. It's symbolically executing the code, so it the the search space becomes very large. We extracted into into ROG, but for lean,
+
+[38:17] the number of locations is the the the lines of code is the same. So it's about 500 for ERC 20, about a thousand and a 100 for the AMM. But fifth 500 of this is actually the embedded ERC 12 token already. So it's, like, 500 and on top about 600 lines of code.
+
+[38:39] And then the properties that we managed to prove in, like, full formality is for the ERC 20 token that the sum of balances equal the total supply that the token tracks. Actually, for our toy example that I showed you, we could also prove something like this because we have the balance of function. And for the AMM, we proved solvency for all liquidity providers. So we proved that the contract
+
+[39:07] will always have enough tokens to pay out the investors, the liquidity providers if they want to exit. So we can actually, you know, mathematically prove that if you invest, you're not gonna get screwed. You can always exit with with enough liquidity. And the proof is actually not too long, about 250, lines of code for the ERC 20 token and about a thousand for the AMM.
+
+[39:34] Okay. And then additionally, in our tool, if you try it out, which I'm really hoping you will, you have about 200 plus, specifications that you can see the full pipeline, all of the, language capabilities, and, the language reference is also quite detailed if you wanna try it out. Okay. As for the last minute, I wanna tell you a little bit what the limitations are and what we are currently working on within ACT.
+
+[40:03] So we've asked around how people would like to use it, and one of the limitations we have is that we cannot read about normal code. So if you have not specified, the transition system cannot support it just yet. But we have a prototype of how to address this, and it's actually an open research question
+
+[40:26] how to address this. So, stay tuned. I'm hoping that in a couple of months, we will be ready to push, the support for reasoning with unknown code because, essentially, the invariance you prove for your contract could carry on even if another contract may call you and cause, you know, reentrancy or something. So reasoning about that is coming up. There are two other limitations.
+
+[40:51] The bottom one listed here is that we cannot reason about unbounded loops or recursion yet. This is a tough question, and, actually, the other tools out there that do formal verification face a similar issue. Of course, when we do symbolic execution for our equivalence check, it's actually very hard to reason if we have unbounded loops. But for the proof assistant side, it's much easier.
+
+[41:19] So our bottleneck is actually equivalence check for this for the second one. The first one is, about to be lifted soon, hopefully. But currently, your local contract state must form a tree you cannot reference, so you cannot share references within your contract. But globally, of course, the references can be shared.
+
+[41:43] And a slight little peek into the future near future, so to say, we are building an additional back end. So here, just to show you the pipeline again, we have a back end that extracts to two proof assistants. Now we are going to extract into something that is not a proof assistant, but of, an automated, theorem prover of a different kind.
+
+[42:08] Actually, it's it's a tool that provides automated way to reason about the economic incentives. So, essentially, whether or not it pays off to cheat and, the game theoretic theories behind it. And it's actually a really cool tool that can, do this reasoning about security properties for the incentives themselves.
+
+[42:31] It can do it automatically. And the idea is that once you've written your act specification, you can essentially use it, what you've already written, to automatically port and check for incentives as well. So it's coming up. It's, under active development right now. So, check us out in a few months. We will push it, and I'm very much looking forward to you testing it.
+
+[42:55] Okay. Thanks for your questions and your attention, and please come seek me me and Sophie with questions even after this talk. Thank you so much. Let's grab everyone. Any questions in the audience? Yeah. Super great talk.
+
+[43:18] Lots of questions. So That means you followed. I'm liking it. How do you believe this, will scale for, like, larger projects? You already mentioned the usual limitations of, like, S and T based approaches like loops, etcetera. So, like, for example, a Uniswap v three or v four with what about, like, a v three or v four style contract where, you know, you have the loop to do, the the thick transitions or or different kinds of contracts? Like, yeah, how do you imagine it it will scale? Yes. So that's an excellent question.
+
+[43:48] The loops are a problem for this equivalence part here, because this equivalence part actually relies on SMT solving at the end. First symbolic execution, then SMT solving. What we are currently exploring is to provide some support to do this part at least part of this equivalence check-in a proof assistant where the logic is expressive enough to support recursion fixed points and loops.
+
+[44:15] So we are looking into how to like, currently, you cannot reason about this, unfortunately, with this current release. But because this is a problem, we are looking into how we could, you know, support some manual proofs here. Now manual proofs and automated proofs are not of the same scale because automated, you can, like, leave your machine overnight, and it will do stuff for you.
+
+[44:39] But we're actually hoping that, with the help of LLMs, the so we're trying to design this intermediate equivalence check-in a proof assistant such that it's LLM friendly so that it has, like, common patterns, how you can prove these things, and then the hypotheses are discharged easier, so with less of actual manual human effort.
+
+[45:02] Yeah. But, you know, it's only it's only viable if you have some expert who will try to do it. I see. Another question is, do you think in the future there'll be easier ways to write the spec? Because to me, as somebody who hasn't done a lot with, formal verification, the the spec and the implementation, they look very similar to me, like Mhmm. The requires, the preconditions, all of that. So I wonder, is there a more direct way to just use your implementation
+
+[45:26] and have that be the spec, or how do you see that moving forward? Yes. This is also one of the desired features for us and for you, the users or potential users. We were thinking about several approaches. The more complicated one to be would be to actually decompile byte code into a spec directly. That would be great. But, actually, you can still partially
+
+[45:48] automate the automate that part if you give it the source code and then, you know, the act language reference to an LLM, you can ask it to to write it for you, and you can give the equivalence check as, like, a verifier whether or not it did a good job. So you can actually bootstrap it with an agent to to help you create the the spec for you.
+
+[46:12] Any other questions? So if we look at it as a security feature, very often, I would say in every single case where I have seen, the problem is usually not that the contract does not fulfill the formal specification,
+
+[46:35] but that the formal specification does not match the informal specification, that the contract does not do what people think it does. And I'm wondering if the and this is a little bit on the dovetails of the previous question. So if the specification can be formulated in such a way that it is closer to what is understandable
+
+[47:00] in terms of being the in terms of something that matches the informal specification that actually is closer to what people would describe what this contract does rather than to the formal specification, which is very similar to the implementation, really. Like, proving that the formal specification
+
+[47:22] and the implementation match each other, it's super important and it's necessary. But, usually, the problem is not there. Right? Right. So I will maybe here say an important distinction. Right? When you say we prove equivalence, the specification here in act does not, list any properties. You list properties
+
+[47:45] in a proof assistant where you use this high level representation where you only have to reason about the contract state. Right? So you don't actually have to reason about the code and how you got there, but you have to say, you know, if you want to prove an invariant, it's quite easy to say for every reachable state, this has to hold. Right? So I agree. It's there is a barrier between English and math, so to say, between a natural language and what what mathematical formula you give it.
+
+[48:18] But I I'm hoping that because you only have to reason about the state transition system, just about the states, that it will become more understandable and it will match better the actual expectation. Yeah. Thank you. Okay. I have a question. Do you what are some other projects that do similar things? Like, could you name some names and maybe compare quickly if there are some
+
+[48:44] You mean other formal verification projects? Or Yeah. But maybe also the ones that do this equivalence with EVM bytecode, so really for the EVM. I'm sorry. I don't understand the question. So Yeah. Here in the EVM byte code, we use, a tool called HEVM. So it's also developed in Argo Collective. And it actually, what it does is it takes EVM byte code and then symbolically executes it. So it gives you, like, a symbolic state in the beginning and then describes how this symbolic state changes
+
+[49:19] when the EVM byte code executes. Right? And then it gives you this representation, this expert representation. It's like a tree, that gives you all of the possible states that you could end up in given your initial symbolic state, and then you can compare. And this is what we do for the equivalence check. So AGVM can also, like, compare two different implementations
+
+[49:42] and their, you know, two different source implementations and their byte code, basically. Yeah. I guess, I mean, some other projects that people use to formally verify EVM, byte code or EVM's solidity source code, something like this. So you could also there are other things that are out there. So for instance, you could there is, how do you call it, a deep embedding of EVM in a proof assistant, in Lean, for instance. Right? So you could, in principle, like, reason about your byte code using this deep embedding of the EVM semantics
+
+[50:16] itself. Or another project, for example, that does a lot of formal verification is Sartora's, prover where they have this, way to use SMT solvers. They start with the EVM byte code. They decompile it to an intermediate representation. They call it TAC. And then you can essentially state your invariance, your properties,
+
+[50:39] and give it on top of this encoding to an SMT solver, and then it sort of checks whether this EVM byte code satisfies a property. And it's all done automatically, right, in the SMT solver. The reason we are doing it differently is because then the expressivity is limited to what SMT solvers can do. And if they time out, you got nothing. Right? So,
+
+[51:02] here, at least, you have some way to reform your proof manually if if that happens. Thank you. Alright. There's still time for one quick question. Thank you. So first, thank you very much for the talk. For someone who never used Lean before, it was very eye opening.
+
+[51:28] And I I'm very happy to hear. No. No. No. And I was really getting hyped up up until the point where you showed us the 60 lines. And not because of the 60 lines, but, to me, it seems like the point of failure might be, that proof part for someone who I'm not not into this formal verification
+
+[51:51] at all. And if if I would love love to use it for I see the value in the result, for example so the specific question, what would happen if the case, the cases that you named in those 60 lines, if you missed one? Would like, how would that wouldn't I be wouldn't it be a false, negative or a false positive in this case? Like, it would say, yeah, you proved the property.
+
+[52:19] That would be the result. But in reality, I'm perhaps missed, some cases that I should have had in those 60 lines. Yes. So wanted to prove something else. Right? Right. So if your statement is correct, then the proof will not go through unless you included all of the cases. That's the beauty of the mathematical proof assistant. It checks the proof for you. Lean will check it for me? Yes. Lean will check if you have a missing case. Okay. I gotta check this Lean thing now. That sounds amazing. Thank you. And even, like, when you so I used, you know, Copilot when I did the proof, and then Lean was kind of smart. It,
+
+[52:57] also, like, when I tried to check the proof and if it was wrong, it suggested some, you know, oh, maybe you could case split on this. Right? So it gave me even you know, when testing the proof, it gave me useful feedback. Alright. But it definite like, I can guarantee you, unless there is a bug in the lean kernel, which is very small and it's designed to be very small, it will make sure that your pattern matched all of the cases
+
+[53:23] and that the logic is sound. As long as it says no more goals, you're finished, and you didn't cheat by typing in sorry, which is in lean, I will do it later, then then you it's for sure. Excellent. I'm even more excited. Thank you. And thank you again, Anya, for answering all the questions so we can clap one more time.
