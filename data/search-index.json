@@ -11425,6 +11425,321 @@
   "r your question? Yes. We got time for one more question if anyone is interested. If not, then thank you very much. Thank you very much."
  ],
  [
+  17,
+  0,
+  "Oh, sorry. Yep. Alright. Yeah. Thanks for being here, everyone. Can we take this? I'm Mellie. I'm partnerships manager at ENS Labs,"
+ ],
+ [
+  17,
+  26,
+  "and we're going to talk about the exciting topic of stablecoins today, surprise, and the premise that stablecoins are scaling very fast. But"
+ ],
+ [
+  17,
+  36,
+  " when it comes to the recipient UX, it's still broken compared to traditional finance. And we're gonna focus on the missing layer, which is "
+ ],
+ [
+  17,
+  46,
+  "the human readable recipient"
+ ],
+ [
+  17,
+  48,
+  "identity. Before we start, I saw a tweet today that kind of fit very well. So stablecoins are usually being framed as completely separate fr"
+ ],
+ [
+  17,
+  62,
+  "om crypto. And, yeah, even though people really try to separate like, treat both as two different products,"
+ ],
+ [
+  17,
+  72,
+  "the truth is that we can learn a lot from the crypto ecosystem. And we've been here for many, many years, and we have a lot of knowledge to "
+ ],
+ [
+  17,
+  83,
+  "pass on to, yeah, industries that come in and, yeah, want to make crypto their own. Especially when it comes to new payment products and, li"
+ ],
+ [
+  17,
+  93,
+  "ke, neobanks and, fintech apps that want to use stablecoins,"
+ ],
+ [
+  17,
+  98,
+  "these should not ignore the lessons that we have learned and the things we have built to, yeah, improve their apps. So one example is EORs w"
+ ],
+ [
+  17,
+  111,
+  "ho, allow salaries to be paid as stablecoins. Now the question is, would you receive your salary with this?"
+ ],
+ [
+  17,
+  121,
+  "Would you trust an HR person who has never touched crypto to send you your salary every month to a raw address. And, technically, it works. "
+ ],
+ [
+  17,
+  133,
+  "It works perfectly fine, but this is not what a trustworthy payment experience looks like. And that is what makes this whole thing interesti"
+ ],
+ [
+  17,
+  144,
+  "ng because,"
+ ],
+ [
+  17,
+  145,
+  "stablecoins do improve on traditional, payments. They're faster, they're global, they settle on chain and they remove a lot of the friction "
+ ],
+ [
+  17,
+  155,
+  "and delays that we experience with banks and bank transfers. Stablecoins are in many ways better, but many of the payment products actually "
+ ],
+ [
+  17,
+  166,
+  "are still failing at the recipient layer compared to bank transfers."
+ ],
+ [
+  17,
+  171,
+  "And if we compare a simple bank transfer, we usually have a name that identifies the recipient, we have the account and we have a centralize"
+ ],
+ [
+  17,
+  180,
+  "d institution layer that verifies that these two match and that the recipient is the right one. And then if you look at stablecoin transfers"
+ ],
+ [
+  17,
+  190,
+  " nowadays, that whole burden of verifying the recipient falls upon the user"
+ ],
+ [
+  17,
+  195,
+  "and the user only has one verification layer, which is, as you can see here, the copied address. So most of the time, the UX also just shows"
+ ],
+ [
+  17,
+  207,
+  " the first four and last four characters of the address and, we do not need to add more complexity by showing the whole address and all the "
+ ],
+ [
+  17,
+  218,
+  "characters,"
+ ],
+ [
+  17,
+  219,
+  "but what we can do is add a readable identity layer that is tied on chain to the recipient address. And this pattern already exists today. M"
+ ],
+ [
+  17,
+  231,
+  "ost of the major wallets that you use and exchanges already have done this before, and we continue improving this, together. And a few produ"
+ ],
+ [
+  17,
+  243,
+  "cts also"
+ ],
+ [
+  17,
+  244,
+  "decided to just use the name and remove the raw addresses completely because the moment a user sees a name as a destination address, the per"
+ ],
+ [
+  17,
+  255,
+  "ception of the transaction just changes completely and becomes more trustworthy and understandable. So, usernames are useful, but usernames "
+ ],
+ [
+  17,
+  266,
+  "inside your app are not enough. The real unlock is the interoperability"
+ ],
+ [
+  17,
+  272,
+  "that comes with a naming layer. So in banking, I can send money to someone even though they don't use the same bank as I do. The payment wor"
+ ],
+ [
+  17,
+  283,
+  "ks for all banking systems and that concept applies to on chain transactions as well and it's even faster and secure. But when it comes to t"
+ ],
+ [
+  17,
+  294,
+  "he identity layer, it needs to follow that same concept."
+ ],
+ [
+  17,
+  298,
+  "So if a PayPal user wants to send USDC to a MetaMask user on the other side of the world, they can do it via an on chain name like an ENS na"
+ ],
+ [
+  17,
+  308,
+  "me. If, Coinbase exchange user wants to do the same and send, tokens to a rainbow wallet user, that should also work with a name that transf"
+ ],
+ [
+  17,
+  319,
+  "ers across and works across all applications."
+ ],
+ [
+  17,
+  322,
+  "So interoperable names is where the real unlock lies. And this is especially important because the a bad recipient UX does cost a lot, espec"
+ ],
+ [
+  17,
+  342,
+  "ially for platforms. One of the many causes, of course, is oh, it's not moving."
+ ],
+ [
+  17,
+  354,
+  "So all human thing is the wrong source and, mistype things and basically, yeah, user error is one of the biggest causes of lost funds on exc"
+ ],
+ [
+  17,
+  372,
+  "hanges and wallets. And then we have, of course, the"
+ ],
+ [
+  17,
+  378,
+  "the slides are not moving. I'm not sure why. But let me try here. No. It's not working. Should I use a different screen? It's"
+ ],
+ [
+  17,
+  407,
+  "working on my screen. It's just not working here. But yes, bad recipient UX is the the issue. And, we have user error, so people copy pastin"
+ ],
+ [
+  17,
+  424,
+  "g the wrong address. And I would love to show you the graph that I have here."
+ ],
+ [
+  17,
+  433,
+  "So user errors and then obvious scams like address poisoning, lookalike addresses, people just being scammed overall, and the whole trust fa"
+ ],
+ [
+  17,
+  453,
+  "ilure of letting humans verify addresses that they are not even able to read easily. Oh, wait."
+ ],
+ [
+  17,
+  467,
+  "Go to this and then presentation. The Wi Fi? Okay. Let's use my let's use my PDF, file. Yeah. I can do that. I'm so sorry, guys."
+ ],
+ [
+  17,
+  493,
+  "I'm connecting to my own hotspot now because I don't think it's working. Messages"
+ ],
+ [
+  17,
+  543,
+  "losing funds due to saying sending it to the wrong address. And no wallet in exchange will actually tell you how many funds or how much, is "
+ ],
+ [
+  17,
+  554,
+  "being lost every month through this very primitive problem. But we do have some, public research by people like Block eight who have, the da"
+ ],
+ [
+  17,
+  564,
+  "ta data online. So if you look up their articles, you can see that from, for example, 2025 until 2026,"
+ ],
+ [
+  17,
+  572,
+  "we are moving in the millions. And now you can imagine that this number is actually bigger than, or this one is actually smaller than the re"
+ ],
+ [
+  17,
+  582,
+  "ality. Reality. And if institutions and fintech apps and new banks come in, it will only rise if they don't get the basics down. Now what ca"
+ ],
+ [
+  17,
+  592,
+  "n platforms do? Warn your users. Have as many visual cues as possible in your apps. Audit your product features regularly to reduce the surf"
+ ],
+ [
+  17,
+  602,
+  "ace for address poisoning as much as possible,"
+ ],
+ [
+  17,
+  605,
+  "and offer your users another layer to verify the destination address. And then as a user, of course, don't use addresses that you see in tra"
+ ],
+ [
+  17,
+  616,
+  "nsaction histories. Don't copy them blindly and always use trusted sources. And then, of course, if it's possible, verify the name and the a"
+ ],
+ [
+  17,
+  627,
+  "ddress."
+ ],
+ [
+  17,
+  628,
+  "And if you use an app that does not offer you a second verification layer for sending tokens and assets, then ask for it. Be loud about it b"
+ ],
+ [
+  17,
+  640,
+  "ecause these are your funds that are at risk and safety should not be a vanity feature. It's foundational infrastructure and should be treat"
+ ],
+ [
+  17,
+  652,
+  "ed as such. So not mix."
+ ],
+ [
+  17,
+  654,
+  "Stablecoins are improving a lot from compared to traditional payments. They're faster, they're on chain, but it cannot be that in 2026, when"
+ ],
+ [
+  17,
+  665,
+  " it comes to the UX, stablecoin transfers are still lagging behind bank transfers when it comes to actually knowing who we are sending money"
+ ],
+ [
+  17,
+  676,
+  " to. And that's it."
+ ],
+ [
+  17,
+  678,
+  "Happy to connect. I'm so sorry. Thank very much. Yeah. Anyone has a question for Meli? Yeah. If not, we're gonna be moving to, Jakub."
+ ],
+ [
   18,
   20,
   "Hello? Okay. Awesome. Hi, everyone. I am Teresa. I work for different organizations, including Funding the Comments and Crypto Altrais. And "

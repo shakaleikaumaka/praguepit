@@ -1,0 +1,61 @@
+# The UX gap in stablecoin payments
+
+Date: 
+Source video: The UX gap in stablecoin payments
+Drive: https://drive.google.com/file/d/18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O/view
+Duration: 00:12:24
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:00] Oh, sorry. Yep. Alright. Yeah. Thanks for being here, everyone. Can we take this? I'm Mellie. I'm partnerships manager at ENS Labs,
+
+[00:26] and we're going to talk about the exciting topic of stablecoins today, surprise, and the premise that stablecoins are scaling very fast. But when it comes to the recipient UX, it's still broken compared to traditional finance. And we're gonna focus on the missing layer, which is the human readable recipient
+
+[00:48] identity. Before we start, I saw a tweet today that kind of fit very well. So stablecoins are usually being framed as completely separate from crypto. And, yeah, even though people really try to separate like, treat both as two different products,
+
+[01:12] the truth is that we can learn a lot from the crypto ecosystem. And we've been here for many, many years, and we have a lot of knowledge to pass on to, yeah, industries that come in and, yeah, want to make crypto their own. Especially when it comes to new payment products and, like, neobanks and, fintech apps that want to use stablecoins,
+
+[01:38] these should not ignore the lessons that we have learned and the things we have built to, yeah, improve their apps. So one example is EORs who, allow salaries to be paid as stablecoins. Now the question is, would you receive your salary with this?
+
+[02:01] Would you trust an HR person who has never touched crypto to send you your salary every month to a raw address. And, technically, it works. It works perfectly fine, but this is not what a trustworthy payment experience looks like. And that is what makes this whole thing interesting because,
+
+[02:25] stablecoins do improve on traditional, payments. They're faster, they're global, they settle on chain and they remove a lot of the friction and delays that we experience with banks and bank transfers. Stablecoins are in many ways better, but many of the payment products actually are still failing at the recipient layer compared to bank transfers.
+
+[02:51] And if we compare a simple bank transfer, we usually have a name that identifies the recipient, we have the account and we have a centralized institution layer that verifies that these two match and that the recipient is the right one. And then if you look at stablecoin transfers nowadays, that whole burden of verifying the recipient falls upon the user
+
+[03:15] and the user only has one verification layer, which is, as you can see here, the copied address. So most of the time, the UX also just shows the first four and last four characters of the address and, we do not need to add more complexity by showing the whole address and all the characters,
+
+[03:39] but what we can do is add a readable identity layer that is tied on chain to the recipient address. And this pattern already exists today. Most of the major wallets that you use and exchanges already have done this before, and we continue improving this, together. And a few products also
+
+[04:04] decided to just use the name and remove the raw addresses completely because the moment a user sees a name as a destination address, the perception of the transaction just changes completely and becomes more trustworthy and understandable. So, usernames are useful, but usernames inside your app are not enough. The real unlock is the interoperability
+
+[04:32] that comes with a naming layer. So in banking, I can send money to someone even though they don't use the same bank as I do. The payment works for all banking systems and that concept applies to on chain transactions as well and it's even faster and secure. But when it comes to the identity layer, it needs to follow that same concept.
+
+[04:58] So if a PayPal user wants to send USDC to a MetaMask user on the other side of the world, they can do it via an on chain name like an ENS name. If, Coinbase exchange user wants to do the same and send, tokens to a rainbow wallet user, that should also work with a name that transfers across and works across all applications.
+
+[05:22] So interoperable names is where the real unlock lies. And this is especially important because the a bad recipient UX does cost a lot, especially for platforms. One of the many causes, of course, is oh, it's not moving.
+
+[05:54] So all human thing is the wrong source and, mistype things and basically, yeah, user error is one of the biggest causes of lost funds on exchanges and wallets. And then we have, of course, the
+
+[06:18] the slides are not moving. I'm not sure why. But let me try here. No. It's not working. Should I use a different screen? It's
+
+[06:47] working on my screen. It's just not working here. But yes, bad recipient UX is the the issue. And, we have user error, so people copy pasting the wrong address. And I would love to show you the graph that I have here.
+
+[07:13] So user errors and then obvious scams like address poisoning, lookalike addresses, people just being scammed overall, and the whole trust failure of letting humans verify addresses that they are not even able to read easily. Oh, wait.
+
+[07:47] Go to this and then presentation. The Wi Fi? Okay. Let's use my let's use my PDF, file. Yeah. I can do that. I'm so sorry, guys.
+
+[08:13] I'm connecting to my own hotspot now because I don't think it's working. Messages
+
+[09:03] losing funds due to saying sending it to the wrong address. And no wallet in exchange will actually tell you how many funds or how much, is being lost every month through this very primitive problem. But we do have some, public research by people like Block eight who have, the data data online. So if you look up their articles, you can see that from, for example, 2025 until 2026,
+
+[09:32] we are moving in the millions. And now you can imagine that this number is actually bigger than, or this one is actually smaller than the reality. Reality. And if institutions and fintech apps and new banks come in, it will only rise if they don't get the basics down. Now what can platforms do? Warn your users. Have as many visual cues as possible in your apps. Audit your product features regularly to reduce the surface for address poisoning as much as possible,
+
+[10:05] and offer your users another layer to verify the destination address. And then as a user, of course, don't use addresses that you see in transaction histories. Don't copy them blindly and always use trusted sources. And then, of course, if it's possible, verify the name and the address.
+
+[10:28] And if you use an app that does not offer you a second verification layer for sending tokens and assets, then ask for it. Be loud about it because these are your funds that are at risk and safety should not be a vanity feature. It's foundational infrastructure and should be treated as such. So not mix.
+
+[10:54] Stablecoins are improving a lot from compared to traditional payments. They're faster, they're on chain, but it cannot be that in 2026, when it comes to the UX, stablecoin transfers are still lagging behind bank transfers when it comes to actually knowing who we are sending money to. And that's it.
+
+[11:18] Happy to connect. I'm so sorry. Thank very much. Yeah. Anyone has a question for Meli? Yeah. If not, we're gonna be moving to, Jakub.

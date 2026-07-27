@@ -367,13 +367,14 @@
     "id": "18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O.mp3"
    }
   ],
-  "transcript": null,
-  "duration": null,
+  "transcript": "18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O",
+  "duration": "00:12:24",
   "quality": "ok",
-  "transponder": false,
+  "transponder": true,
   "featured": false
  },
  {
