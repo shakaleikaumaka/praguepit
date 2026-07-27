@@ -1,1 +1,1457 @@
-[]
+[
+ [
+  6,
+  9,
+  "I have, like, a all three view, the hacker, hackathon organizer, judging. So I can share a little bit a gist of, like, what is the common mi"
+ ],
+ [
+  6,
+  18,
+  "stake and what you can focus on so that you can build faster and better. So why most team struggles? So in the beginning, either you have no"
+ ],
+ [
+  6,
+  26,
+  " idea what to build or you have too many ideas or, like, you start to overengineer early, so you start to build the microservices,"
+ ],
+ [
+  6,
+  34,
+  "which doesn't make sense to showcase for the hackathon or you focus on wrong things, or like a team cows. So, like, hey. Maybe you don't com"
+ ],
+ [
+  6,
+  42,
+  "municate to each other and you find out that three of you were building exactly same feature or, like, a someone just just, like, a push, li"
+ ],
+ [
+  6,
+  50,
+  "ke, a completely wrong branch or, like, you never hit submit. This is really important. So the half finished project is better than you don'"
+ ],
+ [
+  6,
+  58,
+  "t submit at all. So they're, like, often, by the end of the hackathon, I myself had the same experience that all the engineers, developers f"
+ ],
+ [
+  6,
+  66,
+  "eel like my"
+ ],
+ [
+  6,
+  67,
+  "project is not good enough to submit. So you're free shy, you don't submit. But you will be surprised that how your project could be good en"
+ ],
+ [
+  6,
+  76,
+  "ough for the hackathon and a bad demo. So please, like, don't neglect that demo or pitch is important. In the end, judges don't have a time "
+ ],
+ [
+  6,
+  84,
+  "to go through your code base line by line or, like, it's checking the feature by feature. So if you cannot demonstrate what you are building"
+ ],
+ [
+  6,
+  93,
+  "or, like, what kind of things are important to look into, you will not have chance to become finalist. But, of course, hackathon is not just"
+ ],
+ [
+  6,
+  102,
+  " about winning, but the good practice of this is not to win only, but this is a very similar practice that you will go through if you join s"
+ ],
+ [
+  6,
+  111,
+  "tartup or product team. So this is a nice practice you can do with the new people. So"
+ ],
+ [
+  6,
+  116,
+  "hackathon is for clarity and execution. So many people are gonna be thinking that hackathon is like best developers come and then making a m"
+ ],
+ [
+  6,
+  124,
+  "ost complex architecture, technically, like beautiful and building things. But we have only forty eight hours practically. It's like since F"
+ ],
+ [
+  6,
+  133,
+  "riday to Sunday morning to submit. So not the most code, not the smartest stack. It's about you build something which plausible"
+ ],
+ [
+  6,
+  140,
+  "so that you can explain and showcase your idea. The myth is, like, people often think that, like, oh, I'm not the best coder. You need to ex"
+ ],
+ [
+  6,
+  148,
+  "ecute. And then most features, we need to put, like, a lot of different features to make this story complete. It's not true, but it's demo w"
+ ],
+ [
+  6,
+  156,
+  "ins. You will be like, oh, I don't slay. We're gonna ship most of things. You need to focus on few things to demonstrate your work. And then"
+ ],
+ [
+  6,
+  164,
+  " complex tech is not the, like, a winning point. It's more like a clear value what it delivers. So you build all the complex things, but it "
+ ],
+ [
+  6,
+  172,
+  "has no value in your demo. They will not even look into it. And all this kind of thing is something like another how to say that? Like, you "
+ ],
+ [
+  6,
+  180,
+  "know,"
+ ],
+ [
+  6,
+  180,
+  "groundbreaking new groundbreaking news. But, also, when you start to build, like, engineers tend to focus on the left side than the right si"
+ ],
+ [
+  6,
+  188,
+  "de, and this is a good practice. A lot of you may become founder or joining early stage of startup. Also, we use this side brain, but we nee"
+ ],
+ [
+  6,
+  196,
+  "d to go to the reality brain. And what judges do? So judges, like, have perhaps, like, three minutes to decide if I want to read further you"
+ ],
+ [
+  6,
+  204,
+  "r project or not. So, like, they're gonna be, like, 80 project, let's say, and then you need to nail down quickly."
+ ],
+ [
+  6,
+  211,
+  "So even sometimes it's a sixty seconds you feel like, do I want to read further or not? It should have a clear problem, working prototype, v"
+ ],
+ [
+  6,
+  220,
+  "alue over the, like, a tag, and then creativity and the storytelling and polish. All this kind of thing, you will be wondering what does it "
+ ],
+ [
+  6,
+  229,
+  "exactly mean. We will go through also, like, some examples as well. But the thing is you don't over polish things. So, like, a high fidelity"
+ ],
+ [
+  6,
+  237,
+  " prototype"
+ ],
+ [
+  6,
+  238,
+  "is not necessary for the hackathon. You need to focus a few core feature which can demonstrate what you wanted to build and prove the point "
+ ],
+ [
+  6,
+  247,
+  "and talk about that and focus on the value it brings, what problem it's serving instead of how it was difficult to integrate and how complex"
+ ],
+ [
+  6,
+  255,
+  " thing it is. So so simple concept, it should be like something if someone is asking what what you are building, judges or mentors gonna be "
+ ],
+ [
+  6,
+  264,
+  "around. Please talk to them also during hacking so that they can be aligned with you. And also this is the, some magic things. If you talk t"
+ ],
+ [
+  6,
+  272,
+  "o those judges and mentors"
+ ],
+ [
+  6,
+  274,
+  "first during hacking, you actually reduce their time to judge. Right? Because they already know about your project. This is really clever th"
+ ],
+ [
+  6,
+  282,
+  "ing to do. So please make sure that you talk to them and ask them questions so they know where you're heading to. Then you can perhaps a lit"
+ ],
+ [
+  6,
+  289,
+  "tle bit, you know, make it up that when you don't have enough time to explain everything, they know why you implemented this tag because the"
+ ],
+ [
+  6,
+  297,
+  "y had a chat with you."
+ ],
+ [
+  6,
+  298,
+  "So like a simple concept, talk to them, making it easy demo. So demo should be never complicated. And one memorable moment. This is somethin"
+ ],
+ [
+  6,
+  306,
+  "g I really, how to say that? Want to emphasize. So if you are not the master of the presentation, which is completely fine, this is the one "
+ ],
+ [
+  6,
+  314,
+  "of the biggest advice I can give is make one memorable moment. It can be some sound bite, like some nice quote. You feel like, oh my god. Ev"
+ ],
+ [
+  6,
+  322,
+  "ery one gonna quote this on Twitter and talk about my demo. One thing. Focus on what I gonna say. So that one memorable moment, so the judge"
+ ],
+ [
+  6,
+  330,
+  "s after, like, 20 project they read, they remember, oh, that guy,"
+ ],
+ [
+  6,
+  334,
+  "oh, like, the team, you know, who said that that's important thing. So there, the strong narrative is, like, quite attached to the memory mo"
+ ],
+ [
+  6,
+  342,
+  "ment and a finished feel. Your project doesn't need to be fully fledged and finished, obviously, but it should give a kind of finished cycle"
+ ],
+ [
+  6,
+  350,
+  ". So if you have a, like, a one, like, a cycle of, like, people going through a different interaction,"
+ ],
+ [
+  6,
+  356,
+  "make sure that demo is delivering it. And most teams fail the same way. ID fail same way, and this is the a few things, perhaps, like, a lit"
+ ],
+ [
+  6,
+  365,
+  "tle bit different angle, what is the fail factor to check it together. So building too much, like, 12 feature MVP that demos none of them. S"
+ ],
+ [
+  6,
+  374,
+  "o, like, all of you gonna be now, like, debating within your team what is the most important feature, and some of you start to focus on fun "
+ ],
+ [
+  6,
+  383,
+  "to integrate but not necessary,"
+ ],
+ [
+  6,
+  385,
+  "and then they will not have enough time. And brainstorming for hours. So this is, like, forty eight hours hackathon, effectively because you"
+ ],
+ [
+  6,
+  393,
+  " need to submit on Sunday morning. Your idea should be like, thirty minutes is a little of the exaggeration, but let's say you shouldn't, li"
+ ],
+ [
+  6,
+  401,
+  "ke, talk about core concept like hours. Rather quickly choose in an hour. So this is a great opportunity if you're forming a team now, discu"
+ ],
+ [
+  6,
+  410,
+  "ss what you are mainly building and then discuss some detail, and you need to start to build."
+ ],
+ [
+  6,
+  415,
+  "The infrastructure heavy ideas, this is also often the case that people are building project that need a a lot of, like, scale, you know, to"
+ ],
+ [
+  6,
+  423,
+  " build, and they often ended up in infrastructure, not the core app they wanted to actually build. This is something like a common problem o"
+ ],
+ [
+  6,
+  430,
+  "r so start up founders, like, often, like, a focus on some infrastructure to make their app fly. For them, they still had a intrinsic value "
+ ],
+ [
+  6,
+  438,
+  "to do so because"
+ ],
+ [
+  6,
+  439,
+  "that their business perhaps must be built on top of it. But for hackathon project, you don't need to build the old infrastructure. If you ha"
+ ],
+ [
+  6,
+  447,
+  "d to fake some data, fake it. It's not like a fake it. You would keep the dummy data. Right? As such, infrastructure, if there's some intera"
+ ],
+ [
+  6,
+  455,
+  "ction, you can make it as a dummy interaction. Do that and focus on core interaction. Of course, don't lie about it. It's fine. And, like, n"
+ ],
+ [
+  6,
+  463,
+  "o clear problem. So you build it, but everyone asking, like, hey. Why did you build it? I don't know. Like, obviously, make the story around"
+ ],
+ [
+  6,
+  471,
+  " it and ignoring the demo and pitch."
+ ],
+ [
+  6,
+  473,
+  "And no team roles. So they're like a four of you sitting there together, and all of you are perhaps like a often ending up working on same t"
+ ],
+ [
+  6,
+  480,
+  "hing. None of you were building the, like, a portfolio, like, submission. None of you were working on the presentation. Or, like, a someone "
+ ],
+ [
+  6,
+  487,
+  "said that, like, oh, I will be working on this, but it wasn't clear. And then you realize that there's no front end stack. So please make su"
+ ],
+ [
+  6,
+  495,
+  "re that quick discussion and divide and conquer."
+ ],
+ [
+  6,
+  497,
+  "Don't work on, a perfect app. It's obvious thing, but all of you are gonna have a a bit of the, like, you know, butterfly, like, telling you"
+ ],
+ [
+  6,
+  505,
+  ", like, you need to build something perfect. But hackathon is not about that, depending on unstable APIs. So today, like you saw that on the"
+ ],
+ [
+  6,
+  513,
+  " stage, microphone was on and off sometimes, like, thirty seconds. Right? Same thing can happen during your final, like, pitch. So make sure"
+ ],
+ [
+  6,
+  521,
+  " that you don't rely on something gonna break down. So make sure you have some backup, which is recorded video or some screenshots to prove "
+ ],
+ [
+  6,
+  528,
+  "the point."
+ ],
+ [
+  6,
+  529,
+  "And building an invisible feature, what it means. So there's a certain features you don't actually care when you're looking into. Think abou"
+ ],
+ [
+  6,
+  537,
+  "t, like, Tinder. So you want to showcase that some matching algorithm, how people are making a dating market, Or maybe, like, some nice, lik"
+ ],
+ [
+  6,
+  545,
+  "e, you know, design to how to trigger people to say, like, a good or not, and then some funny, like, a gimmicks, not the login feature."
+ ],
+ [
+  6,
+  553,
+  "But if you go to, like, a hackathon, another people are ending their project after forty hours building some login feature and SMS notificat"
+ ],
+ [
+  6,
+  561,
+  "ion. And you're like, but this is dating app. Where is the dating part? Dating is not happening. So please focus on things you should show a"
+ ],
+ [
+  6,
+  569,
+  "nd which can be demo able, not building individual feature. And, of course, so that don't forget the story why you wanted to build so you ca"
+ ],
+ [
+  6,
+  578,
+  "n pitch."
+ ],
+ [
+  6,
+  578,
+  "So winning team follow those, like, you know try to avoid those winning, what is the fail factors so they can reduce the risk early enough. "
+ ],
+ [
+  6,
+  588,
+  "And what can be good hackathon idea? So easy to explain. So if you can explain without jargon so that judges can understand, that's the best"
+ ],
+ [
+  6,
+  598,
+  ". Remember, not every judges are expert"
+ ],
+ [
+  6,
+  601,
+  "in your domain. So there are gonna be also some non tech judges as well. Always, whatever hackathon you go, even technical judges, some some"
+ ],
+ [
+  6,
+  608,
+  " people are gonna be, like, focused on, like, let's say, like, clients. Some people focus on, I don't know, VR. Then how would you convince "
+ ],
+ [
+  6,
+  616,
+  "them? So you need to have some common language to explain your demo. And it should be demo able, very quick. A lot of people wasting on stag"
+ ],
+ [
+  6,
+  623,
+  "e, like, hooking up and try to, like, make things working for, like, ninety seconds. You don't have time for that. It should go in five seco"
+ ],
+ [
+  6,
+  630,
+  "nds to start, and you should show your magic in first thirty seconds so people stay engaged."
+ ],
+ [
+  6,
+  635,
+  "And it should be interesting visually. Doesn't mean that it should be fancy, but you should make sure that something is readable instead of,"
+ ],
+ [
+  6,
+  643,
+  " like, CLI working on things that people barely can read. It look like some, I don't know, like a North Korean hacker from the movie. No. Li"
+ ],
+ [
+  6,
+  652,
+  "ke, please add some visuals so that people can understand, and it's so some obvious pain. The last one is, I will say, arguable. So most pro"
+ ],
+ [
+  6,
+  660,
+  "ject, please serve something"
+ ],
+ [
+  6,
+  662,
+  "obvious pain that you can serve. You can address the problem of users. But if you want to go completely wild, like a you may say, I want to "
+ ],
+ [
+  6,
+  670,
+  "solve the problem for, I don't know, alien living in Mars. That may be ridiculous, but it's a fun project as well. So you can go complete wi"
+ ],
+ [
+  6,
+  678,
+  "ld, but make sure that your persona has some pain and you need to solve their problem. It doesn't need to be always super realistic,"
+ ],
+ [
+  6,
+  685,
+  "but it should be plausible that people can engage and understand so that they can enjoy seeing your program. So pain, feasibility, demobilit"
+ ],
+ [
+  6,
+  693,
+  "y, all of these, you should just, like, remember these three hits, And you can see that it's a multiplier. So if one of them goes zero, ever"
+ ],
+ [
+  6,
+  700,
+  "ything goes zero. So if you have, like, pain point address, it's feasible, but you cannot demo. It's a zero. They cannot prove that you actu"
+ ],
+ [
+  6,
+  708,
+  "ally built it. Your demo is there, but you actually don't see, like, what's feasible. Like, you couldn't, like, even make it feasible, then "
+ ],
+ [
+  6,
+  715,
+  "it doesn't work. Right? You have, like, some shitty demo. You couldn't ship it. It's not working. So make sure there's simple rule. It shoul"
+ ],
+ [
+  6,
+  723,
+  "d be addressing some pain points, interesting story. It's feasible so that you can actually build. Don't overbuild it, and you should be abl"
+ ],
+ [
+  6,
+  730,
+  "e to demo."
+ ],
+ [
+  6,
+  731,
+  "So, like, a bad and good idea, simple example, just for the sake of, like, sharing what is the storytelling technique. So a decentralized, l"
+ ],
+ [
+  6,
+  739,
+  "ike, ZK identity layer for web three, it sounds like a, typical headline of the big tech companies, like, now in web three. Right? Because t"
+ ],
+ [
+  6,
+  747,
+  "hat's not a hackathon project. It's a big project. It's a commercial word. You need to address the big audience. But for hackathon,"
+ ],
+ [
+  6,
+  755,
+  "obviously, you wanna build a horse stack. You need to focus on prove that you're over 18 on chain without sharing your ID so you can buy a d"
+ ],
+ [
+  6,
+  763,
+  "rink. You know what I mean? So, like, it's same thing practically, but you are building actually subset of the feature only. So don't say ov"
+ ],
+ [
+  6,
+  772,
+  "erly broad story so that people actually don't remember what it's built for. It's not even punchy, but focus on that and that will actually "
+ ],
+ [
+  6,
+  780,
+  "help you what you need to build during this hackathon,"
+ ],
+ [
+  6,
+  783,
+  "nail down to few, features only. So they're like a engineer or so like a wild moment. We talked about it should be memorable. So one is, lik"
+ ],
+ [
+  6,
+  791,
+  "e, a easy thing is make sure the visual is there. It should be instantly working. And then some surprising points, try to think. Josh is gon"
+ ],
+ [
+  6,
+  799,
+  "na say, wow. That actually worked or, like, that's interesting way of thinking. So you make the wow moment and make it tangible so that they"
+ ],
+ [
+  6,
+  806,
+  " can, how to say, they're like,"
+ ],
+ [
+  6,
+  808,
+  "resonance with you. So it's it's tangible so they understand. It's something not like, hey. I actually don't understand the mind of that use"
+ ],
+ [
+  6,
+  816,
+  "r. I don't understand why you were actually building it, then likely you will not make it even it's amazing project. Judge will not see the "
+ ],
+ [
+  6,
+  824,
+  "value in it. And this is like a bit of the repetition, but let's make sure they're lucky. Please don't make too many features. How many I am"
+ ],
+ [
+  6,
+  832,
+  " saying this, you will end up in the situation discussion with discussing with your teammates that we should start building that."
+ ],
+ [
+  6,
+  840,
+  "And then also don't, like, optimize being premature, like, a refactoring at first, a evening is not a thing. But if you have someone who is,"
+ ],
+ [
+  6,
+  848,
+  " like, working on that, like, make sure that you are not building for production, you're building for hackathon. So must, wow, and nice. So "
+ ],
+ [
+  6,
+  856,
+  "this is, like, how we make it, like, a memorable, like, features and how to nail down a few features to build. So there's always some core f"
+ ],
+ [
+  6,
+  863,
+  "unctionality"
+ ],
+ [
+  6,
+  864,
+  "that you need to build one or two. You need to ship it, then you can think about adding more features. There's one wow feature there, like, "
+ ],
+ [
+  6,
+  871,
+  "wow. I want to surprise judges that, like, this is amazing app. Why I am different? Not practicing Todoist, but actually this is doing somet"
+ ],
+ [
+  6,
+  879,
+  "hing else. And then NICE is, like, when those are done, you can edit. But at demo, you focus on demonstrating must and wow and mentioning NI"
+ ],
+ [
+  6,
+  886,
+  "CE when question comes."
+ ],
+ [
+  6,
+  887,
+  "So how these three example? Let's say you are building on chain dead man switch. And then you're gonna focus on, like, a, everyone know what"
+ ],
+ [
+  6,
+  895,
+  " is dead man switch. So this is something if someone is dead, it'll be automatically, like, release something. So it doesn't need to be on c"
+ ],
+ [
+  6,
+  902,
+  "hain, but the example is I'm, like, a author a journalist, like, working on some sensitive topics. Someone may kill me if I get killed. My, "
+ ],
+ [
+  6,
+  910,
+  "like, a, vault of the all the sensitive information go to, like, five different colleagues that we can continue, like, research on this. Or,"
+ ],
+ [
+  6,
+  918,
+  " like, your crypto, like, your fund is there. Of course, you don't want to share your private key with your family right now, but car accide"
+ ],
+ [
+  6,
+  926,
+  "nt happened and my 2,000,000,000 worth Bitcoin gone. Of course, I don't have 2,000,000,000, but let's imagine that that's nice thing to thin"
+ ],
+ [
+  6,
+  933,
+  "k about. And then you want to make sure to set up something that it can share perhaps, like, I don't know, multi state key to your family me"
+ ],
+ [
+  6,
+  941,
+  "mber or something. So you got the gist of what is dead man switch. What is important? Check-in timers. How dead man switch often work is lik"
+ ],
+ [
+  6,
+  949,
+  "e a because you are alive, you need to check-in so that it's keep working."
+ ],
+ [
+  6,
+  953,
+  "But once when you forgot to check-in, which means that you are not accessible, available, then it released it. So you need to build a timer."
+ ],
+ [
+  6,
+  961,
+  " That's a core feature. And then auto release is the core feature as well. Right? That's the gist of Deadman's Switch. You don't check-in, t"
+ ],
+ [
+  6,
+  968,
+  "hey release it. What is the wow factor? Maybe panic button reverse so that it I'm not that, but I realized that North Korean hacker got acce"
+ ],
+ [
+  6,
+  976,
+  "ss to my watch."
+ ],
+ [
+  6,
+  977,
+  "I will put the panic button. It will actually release it without checking timer. That can be interesting because that may switch concept is "
+ ],
+ [
+  6,
+  984,
+  "you should be like, you know, that's not available. But instead of that, I'm still alive, but can I make it as a, like, panic button so that"
+ ],
+ [
+  6,
+  992,
+  ", oh, there's so many hack is happening? If I click it, it will work it as a circuit breaker. Maybe it's interesting. Then what is nice to h"
+ ],
+ [
+  6,
+  999,
+  "ave? Oh, so that either have a multi, you know, beneficiary,"
+ ],
+ [
+  6,
+  1002,
+  "and then they will have a split percentage. It'll have a encrypted message going together alongside the funds. Oh, I would have a decoy vote"
+ ],
+ [
+  6,
+  1011,
+  ", so it gonna release the decoy one first, and then it'll go to the real one only after that. All this kind of thing is nice to have, but ma"
+ ],
+ [
+  6,
+  1020,
+  "ybe you don't have a time to build and not necessary to yeah. Not necessary to build now. So you can see there, like, check-in timer,"
+ ],
+ [
+  6,
+  1028,
+  "demo impact high, its core feature, maybe difficulty not to much auto release. Let's just see it's imaginary scenario. Okay? It's a meet, bu"
+ ],
+ [
+  6,
+  1037,
+  "t, like, at then high impact, oh, panic button is, a wow factor that I can add, but decoy vault. Maybe it's difficult to build, but demo is "
+ ],
+ [
+  6,
+  1047,
+  "not great, then I will focus on first three features. And these things are done within, like, let's say, thirty six hours, then you can focu"
+ ],
+ [
+  6,
+  1056,
+  "s on next ones."
+ ],
+ [
+  6,
+  1057,
+  "So what great team look like? You're gonna have this, like, in four different roles. It doesn't need to be four different people. It can be "
+ ],
+ [
+  6,
+  1064,
+  "one person can be builder and designer at the same time. One person can be product thinker and designer at the same time, whatever combinati"
+ ],
+ [
+  6,
+  1071,
+  "on. But if you have this hat, if you're a multi hatter, make sure that you are thinking dedicated to each topic at a time. So they're like, "
+ ],
+ [
+  6,
+  1078,
+  "oh, you're a builder, but you're also product thinker. Then, you need to gather the team. Hey, guys. Let's talk about product. What feature "
+ ],
+ [
+  6,
+  1085,
+  "is the core feature? Wow factor. Let's focus on that. We're gonna sprint for next, like, four hours, and then we meet, and then we're gonna "
+ ],
+ [
+  6,
+  1092,
+  "discuss what's working, what's not. We will get rid of it. If you're a designer, but also at the same time presenter, you will be focusing o"
+ ],
+ [
+  6,
+  1100,
+  "n design,"
+ ],
+ [
+  6,
+  1100,
+  "But perhaps, like, a Saturday afternoon, you will start to think about, hey. What's the storyline? What feature is ready or not? So make sur"
+ ],
+ [
+  6,
+  1108,
+  "e that you built some of the skeleton what you're gonna present about. Many of them can actually accelerate a lot with the AI tools now. Fun"
+ ],
+ [
+  6,
+  1115,
+  "ny enough, actually, my presentation so I wrote this all in just text, and I put it to the cloud design, make the presentation for me. The a"
+ ],
+ [
+  6,
+  1123,
+  "ll the design is absolutely done by cloud codes in, like with my effort of five seconds, I just had to put all the text. That's it. So you w"
+ ],
+ [
+  6,
+  1131,
+  "hen you are making such thing, try to utilize the tool, but make sure someone is owning the task. It's not about the task is big or not. It "
+ ],
+ [
+  6,
+  1138,
+  "should be done. Then someone should own that. They're a presenter. They need to prepare the presentation. If you're a product person, make s"
+ ],
+ [
+  6,
+  1146,
+  "ure checking in with your team so that you say no to the feature, which is not important."
+ ],
+ [
+  6,
+  1151,
+  "So everyone is coding. That happened like a first time when I went to hackathon. Like, hey. Nobody wanted to be a product person nor designe"
+ ],
+ [
+  6,
+  1159,
+  "r or presenter, so everyone was, like, first tech developer. Nobody wanted to be a front end. So I was there, like, a least technical person"
+ ],
+ [
+  6,
+  1166,
+  ". I decided to teach myself JavaScript to become front end because nobody wanted to. But what did he talk about? Demo without visuals, it fa"
+ ],
+ [
+  6,
+  1174,
+  "ils. So that was a problem. No communication. We realized that two hackers were working on exactly same feature which were not important. Th"
+ ],
+ [
+  6,
+  1181,
+  "at was disaster."
+ ],
+ [
+  6,
+  1182,
+  "And even during the presentation, without discuss, the developer go front and talk about that unimportant feature, 30% of our pitching time,"
+ ],
+ [
+  6,
+  1191,
+  " that's disaster. So please communicate. And then this leader, I don't mean it you need to have a boss. You need a tiebreaker. Sometimes som"
+ ],
+ [
+  6,
+  1199,
+  "eone gonna say a is more important. B is more important. Often product person gonna say, let's focus on b. Either you think that it's convin"
+ ],
+ [
+  6,
+  1208,
+  "cing or not, once when you make a decision, you need to move on. You only have forty eight hours."
+ ],
+ [
+  6,
+  1214,
+  "Please make sure you have ownership of what you're building and no endless debates. So fast execution, decide quickly, communicate constantl"
+ ],
+ [
+  6,
+  1223,
+  "y, cut scope aggressively, protect team energy, keep morale high. All of them, you can relate that all the stories we have before, like, wha"
+ ],
+ [
+  6,
+  1232,
+  "t is a typical mistake, what you can do. So this is exactly same gist,"
+ ],
+ [
+  6,
+  1237,
+  "just a version to keep the team, how to say that, like, efficient and decide fast, make sure that you have a tiebreaker, and then convince y"
+ ],
+ [
+  6,
+  1246,
+  "ourself when things are decided against your idea. You just work together or you split the team as soon as possible. So timeline. This is ro"
+ ],
+ [
+  6,
+  1254,
+  "ugh timeline. Your team might be different. But first four hours, idea and scope. Lock the problem, lock the wow moment. This may change."
+ ],
+ [
+  6,
+  1263,
+  "Sometimes this change in, like, Saturday, like, afternoon. This shouldn't change Saturday midnight. And then, like, you do a core build, lik"
+ ],
+ [
+  6,
+  1271,
+  "e, first thirty six hours, which means that by Saturday evening, most core build is done. So you are confident that you have a two core feat"
+ ],
+ [
+  6,
+  1279,
+  "ure and one wow feature, and then you are now working on polishing things around, prepare the demo, and then you should be ready to pitch. S"
+ ],
+ [
+  6,
+  1286,
+  "ometimes it can this can change. Of course, don't"
+ ],
+ [
+  6,
+  1289,
+  "follow this like a bible. One time, it happened to me that, like, a just night before submission, I had a, like, huge urge that we need to c"
+ ],
+ [
+  6,
+  1297,
+  "hange something from scratch. Sometimes that happen. And if your team is fine with it, you can also do it. Maybe worth the risk. It's fun. J"
+ ],
+ [
+  6,
+  1305,
+  "ust make sure that you all commit together. If you lose it because of that, you are fine with it. If you win because of that, you can win al"
+ ],
+ [
+  6,
+  1313,
+  "together"
+ ],
+ [
+  6,
+  1313,
+  "instead of any of you say, I told you so. So make sure that, you are, like, committed together. But sometimes that happen, and sometimes tha"
+ ],
+ [
+  6,
+  1321,
+  "t's the best thing happening. So this is a general guideline. You know? But, like, eight hours ago, submission, you feel like, oh, shit. We "
+ ],
+ [
+  6,
+  1330,
+  "complete said wrong problem. Guys, I'm so sorry. We will build things around. We need to change the storyline completely."
+ ],
+ [
+  6,
+  1337,
+  "That happens, and sometimes that's the most successful things. And maybe that fails, you have a best friends who built that through, through"
+ ],
+ [
+  6,
+  1345,
+  " together. So prototype first, like, It should be like something done very, very quickly. Please talk to mentors or judges. Sometimes you ha"
+ ],
+ [
+  6,
+  1354,
+  "ve your own interpretation what bounty is about, and then the bounty sponsors are completely having different idea. So maybe you were buildi"
+ ],
+ [
+  6,
+  1362,
+  "ng something they were not expecting"
+ ],
+ [
+  6,
+  1364,
+  "in maybe positive way, negative way. Make sure you have a discussion with them. It's partially perhaps that you couldn't understand what the"
+ ],
+ [
+  6,
+  1371,
+  "y meant. Also, a lot of times, also perhaps they didn't give you a clear explanation on what's their expectation. So you must go to talk to "
+ ],
+ [
+  6,
+  1379,
+  "them, and this is what I'm building. What do you think? And you can see their feeling if they have an appetite on it, that you have a better"
+ ],
+ [
+  6,
+  1386,
+  " chance of, like, building further, get better support."
+ ],
+ [
+  6,
+  1389,
+  "Ugly is okay. You need to have some visual, but don't over engineering it. I mean, with AI, actually, a lot of things become much beautiful "
+ ],
+ [
+  6,
+  1396,
+  "than average technical people doing it. So do not worry about it, but I think it's fine. Please make sure that you have some stable demo bra"
+ ],
+ [
+  6,
+  1404,
+  "nch. Fake the back end doesn't mean they're like, hey. Fake the back end in a sense that tell judges that you actually built when you didn't"
+ ],
+ [
+  6,
+  1411,
+  " build. I'm type of judge that will actually go to get the repo and quickly find one line and try to, like, disqualify them if they lie abou"
+ ],
+ [
+  6,
+  1419,
+  "t. Some people don't do. Some people do. So you could get lucky, unlucky depending on what your perspective are. Don't fake it, but you can "
+ ],
+ [
+  6,
+  1426,
+  "have a dummy back end and just be frank about it, what you build. You don't need to put emphasis on this is the dummy, but you explain and t"
+ ],
+ [
+  6,
+  1434,
+  "hey're gonna say, oh, how many of them are actually working?"
+ ],
+ [
+  6,
+  1437,
+  "For this hackathon, we demonstrate a, b, c features, and then d is dummy back end. So we don't need a whole database for this, but we are no"
+ ],
+ [
+  6,
+  1446,
+  "w just pulling some hardcore data to show the feature. They're all fine with it. Just be frank with it. And optimize for demo. So they're li"
+ ],
+ [
+  6,
+  1455,
+  "ke, hey. Make some architect choice that in few hours, I need to present this one. This is interesting one. Do I want to is it easy to show?"
+ ],
+ [
+  6,
+  1463,
+  " So please make sure that, like, it's having influence in your decision."
+ ],
+ [
+  6,
+  1468,
+  "So risk management, quick thing. So like a broken deployment, API failure, unfinished features, exhausted team. So first two, you can, like,"
+ ],
+ [
+  6,
+  1477,
+  " prevent that by recording some and having some screenshot and make sure that, like, a one funny thing is, like, once I had to go to demo an"
+ ],
+ [
+  6,
+  1485,
+  "d sixty seconds before demo, my window was getting updated. And after updated, my app was not working anymore. So we had to quickly roll bac"
+ ],
+ [
+  6,
+  1494,
+  "k, and that was the most sweaty moment because we didn't think why it wouldn't work. And stupidly,"
+ ],
+ [
+  6,
+  1500,
+  "I had the automatic, like, you know, update. So make sure that you turn off software updates, and then make sure that you do demo first. And"
+ ],
+ [
+  6,
+  1508,
+  " unfinished feature, cut them. Some of them, keep the only makes sense one. Exhausted team, make sure that you have a few practice and also "
+ ],
+ [
+  6,
+  1516,
+  "get some sleep. So momentum is better than perfection. Make sure that, like, you guys are all building together,"
+ ],
+ [
+  6,
+  1523,
+  "through the momentum together. AI is a force multiplier. So we talked about this. Some of them are very, very fast, helping you. So they're "
+ ],
+ [
+  6,
+  1531,
+  "coding some boilerplate. I'm sure that all of you have tried, like, some AI tools, get debugging. UI is, like, amazing. I remember that most"
+ ],
+ [
+  6,
+  1539,
+  " of hackathons every year, people were looking for front end and designer. Not that they are not worth it. If you're front end or designer,"
+ ],
+ [
+  6,
+  1547,
+  "you are still very, very important. But if you don't, okay, don't be like devised yet, and then you can actually build something. It might l"
+ ],
+ [
+  6,
+  1556,
+  "ook a little bit generic, but still you can get there and pitch as well. So why this got erased? I don't know. But, like, a coding so, like,"
+ ],
+ [
+  6,
+  1565,
+  " I all of you are aware aware of this tool. But, like, if you're not, Cloud Code, Codex, Cursor, Copilot, interface, it got erased. But, lik"
+ ],
+ [
+  6,
+  1574,
+  "e, Figma or, like, a cloud design for pitch deck, you know, Canva. There's, a multiple things you can use for free credit."
+ ],
+ [
+  6,
+  1582,
+  "And research, like, it means they're, a quick ideation, HTTP, perplexity is also good for that. And deployment of Versa is, I guess, like, a"
+ ],
+ [
+  6,
+  1590,
+  " number one very famous one to use. So make sure they're like a p pick just one tour per category and try them out. And many of them are eit"
+ ],
+ [
+  6,
+  1598,
+  "her available free or they give you some, like, free credits. So if it's not the case, also try to a little bit, like, you know, play things"
+ ],
+ [
+  6,
+  1606,
+  " around which one you can use. So you may use the, like, you know, the free limit for one and then move to the other one."
+ ],
+ [
+  6,
+  1613,
+  "So winning pitch, if you are not used to giving a pitch, focus on this just flow. Initially, you talk about the problem, saying that why it "
+ ],
+ [
+  6,
+  1620,
+  "matters to fix the problem. So, like, that might switch. You're gonna say that, like, okay. If I'm that, my crypto fund get that. So I want "
+ ],
+ [
+  6,
+  1628,
+  "to send it to my family. This is really important. Right? And then the solution is, like, they're gonna be having check-in timer so that if "
+ ],
+ [
+  6,
+  1635,
+  "I don't check-in, gonna release my fund to, like, my family member."
+ ],
+ [
+  6,
+  1639,
+  "And then this is the demo. And then, obviously, you resell, like, maybe, like, fifteen seconds timer. Okay. I didn't check-in. What are gonn"
+ ],
+ [
+  6,
+  1647,
+  "a do? It delivers, and I get the funds, and it shows the impact. And this one and then you've if you manage to build the wow feature but now"
+ ],
+ [
+  6,
+  1654,
+  " guess what? This is not only for Deadman's Switch, but imagine that last, like, a month, we had a 600,000,000 get drained by hacker. So you"
+ ],
+ [
+  6,
+  1662,
+  " realize that your seed phrase is out. You click this button. This is gonna be also"
+ ],
+ [
+  6,
+  1666,
+  "sending to my MercySig account. So this is not only death man switch, but this is also pretty much for a life man. That can be funny story. "
+ ],
+ [
+  6,
+  1675,
+  "So now time to find your team. Some of you perhaps came here to get tips. Some of you were listening all this to get this point to find your"
+ ],
+ [
+  6,
+  1684,
+  " teammates. This is the basic thing. What you need to do is, like, tell your name, your skill, what you're interested in, what you want to b"
+ ],
+ [
+  6,
+  1693,
+  "uild, who you are looking for. What we're do is, like, a what time is it now here?"
+ ],
+ [
+  6,
+  1698,
+  "It's still a couple minutes. So we have a twenty minutes. So twenty minutes, we're gonna be doing it here, and then we can move there. So wh"
+ ],
+ [
+  6,
+  1705,
+  "at I usually do is, like, a think about what you want to build quickly now. I'm gonna ask you. You can raise your hand. You come to stage. Y"
+ ],
+ [
+  6,
+  1712,
+  "ou go through this. I am OMG. Like, hey. I have a great, like, product skill, and also I can present very, very well. I have a mini more, li"
+ ],
+ [
+  6,
+  1719,
+  "ke, I don't know, front end knowledge. We want to build it together. Oh, I checked the, like, a space computer bounty. I want to play with t"
+ ],
+ [
+  6,
+  1726,
+  "he hardware, but I don't have idea on the hardware too much. Please, like, work together."
+ ],
+ [
+  6,
+  1730,
+  "Then someone gonna be, like, talking with you and building further afterwards. So now let's think about a little bit, what you want to build"
+ ],
+ [
+  6,
+  1739,
+  ", and then you will come to front and then pitch your idea to recruit your team member. And then make sure they post same thing in the teleg"
+ ],
+ [
+  6,
+  1748,
+  "ram chat so people who are in different workshops or different talk, they can reach out to you. So someone who wants to come to stage"
+ ],
+ [
+  6,
+  1756,
+  "and share your idea what you want to build? Yes? Hello? Yeah. So my name is Guy, Guido. I'm currently working at Bogdani. I'm"
+ ],
+ [
+  6,
+  1779,
+  "focused on CK proofs, like, serial knowledge proofs, like verifying on chain voting process. This is what we do at at Vogtani. So we are usi"
+ ],
+ [
+  6,
+  1796,
+  "ng kind of roll ups. Yeah. And I'm interested in the idea of"
+ ],
+ [
+  6,
+  1803,
+  "agents publishing votes that only humans can answer to decide the governance of AI. So an alignment strategy so that, basically, AIs ask us"
+ ],
+ [
+  6,
+  1827,
+  "in a ZK verified way, how would they act or what are the limits? Like, questions that instead of companies deciding on this, that we as huma"
+ ],
+ [
+  6,
+  1846,
+  "nity, we can decide on this in a way that is trustless."
+ ],
+ [
+  6,
+  1854,
+  "Yeah. Great. What? Sorry. Missing? I I I'm I'm So what's your skill and whom you are looking for? Anyone who is interested in these topics. "
+ ],
+ [
+  6,
+  1869,
+  "And I'm mainly, like, back end engineer. Mhmm. Like, I code in Go, but, like,"
+ ],
+ [
+  6,
+  1878,
+  "I'm using AI, of course, to whatever it it it needs. So, yeah, anyone who Sounds good. So if you want to build some AI governance curator us"
+ ],
+ [
+  6,
+  1892,
+  "ing ZK, please talk to Guy, and then I'll make sure also uploading, like, short comments about you in Telegram so people can also DM you."
+ ],
+ [
+  6,
+  1906,
+  "Thank you. Anybody else who has idea? Or even you don't have a idea, if you you can try to, you know, like a what is that? Like, promote you"
+ ],
+ [
+  6,
+  1920,
+  "rself. K? And they're saying that, like, I'm best front end developer here. You must recruit me. I'm better than cloud design. Hi. I'm Mikha"
+ ],
+ [
+  6,
+  1934,
+  "il Poma."
+ ],
+ [
+  6,
+  1935,
+  "I'm the scientist and engineer. I'm quite new to Ethereum, but I use it a lot, but haven't been built anything yet. So I'm interested in age"
+ ],
+ [
+  6,
+  1948,
+  "nts and tools. So if you can share your ideas with me, we can build it together. So you need to pass talk to Keyes. Sorry?"
+ ],
+ [
+  6,
+  1959,
+  "So yeah. Because he is also building AI agents. Yeah. Governing. You know? Yes. My nickname is Ambisinistra on Telegram. Yeah. Thank you. Th"
+ ],
+ [
+  6,
+  1970,
+  "ank you. And you. Yeah. You first. Yeah. And please, everyone, don't forget to post this on Telegram because, otherwise, people will not kno"
+ ],
+ [
+  6,
+  1982,
+  "w how to reach out to you, and then they will be, you know, like chasing you at the hole. So"
+ ],
+ [
+  6,
+  1989,
+  "Okay. Hi. I'm Martin. I'm based in Prague here, and I'm mainly focused on product design, maybe white coding, something like that. I have co"
+ ],
+ [
+  6,
+  1999,
+  "lleague that is, also working on this project and is web three developer, but we are just want to have more hands on on this. And we are foc"
+ ],
+ [
+  6,
+  2009,
+  "using on, energy grades or something like that, tokenized energy certificates,"
+ ],
+ [
+  6,
+  2014,
+  "like, for these small energy plants. And, basically, we want to connect these hardware of these energy plans. And yeah. So so we are finding"
+ ],
+ [
+  6,
+  2026,
+  ", back end and front end developer to to do this. Great. Very timely topic. Everyone fighting about computing energy. So"
+ ],
+ [
+  6,
+  2037,
+  "great. And yep. Hey, guys. My name is Agustin. I'm from Hungary. I wrote in the Telegram group yesterday. And, so my idea is to build someth"
+ ],
+ [
+  6,
+  2048,
+  "ing that's fun and delightful. And I'm here for the experience. I'm here to interact with people, to be creative, to brainstorm. I don't rea"
+ ],
+ [
+  6,
+  2060,
+  "lly care so much about what it is that we're building as long as it's a tough"
+ ],
+ [
+  6,
+  2066,
+  "problem that we're solving and we're solving in a fun way. So I already wrote in the telegram if you wanna if don't know. If you feel the vi"
+ ],
+ [
+  6,
+  2079,
+  "be and you just wanna work together, then then hit me up. Thanks. Thank you. And anybody else? Are we all good, everyone? Last chance."
+ ],
+ [
+  6,
+  2092,
+  "Don't be shy. Uh-huh. Hello. My name is Gunith. I'm interested in, like I I've got, like, ZK experience. I have, been in the ZK space for, l"
+ ],
+ [
+  6,
+  2104,
+  "ike, two years and also, like, done a bit of, like, blockchain work, like smart contracts and stuff. And I'm interested in, like, working on"
+ ],
+ [
+  6,
+  2116,
+  " hardware."
+ ],
+ [
+  6,
+  2117,
+  "I have a weather sensor with me, which I want to, like, get get it to work, measure weather, and make a ZK article out of it to, like, prove"
+ ],
+ [
+  6,
+  2125,
+  " that the weather here is at a certain location is what what the sensor says it is, and then prove that on chain maybe. Yeah. Like, do somet"
+ ],
+ [
+  6,
+  2134,
+  "hing with it. Not exactly sure, like, what the end to end flow is gonna look like. I have a general idea in in mind. But, yeah, come talk to"
+ ],
+ [
+  6,
+  2142,
+  " me if you feel like"
+ ],
+ [
+  6,
+  2143,
+  "working together. Yeah. I also want to have a lot of fun during this hackathon. Learn a couple of new things. Yeah. Thank you. Anybody else?"
+ ],
+ [
+  6,
+  2167,
+  " No? Good. I think then,"
+ ],
+ [
+  6,
+  2171,
+  "we are good with it at the moment. So they're like, hey. If you want to continue discussions, so, like, hey. Just like a presenter, can you "
+ ],
+ [
+  6,
+  2178,
+  "raise your hand so people can locate you? So these four gentlemen who just, like, pitched. These four, you five, actually. Yeah. So you reme"
+ ],
+ [
+  6,
+  2186,
+  "mber, please go to talk to them so everyone can recognize you. So, like, hey. Please go to talk to them so that you can build a team. And ma"
+ ],
+ [
+  6,
+  2193,
+  "ke sure, like, post on Telegram because some people may arrive to the venue a little bit late so that they have a chance to know what you ar"
+ ],
+ [
+  6,
+  2201,
+  "e going to build. If there's any help needed, let me know so that I can help you out. Okay. Please, everyone, give a clap to Omg for amazing"
+ ],
+ [
+  6,
+  2208,
+  " presentation"
+ ],
+ [
+  6,
+  2209,
+  "on how to improve in Accaton."
+ ]
+]
