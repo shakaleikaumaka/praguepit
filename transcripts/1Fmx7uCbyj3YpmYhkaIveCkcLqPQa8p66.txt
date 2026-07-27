@@ -1,0 +1,97 @@
+# How Legal Design Can Double — or Halve — Your Project Valuation
+
+Date: 
+Source video: How Legal Design Can Double — or Halve — Your Project Valuation
+Drive: https://drive.google.com/file/d/1Fmx7uCbyj3YpmYhkaIveCkcLqPQa8p66/view
+Duration: 00:18:28
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:13] Hello, everyone. Oh, this is loud. Alright. So I wanna start, this speech with a with a claim. In crypto, legal is part of your product. It's not because lawyers always tend to slow down,
+
+[00:38] those people who work on the product or develop it quite the opposite. It's because legal decides what your product can be, in which form it can exist, who can touch it, and whether the market can trust it. And the main problem now is that too many projects, they,
+
+[01:01] continue to operate under the old model. And the old model, we will discuss in a second. And why is that? It's because a lot of people, especially in crypto, think that legal is latency, that legal slows things down. And sometimes that could be the case, but generally speaking, some legal can be latency, but good legal is bandwidth.
+
+[01:26] It allows you to process new markets and expand. So now about the old model. The old model, was you build a product, you launch a token, sometimes you launch a token without a product, and you only call, legal when there's an emergency before financing or listing, sometimes when investors start asking questions.
+
+[01:50] But other than that, you just do your product, token, launch. But that's the old model. It worked for a while, but it doesn't work anymore. And, that is because the legal choices are no longer outside the product. The legal choices now essentially can decide
+
+[02:15] or dictate what the product is or can be. If we take traditional software, the legal often sits around the product. But in crypto, legal is more inside the product, and that is the first connection that can influence the valuation, how legal can influence the valuation.
+
+[02:40] For a crypto project, legal value can usually accrue in three places. Of course, there is more, but, for this speech, those are the three main ones. The first one is existence. It is about the question whether your product can legally exist as is or as you have designed it.
+
+[03:03] The second one is distribution. The question of distribution is about who can touch your product, who can finance it, who can custody it, sell it, acquire it, or diligence on it? And the third one is trust, and it's essentially about whether the market can trust your product or can trust that your project will survive the next cycle or
+
+[03:28] a couple of cycles after that. And from this perspective, it becomes easier to understand how legal can affect the valuation of your product and of the project generally. So because if existence, distribution, and trust can expand, then the valuation can also expand. And if legal restricts
+
+[03:51] either of those areas, the valuation can shrink. So, the first, the first lever is existence, and we can we can discuss an example. I have a couple of examples encrypted here. The first one is world. It stands for the World Coin.
+
+[04:14] And World Coin is a great example because the legal issues in the World project, are quite obvious. So for those who doesn't remember, the product, the WorldCoin launched in in around 2020. They raised around $250,000,000 from top VCs like a 16 and others.
+
+[04:39] And, their product used a physical device like a little orb, a cool thing to scan your eye and prove that you are a real human. So it's it was essentially about the humanity verification. And it's a cool idea. It's a bold idea. But while developers saw innovation
+
+[05:02] and a cool product, the regulators around the world as it was later discovered. So collection of huge amount of personal data, very sensitive personal data, collecting those data, storing those data, and transferring the data around the globe and across the borders, which was a huge risk.
+
+[05:28] Ultimately, the government agencies in different countries around the world started just cracking down on the projects one after another, which led to World Coin suspending its operations in those countries. And I can say that this is not a story about whether the product is good or bad. It's about an architecture
+
+[05:51] that you have implemented within the product. Because the Worldcoin project was about essentially collecting biometric data, which is very sensitive and in very large and vast amounts. And even the largest VCs with the best legal like a 16 z did not did not understand
+
+[06:14] or envisage that risk and essentially underpriced it because, eventually, their evaluation dropped and the project now does not exist in the in the way that it was conceived initially. So that's about the existence. That's how legal can decide whether the product can exist in that
+
+[06:40] in that setup that you have designed. The second case, would be around the distribution. And here, the BDC stands for Bitcoin ETF. That's that's a clear example because Bitcoin is the king. It has liquidity, it has market, it has the name, it has distribution, it has everything. Right? But then,
+
+[07:04] EDF story is important because nothing changed about the Bitcoin at that time. The only thing that changed was the legal, circumstance around the Bitcoin. Because when the ETF was introduced and approved by the regulators, the Bitcoin essentially gains a new market where new categories of users could buy it, could hold it, and could access it.
+
+[07:33] So that is how legal changed the excess or distribution aspect for the Bitcoin without Bitcoin taking any change, inside. The third case is stocks. It's it stands for XTOX, and it could be XTOX or it could be on the finance. Essentially, it's about tokenizing
+
+[07:57] public equities. So XTOX, what their product is is that they bring public equities like shares in Tesla, Microsoft on chain. And, it seems interesting to consider that public equities existed for a long time, same as tokens did, like blockchain tokens and, like, smart contracts existed for over ten years now. But why hasn't anyone
+
+[08:27] considered or implemented their integration before? So why haven't anybody tokenized the equities before XTOX or before 2025? And, the response is that nobody knew how to do that. How to do that in a manner that would enable their public trading.
+
+[08:51] So what happened is that big stocks, Ondo, and other, large entities in the space, they essentially figure out how to do that. And I can say that even now, some parts of their structures still operate in gray area. So, not fully not fully clear, not fully legal, but what is important is that
+
+[09:15] those risks are understandable now. So the structure is clear. And while some gray zones can remain, all actors and all stakeholders understand those risks, can price them, and can anticipate them. And that's what's important because, ultimately, the, the objective
+
+[09:37] of good legal is not to reduce the risk to zero. It's to reduce the risks and ensure that all remaining risks that are on the table are understandable, priced, anticipated. So those are three examples. And this brings us to the mechanism behind all of those examples
+
+[10:02] of how legal can influence the valuation of the product project. The main, thing is that so this is the mechanism, and legal changes the valuation because it changes essentially who can touch the product.
+
+[10:27] So early buyers like crypto native insiders, they can afford additional risk, while the later buyers cannot do that because exchanges have listing risks, custodians have regulatory risks and custody risks, funds have LP, obligations and other restrictions. Banks have regulatory restrictions
+
+[10:53] on which on which assets they can invest in, and so on and so forth. And, the big question with the the valuation is not only about who can buy it, it's about which category of buyers can buy it because all buyers are spread around the categories.
+
+[11:17] And when I say that legal is inside of the product, that's what I mean. If you look at this list, you can see that those are not separate tasks. In crypto, these are product surfaces. Different aspects will cross legal, governance, redemption, rights, liabilities, data, access,
+
+[11:43] exit planning. Different aspects of your projects will cross legal. Eventually, even what you say on a podcast or on your websites can have legal effects on your project, on your token classification, and on how regulators, treat you.
+
+[12:07] But, also, an important point is that the legal architecture is not some PDF file or memorandum that your lawyer has given to you because in the end, it has to be an operating system within your project and around your product. So, having a lot of papers will not save you. You have to actually implement the procedures,
+
+[12:30] train your personnel when you have to. For example, if you regulate it, and just make sure that you actually incorporate the steps required into your procedures. Alright. So what should founders do with that? I would say ask better questions. Don't ask your lawyers,
+
+[12:53] is that legal? You can try asking these questions instead. Can this product legally exist as is? So, for example, I have designed a product that looks like this. Is it legal? In which market? How can I distribute it? How can I access different markets? And so on. Who still can't touch us? It's about distribution. Which promise could hurt us if challenged? For example,
+
+[13:18] if I write something on the website or in my marketing materials, how will this affect the legal classification of my product or of my activities? Will that will this hurt me during the next financing? What breaks at listing? What breaks at financing or during an acquisition? Because because each of those aspects have to be prepared separately. What legal work can expand the buyer universe,
+
+[13:45] essentially allow my project to climb the buyer universe ladder? And the biggest question is not, can we do that? In legal, the biggest question is, will this structure allow us to do more at a later stage? Because good legal structure keeps more doors open for financing,
+
+[14:11] for partnerships, for exits. And this is how legal actually can change the valuation of a project. Legal decides the size of the market, especially after 2024, 2025, and now legal can decide your market. Yes. Bad legal can be latency, but good legal can be bandwidth.
+
+[14:38] Good legal can allow you to expand, to increase your valuation, and to get new categories of users and buyers and partnerships. It's important to make sure that so, like, the size of the market, items that can decide it could be whether users can trust it, whether exchanges can list it, custodians can hold it, whether funds,
+
+[15:06] large funds, I mean, can invest in it or acquire it, whether public markets can trust the product. So bottom line is that legal does not always make the risk disappear. The bottom line is that the legal has to make the risk understandable, priced, and survivable, as in the case, for example, of Ondo or XDocs,
+
+[15:32] or multiple other cases. And, yes, I will close where I started. In crypto, legal is part of the product, and, not because the lawyer has to see it between every, founder and every idea of that founder. It's because legal can decide whether the product can exist
+
+[15:55] as designs, who can touch it, how you can distribute it, and whether the market can trust your project and trust your product. And that's why legal can double or half your project valuation. Does anyone have any questions?
+
+[16:21] No? Okay. Thank you. There was a question. There was no Can you comment on the Clarity Act? In this context? Well, it's nearly through the senate right now. Yeah. Yeah. The Clarity Act, it's it can it it will have big impact. We can say that.
+
+[16:44] It may create in the context of this speech, how legal can double or half your project valuation, I can say that the Clarity Act can create new markets and allow existing projects to access those markets, for example, in The U. S, right, new categories of buyers and users, new categories of transactions and infrastructure. I was thinking about the current form
+
+[17:06] of the Clarity Act. It's getting finished right now, and, it's quite controversial. Yes. About the yield, about the different items. Exactly. Yes. I don't have any like particular comments because it's a complex matter and it's a political matter in the first place. Right? But I think that having a
+
+[17:30] having a law in the context of The US is better than having no law as it is now. Because from that point, they can move forward. And even now, they're trying to allow different things, to emerge in the market. Right? For example, allow the yield while, for example, restricting it or, imposing different,
+
+[17:53] restrictions on it. It's a negative factor. But allowing the yield in the first place is a positive one. So it's it's quite controversial, as you have noted. But, yeah, to me, it's still a good a good sign. Anyone else? No? Okay. Thank you. Thank you so much for the time.
