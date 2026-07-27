@@ -2115,6 +2115,821 @@
   "n amazing. Thank you so much. I wish you to have a great day, great rest of the conference, and enjoy. Thank you."
  ],
  [
+  4,
+  11,
+  "Thank you for coming today. I'm Nick. I'm from the Trezor expert team at Trezor here in Prague. We are one of the leading manufacturers of h"
+ ],
+ [
+  4,
+  22,
+  "ardware wallets. And what I do at Trezor is that I mostly talk with our user base. Today, I want to talk with you a little bit about"
+ ],
+ [
+  4,
+  33,
+  "personal experiences I've had with users, personal things from my life that I think, really get into very well the challenges that web three"
+ ],
+ [
+  4,
+  43,
+  " users experience when they are interacting with Web three apps, and hopefully inform you about key takeaways that you can bring into your o"
+ ],
+ [
+  4,
+  53,
+  "wn products. Who I am,"
+ ],
+ [
+  4,
+  55,
+  "so I have been assisting, at this point, hundreds of Trezor users, with the Trezor Expert service. I do video calls explaining to people how"
+ ],
+ [
+  4,
+  67,
+  " to use Trezor, understanding what their pain points are with using web three, with using our products, and helping them improve on their us"
+ ],
+ [
+  4,
+  79,
+  "age."
+ ],
+ [
+  4,
+  79,
+  "That gives me familiarity with a lot of different approaches to crypto self custody. It allows me to succeed where are our users succeeding,"
+ ],
+ [
+  4,
+  90,
+  " where are they failing, and, it's allowed me to really see patterns, things that people misunderstand, overestimate, underestimate, and bet"
+ ],
+ [
+  4,
+  101,
+  "ter be able to inform the improvement of both our products and"
+ ],
+ [
+  4,
+  106,
+  "the industry as a whole. Yeah. So we've got a bunch of stuff up here about what users struggle with. I think, really, it's just the top thin"
+ ],
+ [
+  4,
+  118,
+  "g, TMI. Too much intensity in terms of figuring out, you know, what what exactly do I do once I have a crypto wallet, but maybe we can break"
+ ],
+ [
+  4,
+  129,
+  " a few more things down."
+ ],
+ [
+  4,
+  131,
+  "In essence, you have these highly, technical for many people. For us, maybe here in the room, it's crypto is not all that technical. It is, "
+ ],
+ [
+  4,
+  143,
+  "based on a lot of older technologies. It is based on things like TCPIP. RCPs at a basic level. But to the average layperson out there, to sa"
+ ],
+ [
+  4,
+  154,
+  "y your 80 year old grandfather"
+ ],
+ [
+  4,
+  157,
+  "in the Eastern side of the country, it is challenging. It is highly technical. The interfaces are minimal. And breaking it down, understandi"
+ ],
+ [
+  4,
+  167,
+  "ng it, that is challenging. What I am trying to help people with are things like long term recovery planning, so thinking in terms of the Tr"
+ ],
+ [
+  4,
+  177,
+  "ezor multi share backup system, also sometimes multi signature systems like Gnosis"
+ ],
+ [
+  4,
+  183,
+  "out in the hall, and, you know, things like really understanding what are the implications of making a transaction. A lot of people get scar"
+ ],
+ [
+  4,
+  192,
+  "ed because at the end of the day, this is money. This is things that they are valuing and need to handle. So understanding how to review tra"
+ ],
+ [
+  4,
+  202,
+  "nsaction details, understanding where the risks are with phishing,"
+ ],
+ [
+  4,
+  206,
+  "separating out all the noise about crypto, about failing to use crypto properly from the real risks. People inherit a lot of fear from the v"
+ ],
+ [
+  4,
+  217,
+  "arious horror stories on YouTube, Reddit, and, really, again, helping getting people to a point where they can build resilient setups that u"
+ ],
+ [
+  4,
+  227,
+  "sually takes, multiple meetings to,"
+ ],
+ [
+  4,
+  230,
+  "get people to that level of confidence and, yeah, making informed decisions ultimately knowing where you are. I'm a skier, and I think it ac"
+ ],
+ [
+  4,
+  239,
+  "tually does have I'm a much actually, a backcountry skier. I'm not a downhill skier. I'm a backcountry skier. I think it has some applicabil"
+ ],
+ [
+  4,
+  248,
+  "ity to Web three. Just bear with me. So with Web three, you have to make a lot of complex decisions, and you have to make decisions before y"
+ ],
+ [
+  4,
+  257,
+  "ou understand everything."
+ ],
+ [
+  4,
+  259,
+  "I don't exactly recommend going here unless you know what you're doing in terms of hiking. It's not really snow anymore, but this is in The "
+ ],
+ [
+  4,
+  269,
+  "Czech Republic. This is a place called the Giant Mountains. Believe it or not, I have skied down that hill. It's pretty hard to ski down. Yo"
+ ],
+ [
+  4,
+  278,
+  "u have to kind of go usually off the path because it's"
+ ],
+ [
+  4,
+  282,
+  "really, really steep. Okay? And it's quite overwhelming to go down. You have to be making a lot of decisions about where am I going, how do "
+ ],
+ [
+  4,
+  290,
+  "I keep my balance, blah blah blah. When in general, in skiing or also in driving and in crypto, you want to be looking at really, ten second"
+ ],
+ [
+  4,
+  299,
+  "s ahead of you. You want to look to the back of the room, not the front. And that's because you want to look at where you are going, not whe"
+ ],
+ [
+  4,
+  307,
+  "re you are right now. You want to understand everything. And for users,"
+ ],
+ [
+  4,
+  311,
+  "this tends to be overwhelming. They're committing to paths they may not be understand understanding fully, especially if they're new to cryp"
+ ],
+ [
+  4,
+  321,
+  "to. So I went down this hill. As you can imagine, it is asking to get into a ski accident here. And this is what happened to me. I did get i"
+ ],
+ [
+  4,
+  332,
+  "nto a ski accident that day."
+ ],
+ [
+  4,
+  334,
+  "Right there. Not there specifically, but on some lighter terrain. Why did I get into that accent on lighter terrain? Because I was going too"
+ ],
+ [
+  4,
+  346,
+  " fast, and I had gotten comfortable after going down here. And this was something that I knew how to handle, and I mishandled it, and I ende"
+ ],
+ [
+  4,
+  358,
+  "d up in bed for a week with a concussion."
+ ],
+ [
+  4,
+  361,
+  "And I do think that self custody very much, works similarly without being overwhelming, then you overcome the hill, you get confident, and t"
+ ],
+ [
+  4,
+  373,
+  "hat is where the actual trouble, the actual risks can exist. Things like, getting more and more comfortable with smart contract transactions"
+ ],
+ [
+  4,
+  384,
+  " and then ending up with a blind signing error."
+ ],
+ [
+  4,
+  388,
+  "It's not about struggling in an environment you don't feel comfortable navigating. If you don't feel comfortable navigating it, you're never"
+ ],
+ [
+  4,
+  398,
+  " gonna get up the mountain. It's about being on the mountain and coming down rather hard. And, you know, for me, as a Trezor expert, I have "
+ ],
+ [
+  4,
+  408,
+  "an hour with our users. So I can teach someone the basics. I can get someone set up with their crypto wallet in an hour,"
+ ],
+ [
+  4,
+  416,
+  "but getting people to maintain the confidence, you know, I only have an hour to meet with someone in person plus maybe some email correspond"
+ ],
+ [
+  4,
+  426,
+  "ence, which is a lot harder. Email is text. Text is a lot harder than seeing someone even if it be over a video call. So helping people to r"
+ ],
+ [
+  4,
+  436,
+  "eally maintain mental models, I just have to say, you know,"
+ ],
+ [
+  4,
+  440,
+  "check every character of your address. Don't give up your recovery seed to, people who ask for it randomly or to random websites. Most peopl"
+ ],
+ [
+  4,
+  450,
+  "e will be fine. They'll manage that, but I can't be with everyone all the time. I can't control for that every day, and that is a challenge."
+ ],
+ [
+  4,
+  461,
+  " So, ultimately, what we try to do is we try to distill security down into simple,"
+ ],
+ [
+  4,
+  467,
+  "durable advice that users will rely on for potentially years before we see them again or maybe forever. And we just hope that when the time "
+ ],
+ [
+  4,
+  478,
+  "comes for them to go down the hill, they know how to handle it. It is a kind of a scary challenge, but that's what we do. So how do we empow"
+ ],
+ [
+  4,
+  488,
+  "er people to be ready for this? Well,"
+ ],
+ [
+  4,
+  491,
+  "we have definitely a recurring challenge with self custody, which is, long term planning, inheritance. You know, Bitcoin, for example, that "
+ ],
+ [
+  4,
+  501,
+  "has been around for eighteen plus years now. And there are entire generations of Bitcoiners. There are entire generations of Ethereans too. "
+ ],
+ [
+  4,
+  512,
+  "Ethereum has been around for eleven years who have cycled in and out not because they"
+ ],
+ [
+  4,
+  518,
+  "got FUD, but because they had to confront real life and maybe got seriously ill or, unfortunately, passed away. That is the reality we have "
+ ],
+ [
+  4,
+  529,
+  "to live with as humans. So when we are onboarding people, we very often have to simplify. We can't talk in an hour about inheritance. And fr"
+ ],
+ [
+  4,
+  539,
+  "ankly, if we took the three hours it takes to talk about it, people would get overwhelmed. So"
+ ],
+ [
+  4,
+  546,
+  "at the end of the day, we are just trying to reduce as many single points of failure and make the inheritance as simple as possible when peo"
+ ],
+ [
+  4,
+  555,
+  "ple want to upgrade. It's something we can accomplish with multiple conversations. It's also something we accomplish with what is called the"
+ ],
+ [
+  4,
+  564,
+  " slip 39 system, which is, Trezor's multi share system. You can see it displayed on the screen. Basically,"
+ ],
+ [
+  4,
+  571,
+  "you are able to use, multiple lists of words, multiple backup phrases in order to access your crypto. You decide how many of those lists you"
+ ],
+ [
+  4,
+  585,
+  " want to have, for example, five. And in this case in this example, any three of them can be used to see get regain access to your wallet."
+ ],
+ [
+  4,
+  598,
+  "And that is very convenient just to give people to people for free, whether they know that or not when they buy a Trezor because we can then"
+ ],
+ [
+  4,
+  606,
+  " go and tell them even years later, hey. You have this option. You wanna do an inheritance plan? It's there ready for you, and it simplifies"
+ ],
+ [
+  4,
+  614,
+  " their process so much, saves them so much time, and makes it incredibly easy for us to really, get them to that next step whenever they are"
+ ],
+ [
+  4,
+  622,
+  " ready, and we can just, in essence, wait for them."
+ ],
+ [
+  4,
+  625,
+  "There's also this interesting little challenge that I like to talk about, kind of nerdy challenge, which is that, by default on Trezor, you "
+ ],
+ [
+  4,
+  633,
+  "create what's called a single share backup. It's like your classic 12 or 24 word seed, but it's 20 words, and it just has the upgrade capabi"
+ ],
+ [
+  4,
+  641,
+  "lity to multi share whenever you're ready. And in the third and fourth word of that seed, it's always the same. It's the word academic."
+ ],
+ [
+  4,
+  648,
+  "And that is a nice little Easter egg that I can use to kind of get people into the multi share backup conversation, get them into the inheri"
+ ],
+ [
+  4,
+  657,
+  "tance conversation if they notice it. If they don't, well, then, you know, maybe they will eventually. And, it's just basically, it's not, l"
+ ],
+ [
+  4,
+  666,
+  "ike, any kind of security. The the words the third and fourth word are never for security in our system."
+ ],
+ [
+  4,
+  673,
+  "What they are is just to tell the Trezor, hey. This is a single share backup. Hey. This is a multi share backup. So that way, we always know"
+ ],
+ [
+  4,
+  683,
+  " a single share backup has the third and fourth word academic, and that's for the treasurer. Yeah. In general, we also like, when we're crea"
+ ],
+ [
+  4,
+  692,
+  "ting a single share backup with people, we encourage people make multiple copies. We have to always assume when we're talking with people fa"
+ ],
+ [
+  4,
+  702,
+  "ilures can happen."
+ ],
+ [
+  4,
+  703,
+  "And, you know, in essence, it's important that backups, remain preserved and legible. We have products for that. Selling them out in the hal"
+ ],
+ [
+  4,
+  711,
+  "l, Trezor Keep metal, if you're interested. You don't have to be. And it's you know, we have we also work with people on testing their backu"
+ ],
+ [
+  4,
+  720,
+  "p. This is a step that, unfortunately, a lot of people miss. Maybe for better or for worse, some of you have missed it in this room. If you "
+ ],
+ [
+  4,
+  728,
+  "have, I strongly recommend you double check your backup is correct. We have a system on Trezor."
+ ],
+ [
+  4,
+  734,
+  "I think our competitors in general have systems like this as well. If you're using a hot wallet, you can just, you know, eyeball the words o"
+ ],
+ [
+  4,
+  742,
+  "r try recovering them into another hot wallet. I just want you to keep your crypto safe regardless of whether you're using our product or no"
+ ],
+ [
+  4,
+  750,
+  "t. And it's a great way just to really ensure that people understand the recovery system. Not everyone understands the recovery system when "
+ ],
+ [
+  4,
+  758,
+  "they out of setting up a crypto wallet. They're just"
+ ],
+ [
+  4,
+  761,
+  "well, most of us, you know, they maybe they set it up to get rich. Who knows? And this really helps people just start to have that moment of"
+ ],
+ [
+  4,
+  771,
+  " understanding, okay. This is long term, and it's not as maybe crazy as I heard it is on the Internet. It's actually kind of stable, maybe. "
+ ],
+ [
+  4,
+  780,
+  "Our goal is ultimately to create systems that remain understandable"
+ ],
+ [
+  4,
+  785,
+  "and recoverable under stress. And, you know, we accomplish this gradually. We accomplish this, through kind of filtering down the informatio"
+ ],
+ [
+  4,
+  794,
+  "n people need to know. A lot of people tell me, like, when I talk with you, it's just putting together a lot of different bits and pieces th"
+ ],
+ [
+  4,
+  804,
+  "at were in my head. And I can tell you why this is. It's because people are assembling ideas"
+ ],
+ [
+  4,
+  810,
+  "from all kinds of different sources they read onto the Internet into a mental model that was never actually meant to be, never designed to, "
+ ],
+ [
+  4,
+  818,
+  "work together. So there is a lot of information about crypto out there. People, if they're just getting into crypto, they might not have the"
+ ],
+ [
+  4,
+  827,
+  " full backstory. They might not understand all these little design decisions that have been made, why we do what we do."
+ ],
+ [
+  4,
+  834,
+  "It's very difficult to tell the entire story because, again, it takes three to four hours. We don't have that time, and people don't have th"
+ ],
+ [
+  4,
+  844,
+  "e focus to listen in that amount of time. And I have seen all kinds of bad ideas. Let me give you an example. I'm gonna create my own seed w"
+ ],
+ [
+  4,
+  854,
+  "ords. By the way, neither of these seed words work. And I have run into some people who have done that. In one case, someone memorized a see"
+ ],
+ [
+  4,
+  864,
+  "d"
+ ],
+ [
+  4,
+  864,
+  "they wanted to use, which is a little concerning because if that person then tries to come back five years later and they have that seed in "
+ ],
+ [
+  4,
+  872,
+  "mind, it's just not gonna work. And then whoever maybe me or my successor in five years has to figure out, well, why doesn't it work and kin"
+ ],
+ [
+  4,
+  880,
+  "d of gradually pry that story out because in the meantime, with all of this, I can't ask you your seed words. If I ask you your seed words, "
+ ],
+ [
+  4,
+  889,
+  "I have access to your crypto even though this doesn't give me access to your crypto. But I don't know that."
+ ],
+ [
+  4,
+  895,
+  "Not without getting out a word list and figuring that out, which takes time. So it is not fun having a conversation like this. You kind of w"
+ ],
+ [
+  4,
+  905,
+  "anna jump out of the computer and say, please, you are doing it wrong. Please just trust me on this. But, you know, it is important that we "
+ ],
+ [
+  4,
+  915,
+  "have these conversations that we help people to understand"
+ ],
+ [
+  4,
+  919,
+  "the right path. Another example, much more Ethereum related is token approvals. I work with a lot of users who are actively afraid of token "
+ ],
+ [
+  4,
+  930,
+  "approvals. And it's because they've heard, again, all kinds of things on Reddit, on YouTube, that approvals can be dangerous. They can kind "
+ ],
+ [
+  4,
+  940,
+  "of violate the principles of a hardware wallet or cold storage, and they don't understand"
+ ],
+ [
+  4,
+  947,
+  "why is that the case. And, again, it's because, unfortunately, token approvals, great idea, have gotten a very bad reputation thanks to all "
+ ],
+ [
+  4,
+  959,
+  "the phishing incidents that have happened with them. Also, token approvals have just all kinds of interactions. It's not just the approval s"
+ ],
+ [
+  4,
+  970,
+  "tep. It's the connect wallet step with WalletConnect or MetaMask or RabbiWallet. It's"
+ ],
+ [
+  4,
+  977,
+  "a message, then it's doing another transaction, and you already feel like you're being double charged. What's going on? If you are experienc"
+ ],
+ [
+  4,
+  985,
+  "ing this for the first time, it just gets overwhelming, and if you have nothing to do with it, you've also heard that there's some sort of w"
+ ],
+ [
+  4,
+  994,
+  "ay to steal crypto. I'm not here necessarily to give the perfect solution for how we demystify token approvals. I hope most people in this r"
+ ],
+ [
+  4,
+  1002,
+  "oom understand"
+ ],
+ [
+  4,
+  1003,
+  "why they exist. But, unfortunately, it's something that has, created this situation where, again, users start out overly fearful, then they "
+ ],
+ [
+  4,
+  1013,
+  "become overly trusting, and then they get into trouble. They go down the hill the wrong way. Ultimately, I think, you know, you want to lear"
+ ],
+ [
+  4,
+  1023,
+  "n to separate best practices from all the noise."
+ ],
+ [
+  4,
+  1027,
+  "It's not just about giving rules. It's about how helping users form the right mental model, understand what their self custody is, and decid"
+ ],
+ [
+  4,
+  1036,
+  "e make the right decisions for themselves. I, in general, want to believe that people have the freedom to reason through things. I want user"
+ ],
+ [
+  4,
+  1045,
+  "s to understand why practices exist. I think they're more confident when"
+ ],
+ [
+  4,
+  1050,
+  "they understand them. There is a very simple saying for what this process is. It's don't trust verify. When you effectively teach people why"
+ ],
+ [
+  4,
+  1061,
+  " things are the way they are, you are allowing them to kind of reduce cognitive overload. You're making it look less magical and more realis"
+ ],
+ [
+  4,
+  1073,
+  "tic,"
+ ],
+ [
+  4,
+  1073,
+  "more scientific. My goal is ultimately just to help people make informed decisions, usually the same decisions, but sometimes we need to und"
+ ],
+ [
+  4,
+  1082,
+  "erstand where someone is coming from and why they might want to do things differently as long as it's technically possible, as long as it's "
+ ],
+ [
+  4,
+  1091,
+  "not, I made up my own words and want to put them into your product, which is not the way Trezor works. Maybe some other wallet, but not our "
+ ],
+ [
+  4,
+  1100,
+  "wallet."
+ ],
+ [
+  4,
+  1100,
+  "Yeah. And, you know, for me, another helpful thing is just people asking questions. I understand our users better through the questions they"
+ ],
+ [
+  4,
+  1108,
+  " ask, through the problems that and the challenges that they experience. I always encourage people to ask questions because it just helps us"
+ ],
+ [
+  4,
+  1117,
+  " understand where they are on their journey. And one of actually the most, interesting things to me about how people ask questions is"
+ ],
+ [
+  4,
+  1125,
+  "things like, people come and consult with me about how to set up a wallet when they've already set up a Trezor wallet. Sometimes people will"
+ ],
+ [
+  4,
+  1135,
+  " wipe their wallet and then come to me and see how am I doing it. Why? Because they would not trust me to help them set up an actual wallet "
+ ],
+ [
+  4,
+  1144,
+  "with crypto on the call. They will want to see how I do it to be sure that they have done it correctly."
+ ],
+ [
+  4,
+  1151,
+  "In essence, they wanna see our mindset, which is very humbling. Ultimately, you know, you wanna get into individual users' mindsets. You wan"
+ ],
+ [
+  4,
+  1165,
+  "t to get into their ideas, how they think, help them reason through things, and, you know,"
+ ],
+ [
+  4,
+  1174,
+  "also, things like backup storage, for example. What I will say about backup storage is in general, if I tell, 10 people a month the same pla"
+ ],
+ [
+  4,
+  1184,
+  "ce to keep their backup, it runs into a risk that someone could burglarize every single one of my clients in a few years and find the backup"
+ ],
+ [
+  4,
+  1195,
+  " their backup in the same place. And, you know, that is a scary challenge for me."
+ ],
+ [
+  4,
+  1201,
+  "Yeah. So, ultimately, I kind of leave it up to the user to make the right decision, and I think what I always tell people is understand your"
+ ],
+ [
+  4,
+  1209,
+  " surroundings. For example, understand where you are. You're in the Municipal House in Prague, but maybe this is a really nice view that I g"
+ ],
+ [
+  4,
+  1217,
+  "ot a few months ago of the Municipal House. Like, have you seen it at Sunrise? How well do you know Prague? How well do you know where you a"
+ ],
+ [
+  4,
+  1224,
+  "re at a crypto conference to"
+ ],
+ [
+  4,
+  1226,
+  "really have, you know, good op sec, good personal security. At the end of the day, what we are doing, we are doing things in real places. We"
+ ],
+ [
+  4,
+  1236,
+  " are shaping our self custody decisions by how we live in our houses, if we're digital nomads, if we're traveling, if we're in crypto confer"
+ ],
+ [
+  4,
+  1247,
+  "ences, and so on. You know, we wanna be as familiar with our environments as possible,"
+ ],
+ [
+  4,
+  1253,
+  "but at the same time, we don't want to get complacent. So, ultimately, to summarize, you know, we don't want to compromise on our security. "
+ ],
+ [
+  4,
+  1265,
+  "We want to be as sure about operational recoverability, clarity over time. And, you know, many of the risks people encounter, they are from"
+ ],
+ [
+  4,
+  1277,
+  "misunderstanding consequences, permissions, changing environments. We wanna understand how users are filtering their information, how to res"
+ ],
+ [
+  4,
+  1287,
+  "pond to it, where the main challenges arise, things like warnings about token approvals are risky, token approvals are scary, FUD, these sor"
+ ],
+ [
+  4,
+  1296,
+  "ts of things. And, you know, misunderstandings about how to set up a self custody wallet being another one that is one that I like to talk a"
+ ],
+ [
+  4,
+  1306,
+  " lot about. And,"
+ ],
+ [
+  4,
+  1307,
+  "finally, ultimately, we wanna understand the context of where you live, where you are going in life, and help you basically as much as we ca"
+ ],
+ [
+  4,
+  1317,
+  "n, as much as you're willing to share because, you know, everyone has a right to privacy too. You don't have to answer any of the questions "
+ ],
+ [
+  4,
+  1327,
+  "I have to help you basically design the spaces you are in. Yeah. So, I mean, I hope you've enjoyed kind of my talk about"
+ ],
+ [
+  4,
+  1335,
+  "what I help people with, what the challenges are that I see. Hope you go out there, make a positive impact, and be kind to one another. Than"
+ ],
+ [
+  4,
+  1353,
+  "k you. Thank you very much. Anyone has a question for Nick about treasures in general? No."
+ ],
+ [
   5,
   11,
   "Alright. Yep. Thanks for staying here even though Vitalik is speaking. I assume you all heard him plenty. Or you missed that, in that case, "
