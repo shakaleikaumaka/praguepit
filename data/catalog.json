@@ -30,13 +30,14 @@
     "id": "1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX.mp3"
    }
   ],
-  "transcript": null,
-  "duration": null,
+  "transcript": "1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX",
+  "duration": "00:51:16",
   "quality": "ok",
-  "transponder": false,
+  "transponder": true,
   "featured": false
  },
  {

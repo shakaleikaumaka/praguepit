@@ -1,5 +1,1745 @@
 [
  [
+  1,
+  12,
+  "Hi, everyone. Thanks for coming. My name is Micha Obsevaraciel, and I'm the head of tooling and an auditor at EKI Blockchain Security. If yo"
+ ],
+ [
+  1,
+  22,
+  "u'd like to connect with me, feel free to follow the QR or the tag is just Mitch Prev. It's on Telegram and X. And at Aki, we are blockchain"
+ ],
+ [
+  1,
+  31,
+  " audit auditors, but we also love building open source."
+ ],
+ [
+  1,
+  35,
+  "Today, we'll be talking about Wake. But except for Wake, there's also a company and an extension, I will also briefly show you today. And th"
+ ],
+ [
+  1,
+  44,
+  "ere's also open source fuzzer for Solana called Trident. Except for that, we also onboard new developers into the blockchain and the technol"
+ ],
+ [
+  1,
+  53,
+  "ogies. We have the pleasure to work with many amazing projects like Lido, SAFE, XLR, or for example, Aave and One Inch. And we've also recei"
+ ],
+ [
+  1,
+  62,
+  "ved a couple of grants from Ethereum Foundation, Coinbase,"
+ ],
+ [
+  1,
+  66,
+  "and optimism some of them helped to to build Wake as the framework. So maybe you've heard about Wake before, maybe you haven't. Just to brie"
+ ],
+ [
+  1,
+  76,
+  "fly introduce, the framework is Python based open source framework for solid development. You can do testing in Wake. You can do fuzzing, wh"
+ ],
+ [
+  1,
+  85,
+  "ich is like kind of special technique of testing when you use random inputs to stress your contract"
+ ],
+ [
+  1,
+  92,
+  "and hopefully find some interesting bugs and findings. And there's also the state analysis part where you can run built in detectors to find"
+ ],
+ [
+  1,
+  101,
+  " some common issues that can be present in your code. And you can also define your own detectors in the framework and make them specialized "
+ ],
+ [
+  1,
+  110,
+  "to your own code base. There's also a language server, which means that, well, if you're using Versus Code or cursor, you would like some ki"
+ ],
+ [
+  1,
+  119,
+  "nd of support for Solidity."
+ ],
+ [
+  1,
+  121,
+  "And for that, you need a link language server and make it it's basically, the the thing that you need that's connected to your IDE to to to "
+ ],
+ [
+  1,
+  130,
+  "to the cursor or Versus code, and it gives the basic support for for the solid language. And for that, we obviously need the extension. So, "
+ ],
+ [
+  1,
+  139,
+  "like, also has a company in extension. And by the way, it looks like this. So I will show you again in the hands on, but this is this is the"
+ ],
+ [
+  1,
+  148,
+  " extension."
+ ],
+ [
+  1,
+  149,
+  "Now if we take a look back into the, history of development of Wake, everything began in September 22 when the first version of Wake came ou"
+ ],
+ [
+  1,
+  158,
+  "t. Actually, this is not a typo. Originally, it was named Vogue. It was not the best decision we've made, but, originally, it was named Vogu"
+ ],
+ [
+  1,
+  167,
+  "e. And it already contained a lot of modules, a lot of features. There was the basic compiler that was, like, built in above the the SOC com"
+ ],
+ [
+  1,
+  176,
+  "piler."
+ ],
+ [
+  1,
+  176,
+  "There was the language server, as I said before. There was some kind of initial draft of the fuzzer, and there were some built in detectors,"
+ ],
+ [
+  1,
+  187,
+  " to begin with. Then the next version was VOC 2.0. That was, like, in February 23. And at the time, we've introduced a full testing framewor"
+ ],
+ [
+  1,
+  198,
+  "k that was kind of built on Anvil, Ganache,"
+ ],
+ [
+  1,
+  201,
+  "and Hardhat. So, well, you could write the test in Python, use these three, development chains under the hood, and, well, stress your contra"
+ ],
+ [
+  1,
+  213,
+  "cts, either, through unit tests or through fuzzing. The next version I have here is vague 4.0. And now you may wonder where's, the vague or "
+ ],
+ [
+  1,
+  226,
+  "woke,"
+ ],
+ [
+  1,
+  226,
+  "3.0, and that's quite a funny story actually because in the February 23, we've released the testing framework, but then we've realized that "
+ ],
+ [
+  1,
+  236,
+  "there are some blind spots in in the API, how you work with the framework, and that we would like to change the the API a bit. And that's wh"
+ ],
+ [
+  1,
+  245,
+  "y we've we've, created a new version 3.0, the breaking change, one month later in March"
+ ],
+ [
+  1,
+  251,
+  "2023 to fix the mistakes and make everything right. So that's why that version is not here specifically. And regarding, Wake 4.0, this is th"
+ ],
+ [
+  1,
+  261,
+  "e time that we've made the rebrand and we've renamed the framework for to Vague. I think it was for the better. And together with the re reb"
+ ],
+ [
+  1,
+  271,
+  "rand, we've also, introduced the state diagnosis framework so that you you can write your own custom detectors"
+ ],
+ [
+  1,
+  279,
+  "on on your code base. Last year, we've we've introduced the first release candidate of wake 5.0, And the main change is that we've taken the"
+ ],
+ [
+  1,
+  291,
+  " original testing core of the framework, and we've rewritten the whole framework into Rust. So you can still write and you have to write the"
+ ],
+ [
+  1,
+  303,
+  " test in Python,"
+ ],
+ [
+  1,
+  304,
+  "but the core is now written in Rust. So you you call some functions in Python, and it's kind of translated under the hood into Rust or wired"
+ ],
+ [
+  1,
+  314,
+  " wired into Rust. And so it's amazingly fast. It's there there's, like, 10 x up to eight eight 80 x, performance speed up, but the API is ba"
+ ],
+ [
+  1,
+  324,
+  "sically still the same. It's just more powerful,"
+ ],
+ [
+  1,
+  327,
+  "than before. And now we are in the AI AI era, and so there are some features that I would like to introduce into the tool, like MCP server w"
+ ],
+ [
+  1,
+  337,
+  "ith state again analysis for for solidity so that AI can list all the contracts, functions, filter those functions and contracts, and it can"
+ ],
+ [
+  1,
+  348,
+  ", I don't know, it can give you the the the"
+ ],
+ [
+  1,
+  351,
+  "amount of of codes that you've written, like, in the in the size of bytecode? So you you know how much spy, how much space you have left or "
+ ],
+ [
+  1,
+  363,
+  "not. It can generate or it could generate, some tests or fix issues it has found through the detectors. Now let's move a step closer to fuzz"
+ ],
+ [
+  1,
+  375,
+  "ing."
+ ],
+ [
+  1,
+  375,
+  "So maybe you know, maybe you don't know, but fuzzing is kind of special technique when you use random inputs, generate random parameters, ge"
+ ],
+ [
+  1,
+  383,
+  "nerate random sequences of functions. And this way, you are trying to find some interesting bugs. And, well, the most common question, that "
+ ],
+ [
+  1,
+  392,
+  "I get when I'm doing this kind of workshops or talks is why we should test in Python, especially in 2025"
+ ],
+ [
+  1,
+  398,
+  "or '26. And while in my opinion, it's better to have general purpose language because Solidity was never meant to be a testing language. And"
+ ],
+ [
+  1,
+  407,
+  " while it's quite good in some cases, especially for unit testing, you may be missing some powerful features of the general purpose purpose "
+ ],
+ [
+  1,
+  416,
+  "language. Like, when you are mirroring your state of of of the contract,"
+ ],
+ [
+  1,
+  421,
+  "then well, when you have the same same language, you will most likely write it in the same way. And this is not very beneficial because you "
+ ],
+ [
+  1,
+  431,
+  "are most likely just copying the bugs from one file into another. Also, some complex assertions may be quite problematic or even logging of "
+ ],
+ [
+  1,
+  440,
+  "of, what's happening inside inside the contract just for debugging purposes. Some projects have quite complicated math behind the the the id"
+ ],
+ [
+  1,
+  450,
+  "ea,"
+ ],
+ [
+  1,
+  450,
+  "and this math has to be somehow translated into solidity because, well, solidity doesn't have floating point numbers. It it even doesn't hav"
+ ],
+ [
+  1,
+  460,
+  "e fixed point, numbers unless you kind of emulate with the stimulus. So, you have to translate the math some in some kind of way. And, for e"
+ ],
+ [
+  1,
+  470,
+  "xample, AIM curves or interest or resting,"
+ ],
+ [
+  1,
+  473,
+  "and that's something that's nontrivial. And, again, when you test again in Solidity, you most likely copy the same bugs, same mistakes. But "
+ ],
+ [
+  1,
+  483,
+  "if you take a completely different language that has unlimited precision for for whole numbers and it also supports floating points, it supp"
+ ],
+ [
+  1,
+  494,
+  "orts decimals, you can rewrite the logic in quite a different way and compare your Python logic to the solidity solidity code."
+ ],
+ [
+  1,
+  503,
+  "One important thing from my point of view is that you often need some real doc data structures like queues, data classes, and this kind of s"
+ ],
+ [
+  1,
+  514,
+  "tuff. And this is not, present in the solidity, and you have to somehow emulate or write it yourself, which is annoying and it it increases "
+ ],
+ [
+  1,
+  524,
+  "the code you have to maintain, while in Python, you have been prepared, it's just ready ready to be used."
+ ],
+ [
+  1,
+  532,
+  "I've got a and, yes, one more important thing, actually. Solidity means that you often encounter stack to deep, but you also have to recompi"
+ ],
+ [
+  1,
+  543,
+  "le on each edit. So each time you update your test, you have to recompile, and you have to somehow rewrite your test, which is quite annoyin"
+ ],
+ [
+  1,
+  553,
+  "g. I've got a couple of examples here."
+ ],
+ [
+  1,
+  556,
+  "So let's say that we want to track the balances for a couple of tokens. And for each token, we want to track, the balances of each each acco"
+ ],
+ [
+  1,
+  565,
+  "unt we are tracking. So in Solidity, you will most likely use some kind of nested mappings, but you cannot iterate over those mappings becau"
+ ],
+ [
+  1,
+  574,
+  "se Solidity doesn't support that. While in Python, we have just dictionaries. It's very easy, And you can iterate over over all those dictio"
+ ],
+ [
+  1,
+  583,
+  "naries."
+ ],
+ [
+  1,
+  583,
+  "So you can list all the accounts or all the tokens that are somehow tracked in in the state. Another example, if we wanted to somehow track "
+ ],
+ [
+  1,
+  594,
+  "the the pending queue of withdrawals, again, in Solidity, we don't have some kind of queue like as an an internal structure. But in Python, "
+ ],
+ [
+  1,
+  604,
+  "there's dequeue, which is especially, like, especially used for or can be used for that. So,"
+ ],
+ [
+  1,
+  611,
+  "again, much, much easier and less logic that you have to write. Or if we just want to list the the addresses that have more than 1,000 share"
+ ],
+ [
+  1,
+  623,
+  "s, in Solidity, you have a loop that you write yourself while in Python, it's a one liner and just less code and easier to write. Or another"
+ ],
+ [
+  1,
+  634,
+  " example is debugging logs where,"
+ ],
+ [
+  1,
+  637,
+  "you will most likely use console log in Solidity. You may need API encode depending what exactly you want to log, while in Python, you just "
+ ],
+ [
+  1,
+  647,
+  "print, with the formatting syntax, it's super easy. Now let's move on to how we write fast tests in wake. I would start with invariants, whi"
+ ],
+ [
+  1,
+  658,
+  "ch are basically assertions."
+ ],
+ [
+  1,
+  660,
+  "These are the the properties of your project that should be always true, and you want to check them, well, most likely, after each transacti"
+ ],
+ [
+  1,
+  669,
+  "on. But at the end of the day, it's up to you when you want to check how frequently you want to check those invariants. However, there are a"
+ ],
+ [
+  1,
+  678,
+  "ssertions, something that should be true in all the cases. And this is how you should usually find the bugs. You can also make another asser"
+ ],
+ [
+  1,
+  687,
+  "tions,"
+ ],
+ [
+  1,
+  687,
+  "not as invariance, but let's say stateless assertions, when when performing some transactions. And there's also one class of bugs or issues "
+ ],
+ [
+  1,
+  697,
+  "that can be discovered with wake fuzzing, but you don't need to write any assertion. No assertions still can discover bugs, and those are de"
+ ],
+ [
+  1,
+  707,
+  "nial of service issues. So if you if you send a transaction"
+ ],
+ [
+  1,
+  711,
+  "and you don't check the result, if it reverted or not, you are you you are possibly missing denial of service issues because, well, you shou"
+ ],
+ [
+  1,
+  720,
+  "ld assert about the state of the transaction as well, and I will show you later later through through the workshop. Anyway, this is the synt"
+ ],
+ [
+  1,
+  729,
+  "ax. So in a way, each fuzz test is a class, and so it has methods. Invariants are automatically checked after each flow, which is like an in"
+ ],
+ [
+  1,
+  738,
+  "dependent step"
+ ],
+ [
+  1,
+  739,
+  "in the fuzzer. These have to be have to be decorated with the invariant decorator. And, I usually usually use the the invariant prefix just "
+ ],
+ [
+  1,
+  750,
+  "to make it clear it's an invariant. And inside, you can define any Python logic, it will just execute after each flow of of the fuzzer. Now "
+ ],
+ [
+  1,
+  762,
+  "when we move on to the flows,"
+ ],
+ [
+  1,
+  764,
+  "this is one example of a flow. As I said before, flow is like one independent step in the fuzzer. So the fuzzer has, like, let's say, a coup"
+ ],
+ [
+  1,
+  773,
+  "le of options what it can execute given the number of flows you have defined here in your test, and it will randomly pick one of the flows y"
+ ],
+ [
+  1,
+  782,
+  "ou've defined. It will execute the flow. And after the flow, it will execute all the invariants."
+ ],
+ [
+  1,
+  788,
+  "So I hope this is clear. And inside the flow, again, you can do whatever you want to, but, usually, you want to send usually one transaction"
+ ],
+ [
+  1,
+  797,
+  ". That's the core transaction, what you are exec executing or doing. But for the transaction, you need some kind of input parameters and, we"
+ ],
+ [
+  1,
+  806,
+  "ll so you need to generate them. And as I said, fuzzing is about random data. So you generate some random parameters you pass inside the fun"
+ ],
+ [
+  1,
+  815,
+  "ction, inside the transaction."
+ ],
+ [
+  1,
+  817,
+  "And this way, you define the flow. And then this is purely optional. However, I find it very useful and, like, the the the the the the basic"
+ ],
+ [
+  1,
+  827,
+  " part of fuzzing in wake, and this is the state tracking. So you don't rely on the state of the contract. You don't rely on the storage vari"
+ ],
+ [
+  1,
+  836,
+  "ables inside the contract. Instead, you keep your own Python state saved inside the class, inside the Python."
+ ],
+ [
+  1,
+  844,
+  "And then in invariance, you compare your Python state to the state in the contract. And this way, you are basically doing differential testi"
+ ],
+ [
+  1,
+  854,
+  "ng. So we are comparing your mental model that you've diff redefined in Python to the actual actual state on chain in in contract. This is h"
+ ],
+ [
+  1,
+  864,
+  "ow the state machine looks like. Again, as I said,"
+ ],
+ [
+  1,
+  868,
+  "the fastest in wake is a class. So you can see there's a class. It inherits from the fastest, which is built in inside the framework. And th"
+ ],
+ [
+  1,
+  877,
+  "ere's a couple of hooks you can define that are executed at specific times during the lifetime of of the Fastest. The most important one tha"
+ ],
+ [
+  1,
+  886,
+  "t we will we will be using today is pre sequence, which is like the the first initial"
+ ],
+ [
+  1,
+  892,
+  "step before before everything begins. And this is where you should initialize all all your, like, initial pipeline state. And this is also w"
+ ],
+ [
+  1,
+  903,
+  "here you must deploy your contracts as it's shown in this example. Then you can define a couple of flows. So I have just some placeholders h"
+ ],
+ [
+  1,
+  914,
+  "ere, and finally, also some invariants to be executed after each flow."
+ ],
+ [
+  1,
+  919,
+  "Except for the for the class, there's also an entry point because, wake is built on py Pytest, which is the testing framework for Python in "
+ ],
+ [
+  1,
+  931,
+  "general. And so you need an entry point that will be executed. It's called test my token. And, inside the the the entry point, we just creat"
+ ],
+ [
+  1,
+  942,
+  "e an instance of the fast test,"
+ ],
+ [
+  1,
+  945,
+  "and we pass some parameters to the run method, which specify how many times we want to independently test the contract. So one independent r"
+ ],
+ [
+  1,
+  956,
+  "un is called a sequence. It's shown, in the image here. And after the the end of the sequence, we completely reset the blockchain state and "
+ ],
+ [
+  1,
+  967,
+  "start from the very beginning. So we again execute the pre sequence. Oops. Sorry."
+ ],
+ [
+  1,
+  973,
+  "Again, deploy all the contracts and start from anew from the beginning with some new random data and new new stuff to be explored. So this i"
+ ],
+ [
+  1,
+  983,
+  "s the sequence, and the first parameter inside this run function is the number of sequences, so number of independent executions. The second"
+ ],
+ [
+  1,
+  993,
+  " parameter is the number of flows, which is how many flows, how many these flow functions you want to execute during one sequence."
+ ],
+ [
+  1,
+  1002,
+  "And this is what the the image actually describes. So at the beginning of the sequence, there's the pre sequence where you deploy your contr"
+ ],
+ [
+  1,
+  1011,
+  "act to initialize your write and state. And after the pre sequence, the first flow is executed. This is chosen randomly. After the first flo"
+ ],
+ [
+  1,
+  1020,
+  "w, all the invariants are executed to check that the state matches the state in the contract on chain."
+ ],
+ [
+  1,
+  1027,
+  "And after invariants, the second flow executes and invariants are again executed. And this follows as long as you have some flows to be exec"
+ ],
+ [
+  1,
+  1039,
+  "uted given this number of the total flows you want to execute in a single sequence. After that, the chain is reset and that's it. So, this i"
+ ],
+ [
+  1,
+  1050,
+  "s the state machine."
+ ],
+ [
+  1,
+  1052,
+  "Except, for for, like, writing your test, you can you will obviously run the test. And after that, you can check the the the code coverage i"
+ ],
+ [
+  1,
+  1061,
+  "nside the companion extension. So this is how it looks like. Maybe I will show you show you once we write the fast test. But, well, basicall"
+ ],
+ [
+  1,
+  1071,
+  "y, you can see the number of executions of each of each statement or each line. And"
+ ],
+ [
+  1,
+  1076,
+  "you can this way, you can you can easily see whether what branches were not visited. So I believe we can move on to the hands on. So if you "
+ ],
+ [
+  1,
+  1087,
+  "want to follow, please check the link with the with the example, with the workshop, clone it, and check the the initial steps. I will walk t"
+ ],
+ [
+  1,
+  1097,
+  "hrough them again once I once I, change to to to the terminal."
+ ],
+ [
+  1,
+  1102,
+  "Or if you just want to follow later, you can check the QR code and check it at home later. By the way, how many people want to follow? Just "
+ ],
+ [
+  1,
+  1118,
+  "that I know if I should wait or I would just present and then you can check out later. Okay."
+ ],
+ [
+  1,
+  1129,
+  "So I guess I can begin. So I will switch into my cursor. This is the project. It's a very simple one. There's a couple of files already prep"
+ ],
+ [
+  1,
+  1140,
+  "ared. There's, by the way, Cloud MD. I won't be using this one, but if you want to try your cloud cloud just to generate the fastest on your"
+ ],
+ [
+  1,
+  1152,
+  " own, you can point it to this file, and it should generate some"
+ ],
+ [
+  1,
+  1157,
+  "on its own. So you don't need to type, any single line of code, actually. Except for the code m d, there's there's the package JSON because "
+ ],
+ [
+  1,
+  1166,
+  "we need some dependencies to be installed. There's the wake config, some kind of basic read me, and two contracts to be tested. I won't show"
+ ],
+ [
+  1,
+  1174,
+  " you the contract because, well, when you are doing fuzzing, you don't want to go too deep into the logic of the contracts. You you just wan"
+ ],
+ [
+  1,
+  1183,
+  "t to check the the interface, what functions are available. And based on that, you will execute something, and you will observe how the cont"
+ ],
+ [
+  1,
+  1191,
+  "ract behaves, what are your expectations."
+ ],
+ [
+  1,
+  1194,
+  "And this way, you are unbiased, and you will easier find some some big issues. So let me switch to the terminal. I hope it's well visible. S"
+ ],
+ [
+  1,
+  1210,
+  "o in order to install wake 5.0, you need to type pip three install"
+ ],
+ [
+  1,
+  1218,
+  "eve wake equals Equals500RC two because we'll be still using a release candidate of wake wake 5.0. So let me run the command. It was it was "
+ ],
+ [
+  1,
+  1234,
+  "very quick. I had everything precached. And now if we type wake dash dash version,"
+ ],
+ [
+  1,
+  1244,
+  "we should see the version of wake we have we have installed. The next step, we need to install the dependencies. So I will install them with"
+ ],
+ [
+  1,
+  1255,
+  ", PNPM. So, again, very quick, I had them already installed. And this is the initial setup. So we have VAC installed. We have installed the "
+ ],
+ [
+  1,
+  1266,
+  "dependencies. Now if we move on"
+ ],
+ [
+  1,
+  1268,
+  "to to extensions that I'm recommending, we definitely need a Python extension because we'll be writing tests in Python, so I definitely reco"
+ ],
+ [
+  1,
+  1278,
+  "mmend the Python extension. It depends if you're using Cursor or Versus Code because there are slightly some differences between the availab"
+ ],
+ [
+  1,
+  1288,
+  "le extensions. And except for Python, we we"
+ ],
+ [
+  1,
+  1291,
+  "may use even better TOML for the wake config file. And, obviously, and most importantly, we need the extension for Solidity, which is called"
+ ],
+ [
+  1,
+  1301,
+  " Solidity Wake. And this gives the basic support for Solidity into your into your IDE, so you can navigate over the code, you can see, the s"
+ ],
+ [
+  1,
+  1310,
+  "yntax highlighting and generate control flow graphs and"
+ ],
+ [
+  1,
+  1314,
+  "see, for example, detections of some issues that you may possibly have in your code. Now I will create a dummy test file. So let's call it t"
+ ],
+ [
+  1,
+  1329,
+  "est, vault dot py because I can see that there's a vault contract in the code base."
+ ],
+ [
+  1,
+  1338,
+  "Let me type some basic imports that we need, basically, every time we are doing fuzzing in a wake. So from wake testing, we want to import e"
+ ],
+ [
+  1,
+  1350,
+  "verything. And also from wake.testing.fuzzing, we again want to import everything. So the first import imports the basic stuff that can be u"
+ ],
+ [
+  1,
+  1361,
+  "sed for unit testing, while the second one is"
+ ],
+ [
+  1,
+  1365,
+  "contains special specifically some symbols that that will be available and needed for fuzzing. As I showed before, a fast test is a class in"
+ ],
+ [
+  1,
+  1379,
+  " wake. So you'll define a world fast test class that inherits from fast test. And let's put pause here just to make it"
+ ],
+ [
+  1,
+  1390,
+  "better later. Now we define the entry point because, as I said, we'll be using PyTest under the hood, and so we need the entry point for tes"
+ ],
+ [
+  1,
+  1402,
+  "t, where to begin. So let's call it test vault. And inside the function, we will create an instance of our fast test, and we will call run. "
+ ],
+ [
+  1,
+  1414,
+  "And let's say that the sequences number will be 10,000"
+ ],
+ [
+  1,
+  1419,
+  "and the number of flows, for example, 20,000, whatever. So this is the basic setup, but the most important thing is that we need to launch t"
+ ],
+ [
+  1,
+  1430,
+  "he development chain. So far, we've only write written some code in Python, and it doesn't do anything, actually. So we need to launch the d"
+ ],
+ [
+  1,
+  1441,
+  "evelopment chain. And for that, there's a built in global variable called chain,"
+ ],
+ [
+  1,
+  1447,
+  "which which represents the default chain that you'll be using most of the time. And on this chain instance, there's something called connect"
+ ],
+ [
+  1,
+  1457,
+  ", and this will launch a new development chain instance. If we used Anvil, it would launch Anvil, which is like a local development node as "
+ ],
+ [
+  1,
+  1467,
+  "a part of Foundry. However, if we check the wake config file, there's our EVM. As I said before, wake 5.0 comes with its own Rust,"
+ ],
+ [
+  1,
+  1477,
+  "execution engine that's built in into the framework, and it's, it's based on our EVM, which is like which is a Rust EVM as a separate projec"
+ ],
+ [
+  1,
+  1487,
+  "t. It's, maintained. So, we'll be using this Rust Rust based execution core. And so it won't launch anymore. It will just use something insi"
+ ],
+ [
+  1,
+  1498,
+  "de. And this way, we will connect to the development chain,"
+ ],
+ [
+  1,
+  1502,
+  "and we are ready to to deploy some contracts. So let's define the pre sequence hook. And inside, oops, inside the hook, we want to deploy ou"
+ ],
+ [
+  1,
+  1514,
+  "r contract. As you can see, there are two contracts, mock token and vault. So we definitely need to deploy both of them. However,"
+ ],
+ [
+  1,
+  1525,
+  "how do we do it? How do we actually do it? So, we need to generate a typing stubs. If we call wake up pytypes, this this single command will"
+ ],
+ [
+  1,
+  1537,
+  " compile all the contracts inside the project, and it will also generate something called pytypes, which are pything, typing stubs for for t"
+ ],
+ [
+  1,
+  1550,
+  "he contracts"
+ ],
+ [
+  1,
+  1551,
+  "and, events, errors, structs inside them. So it will generate this pytypes directory. It's not meant to be human readable, but it's very use"
+ ],
+ [
+  1,
+  1562,
+  "ful for for the linter inside your IDE. It's also quite useful for AI agents to check how to actually execute the functions on contract. And"
+ ],
+ [
+  1,
+  1572,
+  " there are three directories. There's vague, which contains some built in built in interfaces"
+ ],
+ [
+  1,
+  1579,
+  "and contracts ready to be used. There's also OpenZeppelin because we are using OpenZeppelin as the dependency of our contract. And finally, "
+ ],
+ [
+  1,
+  1589,
+  "there's contracts, which represents this contract directory. So the structure of pytypes follows the structure of the of the, of your projec"
+ ],
+ [
+  1,
+  1599,
+  "t. Inside, you can see there's the the same files,"
+ ],
+ [
+  1,
+  1603,
+  "but with, the PI extension. And as I said, this is not meant to be human readable. It's just there so you can you can execute or invoke the "
+ ],
+ [
+  1,
+  1613,
+  "functions, but not meant to to be read by human. Since we have generated PI types, we can import from PI types, from the from the module, fr"
+ ],
+ [
+  1,
+  1624,
+  "om the directory,"
+ ],
+ [
+  1,
+  1625,
+  "and we will be in importing both contracts, which is the vault, oops, and the mock token. Both of those, since they are contracts that can b"
+ ],
+ [
+  1,
+  1645,
+  "e deployed, have the deploy function."
+ ],
+ [
+  1,
+  1650,
+  "So if we call vault dot deploy, this will execute the constructor of the contract. It has the same parameters as the constructor. So we we n"
+ ],
+ [
+  1,
+  1661,
+  "eed the asset for the vault. We need some kind of treasury. I don't know what it means, but it's some address or an account. And we need a f"
+ ],
+ [
+  1,
+  1672,
+  "ee in BPS."
+ ],
+ [
+  1,
+  1673,
+  "So let's say that, the fee will be a random integer, random integer in between zero and ten thousand, which would be the maximum. And for th"
+ ],
+ [
+  1,
+  1689,
+  "e rest, we will need the asset, which will be our mock token. So let's deploy the token first."
+ ],
+ [
+  1,
+  1699,
+  "Mock token dot deploy. And we can use, let's say, this name and symbol. It doesn't really matter. Once we have the token deployed, we can pa"
+ ],
+ [
+  1,
+  1714,
+  "ss it to the constructor of the vault. The next parameter is a treasury."
+ ],
+ [
+  1,
+  1722,
+  "For this one, let's let's choose a random account. So self dot treasury. Treasury will be random dot choice from chain dot accounts. When yo"
+ ],
+ [
+  1,
+  1734,
+  "u launch a new instance of a chain, there will be predefined set of accounts that you can all already use. By default, it's 10. You can easi"
+ ],
+ [
+  1,
+  1745,
+  "ly override"
+ ],
+ [
+  1,
+  1746,
+  "the initial number of accounts by specifying this parameter. So we can, for example, start with 20 accounts. It's up to you, but I will just"
+ ],
+ [
+  1,
+  1756,
+  " keep those initial 10. And this way, we will choose a random account from the initial set of accounts, and we will say that this is the tre"
+ ],
+ [
+  1,
+  1766,
+  "asury that we will pass into the vault, into the contract. And the final parameter is a fee, we have already"
+ ],
+ [
+  1,
+  1774,
+  "randomly generated here. Now let's save this file and run the fast test. It should just kick off the the the instance, the the chain, and it"
+ ],
+ [
+  1,
+  1788,
+  " should deploy the contract, and that's all. So if we type wake test test slash"
+ ],
+ [
+  1,
+  1796,
+  "test vault, I'd like to append, dash d for debug. So if we encounter any exception, it will, enter an interactive debugger in in Python, whi"
+ ],
+ [
+  1,
+  1807,
+  "ch is very useful because we can inspect what actually happened. And I like to append, for extra verbosities so we can see all the assertion"
+ ],
+ [
+  1,
+  1818,
+  " failures and this kind of stuff."
+ ],
+ [
+  1,
+  1821,
+  "And this is expected because it ran successfully, but it didn't find any valid flow it could execute, and so it raised an exception. So it's"
+ ],
+ [
+  1,
+  1832,
+  " run it runs correctly, but we have nothing to execute except for deployment of the contract, which on its own is not enough. Alright. So le"
+ ],
+ [
+  1,
+  1843,
+  "t's define the very first flow to be executed inside our Fastest."
+ ],
+ [
+  1,
+  1848,
+  "As I showed you in the presentation, it has to be a function decorated with flow. And since I already know the contract, I know there's a fu"
+ ],
+ [
+  1,
+  1862,
+  "nction called deposit. Let's keep it simple like this. But if I didn't know, I could just open the contract."
+ ],
+ [
+  1,
+  1873,
+  "And with the extension, you have everything, you know, highlighted. There you can see already some vulnerability possibly in your contract t"
+ ],
+ [
+  1,
+  1881,
+  "hat was detected by wake. And there's also plenty of labels that you can click on, generate some graphs, whatever. But the the feature I wan"
+ ],
+ [
+  1,
+  1889,
+  "t to show you today is public functions, which is above the definition of the contract. And if you click on it, you will see all the public "
+ ],
+ [
+  1,
+  1897,
+  "function functions except for pure and view functions."
+ ],
+ [
+  1,
+  1900,
+  "Even through inheritance, if we had some inherited contracts, you we would we would see all the functions, including those inherited ones. A"
+ ],
+ [
+  1,
+  1909,
+  "nd these are the functions that we can call. So, again, we don't need to inspect the the complete logic of the contract. We can just see the"
+ ],
+ [
+  1,
+  1917,
+  "re's deposit, there's withdrawal, there's transfer. That's all we need. So we will start with the deposit. And"
+ ],
+ [
+  1,
+  1924,
+  "since we already have the instance of Vault and and before we begin, what I also like to do is just for for the type checking and for the Li"
+ ],
+ [
+  1,
+  1936,
+  "nter, explicitly specify that we will have a token variable assigned here. So there will be the token in our local Python state. There will "
+ ],
+ [
+  1,
+  1947,
+  "be, the fee,"
+ ],
+ [
+  1,
+  1948,
+  "which is an integer. There will there will be the treasury, which is an account. And, there will be the vault, which is the vault we deploye"
+ ],
+ [
+  1,
+  1957,
+  "d. Now we can execute the transaction. So we will call self vault dot deposit, but we need some input parameters. And this one specifically "
+ ],
+ [
+  1,
+  1967,
+  "represents the number of assets of the tokens that we want to deposit. And what's also useful, and I would say I will almost say required, i"
+ ],
+ [
+  1,
+  1976,
+  "s to specify the sender. Because if we don't specify the sender, the default one will be used, which is not very random, and we want to do r"
+ ],
+ [
+  1,
+  1986,
+  "andom testing. So we also want to generate a random sender. So the sender will again be a random choice from chain. Accounts, which is the i"
+ ],
+ [
+  1,
+  1995,
+  "nitial set of accounts we have available"
+ ],
+ [
+  1,
+  1998,
+  "in the instance. Now let's generate the amount. It's actually the amount of tokens that we will deposit into the vault. Let's begin, let's s"
+ ],
+ [
+  1,
+  2010,
+  "ay, with, a random integer in between zero and one million, for example. And this will generate, an integer in between those two bounds, inc"
+ ],
+ [
+  1,
+  2022,
+  "luding those bounds. However, the probability"
+ ],
+ [
+  1,
+  2026,
+  "of each of those numbers to be chosen is the same. It's uniform, which is maybe something that we don't want to test because zero may be an "
+ ],
+ [
+  1,
+  2037,
+  "interesting value for our fastest. So let's say that the probability of generating zero is, let's say, 1%. It should be enough. We are using"
+ ],
+ [
+  1,
+  2048,
+  " floating points, it's 0.01."
+ ],
+ [
+  1,
+  2050,
+  "And this is much better for fuzzing because we now have increased chance that we will generate zero as the input parameter for the function."
+ ],
+ [
+  1,
+  2061,
+  " And we can pass those parameters now inside the deposit function. So we will send the amount. We will specify from as sender who's sending "
+ ],
+ [
+  1,
+  2072,
+  "the transaction."
+ ],
+ [
+  1,
+  2073,
+  "We can now even execute the code, but it won't be super interesting because it will just revert. Maybe it's still quite interesting because "
+ ],
+ [
+  1,
+  2083,
+  "we can expect, inspect why why it reverted, but I think it's quite clear because we've said that we will send this amount of tokens. You can"
+ ],
+ [
+  1,
+  2093,
+  " actually print the amount. So this is the random number we've generated."
+ ],
+ [
+  1,
+  2098,
+  "So it says that we will send this amount of tokens into the vault from the sender, which is this address. However, we've did we didn't didn'"
+ ],
+ [
+  1,
+  2108,
+  "t give any allowance for the vault to pull our tokens, and so it will obviously be required because it cannot pull our tokens. We don't even"
+ ],
+ [
+  1,
+  2118,
+  " have those tokens, so it's not possible to to deposit this amount."
+ ],
+ [
+  1,
+  2123,
+  "What we need to do as a part of testing, this is obviously not possible on the main net or even test net, is that we can call a cheat code t"
+ ],
+ [
+  1,
+  2135,
+  "hat's called mint ERC 20, and it works for almost every token, ERC 20 token out there, where the first parameter is the token"
+ ],
+ [
+  1,
+  2146,
+  "that we want to use. The second one is who will receive some extra tokens. And the final parameter is the amount of tokens that we want to g"
+ ],
+ [
+  1,
+  2154,
+  "enerate for that given account. And this is a cheat code that only works on a local development chain where we can change some stuff we woul"
+ ],
+ [
+  1,
+  2163,
+  "dn't be able usually. And this will generate our tokens. Since we have them, generated, we need to give the approval."
+ ],
+ [
+  1,
+  2170,
+  "So we will call on the token, sell token approved. We want to give the approval to the vault and specify the amount we are approving. And, a"
+ ],
+ [
+  1,
+  2180,
+  "gain, super important, we need to specify who's giving the allowance, who's approving the the pulling of the tokens, which is the sender. It"
+ ],
+ [
+  1,
+  2190,
+  "'s the same account that's later calling the deposit function."
+ ],
+ [
+  1,
+  2195,
+  "I will save it, and let's see what it does. And it reverted again, but this time, it took longer. Maybe what will be better before we discus"
+ ],
+ [
+  1,
+  2209,
+  "s this one is what I also very much like to do is to add some basic logging into the fast test. So let me briefly create a logger"
+ ],
+ [
+  1,
+  2221,
+  "that will log some basic stuff happening inside inside the fast test. And after each flow, it's a good idea to log what happened inside insi"
+ ],
+ [
+  1,
+  2232,
+  "de the flow and what what we've performed. So we've deposited this number of tokens from sender. We can just use sender like this. We don't "
+ ],
+ [
+  1,
+  2242,
+  "need to use the address."
+ ],
+ [
+  1,
+  2244,
+  "And we've deposited to the vault. I will run the test again. One more cool feature. There's a random seed. Each time you invoke wake test, i"
+ ],
+ [
+  1,
+  2254,
+  "t will generate a new random seed. And if you have already some seed pregenerated and you pass it on the command line, it will reproduce the"
+ ],
+ [
+  1,
+  2265,
+  " same sequence of operations of transactions"
+ ],
+ [
+  1,
+  2268,
+  "as in this round because it uses the first, the same first initial seed of random operations. And so we should encounter the same error, soo"
+ ],
+ [
+  1,
+  2280,
+  "ner or later because we are reproducing the same scenario of operations on the blockchain. And as you can see, it performs a lot of operatio"
+ ],
+ [
+  1,
+  2292,
+  "ns before"
+ ],
+ [
+  1,
+  2293,
+  "we reach this zero amount reward. So we've performed a lot of deposits into the contract, and then, we've got a reward from the transaction."
+ ],
+ [
+  1,
+  2303,
+  " This line sends a transaction because we are calling a deposit function that changes the state. So this that's a transaction that are we ar"
+ ],
+ [
+  1,
+  2312,
+  "e sending to the chain. And if there's a revert, which means the transaction failed, it will automatically pop up as an exception inside the"
+ ],
+ [
+  1,
+  2322,
+  " framework."
+ ],
+ [
+  1,
+  2323,
+  "So if we check the vault and inside the vault zero amount, we would see that there is the same same, symbol defined, which is the error of o"
+ ],
+ [
+  1,
+  2335,
+  "f zero amount. And it it it it's it's the same name, and even the parameters are empty. So it's it's the same thing that we've seen on the c"
+ ],
+ [
+  1,
+  2348,
+  "ommand line. So even these errors and also events"
+ ],
+ [
+  1,
+  2352,
+  "are regenerated from Solidity into Python, through the py types. Now we can possibly inspect what's happening, but I think it's quite clear."
+ ],
+ [
+  1,
+  2363,
+  " So let's print the amount. And it it's actually not quite clear because the amount is nonzero, but we've still received the reward. So we s"
+ ],
+ [
+  1,
+  2374,
+  "hould probably, inspect deeper."
+ ],
+ [
+  1,
+  2376,
+  "And for that, I don't want to dive into the code of the solidity because that's something we shouldn't do when doing testing, doing fuzzing "
+ ],
+ [
+  1,
+  2386,
+  "because this way we would be biased about the code because we've already seen that. Instead, let's proceed, we will evaluate later. So just "
+ ],
+ [
+  1,
+  2396,
+  "by looking at this vault and maybe the description, it's quite clear to me that this is like ERC 4 4626"
+ ],
+ [
+  1,
+  2403,
+  "based, vault where we deploy, deposit some tokens. People receive shares, and then later we can we can, burn those shares to receive back th"
+ ],
+ [
+  1,
+  2414,
+  "e tokens. And so let's compute the number of shares that we should receive. Let's compute it before this this line because if we compute it "
+ ],
+ [
+  1,
+  2424,
+  "after, we would never,"
+ ],
+ [
+  1,
+  2426,
+  "reach the computation in the branch when it's reverting. So we wouldn't be able to print the number of shares. And so now it depends if we a"
+ ],
+ [
+  1,
+  2439,
+  "re the first initial depositor or not. For that, let's trace the number of shares we have already distributed,"
+ ],
+ [
+  1,
+  2449,
+  "which can be a dictionary with the keys being accounts, the holders of the shares, and then the number of shares they are holding. I will us"
+ ],
+ [
+  1,
+  2461,
+  "e a default dictionary, which is like special structure in Python that very much emulates mappings in in Solidity."
+ ],
+ [
+  1,
+  2471,
+  "So even if you have a key that was never accessed before, it will default to a default value that you define. In our case, it will be zero. "
+ ],
+ [
+  1,
+  2483,
+  "If we pass here int as an integer, it will default to zero. So if we ask for any account, even existing, non existent, whatever, it will alw"
+ ],
+ [
+  1,
+  2494,
+  "ays return zero. So if the sum"
+ ],
+ [
+  1,
+  2497,
+  "of shares we have already distributed is zero, it means that this is the first deposit into the vault, and so the formula is a bit different"
+ ],
+ [
+  1,
+  2512,
+  ". First of all, let's compute the fee, because the fee, as I assume, is just a percentage"
+ ],
+ [
+  1,
+  2521,
+  "of the amount. And since it's in BPS, we should multiply it by the fee number and then divide by 10,000, which represents 100%. Now, the num"
+ ],
+ [
+  1,
+  2534,
+  "ber of shares will most likely be the amount minus fee, because the fee is not a part of the deposit we are making into into the vault."
+ ],
+ [
+  1,
+  2547,
+  "Otherwise, the shares number most likely will be the amount minus fee, and then multiply that by the total number of shares we've distribute"
+ ],
+ [
+  1,
+  2566,
+  "d so far, and divided by the total number of assets"
+ ],
+ [
+  1,
+  2573,
+  "that's held inside the contract. For now, we can just use, self token balance of the vault. So we have computed the number of shares we shou"
+ ],
+ [
+  1,
+  2592,
+  "ld receive. And if I run the fastest again, it should take some time."
+ ],
+ [
+  1,
+  2601,
+  "But now if we print the number of shares, it's it's on zero, actually. That's interesting. So let me check the formula again. And I believe "
+ ],
+ [
+  1,
+  2612,
+  "I know why it's non zero, and it's because of a bug that's present in the contract. And I've reproduced the same bug inside my code. But, we"
+ ],
+ [
+  1,
+  2624,
+  "ll,"
+ ],
+ [
+  1,
+  2624,
+  "let's correct the formula then. Because this is not very precise, if we if we check the total number of tokens inside the vault, we are also"
+ ],
+ [
+  1,
+  2633,
+  " accounting for the fees because the fees are also transferred into the vault, but we shouldn't account for them when computing the number o"
+ ],
+ [
+  1,
+  2641,
+  "f shares. So this is obviously a bug that may be present inside the contract, but it's definitely present in our fastest."
+ ],
+ [
+  1,
+  2649,
+  "So when you are doing testing of the contracts, you shouldn't do the same mistakes inside your fastest code inside Python. So let's let's tr"
+ ],
+ [
+  1,
+  2663,
+  "ack the actual number, like, let's say, assets, which will be an integer. It will be zero, and we"
+ ],
+ [
+  1,
+  2672,
+  "will we will, update the total assets number by the amount minus fee. It's and what's also important, and I forgot to update, is the shares "
+ ],
+ [
+  1,
+  2686,
+  "number. So we should say that the shares held by the sender after the transaction is finished is updated,"
+ ],
+ [
+  1,
+  2697,
+  "increased by the shares number we've computed before. And I forgot to update this part of formula, obviously. We shouldn't rely on the on th"
+ ],
+ [
+  1,
+  2715,
+  "e on chain state. Instead, we should use our local Python state. So this is the local number we've computed inside the fast test."
+ ],
+ [
+  1,
+  2732,
+  "And it's still printing as non zero. Never mind. So let's let's debug what's happening. We still have some time. So let's deposit or inside "
+ ],
+ [
+  1,
+  2749,
+  "the deposit function, let's actually let's actually add"
+ ],
+ [
+  1,
+  2756,
+  "some console logs, and I can at least show you how we can debug what's happening inside the contract. So we can insert some console logs int"
+ ],
+ [
+  1,
+  2767,
+  "o the contract. We can import or we need to import, the wake console so it resolves those functions. Since we've updated the contract,"
+ ],
+ [
+  1,
+  2778,
+  "we need to recompile and to regenerate file types. So we need to call wake up file types again to recompile, regenerate, and now we can just"
+ ],
+ [
+  1,
+  2792,
+  " run it all again. And we we can inspect what's happening inside the contract. And if we if we,"
+ ],
+ [
+  1,
+  2802,
+  "for example, use chain.txs, which is the low which is the global list of all transactions we've executed so far. We check the the the last o"
+ ],
+ [
+  1,
+  2813,
+  "ne that we've executed at this line, and we check the call trace property. We can inspect the call trace of the transaction, and we can see "
+ ],
+ [
+  1,
+  2824,
+  "the console logs we've inserted into our code."
+ ],
+ [
+  1,
+  2828,
+  "And here specifically, we can see that we are calling vault at this address. We are calling the deposit function. We are setting this number"
+ ],
+ [
+  1,
+  2839,
+  " of assets as the input. Then inside inside this vault, there's a balance of call, performed on the mock token. There's some value returned "
+ ],
+ [
+  1,
+  2851,
+  "from the token."
+ ],
+ [
+  1,
+  2852,
+  "The first console log we've inserted says that the balance before is this number of tokens. And the second console log says that the shares "
+ ],
+ [
+  1,
+  2863,
+  "number is zero, which means that inside the contract, we are actually seeing the zero number of shares. However, in our fast test, it's a di"
+ ],
+ [
+  1,
+  2874,
+  "fferent number."
+ ],
+ [
+  1,
+  2875,
+  "And this is something we should focus on because our expectation is that we would see this number of shares, which is 12. But inside the con"
+ ],
+ [
+  1,
+  2883,
+  "tract oops. My bad. Inside the contract, we are seeing, based on the console log, zero number of shares. So this is something different than"
+ ],
+ [
+  1,
+  2891,
+  " we expected and we should investigate. In this case, it will be a bug in the contract, but it could be, as I showed you before, it could be"
+ ],
+ [
+  1,
+  2899,
+  " a bug in the fast test as well. So that's why it's needed to be investigated."
+ ],
+ [
+  1,
+  2904,
+  "However, this is how we find bugs inside the contracts that we basically follow the the signatures of the contracts. We execute some functio"
+ ],
+ [
+  1,
+  2913,
+  "ns with our assumptions, and then we compare the differences between the contract and local Python state. So I would wrap it up for today wi"
+ ],
+ [
+  1,
+  2921,
+  "th this with this, hands on. If you want to follow, if you want to generate the full fast test, you can just say, hey, code. Generate the fa"
+ ],
+ [
+  1,
+  2930,
+  "stest for this contract. It's super easy because there's a code MD file inside inside the the repository."
+ ],
+ [
+  1,
+  2936,
+  "And I will just briefly switch back to the presentation because Wake is now listed as a part of the Ethereum security quadratic funding, whi"
+ ],
+ [
+  1,
+  2945,
+  "ch means that people can donate to to various projects. I recommend you to to check all the projects because there's many of interesting one"
+ ],
+ [
+  1,
+  2954,
+  "s. There's the Wake framework also listed with the extension. And based on donations from people, the"
+ ],
+ [
+  1,
+  2961,
+  "tooling then gets some, funding from from the DAO that's that's, organizing this funding. And, specifically, for vague and the extension, th"
+ ],
+ [
+  1,
+  2970,
+  "e funding will be used for the state analysis MCP so AI agents can inspect the code and see some insights into the code like control flow an"
+ ],
+ [
+  1,
+  2979,
+  "d where is the the given variable being used. And the next goal is also to kind of support, AI fuzzing. So we don't need to write this manua"
+ ],
+ [
+  1,
+  2988,
+  "lly because as you can see, we can still make some mistakes."
+ ],
+ [
+  1,
+  2992,
+  "Instead, the AI can write this kind of fuzz test, and it can debug what's happening and be much more efficient than we are. And finally, as "
+ ],
+ [
+  1,
+  3000,
+  "I said, WEG has also some static analysis detectors that can detect some common issues, and we can let AI fix those detections and propose s"
+ ],
+ [
+  1,
+  3009,
+  "ome some relevant changes. So if you want to support, these are the QR links. Be sure to check all the projects because there's many interes"
+ ],
+ [
+  1,
+  3017,
+  "ting ones."
+ ],
+ [
+  1,
+  3018,
+  "And one final note, please, check out also the talk from the CEO of Equity Blockchain who will be presenting our approach to benchmarking AI"
+ ],
+ [
+  1,
+  3029,
+  " on the smart contract. And this should be in, like, an hour in the Gregor stage. So please also check that as well. And, yeah, that's all f"
+ ],
+ [
+  1,
+  3041,
+  "rom me today. Okay. Thank you, Mikhail."
+ ],
+ [
+  1,
+  3044,
+  "We have a time for some quick questions. Anyone with a quick question? If not, then you can catch Michel in the halls and we invite everyone"
+ ],
+ [
+  1,
+  3065,
+  " to come listen to Gregor's stage in about an hour. Okay?"
+ ],
+ [
   2,
   12,
   "Good morning, everyone. It's really nice to see you all here. Welcome to the day number two. My name is Maria, and I'm core contributor of K"
