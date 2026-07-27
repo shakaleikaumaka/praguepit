@@ -1,0 +1,121 @@
+# The Builder Economy: Bringing Back the Bull
+
+Date: 
+Source video: The Builder Economy: Bringing Back the Bull
+Drive: https://drive.google.com/file/d/1HvRo9s_VlgUDq5VNL-gnmzPZtHnUTw-5/view
+Duration: 00:25:01
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:11] Alright. Hey, guys. Thank you for coming. Really appreciate you guys all coming out, many of you after the hackathon. I know it's been a long weekend and, I will be speaking about the next steps to the hackathon. So maybe fitting that this talk is starting right as the hackathon ends. So my name is Nate. I go by eatsleepcrypto .eth. I'm gonna be speaking about the next phase of the market and how we bring back the bull from the cyberpunk depths that we're currently in of the, current bear.
+
+[00:45] So a little background on myself, I'm a bitcoiner class of 2013. I've been in the space writing on token economics and related topics for the last eight years on eatsleepcrypto.com. I founded Token Dynamics, which is a protocol design and economic audit firm which aligns incentives of protocols so that the tokens are valuable and don't compromise the protocol's own security.
+
+[01:09] So I want to start by talking about we are currently in a bear market. This is my fourth and some things that I've seen that are recurring themes of the bear market, to fall in two categories. So one is structural and one is cultural. On the cultural side, right now, we are on the heels of the bull where cypherpunk voices are drowned out.
+
+[01:32] Every bull market, the money comes in and people it's not that people forget why they came, it's that the people that are loudest are the ones that came for the money. And that comes from a few root causes. One of those is VCs only fund the kind of things they're already familiar with. So, a VC doesn't have time to do due diligence on the novel DeFi primitives that we all want to see because some of those are math heavy, some of them are just against the status quo, against their other investments, so they don't make sense for their portfolio.
+
+[02:09] But what we end up with is the people that are taking VC money are being steered in the direction that VCs are already familiar with, that they understand, and that they want them to go. So it's kind of a deal with the devil that builders have been making for the last several cycles because VCs are the main source of funding if you want to build and get a broader audience.
+
+[02:34] And consequently, the builders that don't do that are left underfunded, discouraged, sometimes leaving the industry altogether or building projects that are just relegated to the shadows. On the structural side, the market structure itself, the way that tokens are distributed, who they go to, where liquidity comes from, all of these kinds of things, they're broken as well.
+
+[02:58] So this stems from one core cause, I would say. It's, what we call mark to market valuation. The idea that if I sell you 1 token at $1 and there are a billion of them, the fully diluted value or the market cap is now a billion dollars. So you have a billion dollar token on paper. But we can all see when we simplify the math that way that that's not the actual value of all of those tokens.
+
+[03:25] This is what we call low float high FDV and it was the predominant meta strategy for launching a token for the last five years. The other, sort of systemic issue is with insider allocations. So the insiders, the VCs namely, have actually done this on purpose in order to get exit liquidity from retail.
+
+[03:49] So they accumulate a larger than liquid share of tokens and then they eventually dump them on the market when they vest. And in the process, the price discovery itself is done through a series of VC rounds that are pumped up with fake vanity metrics like number of users or different things that don't drive a bottom line, in order to get to the next round of VCs that will buy the bag and continue the Ponzi scheme all the way until
+
+[04:19] retail gets it through an airdrop, through an ICO, or in TradFi through an IPO. This is the same market structure that they've been borrowing and brought into our industry as well. And so on the topic of cycles, we have this pattern. Basically, every four years, crypto remembers its cypherpunk roots and builds something really cool in the depths of a bear market and a bull market is kicked off by a new token distribution mechanism.
+
+[04:51] So with mining, each of these and each of these have an issue that solves, you know, maybe a solution that the previous to a problem the previous had and creates a problem for the next one to solve. So, mining solved fair distribution contrary to popular belief. Proof of work is not a consensus mechanism so much as a distribution mechanism. It was required for more efficient consensus mechanisms like proof of stake to come about. But in the process, it gave tokens to those people that actually deserved them because they were contributing to the network
+
+[05:27] and it prevented people from with a fair launch, you know, without insider pre mines and allocations, prevented people from accumulating enough of the market supply to, nuke the chart. On the downside, again, costly consensus mechanism and there wasn't automatically liquidity from mining for people to be able to buy. So we relied on centralized exchanges
+
+[05:51] and market makers to subsidize these prices. Next in 2017 was ICOs. A big advantage of this was it allowed people to buy in to the projects they believed in and democratize the access to those deals, but it had a lot of issues. So in 2017, you could raise a $100,000,000 on an idea and no product. So there were a lot of rugs and people were raising that much or more.
+
+[06:20] And one of the issues there is they didn't actually have a reputation at stake, so they had nothing to lose. They could just say, we're building the second version of the Internet and then never ship a product. And that happened many times. But from the user side and investor side, it made sense because you could basically guarantee yourself a 10 or a 100 x just by buying the ICO early and then selling it later to retail.
+
+[06:45] Again, no price discovery because VCs were funding in the background, setting the prices and the, liquidity was not enough for people to actually exit. And so we saw this chart pattern all the way up, all the way down. And again, centralized exchanges and market makers still required to subsidize
+
+[07:08] investor exits. Then we got to 2020, 2021 with airdrops. The meta was free money. It was like you're getting these tokens for free, and it was a really great way for users or teams to not only bootstrap their funding, but to bootstrap their user base. And, it allowed them to raise the capital they needed from VCs on the promise that they would be able to sell those tokens to users who would,
+
+[07:34] be participating in the network. They could generate user interest again with those vanity metrics. But we learned that there is no free lunch and we still had the low float high f d v problem. It ended up being even worse for retail because not only did you have v c's selling into the market, you had airdrop farmers selling into the market and centralized exchanges market makers were still required.
+
+[07:58] Fast forward to 2025 where the meta was Launchpads, and some advantages here. This finally got rid of VCs and centralized exchanges for the most part. We also have some bootstrapping liquidity bootstrapping primitives out there in the market. But some of the major downsides of the way that these launch pads are designed, they still don't structurally solve the existing problems. So bonding curve mechanics are one. Basically,
+
+[08:29] during the auction process, people can sell the token back before it is fully discovered where they're basically jumping from $1 to $5 and then selling at 5 and dropping the price back down. So the market doesn't find a fair value for these tokens. Also, bonding curves allow teams to buy in early and then sell or,
+
+[08:53] you know, accumulate large amounts of tokens the way that most of them are structured. And so it ends up being worse for retail than most of the other incumbent solutions. Furthermore, Launchpads have an issue of white listing where they're alternately a utility token Launchpad with, a limited number of projects allowed to launch on them or they're a MemeCoin Launchpad where anybody's allowed to launch. You just can't launch anything valuable and raise funds for it. So,
+
+[09:24] price discovery is hampered and in most launch pads, there's still not enough liquidity for investor exits. So to recap this quickly, we have a capital raising problem in crypto. VCs aren't funding novel primitives. They are largely venture followers, not venture capitalists. They're also only writing checks above 500 k.
+
+[09:48] The And the problem for builders is that you have to spend six months talking to a VC just to get some capital and it's not guaranteed and that's time that you could be building. Grants are also really strained right now. The EF closed open grants in 2025. A lot of l twos are sunsetting right now and those are some of the primary venues for getting grants for builders, but even in those cases, the average grant size is too small for builders to reasonably
+
+[10:17] get to market with a solid even a solid MVP and all of the background operations that they need to do. And then on chain, we have crowdfunding platforms like Gitcoin that are designed for altruistic, donors. And the problem with socialism is you eventually run out of other people's money. The problem with altruism is you eventually run out of your own money because there's no economic flywheel that would pay you back in order to get,
+
+[10:48] recoup some costs and get, rewarded for the risk that you're taking. And as we mentioned, Launchpads are generally extractive and have this problem where they're alternately for meme coins or for a small subset of utility tokens. There has to be a better way. And that better way solves these two problems that we mentioned at the beginning, so culturally
+
+[11:12] and, systemically. So the first is getting cypherpunk builders the capital that they need in the bear market so that they can be one of those applications that makes it to the next cycle. The second is what Ethereum is doing a great job at is amplifying cypherpunk voices. So crops, censorship resistance, open source, privacy, and security is the official
+
+[11:38] Ethereum mandate. This is, kind of a rallying cry to the cypherpunks to, start to orient their applications around these value propositions that are why we came here in the first place. And the the third point that I would make is that, we want to have fun as well. Like crypto used to be a lot of fun, and in the bear market, we sometimes lose that. And so culturally,
+
+[12:05] we want these things to be in place so that we can solve that part of the problem. On the other side, we have fundamentals and that involves fixing the market structure and all of the issues that I've just described. Moving from low float high FDV to full float fair FDV. And I'll talk about how we do that next. The second is capping insider allocations so that they never exceed liquidity.
+
+[12:31] That is, one of the unsolved problems of existing token distribution mechanisms and the main thing that structurally will solve this problem. And the third is, giving builders sustainable economic primitives. So teaching builders what kinds of things they can use to actually bootstrap an economy and build something that is valuable and not just useful.
+
+[12:56] So we do that by with three main value propositions. One is ungated Launchpad. So the primary thing the primary issue here that we're solving is the vetting problem. I'll talk about how we do that in a moment. Second is price discovery, getting a fair market value for these tokens. And the third is locked liquidity.
+
+[13:20] So how it works at a high level? First, in a punk auction. So this is for punk.fun, our new launch pad. We go to market in two months. So the first step is you set up an auction, you deposit tokens. You are able to attach project x account and an e n s optionally too. So that if you see that such and such.eth is launching a token and Vitalik follows the project on Twitter, then you know it's a pretty good reasonable,
+
+[13:51] reputation at stake going back to the problem of ICOs. Second step is an auction is announced at least a week in advance so that people have time to due diligence on what token they're buying. And then we have a price discovery system. So this is a view, let's say halfway through an auction. So sneak peek at our fun UI. So an auction starts in the bottom left corner with a small block of tokens. So we sell tokens in batches
+
+[14:23] or tokens are auctioned off in batches, starting with a small number of basis points at a low price. So for example, let's say 10 basis points in the bottom left are sold for 10¢ a token raised entirely in ETH. When that batch sells out, the price and size of the next batch doubles. So the initial batches are likely to sell out pretty quickly because they're set at a low, low price relative to the expected fully diluted value.
+
+[14:53] And, let's say on the third one there, the price goes up from 10 at 10 to 20 at 20 and, 40 basis points for 40¢ a token. It starts high and as soon as the batch stops selling out or tokens stop selling out, it starts to decay exponentially in price but not size.
+
+[15:16] So the wick on the top of the third block there indicates that it decayed from, on a log scale, somewhere a 40¢ starting price down to let's say 15, halfway between the first two. And then when it's sold out, users get the clearing price. So the, people who bid on them will get those tokens at 15¢
+
+[15:40] and then the price doubles again to, 30¢ and this time for, 80 basis points of token supply. And then the price the, auction continues. So it goes all the way through like this and at the end of the auction, this pink through line on the screen indicates the weighted average price raised for each,
+
+[16:02] for all of the tokens. And at the end of the auction, half of the tokens deposited are paired with half of the funds raised and pushed to a locked liquidity position on Uniswap v two for secondary market price discovery. So users, bidders get the tokens that they bid on. Teams get half the funds, the Punk platform,
+
+[16:25] and token holders get, 5% of the funds raised and, tokens launched. And the, liquidity pool, starts to do secondary market discovery because it's got a deeply liquid supply much greater than any insider allocation because we also cap the insider allocation at the beginning at 10%.
+
+[16:48] So teams can only get 10% of the tokens if they want to be a true gold tier punk auction. So we have a split UI for the punk platform. We've got Punk for utility tokens and fun for meme coins. They have different parameters but they use the same mechanism and contracts. We're going to market with fun first
+
+[17:12] and we have, we will find the ways that people can extract and do an unfair launch by looking at the data from fun and we hard code the parameters two months later into punk when we let that side of the UI go live. So we are, you can see here 95% of the liquidity for the meme coins goes directly
+
+[17:34] to the, liquidity pool in fun. And so people using this are able to trade and know that the meme coin isn't just gonna be rugged afterward, in the same way that they all do. They have an opportunity to trade the tokens back in the pool or let the pool do price discovery itself. So a few value props here, to wrap this up. So we've got fair access.
+
+[18:01] We solve the vetting problem by attaching reputation to a launch and give people ample time to actually look at the tokens and see how they want to participate in the auction. Transparent parameters, everything is on chain, save the description, logo, and the, optional connection to an x account for the project.
+
+[18:25] The insider allocation is capped at 10% on punk, 5% on fun, and the price discovery, those are coded parameters, hard coded into the contract. And then the price discovery happens through this process that doesn't allow people to sell the tokens back halfway through the auction. So price discovery actually happens
+
+[18:47] in a in a way that discovers the fair price by anyone's standard by the end of the auction. There's no custody of funds except for the spin out contracts. We have a factory that generates all of these auctions, and we don't control the auctions. Once they're live, they're going, and we have no way to stop them. The,
+
+[19:11] contracts themselves don't hold TVL outside of the auction and our addresses. The factory contract will not hold funds. So, we mitigate the honeypot problem. Again, full float, fair FDV, through the auction mechanism and, preventing rugs through all of the mechanisms that we just talked about. So this unlocks a few things. One, it solves the supply side of tokenomics entirely on chain.
+
+[19:41] The, cypherpunks are actually getting funded outside of grants presumably through investors who believe in what they're building. And our bet is that builders are gonna do a lot better of a job than VCs at finding the primitives that really need to exist that are serving the market. Furthermore, we are privacy first in the sense that anons can preserve their reputations without doxing to VCs. This is a common issue that we've heard at Token Dynamics
+
+[20:12] and in building this product that, that Anand's face is that they don't want to docs themselves just to leverage their reputation. Agents are a novel, new target market. We have, you know, agents can't KYC. And so they need somewhere that actually allows them to launch things on chain.
+
+[20:35] And then finally, this gets rid of VCs, market makers, and centralized exchanges for these projects forever. This forces price discovery to happen on chain rather than off chain, and that solves many of the cultural problems that we talked about at the beginning. So I'll open it up here for questions if anyone has them, and thank you guys for coming to the talk.
+
+[21:03] Yes, in the back. Hi. Thanks for the great talk. I have a question, or maybe like I, how does this compare to the Uniswap auction that they released with, you know, the ASTHAC token and so on? So could you comment on that? Thanks. Yes. Let's say one is one is branding, right? Certainly, Uniswap
+
+[21:26] might be in the category of immutable primitives that we want to see launched on Punk, but Uniswap CCA itself is white list only right now. And so that doesn't allow for the vast majority of projects that need to get to market to actually do that. So that would be the primary, but we also have some slight differences in our mechanisms that I would defer to mechanism design
+
+[21:48] cofounder. But, yeah, happy to talk about that after. And he's in the room here, so we can we can chat about that. Yeah. Great talk. Thank you. Did I hear, like, Uniswap v two? Or how
+
+[22:13] come? Why? Great question. Okay. So, with that pink through line that we saw on the UI, that is the weighted average price and if we push to that in a v three position for example, then we would have, a guaranteed exit for anybody that bought below that price. And game theoretically, we think that's undesirable because we don't want people to just be buying so that they can sell it later. Whereas, if you're buying at a price that you specify by placing a bid for an allocation in ETH, then you're presumably interested in getting the token at that price because you think it's fair.
+
+[22:50] So it's mostly about the game theory of, the locked liquidity position. Hey. Would this apply to all stages of a project? So for instance, a project that just started, could they
+
+[23:12] could they could they just launch their own token, or would this be better for, say, like, a series a project that already have, like, established committee? I guess I'm thinking more like Hyperliquids AirDrop and how successful it was in building a community and getting people involved. And I'm just wondering, like, does this apply to all projects, I guess? Yeah. Well, Hyper Liquid and I forget the numbers exactly. It's a great question. Hyper Liquid had a deep source of funding to bootstrap the platform
+
+[23:38] where most builders that we expect to launch on this won't. So I would say we're ideal for anyone with below a 10% allocation, to insiders. But by Series you know, much more than that is usually sold to investors. So, I would say the earlier, the better, but at least have an MVP. And so that makes this a really good kind of project for hackathon winners and people that are looking to take their side projects to market.
+
+[24:10] Yeah, we serve two groups of people. We're targeting, cypherpunks obviously and the mid market, which are those group of people that would normally go to grants and to VCs, but for the reasons in talk, can't do that because it's just not practical for either party. I just a logo.
+
+[24:39] Yeah. MVC, minimum viable community. Alright. Thank you, guys. I'll be around after.

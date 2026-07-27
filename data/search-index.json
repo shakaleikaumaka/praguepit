@@ -6953,5 +6953,900 @@
   21,
   1656,
   "Okay. That's all. We can discuss it. Thank you for the presentation again. Okay."
+ ],
+ [
+  28,
+  11,
+  "Alright. Hey, guys. Thank you for coming. Really appreciate you guys all coming out, many of you after the hackathon. I know it's been a lon"
+ ],
+ [
+  28,
+  21,
+  "g weekend and, I will be speaking about the next steps to the hackathon. So maybe fitting that this talk is starting right as the hackathon "
+ ],
+ [
+  28,
+  30,
+  "ends. So my name is Nate. I go by eatsleepcrypto .eth. I'm gonna be speaking about the next phase of the market and how we bring back the bu"
+ ],
+ [
+  28,
+  40,
+  "ll from the cyberpunk depths that we're currently in of the, current bear."
+ ],
+ [
+  28,
+  45,
+  "So a little background on myself, I'm a bitcoiner class of 2013. I've been in the space writing on token economics and related topics for th"
+ ],
+ [
+  28,
+  54,
+  "e last eight years on eatsleepcrypto.com. I founded Token Dynamics, which is a protocol design and economic audit firm which aligns incentiv"
+ ],
+ [
+  28,
+  63,
+  "es of protocols so that the tokens are valuable and don't compromise the protocol's own security."
+ ],
+ [
+  28,
+  69,
+  "So I want to start by talking about we are currently in a bear market. This is my fourth and some things that I've seen that are recurring t"
+ ],
+ [
+  28,
+  78,
+  "hemes of the bear market, to fall in two categories. So one is structural and one is cultural. On the cultural side, right now, we are on th"
+ ],
+ [
+  28,
+  88,
+  "e heels of the bull where cypherpunk voices are drowned out."
+ ],
+ [
+  28,
+  92,
+  "Every bull market, the money comes in and people it's not that people forget why they came, it's that the people that are loudest are the on"
+ ],
+ [
+  28,
+  101,
+  "es that came for the money. And that comes from a few root causes. One of those is VCs only fund the kind of things they're already familiar"
+ ],
+ [
+  28,
+  111,
+  " with. So, a VC doesn't have time to do due diligence on the novel DeFi primitives that we all want to see because some of those are math he"
+ ],
+ [
+  28,
+  120,
+  "avy, some of them are just against the status quo, against their other investments, so they don't make sense for their portfolio."
+ ],
+ [
+  28,
+  129,
+  "But what we end up with is the people that are taking VC money are being steered in the direction that VCs are already familiar with, that t"
+ ],
+ [
+  28,
+  138,
+  "hey understand, and that they want them to go. So it's kind of a deal with the devil that builders have been making for the last several cyc"
+ ],
+ [
+  28,
+  148,
+  "les because VCs are the main source of funding if you want to build and get a broader audience."
+ ],
+ [
+  28,
+  154,
+  "And consequently, the builders that don't do that are left underfunded, discouraged, sometimes leaving the industry altogether or building p"
+ ],
+ [
+  28,
+  163,
+  "rojects that are just relegated to the shadows. On the structural side, the market structure itself, the way that tokens are distributed, wh"
+ ],
+ [
+  28,
+  172,
+  "o they go to, where liquidity comes from, all of these kinds of things, they're broken as well."
+ ],
+ [
+  28,
+  178,
+  "So this stems from one core cause, I would say. It's, what we call mark to market valuation. The idea that if I sell you 1 token at $1 and t"
+ ],
+ [
+  28,
+  188,
+  "here are a billion of them, the fully diluted value or the market cap is now a billion dollars. So you have a billion dollar token on paper."
+ ],
+ [
+  28,
+  197,
+  " But we can all see when we simplify the math that way that that's not the actual value of all of those tokens."
+ ],
+ [
+  28,
+  205,
+  "This is what we call low float high FDV and it was the predominant meta strategy for launching a token for the last five years. The other, s"
+ ],
+ [
+  28,
+  216,
+  "ort of systemic issue is with insider allocations. So the insiders, the VCs namely, have actually done this on purpose in order to get exit "
+ ],
+ [
+  28,
+  227,
+  "liquidity from retail."
+ ],
+ [
+  28,
+  229,
+  "So they accumulate a larger than liquid share of tokens and then they eventually dump them on the market when they vest. And in the process,"
+ ],
+ [
+  28,
+  239,
+  " the price discovery itself is done through a series of VC rounds that are pumped up with fake vanity metrics like number of users or differ"
+ ],
+ [
+  28,
+  248,
+  "ent things that don't drive a bottom line, in order to get to the next round of VCs that will buy the bag and continue the Ponzi scheme all "
+ ],
+ [
+  28,
+  258,
+  "the way until"
+ ],
+ [
+  28,
+  259,
+  "retail gets it through an airdrop, through an ICO, or in TradFi through an IPO. This is the same market structure that they've been borrowin"
+ ],
+ [
+  28,
+  269,
+  "g and brought into our industry as well. And so on the topic of cycles, we have this pattern. Basically, every four years, crypto remembers "
+ ],
+ [
+  28,
+  280,
+  "its cypherpunk roots and builds something really cool in the depths of a bear market and a bull market is kicked off by a new token distribu"
+ ],
+ [
+  28,
+  290,
+  "tion mechanism."
+ ],
+ [
+  28,
+  291,
+  "So with mining, each of these and each of these have an issue that solves, you know, maybe a solution that the previous to a problem the pre"
+ ],
+ [
+  28,
+  300,
+  "vious had and creates a problem for the next one to solve. So, mining solved fair distribution contrary to popular belief. Proof of work is "
+ ],
+ [
+  28,
+  309,
+  "not a consensus mechanism so much as a distribution mechanism. It was required for more efficient consensus mechanisms like proof of stake t"
+ ],
+ [
+  28,
+  318,
+  "o come about. But in the process, it gave tokens to those people that actually deserved them because they were contributing to the network"
+ ],
+ [
+  28,
+  327,
+  "and it prevented people from with a fair launch, you know, without insider pre mines and allocations, prevented people from accumulating eno"
+ ],
+ [
+  28,
+  336,
+  "ugh of the market supply to, nuke the chart. On the downside, again, costly consensus mechanism and there wasn't automatically liquidity fro"
+ ],
+ [
+  28,
+  346,
+  "m mining for people to be able to buy. So we relied on centralized exchanges"
+ ],
+ [
+  28,
+  351,
+  "and market makers to subsidize these prices. Next in 2017 was ICOs. A big advantage of this was it allowed people to buy in to the projects "
+ ],
+ [
+  28,
+  362,
+  "they believed in and democratize the access to those deals, but it had a lot of issues. So in 2017, you could raise a $100,000,000 on an ide"
+ ],
+ [
+  28,
+  373,
+  "a and no product. So there were a lot of rugs and people were raising that much or more."
+ ],
+ [
+  28,
+  380,
+  "And one of the issues there is they didn't actually have a reputation at stake, so they had nothing to lose. They could just say, we're buil"
+ ],
+ [
+  28,
+  388,
+  "ding the second version of the Internet and then never ship a product. And that happened many times. But from the user side and investor sid"
+ ],
+ [
+  28,
+  396,
+  "e, it made sense because you could basically guarantee yourself a 10 or a 100 x just by buying the ICO early and then selling it later to re"
+ ],
+ [
+  28,
+  405,
+  "tail."
+ ],
+ [
+  28,
+  405,
+  "Again, no price discovery because VCs were funding in the background, setting the prices and the, liquidity was not enough for people to act"
+ ],
+ [
+  28,
+  416,
+  "ually exit. And so we saw this chart pattern all the way up, all the way down. And again, centralized exchanges and market makers still requ"
+ ],
+ [
+  28,
+  427,
+  "ired to subsidize"
+ ],
+ [
+  28,
+  428,
+  "investor exits. Then we got to 2020, 2021 with airdrops. The meta was free money. It was like you're getting these tokens for free, and it w"
+ ],
+ [
+  28,
+  437,
+  "as a really great way for users or teams to not only bootstrap their funding, but to bootstrap their user base. And, it allowed them to rais"
+ ],
+ [
+  28,
+  446,
+  "e the capital they needed from VCs on the promise that they would be able to sell those tokens to users who would,"
+ ],
+ [
+  28,
+  454,
+  "be participating in the network. They could generate user interest again with those vanity metrics. But we learned that there is no free lun"
+ ],
+ [
+  28,
+  462,
+  "ch and we still had the low float high f d v problem. It ended up being even worse for retail because not only did you have v c's selling in"
+ ],
+ [
+  28,
+  471,
+  "to the market, you had airdrop farmers selling into the market and centralized exchanges market makers were still required."
+ ],
+ [
+  28,
+  478,
+  "Fast forward to 2025 where the meta was Launchpads, and some advantages here. This finally got rid of VCs and centralized exchanges for the "
+ ],
+ [
+  28,
+  488,
+  "most part. We also have some bootstrapping liquidity bootstrapping primitives out there in the market. But some of the major downsides of th"
+ ],
+ [
+  28,
+  498,
+  "e way that these launch pads are designed, they still don't structurally solve the existing problems. So bonding curve mechanics are one. Ba"
+ ],
+ [
+  28,
+  508,
+  "sically,"
+ ],
+ [
+  28,
+  509,
+  "during the auction process, people can sell the token back before it is fully discovered where they're basically jumping from $1 to $5 and t"
+ ],
+ [
+  28,
+  520,
+  "hen selling at 5 and dropping the price back down. So the market doesn't find a fair value for these tokens. Also, bonding curves allow team"
+ ],
+ [
+  28,
+  530,
+  "s to buy in early and then sell or,"
+ ],
+ [
+  28,
+  533,
+  "you know, accumulate large amounts of tokens the way that most of them are structured. And so it ends up being worse for retail than most of"
+ ],
+ [
+  28,
+  542,
+  " the other incumbent solutions. Furthermore, Launchpads have an issue of white listing where they're alternately a utility token Launchpad w"
+ ],
+ [
+  28,
+  551,
+  "ith, a limited number of projects allowed to launch on them or they're a MemeCoin Launchpad where anybody's allowed to launch. You just can'"
+ ],
+ [
+  28,
+  560,
+  "t launch anything valuable and raise funds for it. So,"
+ ],
+ [
+  28,
+  564,
+  "price discovery is hampered and in most launch pads, there's still not enough liquidity for investor exits. So to recap this quickly, we hav"
+ ],
+ [
+  28,
+  574,
+  "e a capital raising problem in crypto. VCs aren't funding novel primitives. They are largely venture followers, not venture capitalists. The"
+ ],
+ [
+  28,
+  585,
+  "y're also only writing checks above 500 k."
+ ],
+ [
+  28,
+  588,
+  "The And the problem for builders is that you have to spend six months talking to a VC just to get some capital and it's not guaranteed and t"
+ ],
+ [
+  28,
+  597,
+  "hat's time that you could be building. Grants are also really strained right now. The EF closed open grants in 2025. A lot of l twos are sun"
+ ],
+ [
+  28,
+  606,
+  "setting right now and those are some of the primary venues for getting grants for builders, but even in those cases, the average grant size "
+ ],
+ [
+  28,
+  615,
+  "is too small for builders to reasonably"
+ ],
+ [
+  28,
+  617,
+  "get to market with a solid even a solid MVP and all of the background operations that they need to do. And then on chain, we have crowdfundi"
+ ],
+ [
+  28,
+  627,
+  "ng platforms like Gitcoin that are designed for altruistic, donors. And the problem with socialism is you eventually run out of other people"
+ ],
+ [
+  28,
+  637,
+  "'s money. The problem with altruism is you eventually run out of your own money because there's no economic flywheel that would pay you back"
+ ],
+ [
+  28,
+  647,
+  " in order to get,"
+ ],
+ [
+  28,
+  648,
+  "recoup some costs and get, rewarded for the risk that you're taking. And as we mentioned, Launchpads are generally extractive and have this "
+ ],
+ [
+  28,
+  657,
+  "problem where they're alternately for meme coins or for a small subset of utility tokens. There has to be a better way. And that better way "
+ ],
+ [
+  28,
+  667,
+  "solves these two problems that we mentioned at the beginning, so culturally"
+ ],
+ [
+  28,
+  672,
+  "and, systemically. So the first is getting cypherpunk builders the capital that they need in the bear market so that they can be one of thos"
+ ],
+ [
+  28,
+  682,
+  "e applications that makes it to the next cycle. The second is what Ethereum is doing a great job at is amplifying cypherpunk voices. So crop"
+ ],
+ [
+  28,
+  692,
+  "s, censorship resistance, open source, privacy, and security is the official"
+ ],
+ [
+  28,
+  698,
+  "Ethereum mandate. This is, kind of a rallying cry to the cypherpunks to, start to orient their applications around these value propositions "
+ ],
+ [
+  28,
+  708,
+  "that are why we came here in the first place. And the the third point that I would make is that, we want to have fun as well. Like crypto us"
+ ],
+ [
+  28,
+  718,
+  "ed to be a lot of fun, and in the bear market, we sometimes lose that. And so culturally,"
+ ],
+ [
+  28,
+  725,
+  "we want these things to be in place so that we can solve that part of the problem. On the other side, we have fundamentals and that involves"
+ ],
+ [
+  28,
+  734,
+  " fixing the market structure and all of the issues that I've just described. Moving from low float high FDV to full float fair FDV. And I'll"
+ ],
+ [
+  28,
+  744,
+  " talk about how we do that next. The second is capping insider allocations so that they never exceed liquidity."
+ ],
+ [
+  28,
+  751,
+  "That is, one of the unsolved problems of existing token distribution mechanisms and the main thing that structurally will solve this problem"
+ ],
+ [
+  28,
+  761,
+  ". And the third is, giving builders sustainable economic primitives. So teaching builders what kinds of things they can use to actually boot"
+ ],
+ [
+  28,
+  771,
+  "strap an economy and build something that is valuable and not just useful."
+ ],
+ [
+  28,
+  776,
+  "So we do that by with three main value propositions. One is ungated Launchpad. So the primary thing the primary issue here that we're solvin"
+ ],
+ [
+  28,
+  787,
+  "g is the vetting problem. I'll talk about how we do that in a moment. Second is price discovery, getting a fair market value for these token"
+ ],
+ [
+  28,
+  797,
+  "s. And the third is locked liquidity."
+ ],
+ [
+  28,
+  800,
+  "So how it works at a high level? First, in a punk auction. So this is for punk.fun, our new launch pad. We go to market in two months. So th"
+ ],
+ [
+  28,
+  810,
+  "e first step is you set up an auction, you deposit tokens. You are able to attach project x account and an e n s optionally too. So that if "
+ ],
+ [
+  28,
+  821,
+  "you see that such and such.eth is launching a token and Vitalik follows the project on Twitter, then you know it's a pretty good reasonable,"
+ ],
+ [
+  28,
+  831,
+  "reputation at stake going back to the problem of ICOs. Second step is an auction is announced at least a week in advance so that people have"
+ ],
+ [
+  28,
+  841,
+  " time to due diligence on what token they're buying. And then we have a price discovery system. So this is a view, let's say halfway through"
+ ],
+ [
+  28,
+  852,
+  " an auction. So sneak peek at our fun UI. So an auction starts in the bottom left corner with a small block of tokens. So we sell tokens in "
+ ],
+ [
+  28,
+  862,
+  "batches"
+ ],
+ [
+  28,
+  863,
+  "or tokens are auctioned off in batches, starting with a small number of basis points at a low price. So for example, let's say 10 basis poin"
+ ],
+ [
+  28,
+  873,
+  "ts in the bottom left are sold for 10¢ a token raised entirely in ETH. When that batch sells out, the price and size of the next batch doubl"
+ ],
+ [
+  28,
+  883,
+  "es. So the initial batches are likely to sell out pretty quickly because they're set at a low, low price relative to the expected fully dilu"
+ ],
+ [
+  28,
+  892,
+  "ted value."
+ ],
+ [
+  28,
+  893,
+  "And, let's say on the third one there, the price goes up from 10 at 10 to 20 at 20 and, 40 basis points for 40¢ a token. It starts high and "
+ ],
+ [
+  28,
+  905,
+  "as soon as the batch stops selling out or tokens stop selling out, it starts to decay exponentially in price but not size."
+ ],
+ [
+  28,
+  916,
+  "So the wick on the top of the third block there indicates that it decayed from, on a log scale, somewhere a 40¢ starting price down to let's"
+ ],
+ [
+  28,
+  927,
+  " say 15, halfway between the first two. And then when it's sold out, users get the clearing price. So the, people who bid on them will get t"
+ ],
+ [
+  28,
+  939,
+  "hose tokens at 15¢"
+ ],
+ [
+  28,
+  940,
+  "and then the price doubles again to, 30¢ and this time for, 80 basis points of token supply. And then the price the, auction continues. So i"
+ ],
+ [
+  28,
+  950,
+  "t goes all the way through like this and at the end of the auction, this pink through line on the screen indicates the weighted average pric"
+ ],
+ [
+  28,
+  961,
+  "e raised for each,"
+ ],
+ [
+  28,
+  962,
+  "for all of the tokens. And at the end of the auction, half of the tokens deposited are paired with half of the funds raised and pushed to a "
+ ],
+ [
+  28,
+  972,
+  "locked liquidity position on Uniswap v two for secondary market price discovery. So users, bidders get the tokens that they bid on. Teams ge"
+ ],
+ [
+  28,
+  982,
+  "t half the funds, the Punk platform,"
+ ],
+ [
+  28,
+  985,
+  "and token holders get, 5% of the funds raised and, tokens launched. And the, liquidity pool, starts to do secondary market discovery because"
+ ],
+ [
+  28,
+  996,
+  " it's got a deeply liquid supply much greater than any insider allocation because we also cap the insider allocation at the beginning at 10%"
+ ],
+ [
+  28,
+  1008,
+  "."
+ ],
+ [
+  28,
+  1008,
+  "So teams can only get 10% of the tokens if they want to be a true gold tier punk auction. So we have a split UI for the punk platform. We've"
+ ],
+ [
+  28,
+  1019,
+  " got Punk for utility tokens and fun for meme coins. They have different parameters but they use the same mechanism and contracts. We're goi"
+ ],
+ [
+  28,
+  1030,
+  "ng to market with fun first"
+ ],
+ [
+  28,
+  1032,
+  "and we have, we will find the ways that people can extract and do an unfair launch by looking at the data from fun and we hard code the para"
+ ],
+ [
+  28,
+  1042,
+  "meters two months later into punk when we let that side of the UI go live. So we are, you can see here 95% of the liquidity for the meme coi"
+ ],
+ [
+  28,
+  1053,
+  "ns goes directly"
+ ],
+ [
+  28,
+  1054,
+  "to the, liquidity pool in fun. And so people using this are able to trade and know that the meme coin isn't just gonna be rugged afterward, "
+ ],
+ [
+  28,
+  1065,
+  "in the same way that they all do. They have an opportunity to trade the tokens back in the pool or let the pool do price discovery itself. S"
+ ],
+ [
+  28,
+  1076,
+  "o a few value props here, to wrap this up. So we've got fair access."
+ ],
+ [
+  28,
+  1081,
+  "We solve the vetting problem by attaching reputation to a launch and give people ample time to actually look at the tokens and see how they "
+ ],
+ [
+  28,
+  1092,
+  "want to participate in the auction. Transparent parameters, everything is on chain, save the description, logo, and the, optional connection"
+ ],
+ [
+  28,
+  1102,
+  " to an x account for the project."
+ ],
+ [
+  28,
+  1105,
+  "The insider allocation is capped at 10% on punk, 5% on fun, and the price discovery, those are coded parameters, hard coded into the contrac"
+ ],
+ [
+  28,
+  1115,
+  "t. And then the price discovery happens through this process that doesn't allow people to sell the tokens back halfway through the auction. "
+ ],
+ [
+  28,
+  1125,
+  "So price discovery actually happens"
+ ],
+ [
+  28,
+  1127,
+  "in a in a way that discovers the fair price by anyone's standard by the end of the auction. There's no custody of funds except for the spin "
+ ],
+ [
+  28,
+  1138,
+  "out contracts. We have a factory that generates all of these auctions, and we don't control the auctions. Once they're live, they're going, "
+ ],
+ [
+  28,
+  1148,
+  "and we have no way to stop them. The,"
+ ],
+ [
+  28,
+  1151,
+  "contracts themselves don't hold TVL outside of the auction and our addresses. The factory contract will not hold funds. So, we mitigate the "
+ ],
+ [
+  28,
+  1162,
+  "honeypot problem. Again, full float, fair FDV, through the auction mechanism and, preventing rugs through all of the mechanisms that we just"
+ ],
+ [
+  28,
+  1173,
+  " talked about. So this unlocks a few things. One, it solves the supply side of tokenomics entirely on chain."
+ ],
+ [
+  28,
+  1181,
+  "The, cypherpunks are actually getting funded outside of grants presumably through investors who believe in what they're building. And our be"
+ ],
+ [
+  28,
+  1191,
+  "t is that builders are gonna do a lot better of a job than VCs at finding the primitives that really need to exist that are serving the mark"
+ ],
+ [
+  28,
+  1200,
+  "et. Furthermore, we are privacy first in the sense that anons can preserve their reputations without doxing to VCs. This is a common issue t"
+ ],
+ [
+  28,
+  1210,
+  "hat we've heard at Token Dynamics"
+ ],
+ [
+  28,
+  1212,
+  "and in building this product that, that Anand's face is that they don't want to docs themselves just to leverage their reputation. Agents ar"
+ ],
+ [
+  28,
+  1223,
+  "e a novel, new target market. We have, you know, agents can't KYC. And so they need somewhere that actually allows them to launch things on "
+ ],
+ [
+  28,
+  1235,
+  "chain."
+ ],
+ [
+  28,
+  1235,
+  "And then finally, this gets rid of VCs, market makers, and centralized exchanges for these projects forever. This forces price discovery to "
+ ],
+ [
+  28,
+  1246,
+  "happen on chain rather than off chain, and that solves many of the cultural problems that we talked about at the beginning. So I'll open it "
+ ],
+ [
+  28,
+  1257,
+  "up here for questions if anyone has them, and thank you guys for coming to the talk."
+ ],
+ [
+  28,
+  1263,
+  "Yes, in the back. Hi. Thanks for the great talk. I have a question, or maybe like I, how does this compare to the Uniswap auction that they "
+ ],
+ [
+  28,
+  1274,
+  "released with, you know, the ASTHAC token and so on? So could you comment on that? Thanks. Yes. Let's say one is one is branding, right? Cer"
+ ],
+ [
+  28,
+  1285,
+  "tainly, Uniswap"
+ ],
+ [
+  28,
+  1286,
+  "might be in the category of immutable primitives that we want to see launched on Punk, but Uniswap CCA itself is white list only right now. "
+ ],
+ [
+  28,
+  1294,
+  "And so that doesn't allow for the vast majority of projects that need to get to market to actually do that. So that would be the primary, bu"
+ ],
+ [
+  28,
+  1302,
+  "t we also have some slight differences in our mechanisms that I would defer to mechanism design"
+ ],
+ [
+  28,
+  1308,
+  "cofounder. But, yeah, happy to talk about that after. And he's in the room here, so we can we can chat about that. Yeah. Great talk. Thank y"
+ ],
+ [
+  28,
+  1327,
+  "ou. Did I hear, like, Uniswap v two? Or how"
+ ],
+ [
+  28,
+  1333,
+  "come? Why? Great question. Okay. So, with that pink through line that we saw on the UI, that is the weighted average price and if we push to"
+ ],
+ [
+  28,
+  1342,
+  " that in a v three position for example, then we would have, a guaranteed exit for anybody that bought below that price. And game theoretica"
+ ],
+ [
+  28,
+  1351,
+  "lly, we think that's undesirable because we don't want people to just be buying so that they can sell it later. Whereas, if you're buying at"
+ ],
+ [
+  28,
+  1360,
+  " a price that you specify by placing a bid for an allocation in ETH, then you're presumably interested in getting the token at that price be"
+ ],
+ [
+  28,
+  1368,
+  "cause you think it's fair."
+ ],
+ [
+  28,
+  1370,
+  "So it's mostly about the game theory of, the locked liquidity position. Hey. Would this apply to all stages of a project? So for instance, a"
+ ],
+ [
+  28,
+  1387,
+  " project that just started, could they"
+ ],
+ [
+  28,
+  1392,
+  "could they could they just launch their own token, or would this be better for, say, like, a series a project that already have, like, estab"
+ ],
+ [
+  28,
+  1399,
+  "lished committee? I guess I'm thinking more like Hyperliquids AirDrop and how successful it was in building a community and getting people i"
+ ],
+ [
+  28,
+  1406,
+  "nvolved. And I'm just wondering, like, does this apply to all projects, I guess? Yeah. Well, Hyper Liquid and I forget the numbers exactly. "
+ ],
+ [
+  28,
+  1413,
+  "It's a great question. Hyper Liquid had a deep source of funding to bootstrap the platform"
+ ],
+ [
+  28,
+  1418,
+  "where most builders that we expect to launch on this won't. So I would say we're ideal for anyone with below a 10% allocation, to insiders. "
+ ],
+ [
+  28,
+  1429,
+  "But by Series you know, much more than that is usually sold to investors. So, I would say the earlier, the better, but at least have an MVP."
+ ],
+ [
+  28,
+  1439,
+  " And so that makes this a really good kind of project for hackathon winners and people that are looking to take their side projects to marke"
+ ],
+ [
+  28,
+  1450,
+  "t."
+ ],
+ [
+  28,
+  1450,
+  "Yeah, we serve two groups of people. We're targeting, cypherpunks obviously and the mid market, which are those group of people that would n"
+ ],
+ [
+  28,
+  1464,
+  "ormally go to grants and to VCs, but for the reasons in talk, can't do that because it's just not practical for either party. I just a logo."
+ ],
+ [
+  28,
+  1479,
+  "Yeah. MVC, minimum viable community. Alright. Thank you, guys. I'll be around after."
  ]
 ]
