@@ -19910,6 +19910,946 @@
   "No? Okay. In that case, let's give him another round of applause, please."
  ],
  [
+  27,
+  12,
+  "Alright. Hello, everyone. Thank you for coming to my talk. My name is Eric, and today I'm gonna talk about ownership, custody, and going bey"
+ ],
+ [
+  27,
+  21,
+  "ond tokenization. So, a brief introduction. My name is Eric Marti Haynes, tokenization tech lead at Nevermind. Most people know Nevermind fr"
+ ],
+ [
+  27,
+  31,
+  "om the Ethereum client, also our auditing work,"
+ ],
+ [
+  27,
+  34,
+  "but I'm part of our DeFi and enterprise team. We work together with DeFi protocols, startups, institutions, banks, and we basically help the"
+ ],
+ [
+  27,
+  44,
+  "m, develop protocols, infrastructure to be able to get on chain and interact with, smart contracts, DeFi, this sort of thing. So the first t"
+ ],
+ [
+  27,
+  53,
+  "hing I'd like to get out of the way is that, real world asset token"
+ ],
+ [
+  27,
+  58,
+  "does not necessarily equal ownership over the underlying asset. This is a big problem with big implications. We're going to see, what effect"
+ ],
+ [
+  27,
+  70,
+  "s it causes and also what we can do about it. So let's start with ownership. So most tokenized assets nowadays are actually more like real w"
+ ],
+ [
+  27,
+  82,
+  "orld receipts than real world assets."
+ ],
+ [
+  27,
+  85,
+  "This is because the ownership is determined by a centralized registry, which is off chain, rather than the token representation, which we ha"
+ ],
+ [
+  27,
+  94,
+  "ve on chain on a blockchain like Ethereum or some other blockchain, for example. And this basically means that token transfers, on the block"
+ ],
+ [
+  27,
+  104,
+  "chain do not necessarily represent a legal transfer of ownership. And in the case of a legal dispute or something like this, then centralize"
+ ],
+ [
+  27,
+  113,
+  "d intervention may may be required and it can lead to all sorts of issues."
+ ],
+ [
+  27,
+  118,
+  "This is because, how most tokenized assets nowadays are set up, especially when excluding stablecoins. Most of this talk is kind of focused "
+ ],
+ [
+  27,
+  128,
+  "on other types of real world assets, more like securities, let's say. Most of these assets are set up, with a legal wrapper in place, which "
+ ],
+ [
+  27,
+  138,
+  "can be an SPV, a special purpose vehicle, or a trust. And so they kinda create this wrapper layer around the security itself,"
+ ],
+ [
+  27,
+  147,
+  "and the the tokens represent shares in this SPV or rights in the trust rather than the underlying asset. And this means that token owners, h"
+ ],
+ [
+  27,
+  157,
+  "ave contractual rights through the legal wrapper, but they don't have proprietary rights, to the underlying asset directly. And so, somethin"
+ ],
+ [
+  27,
+  168,
+  "g goes wrong, they can't necessarily claim it, as theirs."
+ ],
+ [
+  27,
+  172,
+  "Having this difference between, both on chain and off chain registrars also means, we have to deal with, alignment, for example. So, in orde"
+ ],
+ [
+  27,
+  182,
+  "r to keep both of these ledgers aligned, often transfer restrictions need to be put on the blockchain in order to match the logic of, what h"
+ ],
+ [
+  27,
+  192,
+  "appens off chain in the centralized world."
+ ],
+ [
+  27,
+  195,
+  "This usually means identity checks like KYC and AML. It means, making sure investors meet eligibility criteria, like, for example, being an "
+ ],
+ [
+  27,
+  204,
+  "accredited professional corporate investor, etcetera. It can mean jurisdictional blocks, so making sure, certain recipients aren't sanctione"
+ ],
+ [
+  27,
+  214,
+  "d or on the OFAC list or something like this."
+ ],
+ [
+  27,
+  217,
+  "And, also, it can mean strict schedules and lockups. Right? Some, securities can only be traded during certain periods or they might be lock"
+ ],
+ [
+  27,
+  227,
+  "ed up for some period of time, this sort of thing. We then also have the issue of reconciliation. So if there's any issue, between these two"
+ ],
+ [
+  27,
+  237,
+  " ledgers, they have to be reconciled. And, it it can be caused by timing and settlement mismatches between, how these"
+ ],
+ [
+  27,
+  245,
+  "registers operate. Human error is also a pretty big risk, and even if it does not happen often, it can happen. And if it happens, then fixin"
+ ],
+ [
+  27,
+  254,
+  "g discrepancies can be complex and time consuming. It can even involve having to, like, upgrade a smart contract, mint, tokens manually or s"
+ ],
+ [
+  27,
+  264,
+  "omething like pretty complex like this, which is is kind of ugly and we want to avoid, of course."
+ ],
+ [
+  27,
+  270,
+  "And, with transfers, it's improving, but as you can see, this, research report from Pantera, it's the state of tokenization from 2026. I'll "
+ ],
+ [
+  27,
+  279,
+  "be referencing it a bit in this talk because I found it quite relevant. It came out very recently. And they found about 38% of tokenized ass"
+ ],
+ [
+  27,
+  288,
+  "ets nowadays are actually have, like, a decent level of transferability,"
+ ],
+ [
+  27,
+  293,
+  "let's say, which for them is from one to five scoring them at least a three. So that is quite low for a feature that we would consider quite"
+ ],
+ [
+  27,
+  303,
+  " basic in the blockchain space, which is transferring a token. And, this sort of, mismatch between like the on chain and off chain can lead "
+ ],
+ [
+  27,
+  312,
+  "to different points of failure. So, I'm gonna mention a few. This is not, including"
+ ],
+ [
+  27,
+  318,
+  "everything that can happen. One thing that can happen is ghost assets. So, if you have, tokens on chain but, something happens to the underl"
+ ],
+ [
+  27,
+  326,
+  "ying, they can become unbacked. Right? If the underlying is sold, moved, or altered, something like this. Here, I have an example from tradi"
+ ],
+ [
+  27,
+  334,
+  "tional finance, which is that JPMorgan had over a million dollars of, nickel stored in a warehouse, and then they found out this nickel was "
+ ],
+ [
+  27,
+  342,
+  "actually bags of rocks."
+ ],
+ [
+  27,
+  343,
+  "And, you know, it's like very simple example, not related to tokenization in this case, but it can show kind of, how the underlying, can dis"
+ ],
+ [
+  27,
+  353,
+  "appear and it can then impact, the asset representing it. We also have admin control. So this is something we already see with, like, curren"
+ ],
+ [
+  27,
+  362,
+  "t stable coins like USDC, Tether, etcetera, or to comply with KYC and AML regulations"
+ ],
+ [
+  27,
+  368,
+  "or, also if law enforcement dictates it, then, they can basically use their admin keys to freeze or even, like, clawback tokens in in some c"
+ ],
+ [
+  27,
+  376,
+  "ases. There's also the risk of, drag on liquidations. So, basically, if something happens to, some underlying asset and there's some liquida"
+ ],
+ [
+  27,
+  385,
+  "tion that has to be enforced off chain, this can take a long time and it can kind of mess with redemptions. It can even be paused or halted,"
+ ],
+ [
+  27,
+  393,
+  " and then it can take a long time for, like, legal disputes to resolve and this kind of thing. This is something that happened with MakerDAO"
+ ],
+ [
+  27,
+  402,
+  " a few years back."
+ ],
+ [
+  27,
+  403,
+  "They had a specific pool where some, private credit, tokenized asset that was backing the pool, defaulted, And, these liquidations off chain"
+ ],
+ [
+  27,
+  412,
+  " took some time and, depositors in the pool actually, could not redeem, like, directly and had to wait, like, for a long period for it to ge"
+ ],
+ [
+  27,
+  420,
+  "t resolved. And then finally, we have kind of the biggest risk, which is the bankruptcy risk."
+ ],
+ [
+  27,
+  426,
+  "If this SPV that is, kind of wrapping the securities, goes bankrupt or the company behind it, in theory, it should be protected, but it's so"
+ ],
+ [
+  27,
+  435,
+  "mething that's been kind of untested and it's unclear how certain judges might treat it and, if they might kind of, give investors the right"
+ ],
+ [
+  27,
+  444,
+  " to claim the assets directly. Right? This is And and otherwise, they could become unsecured creditors. This is something we've seen, with C"
+ ],
+ [
+  27,
+  453,
+  "elsius."
+ ],
+ [
+  27,
+  453,
+  "Again, not an example, related to tokenized assets, but in this case, the users were determined not to have rights under the assets that the"
+ ],
+ [
+  27,
+  462,
+  " company had left themselves. And so they just became unsecured creditors and had to face, like, whatever resolution, the bankruptcy procedu"
+ ],
+ [
+  27,
+  470,
+  "re granted them. So, now let's talk about custody, how it relates to ownership, how it relates to DeFi, and kinda how it all fits together."
+ ],
+ [
+  27,
+  479,
+  "So we have this concept, with tokenized assets of primary versus secondary markets. The primary market would be the primary issuance and, re"
+ ],
+ [
+  27,
+  487,
+  "demption. And a lot of tokenized assets lack utility outside of this, subscription and redemption cycle. Right? The secondary market would b"
+ ],
+ [
+  27,
+  496,
+  "e anything else that happens in between. Right? So after I subscribe and I obtain an asset, maybe I want to trade it or I want take a loan a"
+ ],
+ [
+  27,
+  504,
+  "gainst it, something like this. That would be the secondary market."
+ ],
+ [
+  27,
+  508,
+  "And, many projects aim to be composable with DeFi and integrate with it or other protocols. That's kind of one of the goals of tokenization "
+ ],
+ [
+  27,
+  517,
+  "being on this composable layer. But few of these projects are there today. And even for those that are and do have some integrations, they'r"
+ ],
+ [
+  27,
+  526,
+  "e usually quite restricted, quite limited, and maybe only, interacting with, like, a a few small number of protocols."
+ ],
+ [
+  27,
+  533,
+  "And here again, we have from the Pantera report, they found that only 12% of tokenized assets, have what can be considered a decent level of"
+ ],
+ [
+  27,
+  542,
+  ", DeFi composability. Right? This is quite low, and I think this is including, like, stablecoins as well. So you can imagine the situation i"
+ ],
+ [
+  27,
+  550,
+  "s is not great in this regard. You can't do much with with assets, tokenized assets on chain nowadays except holding them."
+ ],
+ [
+  27,
+  558,
+  "And, this DeFi integration, like like, why it happens is basically, one of the main reasons is because there's this composability friction. "
+ ],
+ [
+  27,
+  567,
+  "Right? Securities and other types of, tokenized assets, have various restrictions like we've explored partially because of this kind of a du"
+ ],
+ [
+  27,
+  576,
+  "al ledger system. And, these don't play nicely, with DeFi. So some some examples are what happens when a real world asset is deposited into "
+ ],
+ [
+  27,
+  585,
+  "a lending protocol or a liquidity pool. So the protocol on SANE holds the receipt, which is fine. Like, we're we're used to that in DeFi."
+ ],
+ [
+  27,
+  594,
+  "But who holds the legal right once this process has happened? Well, it depends. It's, it's not really clear. It's kind of a gray area right "
+ ],
+ [
+  27,
+  604,
+  "now, and it's very, case by case basis. So we're gonna look at a few cases. One of these is Aave Horizon. Aave Horizon is basically a fork o"
+ ],
+ [
+  27,
+  614,
+  "f of every three that is specifically set up for, tokenized funds, in this case, like, money markets and this sort of asset."
+ ],
+ [
+  27,
+  623,
+  "It's based on AAVE v three. So I'm just gonna quickly refresh it for, I assume most of you are familiar with it, but there are some details "
+ ],
+ [
+  27,
+  632,
+  "that are relevant. Lenders supply assets to earn interest on Aave. Very importantly, here, they receive tradable A tokens that represent the"
+ ],
+ [
+  27,
+  640,
+  "ir position. So in the traditional Aave system, basically, they lose ownership of their tokens, but they receive A tokens in return, and the"
+ ],
+ [
+  27,
+  649,
+  "n they can do whatever they want with these. Right?"
+ ],
+ [
+  27,
+  652,
+  "Borrowers provide collateral in order to take out loans. And if a borrower's collateral drops below a required threshold, then liquidations "
+ ],
+ [
+  27,
+  661,
+  "automatically, when someone triggers it, it, like, sells that collateral, and the debt is automatically, repaid. So Aave Horizon works a bit"
+ ],
+ [
+  27,
+  670,
+  " differently. It's, permission for borrowers borrowers."
+ ],
+ [
+  27,
+  674,
+  "Sorry. So borrowers have to be, allow listed beforehand, basically, and KYC, etcetera. But lenders are permissionless. So anyone can go and "
+ ],
+ [
+  27,
+  685,
+  "lend stablecoins, in this case, mainly, to these borrowers. It also has some limitations, compared to v three. In this case, eight tokens ar"
+ ],
+ [
+  27,
+  696,
+  "e replaced with RWA"
+ ],
+ [
+  27,
+  697,
+  "a tokens, which are similar, but they are restricted. And, also, liquidations are also constrained in certain ways. But, basically, the main"
+ ],
+ [
+  27,
+  705,
+  " idea compared to Aave v three is that ownership here, is retained by investors when they deposit. Even when they deposit into this protocol"
+ ],
+ [
+  27,
+  713,
+  ", legally, they still own the token that has been deposited there, and the protocol does not own it. With the exception of liquidations, whe"
+ ],
+ [
+  27,
+  721,
+  "n a liquidation happens, the ownership is transferred to the liquidator."
+ ],
+ [
+  27,
+  725,
+  "And, kinda because of these legal concepts, we have all these changes, respective to AVI three where, each token issuer still enforces asset"
+ ],
+ [
+  27,
+  735,
+  " specific rules and restrictions. So if there was some restriction on trading certain hours or only certain people can hold a token, that st"
+ ],
+ [
+  27,
+  746,
+  "ill applies when integrating with Horizon. RWA"
+ ],
+ [
+  27,
+  749,
+  "tokens are considered extensions of the, like, security tokens themselves. And this basically means they cannot be transferred, they cannot "
+ ],
+ [
+  27,
+  758,
+  "be borrowed, and they cannot be flash borrowed. They're just basically signaling the amount that you've deposited in the protocol, but they "
+ ],
+ [
+  27,
+  767,
+  "don't do anything else. And, only the security tokens, the RWA tokens,"
+ ],
+ [
+  27,
+  771,
+  "can be liquidated. In regular AVV three, you can liquidate someone and just take their a tokens, which in this case would be the RWA a token"
+ ],
+ [
+  27,
+  780,
+  "s. This can't be done here. So you get the underlying directly. You can't just, like, claim a user's position, let's say. And finally, liqui"
+ ],
+ [
+  27,
+  788,
+  "dations are restricted only to allow listed users, which are basically the borrowers and, any other address that,"
+ ],
+ [
+  27,
+  795,
+  "the curator, let's say, in this case, the DAO would would allow, which could be like some AVE addresses themselves, basically, that are will"
+ ],
+ [
+  27,
+  804,
+  "ing to carry out this role, and they've been again like KYC, etcetera. We can take a look at a different example, which is XDOCS. XDOCS work"
+ ],
+ [
+  27,
+  814,
+  "s quite differently because it allows permissionless transfers in this case. So it doesn't have,"
+ ],
+ [
+  27,
+  820,
+  "many of these restrictions that, protocols integrating with, Aave Horizon have. So they're actually recognized under the Swiss distributed l"
+ ],
+ [
+  27,
+  828,
+  "edger technology act, and that basically means that they're digital tokens that track the exact price of traditional stocks from, like, The "
+ ],
+ [
+  27,
+  836,
+  "US stock market, etcetera. And, they're set up as tokenized corporate debt using tracker certificates,"
+ ],
+ [
+  27,
+  842,
+  "and these are issued, under the Swiss law. They're not actual equity, but they're backed one to one by real shares held by a regulated custo"
+ ],
+ [
+  27,
+  851,
+  "dian. And in the primary issuance, only verified institutions are allowed to mint or redeem these tokens. But, these tokens are standard and"
+ ],
+ [
+  27,
+  859,
+  " permissionless, so it means that they can be traded twenty four seven and used in DeFi once outside of this, primary issuance."
+ ],
+ [
+  27,
+  867,
+  "So if if I'm an allow listed user and I I I subscribe and I buy these, then I can go on Uniswap. I can create a pool and I can sell them to "
+ ],
+ [
+  27,
+  876,
+  "other people and other people can buy them without issue. So, it's kind of a bit of a hybrid model where, the primary issuance is permission"
+ ],
+ [
+  27,
+  885,
+  "ed but the secondary market is permissionless. And now I'd like to talk about where we go, beyond tokenization."
+ ],
+ [
+  27,
+  892,
+  "And to do that, we have to talk about, what a native token is. Right? And, there's a few different definitions. I'm gonna mention here again"
+ ],
+ [
+  27,
+  900,
+  " the Pantera report because, their definitions are based on a few different factors that they've measured. One of these is issuance of redem"
+ ],
+ [
+  27,
+  909,
+  "ption. Another one is transferability and settlement. And finally, the complexity and composability."
+ ],
+ [
+  27,
+  915,
+  "And so, they've ranked, a bunch of different assets based on this framework, and they've, come up with the following tiers of tokenization, "
+ ],
+ [
+  27,
+  924,
+  "let's say. Number one would be a wrapper, which is basically what we've been discussing at the beginning of this talk, where it's mostly rea"
+ ],
+ [
+  27,
+  932,
+  "l world receipt for something that is off chain. Then we have tier two, which would be a hybrid, sort of asset, which, has kind of some, lif"
+ ],
+ [
+  27,
+  941,
+  "e cycle and functionalities on chain,"
+ ],
+ [
+  27,
+  943,
+  "but the critical functions still remain off chain in some centralized registry. And then they describe native as an asset that is, kind of o"
+ ],
+ [
+  27,
+  953,
+  "n chain with most of its functionalities and its most important ones, but might still have some minimal, like, off chain dependencies. My de"
+ ],
+ [
+  27,
+  962,
+  "finition is a bit stricter, I would say. So I would say,"
+ ],
+ [
+  27,
+  966,
+  "a native token can be defined, by a lack, complete lack of off chain registry, and the on chain registry acts as the whole source of truth. "
+ ],
+ [
+  27,
+  976,
+  "It may be restricted and it may be permissioned, but any rules like this that are enforced, they're enforced programmatically on chain throu"
+ ],
+ [
+  27,
+  985,
+  "gh smart contracts, as well as any additional, like, instrument or, like, use case specific logic that this token might have. And this would"
+ ],
+ [
+  27,
+  995,
+  " be similar to what Pantera mentions as a, like, tier four asset. So it would be, like, one step after their tier three."
+ ],
+ [
+  27,
+  1003,
+  "And these native assets that kinda live completely unseen and don't have, like, an off chain counterpart, how how do we implement them? Righ"
+ ],
+ [
+  27,
+  1011,
+  "t? Well, we have a few ways of doing it. Currently, we're starting to see a few legal frameworks in different parts of the world, that allow"
+ ],
+ [
+  27,
+  1019,
+  " us to do this. They're usually kind of quite limited in some aspects, maybe only focused on specific types of assets, but it's quite intere"
+ ],
+ [
+  27,
+  1027,
+  "sting. So we have, the DLT Act in Switzerland, which I already kind of mentioned."
+ ],
+ [
+  27,
+  1032,
+  "Basically, ledger based securities, legally fuse the financial right to the digital token itself. We also have in Germany the EWPG, which ba"
+ ],
+ [
+  27,
+  1041,
+  "sically means for crypto securities, the certificate is an entry in a decentralized ledger, which is usually a blockchain. And in The US, we"
+ ],
+ [
+  27,
+  1050,
+  " have the Delaware general corporations law, which allows corporations to use distributed ledgers to administer their official corporate rec"
+ ],
+ [
+  27,
+  1060,
+  "ords."
+ ],
+ [
+  27,
+  1060,
+  "Though this one is still a bit problematic because they kinda have some debates with the SEC about kind of, who who who does what, and it ca"
+ ],
+ [
+  27,
+  1069,
+  "n't be used completely freely as intended, at least right now from from what I've seen. We also have some regulatory sandboxes. So, to be cl"
+ ],
+ [
+  27,
+  1078,
+  "ear, these are not permanent laws, but they kind of allow for temporary exemptions or experimentation"
+ ],
+ [
+  27,
+  1084,
+  "licenses, for certain protocols to to operate in a similar way to a legal the legal frameworks we've seen before. So in the EU, we have the "
+ ],
+ [
+  27,
+  1093,
+  "DLT pilot regime, which is a regulatory sandbox. It grants temporary exemptions from, these legacy rules we have, and so then institutions c"
+ ],
+ [
+  27,
+  1102,
+  "an build and operate, DLT trading and settlement infrastructures. And in The UK, we have the digital security sandbox,"
+ ],
+ [
+  27,
+  1110,
+  "which temporarily modifies existing UK rules. And similarly, it allows finance market infrastructures to use distributed ledger technologies"
+ ],
+ [
+  27,
+  1119,
+  " to natively issue, trade, and and settle, digital securities. And so you might be asking yourselves, like, what benefits do native tokens h"
+ ],
+ [
+  27,
+  1128,
+  "ave, right, over, like, tokenized assets that we're used to and familiar with seeing nowadays."
+ ],
+ [
+  27,
+  1134,
+  "And, there there is a bunch of benefits. Basically, with native issuance, we go beyond tokenization. The tokens themselves are the legal ass"
+ ],
+ [
+  27,
+  1142,
+  "et, and this unlocks a lot. Right? One of the things is no reconciliation. We only have one source of truth that is on chain, so we don't ha"
+ ],
+ [
+  27,
+  1150,
+  "ve to deal with going off chain, looking at the discrepancies, and figuring out, like, what went wrong. We just read what's on chain, and th"
+ ],
+ [
+  27,
+  1158,
+  "at's the source of truth."
+ ],
+ [
+  27,
+  1159,
+  "We also don't have this legal wrapper like an SPV or something like this that acts as an intermediary. And so, you know, these legal structu"
+ ],
+ [
+  27,
+  1167,
+  "res, usually, there's, like, some management fee or someone in the middle, like, taking on some some risk or or or some fee. Right? And so i"
+ ],
+ [
+  27,
+  1175,
+  "f we don't have this, we get rid of this, overhead, and it can become more efficient. We can also enable true atomic settlement,"
+ ],
+ [
+  27,
+  1183,
+  "whenever something happens on chain. We know, like, if we transfer a token to someone, you know, in Ethereum within twelve seconds, like the"
+ ],
+ [
+  27,
+  1191,
+  " next block, it gets confirmed. We know, okay, this token now belongs to someone else. We don't have to wait till, like, t plus one, t plus "
+ ],
+ [
+  27,
+  1199,
+  "two, to to like like we do in traditional finance. We also simplify corporate actions. So, basically, in the cases of securities, if there's"
+ ],
+ [
+  27,
+  1207,
+  ", like,"
+ ],
+ [
+  27,
+  1207,
+  "like, shareholder votes or there's dividends to be distributed, this can currently be quite messy through, like, SPVs and other structures, "
+ ],
+ [
+  27,
+  1215,
+  "whereas here, we can just build this logic on chain and have it work directly. And finally, the biggest one is the bankruptcy protection. Ri"
+ ],
+ [
+  27,
+  1224,
+  "ght? If I own a token in my wallet and this token legally represents a share, the issuer themselves."
+ ],
+ [
+  27,
+  1230,
+  "Right? I'm not scared that they will go bankrupt and then I will be like a a creditor or something like this. I I will still own my asset, w"
+ ],
+ [
+  27,
+  1239,
+  "hich is in my in my wallet. And, yeah, to conclude, we must continue. We've seen a lot of hype around tokenized assets. We've seen, like, TV"
+ ],
+ [
+  27,
+  1248,
+  "L and AUM, like, increase massively, but we haven't really seen, like, let's say, the complexity of these protocols improve that much."
+ ],
+ [
+  27,
+  1257,
+  "And, in my opinion, these tokenized assets should be evaluated should be evaluated based on how much they improve over the status quo that w"
+ ],
+ [
+  27,
+  1266,
+  "e have and not necessarily just whether they utilize, blockchain rails. They should be able to be effortlessly traded in real time across bo"
+ ],
+ [
+  27,
+  1274,
+  "rders. They should be easier and more efficient to manage. They should be resilient, and, they should be available to a larger set of invest"
+ ],
+ [
+  27,
+  1283,
+  "ors."
+ ],
+ [
+  27,
+  1283,
+  "So that's it. Thank you very much. I hope you learned something. And, yeah, I hope you found it interesting. Thank you. Anyone has questions"
+ ],
+ [
+  27,
+  1303,
+  "? Hi, thank you. Thanks for the presentation and introduction"
+ ],
+ [
+  27,
+  1311,
+  "into the broader topic of the RWAs. Can you elaborate a little bit the fragmentation problem? It means that there are like several issuers o"
+ ],
+ [
+  27,
+  1321,
+  "f the same stock bond, whatever kind of the r RWA, and and whether there are already ongoing activities to actually mitigate this. That that"
+ ],
+ [
+  27,
+  1330,
+  "'s something very interesting, and it's something that I've thought about before"
+ ],
+ [
+  27,
+  1336,
+  "because this is a very similar problem to what we I I think it was a bigger problem in the past, but it still happens, with when you have a "
+ ],
+ [
+  27,
+  1344,
+  "bridge to a new chain or different bridges and then you have, like, five versions of USDC on this chain. Right? And the the same can happen "
+ ],
+ [
+  27,
+  1353,
+  "with securities, right, or or any kind of RWA. If you have, like, different issuers that are issuing it, you might end up with five differen"
+ ],
+ [
+  27,
+  1361,
+  "t versions of, like, Nvidia stock or something like this. Right? And, you know, this fragmentation can have an impact on liquidity pools, le"
+ ],
+ [
+  27,
+  1370,
+  "nding markets, etcetera."
+ ],
+ [
+  27,
+  1371,
+  "I would say it's not a super simple problem to solve. I would say it's not a huge problem right now anyway because, like, you've seen, like,"
+ ],
+ [
+  27,
+  1379,
+  " integration with DeFi and transferability is not huge. So most of these assets are not running into this problem right now. But I do think "
+ ],
+ [
+  27,
+  1387,
+  "there will be some point where we will run more into it. And I think it's not as simple as just the kind of, unifying these assets under one"
+ ],
+ [
+  27,
+  1395,
+  " asset because, different issuers, if they're not like, native tokens,"
+ ],
+ [
+  27,
+  1399,
+  "can have actually like different risk layers depending on their legal setup and stuff. Right? So I think what could be interesting is, some "
+ ],
+ [
+  27,
+  1407,
+  "sort of unifying layer that at the same time allows to differentiate between these legal risks. And, depending who deposits, you know, maybe"
+ ],
+ [
+  27,
+  1415,
+  " I get a better rate for this asset because it's considered safer legally and, compared to some other assets, something like that. But, yeah"
+ ],
+ [
+  27,
+  1423,
+  ", I would say it's mostly an unsolved,"
+ ],
+ [
+  27,
+  1425,
+  "problem right now. So do to have you some sort of the aggregated derivatives that would be, like, used in the in the larger DeFi ecosystem a"
+ ],
+ [
+  27,
+  1440,
+  "nd not directed or the concrete issued issued papers? I think it could be one solution."
+ ],
+ [
+  27,
+  1450,
+  "Again, I'm not, like, super sure if it's the best approach. I think there have been similar approaches tried with stablecoins, right, to kin"
+ ],
+ [
+  27,
+  1458,
+  "da unify stablecoins under, one single one, and they haven't necessarily worked. It's maybe been more at a protocol layer where a certain pr"
+ ],
+ [
+  27,
+  1466,
+  "otocol decides to kind of aggregate everything under, let's say, their own stablecoin that that might be backed by a basket of different one"
+ ],
+ [
+  27,
+  1474,
+  "s, and they might have, like, different controls over different ones. But"
+ ],
+ [
+  27,
+  1478,
+  "Alright. Any other questions? Or all right. Thank you."
+ ],
+ [
   28,
   11,
   "Alright. Hey, guys. Thank you for coming. Really appreciate you guys all coming out, many of you after the hackathon. I know it's been a lon"
