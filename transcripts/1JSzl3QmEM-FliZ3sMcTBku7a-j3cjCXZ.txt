@@ -1,0 +1,145 @@
+# OpenSigner — Open-Source Self-Hostable Wallet Key Management
+
+Date: 
+Source video: OpenSigner — Open-Source Self-Hostable Wallet Key Management
+Drive: https://drive.google.com/file/d/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ/view
+Duration: 00:29:04
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:12] Hey, guys. Hi, everyone. So this is, Jaume. And today, I want to talk about, self hostable key management. This works for EVM chains, Solana chains, and other, you know, just any other curve that you'd want to implement. And, my desired outcome for the talk is that you learn
+
+[00:36] that, in browsers and in applications, hosting your own key management infrastructure comes with different trade offs. And, if you, will see us, with OpenSigner, we've tried to make one obstruction that works, for both. So yeah. So as it is right now, I'm sure you're all aware, with, key management infrastructure,
+
+[01:05] you either make it custodial to begin with. It has a super strong lock in. So once you, choose one of the vendors, you're basically never changed, because they host, the keys of your users and you're locked usually per life of your project. And, of course, you have to trust that the security boundaries and implementations of your
+
+[01:28] vendor are strong. So that's why we decided to create, OpenSigner. It's an open source MIT licensed, self hostable key management. The key advantage that it has is that you can audit, and it comes with a security boundary that works both for browsers
+
+[01:51] and applications. Another key, part of OpenSigner is that it doesn't lock you in with one specific, authentication provider. And that is really, really important because, well, I'm sure as I'm sure you all know, many vendors usually lock you in with, one first, you do the authentication,
+
+[02:16] and then you do the key management. So one user is one key in their in their, database. In OpenSigner, you bring your own authentication provider. And, as we've seen in some hacks, for instance, the Contigo app, hack, the authentication token that is issued from the auth provider,
+
+[02:38] if it's not treated carefully, can become a backdoor into recovering the keys of, your users. So OpenSigner, as I will explain, takes care of that edge case. These are the main, properties of OpenSigner. The most important here, as I already mentioned, self hostable, is that it's based on Shamir secret sharing.
+
+[03:04] So it takes a private key, doesn't really matter, the kind of curve that this private key was derived from, and it splits it in three different shares. And each of the shares, is exposed in a specific security boundary, and the whole key is reconstructed only in one place once you use it and then it's flushed. I will go over this, in more detail now.
+
+[03:30] So in order to sign a specific message, you must reconstruct the key. So as I mentioned, the private key is always split in three different shares, and it needs a quorum of two in order to be reconstructed. An important property here is that two different derivations of the same key cannot be combined.
+
+[03:55] So every time that you do a new split of the private key, you get a new set of shares that cannot be, used in previous, derivations of the shares. So these are the three shares that we have with OpenSigner. There is the device share. This is the one that lives and can be stored in the local storage or whatever's, permanent storage that you have in the user's device.
+
+[04:22] It can be, deleted, and that doesn't include and that doesn't incur in a loss of the, private key of the user. Then you have the hot share. This share is, used in combination. I will go over this, in the next slide, but just for you to have, like, an overall idea. Hot share is fetched every time the user needs to use this, their their wallet. And the cold share is only used,
+
+[04:48] when the user logs in into a new device to derive a new set of, shares for their wallet. So this is the the whole flow. I will go over it, from, the right from your right side, to the left. So I just presented that you have the three different shares. You have the cache,
+
+[05:11] which is the device share, then you have the hot share, and the cold share. So for a completely new user, what you do is that you spin out a, a security boundary that is limited by an iframe that is, locked to a specific domain that you trust. So in this specific iframe that you trust, you
+
+[05:34] generate this new private key and you split it in three different shares. Then you take two of these shares and one you send it into the cold storage and the other one you send it into the hot storage. One key insight here is that, and and I will explain this in the next slide, but you cannot simply just share the the
+
+[05:57] the, what is the recovery share, the cold share, and send it onto the browser because then you, you have to be careful on who controls the servers where each of the shares are stored. Because if it's the same entity, controls the hot share and the cold share, they could, in theory, reconstruct your key, and then it's a custodial setup.
+
+[06:20] So let me go over what are some of the methodologies that we created in order to secure the, call share to make sure that, you know, the operator of this service can never reconstruct the full key without the user being in the loop. Meaning that the user either has to provide some sort of entropy that they provide
+
+[06:44] by, a password or by, using the PRF extension in passkeys, so to derive a key that encrypts the call share, or another methodology that we created, which is what we call automatic recovery, which doesn't include any any user input. So if you guys are interested, we can deep dive a bit more on that, but it's a bit more, complex.
+
+[07:11] So, as I mentioned, there are three ways of, encrypting the call share that is stored in the recovery service. So you have the password, straightforward. The user gives you a, like, password during the onboarding, and that password is used to encrypt the this call share. And this is only then used if the user needs to log in into a new device. Once they are logged in into a into a device,
+
+[07:38] you only need the local share and the hot share. So you can combine those two to reconstruct the private key and use it every time. This is a key insight. Right? Because you don't want, like, a new user that comes into your application every time asking for what is the password and so on. So you only ask for it once per a new device that gets locked in. Then the passkey,
+
+[08:01] I will explain it, just like in in a few seconds, but the, the the the the key insight here is we use an extension, called PRF to, pass keys where that allows for deriving a deterministic encryption key, and we use that to encrypt, the recovery share.
+
+[08:24] And the last method, the one that I mentioned is a bit more complex, is one that doesn't require any user intervention. And in this method, it only works in in very, specific scenario, which is when you have OpenSigner hosted by a provider, and this provider
+
+[08:47] is offering this service to another app developer, and this app developer is offering the service to a to a to a user. So you see there are like a bit like, there's an extra step here because this, app developer has to basically host an encryption key. And this encryption key is the one that is used then to
+
+[09:10] encrypt the recovery shares whenever the user wants to, log in into a new device. So you basically introduce a new party into, into what is required to create a wallet, but you get the improvement where the user doesn't need to recover a password or worry about, like, losing the passkey because they, I don't know, they, deleted their Bitwarden account or, you know, any of those things.
+
+[09:37] So this is the what I mentioned just now about, pass keys. In theory, it sounds awesome, and everyone should use it like, Jack Dorsey is, like, endorsing it for, you know, to create, like, a file sharing system that everything is encrypted in the cloud and, like, you can create, in theory, you know, applications where the user only has a private key that they control, and then you can encrypt everything with it.
+
+[10:04] In practice, we've seen it's a bit more complex. For one, because the UIs from most devices we use do not give the flexibility of changing what the UI says whenever you're using a passkey. So they think you are logging into something when you're actually doing something pretty important, which is decrypting and encrypting. And sometimes users do factory resets,
+
+[10:29] and, they don't know what they are deleting. They are deleting all their, you know, some of the pass keys from their, you know, password manager and so on, and then they lose the pass key. And then it's catastrophic. Right? Because this is basically holding the encryption key that has access to their account. So we've seen that as well. So it's not jack of all trades. It has some advantages.
+
+[10:52] But, yeah. So this is the setup of, how it looks like, to host OpenSigner. So you have your application, which, as I mentioned, can be a browser, but we've made it work as well in in, mobile applications, React Native, Swift. It doesn't really matter. And then you basically spin out an iframe service. This iframe
+
+[11:19] is the security boundary, where the private key is generated, where the keys are are split and and the wallet is reconstructed every time. And so then the app communicates. So the app, let's say, it's a website, communicates with the iframe service through post messages. And then the iframe service, given that you can reconstruct the key, will, you know, respond with the signature.
+
+[11:47] And inside the iframe service, you're communicating with the three with the three key services here, which are, yeah, the hot storage where you only interact when you want to recover, cold storage, sorry, hot storage when you want to interact every time you want to sign, cold storage when you want to recover, and the auth service, which is another security boundary that you only expose
+
+[12:11] any like, the hot storage and cold storage whenever the user is authenticated. So you can bring your own auth service here. You can bring better auth. You can bring Okta, Auth0. Doesn't really matter. The only important thing here is that OpenSigner, you know, will have an endpoint, that you will be able to configure, and then you basically will send the tokens and it will verify them and answer back with basically a Boolean yes, no. And then
+
+[12:37] it will allow for doing the next action, which is, you know, returning the the share. So this is a very quick, you know, comparison. It's super broad like the rest. What does it really mean? There are so many options out there. But the it's it it can serve as a as a as a summary of all the things that we accomplished with OpenSigner.
+
+[13:02] So, most importantly, MIT licensed. You can self host it. It's noncustodial. We are a bit picky here. We've seen some providers, like, for instance, Privy in the beginning was mentioning they were self custodial. Our opinion, only self custodial when the user has the key. In this case, the key is split between multiple providers, so non custodial.
+
+[13:26] OTH provider, as we mentioned, to the agnostic chain support, it's only key management. It doesn't do anything else. So you can we have support for Solana and EVM chains, but you could, in theory, expand to to some other, as well. And signing signing speed, super important as well, because you only need to do a fetch of the hot storage once the user is authenticated.
+
+[13:49] The, only limiting factor is how fast can you get the hot the hot share. So what is the ping speed between, you know, the iframe where the user is and where the server is, where you're hosting the hot shares. So this can be a hundred milliseconds, could be less, could be more depending on where you have your your servers or if you are distributed or not. So
+
+[14:16] the key thing yeah. This is just like a just a, like, a summary thing, on the on the whole steps. And, yeah, that's that's basically it. As you guys can see, go check the GitHub repository. We have some documentation explaining more in-depth what are some of the, you know, setups that are possible with it and and and and some pitfalls that we've seen and
+
+[14:41] and and how to add it into your system. So check it out if you're interested. And, yeah, that's it, from Altalk. You have guys have any questions? Okay. So, does anyone have it? Sure. Yeah. Thank you. I wanted to ask about the the advantages of using the fiat Shamir
+
+[15:05] secret share sharing versus using a simple two out of three smart contract wallet Mhmm. Setup? Like, what is the advantage or for it? It seems like an extra hassle to manage all this crap. Like, I can just have the same thing. Yeah. So, we built OpenSigner and we are starting from the smart account perspective. So I
+
+[15:32] cofounded OpenFord, which where we started only with smart accounts for EVM chains. So we started only with smart contract wallets, you know, with hosting the bundler, grading the paymaster service and giving everything bundled together to make it work. And what we quickly realized is, one, you still need the key management if you are not using passkeys directly in the wallet.
+
+[15:57] And two, how do you make it multi chain? There there when most of the providers that we see out there, at least with, pure smart contract accounts, If you want to use it multi chain, then it comes with a huge hassle because, well, to use it into a new chain, you need you need to deploy the wallet. It's counterfactual.
+
+[16:20] What does that does that even mean? How do I import it into MetaMask if I want to, like, leave your app? Huge amount of issues like those that you cannot really get away with pure smart contract accounts. What we saw with seven seven zero two and the PecDrop fork is that that changed the game a bit. You can, you know, smart contract wallets, you can kind of merge them with EOs in their properties. You can now kind of import a smart contract wallet, let's say, into Metamask. You can simply import the private key and use the wallet normally, and that's a huge win.
+
+[17:00] But you still need the key. That's there's no escaping of the on the key part. And pass keys, well, usually, they are per chain. And how do you see in this state? I mean, I've been I think, Bangkok, that was, what, two years ago, three years ago maybe. They were already, like, speaking about synchronizing state between chains. Coinbase team was working on it. Some of the teams were working on it. I haven't heard anything about it like since, yeah, like two years.
+
+[17:28] So how do you think the state of like what are the recovery, guardians of a specific smart contract wallet? How do you think the passkey wallet between different chains? Is, in my opinion, those are still, like, unresolved questions. So that's why you always get back to the key. And that's a gateway from it. People create, like, more complex applications, but the complex applications then always become gated,
+
+[17:53] at the end. So yeah. Yeah. I have a question. If you focus on the initial part when we are creating the private key, it's strictly created in the iframe, as you said? If I could you repeat the beginning of the question if you focus on creating the private key So
+
+[18:18] you said it's created in the iframe, right? So if we consider the situation, your device is compromised, but you don't know about that. Mhmm. How can you trust, you know, this it's it sounds like there is this initial issue. So the the key properties that you get with, with iframes
+
+[18:40] is that in in modern browsers, they are isolated services from the hosting machine. So the key, question here would be what happens if the iframe is compromised? So, like, the the one that is hosting the iframe is compromised. Then you're cooked. Like, they could you basically the iframe is like the security boundary, and they basically are inside the security boundary. And so then it's really, really problematic.
+
+[19:05] But for a hosting machine like, if the like, a user's browser is compromised, I guess, for instance, you could modify the UI of the user to trick them into clicking a specific part of the UI that does the reconstruction. That would be that would be an issue. Right? But, the iframe and the host browser are isolated services. So in that sense,
+
+[19:32] like, there maybe there are some ways that I'm not aware, but there are faster ways. And so there would be, like, faster ways on, like, modifying the UI, for example, into signing something else, sending the message, like, the wrong message. I mean, there are there are some other ways. Right? I know, but we also didn't know about the Spectre attack and then it happened. Right? And it would it would be the case
+
+[19:58] that we consider it secure, but until it isn't because we don't know about all its vulnerabilities. So there are also Mhmm. Usually, generate the private keys in servers where isolated or separated in some external devices like signers and so on. Mhmm. So yeah. I just
+
+[20:21] No. I mean, it's a good point. And so it's all about, like, the for example, like, if you try if you believe that, there will be an exploit that will break the security boundaries of browsers that will make iframes exploitable, that, you know, iframes are not hosted in your machine exploitable.
+
+[20:45] I mean, may but, like, I think, like, this is more, like, on on more on speculation territory. I mean, I don't know if AI will be able to figure out, like, new attacks on this kind of stuff, but maybe there are also attacks on the on the server side of things. It's it's hard to say. I I know, like, you get some advantages and you leave some. It's just like another proposal that you get,
+
+[21:08] and here where everything would happen on device. So, yeah, that's my answer. So adding to that, like so store right now, the code is storing the the device share into the iframe. Right? Yes. So that's very insecure and from an access point of view as well. Right? Because the
+
+[21:35] the browser implementation of the local storage is tab based or, like, domain based. Oh, well, I mean, here it said local storage, but, like, in production, you would not host it in local storage. Right? So Where would be the ideal place then? So, for example, at OpenFord, we run OpenSigner as a service. And so, you would have, you know, a domain from a third party hosting the iframe,
+
+[21:59] and that would be loaded whenever you want to interact with your with your wallet. So it's an invisible iframe that is loaded in your in your browser. And then you communicate with this, iframe through a post message and event listeners. So it's not it's it's never like in local storage. Here, it was set as in if you start OpenSigner locally today, that's how it would look like. But in production, you never serve stuff in local storage. But couldn't the malicious,
+
+[22:27] service worker be able to be installed to this domain, third party domain? And there are vulnerabilities. I mean, the browser implementation of local storage varies from one provider to another. It varies from Firefox to, let's just say, Chrome. But, there is always that vulnerability that extensions can listen to it as well as, service workers
+
+[22:51] primarily. Right. So I think the the key part here as well is that most of the vulnerabilities that you referred to would not be independent to would would that would be affect as well any, would affect differently if you had your wallet, for example, hosted in a server. Because if you have a Chrome extension that is malicious, it can, for example, intercept your, network,
+
+[23:18] messages with the with the back end, and then you can change the payload and change whatever you want. So the key thing here is that you're in local storage, even if your iframe is, you know, your machine is compromised and they can get your local share, local share alone is useless. And so, the key is only fully,
+
+[23:42] reconstructed, at, use time. So whenever the user wants to sign something, the hot share is fetched, the key is reconstructed, is used, and then it's flushed. So you you it only lives on the user's device, by a very few, milliseconds. So if your browser is compromised because you're doing something else in a different page or you install a Chrome extension and you're not using your wallet, that doesn't affect anything. And even if they get the,
+
+[24:12] device share by itself, it's not useful. Well, all it all it takes for me is a single transaction. I just need to sign a single malicious transaction to extract all the funds out of the user's wallet. So still, even if I don't need access to the pro private key of the user or the complete key, I just need to execute a single transaction. That's possible if the device share is compromised.
+
+[24:36] No. So if the device share is compromised and let's say you have a Chrome extension that can, you know, infiltrate and and and get in between your post message and event listener, it doesn't matter the setup that you have. So for example, if you are sending, a payload, like, adjusted payload into a back end server, the back end server signs the message and you get it back Mhmm. You'll be compromised as well. So the the the issue here is, like, your server is your browser is compromised,
+
+[25:06] not that you have, like, a local share. Because this local share is isolated in the in the iframe. And, you know, if like, when you try to use it, it would have the same security guarantees as if you were trying to communicate with a back end service. So Okay. So, again, adding to that, since you talked about the a AIP for 07/07/2002. Right? So why not, if it's possible, to delegate the entire contract
+
+[25:34] the address to a smart contract, wouldn't it be safer with coupling that contract to, let's just say, a passkey instead of this vulnerability a potential vulnerability via storing local like, in in the storage device share? Can we just bin the private key altogether? So yeah. Yeah. We've seen some approaches where you create an an ephemeral private key. You do the delegation,
+
+[25:59] and you completely forget the initial private key. Yes. And during this initial setup, you see you know, you you set up a passkey, and then you use that as your as your wallet. That's And it works against all chains too then. If you're able to obtain a request with chain ID, I guess, minus one, then it works against all chains. Yeah. You could you could, in theory, then, take that initial transaction that you used in the origin chain and repeat it into all destination chains and then you'd have the same setup. You will have though an issue in if you change the origin setup into a new passkey, that doesn't translate into the new chains. So you can have
+
+[26:36] smart accounts that are out of sync between each other, and then it gets, it can get really complex. But yeah. I mean, it's another But you can always add more pass keys. That control can still be granted. Yeah. Yeah. So yeah. But, like, you have to keep the state synchronized manually. So there's no service, that I know of that would, keep the state synchronized between blockchains. So you change the passkey in one chain. It doesn't automatically change in all the other chains where you have your wallet, deployed.
+
+[27:06] So you have to go, like, in all the other chains and basically deploy it as well. Same for Guardians if you have some or any other ZK email. It doesn't matter. Yeah. But we all always have the transaction. That transaction, the request is public. So if it's the chain ID minus one, anyone could actually relay it. Even you could execute that transaction of my account. Like, you added a passkey, but it's getting added
+
+[27:28] to all accounts. So anyone on the rise can actually sing the transaction. A relay or a simple relay will do. I think, for the initial chain, like, for the initial setup, that's possible because during the delegation, you're putting chain ID zero. So it applies to all the chains. For subsequent transactions, you are still have chain ID zero there too. What's the problem with that? If you do a normal transaction,
+
+[27:55] you don't have chain ID zero. Right? It's a regular transaction and chain ID is not zero? No. It depends on how you how you write the smart contract to actually accept a passkey hash. Yeah. I guess then. Yeah. I mean, I I have think you problems then with nonce, for example. I think, like, there's an edge like, a sea of edge cases where then you need to have, like, what if the origin transaction has nonce one and the another chain has nonce one? Should be synchronized.
+
+[28:21] Nonce The you see, like, there's, like, an edge of, like, 20 edge cases that actual products and users would never have. Ideally, proto I have you heard of proto.sh? They actually actually figured it out. Like, they maintain separate nouns for these kind of changes, like a master nouns. Yeah. You're Then the problem is solved. Nouns and so on. Yeah. Yeah. Yep. Thank you. So any other questions?
+
+[28:46] No? Awesome. Thanks. Thank you. So that was the last session for today. We hope to see you tomorrow as well. Thank you.

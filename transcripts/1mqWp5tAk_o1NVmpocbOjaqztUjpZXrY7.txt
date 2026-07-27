@@ -1,0 +1,245 @@
+# Orbitport — Bridging the Gap to Orbital Compute
+
+Date: 
+Source video: Orbitport — Bridging the Gap to Orbital Compute
+Drive: https://drive.google.com/file/d/1mqWp5tAk_o1NVmpocbOjaqztUjpZXrY7/view
+Duration: 00:49:41
+Transcribed: 2026-07-27 · deepgram nova-3 · PIT BULL harvest fleet v3
+
+---
+
+[00:12] Hey, everyone. Welcome to East Prague. Today, yeah, as, as a introduction, says, we're gonna talk about OrbitPort, the gateway to space. So a bit about me. I'm coming with, let's say, unrelated background, from SAP, mostly in the cloud domain. I was an architect there, then in SSV network,
+
+[00:39] a bit low level crypto and web three, and then in chaining. And I've joined space computer, mostly working on, as I said here, distributed systems, confidential computing, and then, of course, space satellites, embedded systems. We are now, like, in the process. We are still, let's say, pretty much a newbies in the in the area. We are still learning.
+
+[01:05] So there is lots of interesting things to see and explore with our partners and this is how we learn things. And soon, we would have more footprint in space, so we will learn more. So the agenda for today, we'll go over the complexities in that we have currently in space infrastructure.
+
+[01:29] We'll see what, what we bring to the table with the trust minimized infrastructure, and we'll go over our orbital services. And let's start. So not sure if you know. I guess you you probably do. But if you missed it, then space is becoming a hot thing right now.
+
+[01:51] And, basically, everyone wants to to put some data center in space to do some AI computing, whatever. And, yeah, there's a lot of PR and hype about it, but the reality is a bit it's it's different. So things there are still, like, in progress. You can think about the the crypto industry
+
+[02:15] ten years ago and before about events, things are not yet, completely in place or not easy to to work with as a developer, as a builder. And, yeah, we we hope to, to to address those issues. And with Orbitport, what we want to have
+
+[02:38] is to have a portal to our services, to our infrastructure in space. Basically, we're able to interact with our services and, facilitate the entire interaction from Earth to to space. And this is the high level picture of of where we where we are where we at with Orbitport in the in the bottom.
+
+[03:05] You can see that it's connected to some, earth infrastructure, like account provider and also from the other side to some space infra, adapters. That's a typo. And also, we hopefully would have also like direct, direct link to to talk with, space with ground stations and things like that that would eventually get to to the space, to our satellite.
+
+[03:38] And, yeah, today, we're gonna jump into, many of many of the things here. I won't have time to to drill into each and every topic, but, we'll try to do it, and feel free to ask questions. And, yeah, let's start. So space communications, basically, the the biggest issue is that, yeah, you have now latency
+
+[04:01] that, it's it's different. It's it's latency and intermittency. So you won't be always available. The the satellites are doing, their orbits around the the globe. It takes somewhere between ninety minutes, to one eighty. And you have a com you have communication window communication windows. You don't you can't interact with them all the time.
+
+[04:25] You should be able to do it only once they pass some ground station. And the the bandwidth, yeah, is is limited. We will get to numbers afterwards, but it's, it's pretty bad. And because we have a strict power budget on the satellite and basically, on the satellite, you have multiple, sub subsystems, not just us.
+
+[04:48] We are just, being hosted in some satellite, but eventually, there are other systems there, and the power is very limited. I know we told the AI boom they talk about, energy from the sun, But as of today, it's still, it's not there yet, and it's, yeah, it's it's it's too expensive to, to run things there. And you you are limited with the amount of power that, you can have, so you're not always on.
+
+[05:18] Sometimes you would be you need to manage blackouts and things like that. So these are pretty are the, let's say, are the things to resolve, but let's see a bit more. So currently, today, what we have, what what are the options? So we can interact via ground stations. And do you see my mouse? Yeah. So you can interact directly with satellites
+
+[05:44] using radio frequency and, you can see here, like, several rings. The first ring is low earth orbit. You can see the the height mentioned here. This is still low Earth orbit. And above, you can see the the scale. It's not the scale is not accurate here in the picture, but, yeah, this is, pretty
+
+[06:07] almost 10x higher than the low orbit, low Earth orbit. And this is one one way to interact from ground stations. For geo, we would have higher operation windows, and we we would have, yeah, higher higher latency because eventually, it's, more far than the the LEO ones.
+
+[06:31] But with LEO, we get, we get smaller windows, but we get lower latency because it's closer. And there is another way of of doing this communication and it's via another network. And this is what you see here in the middle, the LEO communication constellation. There are several companies that basically spin up network
+
+[06:57] in space, and they help to they they help other satellites to interact with each other, and we can also use that. And if we start with ground stations, then, as I said, it's like periodical, operational windows that you can, interact with the satellite. And it has to do with, like, you as a builder, as a developer, you interact with some APIs,
+
+[07:26] with some cloud systems, and it could get into some mailbox. This is like where the industry is at. And but eventually, the ground station itself, what it does is to is to balance the entire demand that it has, and it uses the same like, it has slots that you can be part of them. You need to pre allocate,
+
+[07:50] but eventually, you can be part of some, at some specific point in time, your message will be sent. And the issue with that is that, yeah, on peak demand, we have, we have too much, requests going on. With low demand, they actually, if they don't fill enough slots, so they don't send any any packet.
+
+[08:13] And basically, it's also another issue. And the bottom line is that we would have, delivery delays for sure. So we several, I didn't mention, but we have several we are working with several partners and basically being deployed on soon on multiple satellites. And in each satellite, you have a different setup.
+
+[08:36] And if we try to look, specifically on the, RF bands that are used for, the ground stations interaction, Then we have the UHF, for command interface, and we have the s band. This is what, we are heavily using. Basically, our, our data goes through there. And,
+
+[09:00] just to mention that the ground stations can handle larger data chunks, but it has the intermediate, connectivity. And if you compare to the layer networks, then, yes, we have maybe a smaller packet, but we have a more consistent, connection. These are the most common, constellations for these networks, basically, like the layout, how the how do they,
+
+[09:25] align on the orbit. And you can see on the left, you have the Walker star with a good coverage of also the polar areas. And you have Walker delta. There you can see that the poles are less, covered. And you have a mixed geometry, which is everything, both both of them. If you look on Starlink,
+
+[09:50] they are the most dominant player. For those who don't know, they have more than 10 k in the sky, and they use mixed geometry, from this from this picture. So they are highly available, but they are targeting the, let's say, the residential, markets. So it's more like for terrestrial
+
+[10:12] networks to to operate rather than, networks between satellites or connectivity between satellites. And you can connect with them, yeah, on earth. You have these, these cool dishes that you can put everywhere, and basically would connect with RF to their satellites. And then, the the ISL, the inter satellite links within,
+
+[10:38] Starlink, they would either go with RF, but, yeah, they are now switching over to, to laser beams. So this is this optical, inter satellite links. And this one is crazy, from numbers point of view, but it also introduced some hard challenges that if we put them like, if we try to look how they match to a small satellite, that just,
+
+[11:01] not it. It's it's not there yet. Basically, there are too many integration challenges. The the high power and wave that I mentioned before, you would also have vendor lock in, meaning you would find it hard to work with other providers, with other networks, with other means. And it's optimized for for terrestrial networks.
+
+[11:24] And if you look at it for, space, for inter satellite communications, then it's something that is retrofitted rather than something that was organically, built this way. So they they they are, getting progress. Let's say if we compare to one year one year ago, then, yeah, they they are they already have some component that you can install on on a satellite.
+
+[11:48] But, it's still early. So if you look on, let's say, a more friendly project to work with with regards to to satellite communication is Iridium. They also have a mesh network in the sky. They have less definitely less satellites,
+
+[12:10] 66, but it's a they operate since the nineties. They are they are long term players. And as I mentioned before, they have like good, because they do the Walker Star constellation, which is this one. They have good coverage of the entire globe, and they can operate in places where
+
+[12:33] the terrestrial networks can't. So, their their band spectrum is a bit, you can see it's like it's mixed. There are bands that are used for, this is user from Earth, basically, messages, and being below
+
+[12:58] their satellites. They are something like 700, kilometers height and we out below, like, in altitude, up to 500. And if you look on the antennas here, if you go to the details of the picture, you would see that the antenna is pointing up. So this is another thing. You need to have your antenna
+
+[13:21] pointing to the right direction, whether it's up for, the communications or down from ground stations. So this is also something to consider. There could be multiple antennas. Yeah. But it's not always the case. That's the Okay. Okay. So you have to retire the satellites to There there there's a there's a compute unit on the satellite that takes care of that. It's, like, not in our jurisdiction, but
+
+[13:49] because you have to move impacts, like so you you have the limited limited and limited. Yep. Yep. Fields now. So you cannot do it all the same? They do it, intelligently. Like yeah. So they do it only when they should. Like so Uridium exposes some services for for,
+
+[14:13] users to to interact with. The most common one is called short burst data or CBD. SBD. Sorry. And, yeah, you're from Prague with all the so the, it's basically like a unicast, service. You just, send one package to a single device using some device ID,
+
+[14:37] and it should get there. The latency, spans from dozens of seconds to minutes. And the payload is, yeah, as I wrote here. Like, this is the amount of bytes we have per payload. I assume, yeah, it's if you compare it to what we know and used to, today, then, yeah, it's, it's another problem.
+
+[15:01] And the good thing is that, yeah, it it takes like, low power. And another service, it's called Burst. It's a broadcast service. Basically, you can broadcast to a group of satellites that are located in a specific area, And it would help you, yeah, to if you want to to deliver message messages to to multiple parties at the same time or let's say with with low latency,
+
+[15:26] then, yeah, maybe this is what you should use. And but it also has its own, latency issues. And for Iridium specifically, they have cloud adapter. It's called Direct Connect. It's deployed on AWS. Their main connection is in The US, but they they they are available globally. So you can use it basically to work with some queue,
+
+[15:51] to either push or pull or pull your your data. And the latency might be better than if you try to do it alone. But, yeah, it depends on what service is being used. And, currently, I'm I'm I haven't followed, yeah, again, because it's changing every time. So as of now, I think they do support, only SBD and, some other services, but not Burst as of now.
+
+[16:20] So we saw like the the complexities we have with infrastructure and how space communication works. So Orbitport part of the story, well, it it has several things, on the play to do. First, it needs to to manage the the capacity in ground stations and things like that, eventually to to pre allocate if it needs to. So it would have,
+
+[16:46] some some mean of sending a message at some specific point in time without waiting for the ground station to be ready. And we over allocate sometimes in order to to make sure that some either peak or or low demand wouldn't, introduce major latency. So
+
+[17:09] on top of that, we also have aggregation, and batching, meaning that we don't send each and every messages as it comes to Orbit port, but whether we are doing, some batching of several, several messages and basically sending packages of like, a set of messages together to to reduce the round trips and,
+
+[17:33] basically making it easier for us to to manage. This But this batching also is taking time, so is it a bit longer? It it takes time, but eventually, you can plan better like this rather than just react on some incoming request that wants to send something to space and just do it. Because if you do it like that, eventually, you will be This batch configuration is controlled by you, I cannot batch myself? No. No. It's on our side. Yeah.
+
+[18:04] It's, it's not like transactions, like you need to to choose transactions. It's like, you can do something like more FIFO based, but eventually you would see, okay, there are some requests that goes to the same service or something like that. So I would try to batch them together. So I would interact with the service once, and I would get two responses from it once. You know? Something like that. And eventually, yeah, that helps to to maximize
+
+[18:31] delivery, but we are also trying to to work with friends to send if if we have some some message that we want to transmit we type probability and it and we want it to arrive fast, then we can use several streams to send it and multiple providers and multiple types of communications
+
+[18:54] in order to to make sure it would arrive fast. But it also comes with a cost, so on our side, we need to balance between the reliability and the cost of the of the solution. So at the end, what what Orbitport does for for others is to streamline the connectivity with the with the satellites. Basically, if you come from outside and you talk with Orbitport,
+
+[19:19] you wouldn't always tell that, yeah, okay, it talks with the space and waits for response. And it's actually, a pretty hard thing to do. We are not there yet, but this is our goal and this is, where we aim to be at. And if we look on the entire story, so what we get here is if you compare to the TCP IP stack,
+
+[19:42] then on the physical layer, we have the the RF link, and it could be either, from ground station coming or from, networks, but eventually, this is the first layer. On top of that, we have, I called it the embedded subsystems. Basically, on the satellite, Once you get some packet,
+
+[20:06] once the antenna reads some packet, it needs to send it to the right subsystem on the satellite. In our case, it would be us, the rest is subsystem. And the network side, that is what we just talked about. So again, it's like a complete layer that we need to do our logic there. We are running in a TEE. I would go into it very shortly.
+
+[20:33] And we are utilizing multiple vendors and providers. So eventually, it's like, you can think of it like batching, aggregation, all those things, but also routing and basically managing all the different providers. Then we have the transport layer, which on our side, it translates to the we call it a test a tested transport.
+
+[20:56] Basically, what we get is a secured connection between TE on earth and TE on in space. And, yeah, again, we we would, jump into it, very soon. And on the application there, we have our platform, what what we have on the satellite, which provides, it has, like, its own services and things like that. So we need to find our way within the satellite, within our our compute unit.
+
+[21:27] So, yeah, I promised this. So what about the trust? I mentioned until now only like all the networking communication stuff, but eventually and, yeah, we are doing the aggregation. It's a pretty let's say, if you have something, which, you want privacy for that action. If we are doing all this batching and things like that, we are losing that.
+
+[21:50] And, basically, what we want is to run on TEs on both sides. And on Earth's side, we have, we are running on TDX. And if you'll do like a short, maybe, yeah, before we jump into other things, we'll do like a short introduction to to TEs. So TDX by Intel, it's
+
+[22:15] it's supporting visualization. That's like a cool feature of it. And, basically, what you get is isolated VMs running on a single machine without having, none of the VM access to other VMs. And also the hypervisor, none can no one can access, the memory of some, of some VM.
+
+[22:39] And it has a remote attestation that allows us basically to verify what software was running on it and that the hardware also matches it. And if we look on the what we have in space, TDX, yeah, it's good for earth deployment but deployments, but it's not fit for embedded systems and things that you want to,
+
+[23:04] be more, optimized with. And it has another, big drawback. We'll get into it. So with Arm Chart Zone, things works a bit differently. Basically, it separates, single SKU into two main regions. One is the normal world, where we have it's it's also it should be like,
+
+[23:27] some trusted operation system, but at the end, this could be anything that's, distribution right now. And we have the secure world, and there is, let's say, a mini operation system. And we have those two on the satellite. They are working on some device. We'll we'll see it soon. But it's a single core device.
+
+[23:53] So, basically, you have another component called the secure monitor that takes care of context switching between those two. The context switching is done with didn't wrote here. It's done with exceptions. So whenever you have some exception, for example, in the normal world, you go, up to the secure monitor and it can decide what to do from there, whether it's a real,
+
+[24:20] exception or you just need to context switch to the secure world. And you can pass like that parameters and everything. And eventually, you have also like, you have ability to control the peripherals, let's say, the things that you connect to it, the devices, and basically ensures that if someone if some device is being used by the secure world, it won't be used by by anything in the normal world.
+
+[24:47] So we have these two, Amtrak Zone and TDX. And if you look on the infrastructure for Orbit port, then again, it's a TDX based, runtime, on Earth. And in Orbit, we are running on Armtrace Zone. Basically, we have a mutual remote attestation where
+
+[25:11] we validate that attestation from space on earth and vice versa. And we have a verifiability. So whatever is being sent, know that whatever is being processed, we know that it was running on some specific software, on some specific hardware. And, yeah, we know the regions
+
+[25:34] where it came from. So if you look on the layers of trust for Orbit port, what we're doing is to have our own OS image. We use MCOSI to build it. And on top of that, we are running k three s. And for that, we have our, our images,
+
+[25:58] our container images that are being built with Docker Ardent images. Basically, I'm not sure if you know it. It's a pretty new feature of Docker, but they they created some it's also like tools and repository and everything for, R and D images that basically you can track the entire, SBOM, and you have all the
+
+[26:21] all the dependencies. Everything is pinned with versions. And it has some other, like, standards than the the normal Docker Docker file, that we know. And, eventually, we connect these two things, these two pipelines. Then whenever we put some code into lower
+
+[26:48] Then, we get finally, we get a docker added image that sits on docker added image repository rather than docker. And what we do from there is on the call what we they call the all the images that we got. We create some
+
+[27:24] we create the service test, k three s. Behind the scenes, we use we use container d. And, eventually, we have the the output is that we have a pretty we we strip off everything that we don't need from the from the operation system. So we have a pretty thin image that we can boot on some,
+
+[27:47] on any VM. But in our case, we we go and run it on a confidential VM, on GCP. This is provided by them. Basically, you can think of it like, having some spot of some compute that runs TDX, and therefore, we can run as a VM on this infrastructure.
+
+[28:11] And within what we have running, specifically, we have Orbit port, of course, but specifically, we have some reverse proxy to to pull off the TLS termination and to have a more like the the space environment, what's going on there, how it looks like. So first, what we have there? So our unit on the satellite,
+
+[28:46] it consists of a Raspberry Pi, USB armory. That's a cool, secure device with arm charge zone on it. If you look on the Echaton, you would see in our track, you will you can play with it in one of the tracks. So, yeah, take a look. And we have some TPM on it as well. And
+
+[29:10] you can see okay. So you can see here on the left, this is the actual board that we would have. Basically, it's a Raspberry Pi on top of some other board to have all the components integrated, in an optimized way. If you look on the left, this is a stack where eventually the board sits and you can see that it it it has like these copper
+
+[29:38] stripes. This is what we use for, heat dissemination. And this is how it looks like as a box. And, eventually, it arrives to some small satellite. In this case, this is a CubeSat. And if we look what we have inside, then what I explained before with the normal world and secure world, this is the USB armory connected to the pi.
+
+[30:07] On the Pi, I'm not showing you what everything that we have, but just so you know, we have an operation system that we also made our own using Yocto. And on top of that, we have some, it's not a real not just one single app, but we have several, relays, that helps you to get to,
+
+[30:30] to the secure world, eventually to the USB armory. And on the USB armory, we have another secure elements, another two secure elements that we use. And I think we can see here. Okay. So the the setup once he wants to to set up some satellite in the sky and to be sure that
+
+[30:52] from our point of view, we know that we are talking to that satellite. We need some proof that the vendor didn't just put the Raspberry Pi in their garage and saying, yeah, it's in space. So, we want something stronger. So what we have is, let's say the once we launch something, then we only in the sky, we generate,
+
+[31:18] two keys. And these two keys are generated from different devices, the ones that we see here, the SCO five o and the Tropic zero one. And we use those keys in order to eventually participate in some protocol called SIP, security execution assurance protocol. This is a protocol that we worked with,
+
+[31:41] with, common prefix to to have some, defined flow for us whenever we want to boot or provision some satellite. And eventually, how it works is that from the ground stations, you would have some form of a challenge response, ceremony with several ground stations.
+
+[32:04] And there's a satellite you need to interact with several of these, and then you get a certificate. And this certificate, basically, this is like the the attestation. Ongoing here, it says, still not there. We need to talk like about design stuff, but, yeah, we would also have like something ongoing with regards to this proof. So it wouldn't be like just a one time. Currently, with the protocol, it's a one time thing, just when we provision.
+
+[32:32] But we plan to have it something more that occurs periodically. A nice picture, I already I think I mentioned most of it, but, yeah, just to see the layers themselves. Here, I forgot to put Yocto at the beginning, but eventually, and I didn't mention Secure Boot. So what we would have in our system is that,
+
+[32:58] besides that we would create the image, we would also, run Secure Boot to ensure that only image that we made can be run. And we would have the same Secure Boot ceremony also with other up there is something that we have and signed,
+
+[33:23] and only this can be running. Like, no one can just put their stuff or manipulate our software. So, eventually, we get something, like a proof that, yeah, we know what's running, we know where. And, yeah, now we are good to go with regards to, security. So, yeah, we we've seen all that.
+
+[33:46] And eventually, yeah, we want to, see what we can do with all these, with all these things. So if we look on the architecture of OrbitPort, then if you look on the left side, we have some user that can interact with the gateway. The gateway would route their request to the right, service.
+
+[34:09] Currently, we support only CDRNG and KMS, but soon there would be more. And, in general, we have here more components, some of the authentication, as I mentioned before. Currently, we have the account provider completely isolated from Orbit port. But, yeah, it's just to to get started. Afterwards, we would connect it.
+
+[34:33] And on the space infra side, so we have connectors which basically helps us to to differentiate between the different APIs, the different components of each provider. And it could be like the same provider, but different interface. So, yeah, it's also like very helpful on that front.
+
+[34:57] And we will get yeah, there are several things here that I still need to mention with regards to CTR engine KMS. But we're having more components. For example, we are working with IPFS to have some distributed storage. And, yeah, I think that's it for this picture. So, CDRNG. CDRNG stands for COSMIC
+
+[35:22] true random number generator. And, basically, it relies on entropy that we gather in space. There is some sensor that helps us to to track over space radiation. And, I can't really tell how how it's really working, but, it's basically provide us some random number that is based on some phenomena
+
+[35:46] in in the sky, in space, no one can access to. And, basically, it gives us a real true random number. This is like a and we would see soon that we also have, a way to validate it. So one second. So if we try to play a bit if we try to play a bit and
+
+[36:13] we can start with the docs, but let's open CTRNG. That's a bad link. In the docs, you can find some guides how to work with the with our SDK. We have an SDK in TypeScript. And specific specifically for CTRNG, we have also in Rust. But generally, yeah, we plan to to support all the Rust, Go,
+
+[36:36] TypeScript, whatever. And as a user, you need to provide some a some client ID and client secret and you are good to go. Basically, you can ask for Randall number and you will get something from space. We also have another option without credentials
+
+[36:59] and this would go to what we call a public randomness beacon. The the randomness beacon is a chain of blocks with random numbers in it. And what happens is that you can you can access it from anywhere. You don't need any API keys. You don't need anything. And we post every, I think, five minutes. We post a new block there with new randomness
+
+[37:26] so you can basically use it as a seed for your system. And, yeah, and, you can manipulate the randomness because eventually it's public. But, yeah, you can, you can work with it without anything. So these two cool options how do I get back? These two cool options are are available through the the SDK.
+
+[37:50] And if you look one second on this project, basically, we have, we have integrated, the CTRNG as a seed for threshold libraries, and we use this, this is the this is the library itself. What we did is to follow some interface,
+
+[38:14] so some trade, and basically be able to so others would be able to work with us. And basically, you can give our component as a RNG generator and it would it would work. And basically, what we are doing is to it's also related to the randomness beacon with IPFS.
+
+[38:38] What we are doing with, with that is that we use mixed CTRNG and mixed in the sense that we are taking a real real CTRNG from space, and we use it as a seed to generate more random numbers. We follow you can you can, I think it's writing written here somewhere, but whatever we are doing is, we are based on we are doing the derivation based on ChaCha,
+
+[39:04] meaning that we are trying to, take some random seed, generate multiple numbers from it until until some, like, it was used too much or things like that? And eventually, the user would get a random number that is also based on, the the the cosmic one. So on our side, we did lots of, investigations
+
+[39:29] on how how can we prove it, how can we prove it, through randomness. So we have integrated here several, statistical verification tests, and you can run it, yourself and you can check the repository. We actually have a repository for statistical verification. In order to really do some real tests here, you need a lot of, you need lots of datasets.
+
+[39:54] So with something from space, as you can imagine, it might be hard to to get, enough data. But if you have something, that you can provide million or more items from it, then, yeah, you can run these tests and basically, you can, verify that your randomness is truly random. And I think that's it with regards to CTRNG.
+
+[40:22] If we look on KMS, then we we offer, like, a very special solution because if you look on existing KMS out there, on, cloud KMS or Ashi Ashiko Vault, things like that, eventually, you have the chicken and the egg problem where you need to store some root key for for this KMS. You need to store it somewhere.
+
+[40:46] So you either store it in some other KMS or several KMSs, but, yeah, eventually you're you're stuck in like some some sort of a a loop. So you trust some cloud provider because they you don't need to worry about their root key. So they know how to worry about it. So you use some cloud KMS or some HSM, but both introduce
+
+[41:10] introduce issues and eventually, have both like the if you look on the the cloud KMS, then you have a provider lock in, regulation issue. And if you look on HSM, then, yeah, you trust some operator. So eventually, this is a problem which we aim to solve with our version of KMS,
+
+[41:33] which, can run-in space. And, basically, we run on top of OpenBAW. And those who don't know, OpenBAW is the open source version of Hashgold Vault, which has made, eastern business, business license since, twenty o three. So, yeah, OpenBAW, it works the same. It works with the same architecture.
+
+[41:58] So it has, it's it's called Go plug ins. They allow, allow you to extend their capabilities with Go code that you write and you follow some interface. And, basically, you can be part running as part of OpenBAW your code. So what we did is to implement a plug in for Ethereum. So you can do key management and signing.
+
+[42:21] And we also we're also planning to do it for threshold, threshold DCDSA and for PQC. And, hopefully, we can do it for other things that we would see in the future. And the Orbit port in this case is the orchestration layer of it. So you have
+
+[42:45] OpenBAW with plug ins and this deployment also it's it's, like both on earth and in the space. So in the space, we are also running OpenBAW. And basically, with OrbitPort, we can orchestrate all the all the processes that needs to happen. And in the future, we would have the MPC flow orchestrated
+
+[43:08] from there. And we would have, as I mentioned, like an hybrid deployment where some of the nodes would be on earth and some, in space. And in both cases, yeah, we would be running within an enclave or at least some of the some of the processing would be done within an enclave. If we open the docs,
+
+[43:37] Then in the docs, you would find a pretty detailed also like examples, but also what are our capabilities. Let me jump right into it, one second. So, basically, you can see what we support. We support, of course, what comes by default from OpenBAW.
+
+[44:02] This is this transmit scheme. You can see there are many many algorithms that are supported, and we also include Ethereum as well. And how it works as a user, again, through the the the SDK, but you can do it by yourself. It's just HTTP call. So, you need again here, this time you must have a client ID
+
+[44:28] and a secret. And once you have those, you can connect. And, basically, you can discover what are the capabilities of the current deployment of the KMS. It would change over time and it might support multiple KMSs, but for now, we have like a single entry point that should give you back the existing capabilities. And according to that, you can take a decision
+
+[44:54] on your end. So whenever you you want to to interact with it, you need to create some key. Right? So, there's an API for that. Then whenever you call, the key is completely generated, completely, out of your site. You as a user never see the key, and you never get it wrong. And in general, whenever you want to work with it,
+
+[45:20] you can perform the cryptographic operation within with our plugin plugins within OpenBAW. So it could be decrypt or encrypt, and it could be signing. And besides that, we allow you to rotate a key. And, basically,
+
+[45:44] let's move to another one. I'm just I'm just really sorry. We are running a little bit out of time. So in five minutes, if maybe just, feel like, for questions, if Alright. So let's let's jump really quick. Let me just show you. So I don't know if there's, like, questions. Sorry. Maybe. Thank you for the presentation very much. So if you could clap us together.
+
+[46:11] Anyone has a question for does anyone have a question? Thank you, Amir, for the presentation. Please, what are the challenges of having the computational platform on the orbit regarding the radiation and deorbiting? Yeah. We didn't get into the satellite things too much. But, yeah, whenever you're in space and we are using,
+
+[46:36] like, customer silicon, like, not hardened devices for space, so we need to have some coating and protection. You saw it with the aluminum box. Eventually, space radiation, it has like several there are several types of things that can go wrong. One is the degradation of the hardware. So this is where the aluminum box helps.
+
+[47:00] And afterwards, you have, phenomenas like bit flips. So it can actually flip some bit in your memory and then some computation sorry. Once again. Some computation can be wrong, for example, and it would be corrupted. So you need to handle that on the software level. Like, you need to either run a single computation multiple times or to have several components, exact components that would run the same computation,
+
+[47:26] so you would actually get you would actually be able to validate that this is the result. And, well, there are many things, around the the satellite things. So but if you focus only on on radiation, then I guess then, on our side, we also, take care of, let's say, the the storage, whatever we we put in the memory,
+
+[47:50] we we take into account that it might get corrupted. So we redundancy is the is the king here. Like, you need to understand how you do your redundancy in your architecture on both hardware and and software. That's the yeah. We You're running you're running your, like, software on, like, the normal Raspberry Pi. So where is, like, a standard RAM memory. So where is no, like, memory which is try to avoid this bit bit flip and etcetera. You do everything on the software level. Right?
+
+[48:24] Let me go back here. Yeah. Yeah. So you can see here on the left, this is the actual board, a picture of our board, our PCB. Your PCB is on top. Like, what what exactly is this doing? Because on the on the hood, it's Raspberry Pi classic one, but what is the top level? What is what is this shield does? So you can see it's, it's connected to it here. Yeah. Yeah. And also via this USB
+
+[48:50] sharing dongle. And, basically, we have several peripherals that we connect to it, the USB armories, for example. Alright? We have two USB armories. That's two USB connections that And we have we must have this set up proper for space. Okay. We mentioned radiation, so there's also vibration in space. Right? So USB, things like that, it it wouldn't work the best over there.
+
+[49:17] Yeah. Yeah. Thank you really much for the presentation. We are unfortunately running out of time. So thank you again very much. Yeah. And, come find us in the ACCO Room. And we're be moving to

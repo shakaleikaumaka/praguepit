@@ -9050,6 +9050,1626 @@
   "be moving for"
  ],
  [
+  11,
+  12,
+  "Hey, everyone. Welcome to East Prague. Today, yeah, as, as a introduction, says, we're gonna talk about OrbitPort, the gateway to space. So "
+ ],
+ [
+  11,
+  25,
+  "a bit about me. I'm coming with, let's say, unrelated background, from SAP, mostly in the cloud domain. I was an architect there, then in SS"
+ ],
+ [
+  11,
+  38,
+  "V network,"
+ ],
+ [
+  11,
+  39,
+  "a bit low level crypto and web three, and then in chaining. And I've joined space computer, mostly working on, as I said here, distributed s"
+ ],
+ [
+  11,
+  49,
+  "ystems, confidential computing, and then, of course, space satellites, embedded systems. We are now, like, in the process. We are still, let"
+ ],
+ [
+  11,
+  60,
+  "'s say, pretty much a newbies in the in the area. We are still learning."
+ ],
+ [
+  11,
+  65,
+  "So there is lots of interesting things to see and explore with our partners and this is how we learn things. And soon, we would have more fo"
+ ],
+ [
+  11,
+  77,
+  "otprint in space, so we will learn more. So the agenda for today, we'll go over the complexities in that we have currently in space infrastr"
+ ],
+ [
+  11,
+  88,
+  "ucture."
+ ],
+ [
+  11,
+  89,
+  "We'll see what, what we bring to the table with the trust minimized infrastructure, and we'll go over our orbital services. And let's start."
+ ],
+ [
+  11,
+  101,
+  " So not sure if you know. I guess you you probably do. But if you missed it, then space is becoming a hot thing right now."
+ ],
+ [
+  11,
+  111,
+  "And, basically, everyone wants to to put some data center in space to do some AI computing, whatever. And, yeah, there's a lot of PR and hyp"
+ ],
+ [
+  11,
+  123,
+  "e about it, but the reality is a bit it's it's different. So things there are still, like, in progress. You can think about the the crypto i"
+ ],
+ [
+  11,
+  134,
+  "ndustry"
+ ],
+ [
+  11,
+  135,
+  "ten years ago and before about events, things are not yet, completely in place or not easy to to work with as a developer, as a builder. And"
+ ],
+ [
+  11,
+  149,
+  ", yeah, we we hope to, to to address those issues. And with Orbitport, what we want to have"
+ ],
+ [
+  11,
+  158,
+  "is to have a portal to our services, to our infrastructure in space. Basically, we're able to interact with our services and, facilitate the"
+ ],
+ [
+  11,
+  171,
+  " entire interaction from Earth to to space. And this is the high level picture of of where we where we are where we at with Orbitport in the"
+ ],
+ [
+  11,
+  184,
+  " in the bottom."
+ ],
+ [
+  11,
+  185,
+  "You can see that it's connected to some, earth infrastructure, like account provider and also from the other side to some space infra, adapt"
+ ],
+ [
+  11,
+  198,
+  "ers. That's a typo. And also, we hopefully would have also like direct, direct link to to talk with, space with ground stations and things l"
+ ],
+ [
+  11,
+  211,
+  "ike that that would eventually get to to the space, to our satellite."
+ ],
+ [
+  11,
+  218,
+  "And, yeah, today, we're gonna jump into, many of many of the things here. I won't have time to to drill into each and every topic, but, we'l"
+ ],
+ [
+  11,
+  229,
+  "l try to do it, and feel free to ask questions. And, yeah, let's start. So space communications, basically, the the biggest issue is that, y"
+ ],
+ [
+  11,
+  239,
+  "eah, you have now latency"
+ ],
+ [
+  11,
+  241,
+  "that, it's it's different. It's it's latency and intermittency. So you won't be always available. The the satellites are doing, their orbits"
+ ],
+ [
+  11,
+  251,
+  " around the the globe. It takes somewhere between ninety minutes, to one eighty. And you have a com you have communication window communicat"
+ ],
+ [
+  11,
+  260,
+  "ion windows. You don't you can't interact with them all the time."
+ ],
+ [
+  11,
+  265,
+  "You should be able to do it only once they pass some ground station. And the the bandwidth, yeah, is is limited. We will get to numbers afte"
+ ],
+ [
+  11,
+  275,
+  "rwards, but it's, it's pretty bad. And because we have a strict power budget on the satellite and basically, on the satellite, you have mult"
+ ],
+ [
+  11,
+  286,
+  "iple, sub subsystems, not just us."
+ ],
+ [
+  11,
+  288,
+  "We are just, being hosted in some satellite, but eventually, there are other systems there, and the power is very limited. I know we told th"
+ ],
+ [
+  11,
+  298,
+  "e AI boom they talk about, energy from the sun, But as of today, it's still, it's not there yet, and it's, yeah, it's it's it's too expensiv"
+ ],
+ [
+  11,
+  309,
+  "e to, to run things there. And you you are limited with the amount of power that, you can have, so you're not always on."
+ ],
+ [
+  11,
+  318,
+  "Sometimes you would be you need to manage blackouts and things like that. So these are pretty are the, let's say, are the things to resolve,"
+ ],
+ [
+  11,
+  329,
+  " but let's see a bit more. So currently, today, what we have, what what are the options? So we can interact via ground stations. And do you "
+ ],
+ [
+  11,
+  339,
+  "see my mouse? Yeah. So you can interact directly with satellites"
+ ],
+ [
+  11,
+  344,
+  "using radio frequency and, you can see here, like, several rings. The first ring is low earth orbit. You can see the the height mentioned he"
+ ],
+ [
+  11,
+  355,
+  "re. This is still low Earth orbit. And above, you can see the the scale. It's not the scale is not accurate here in the picture, but, yeah, "
+ ],
+ [
+  11,
+  366,
+  "this is, pretty"
+ ],
+ [
+  11,
+  367,
+  "almost 10x higher than the low orbit, low Earth orbit. And this is one one way to interact from ground stations. For geo, we would have high"
+ ],
+ [
+  11,
+  379,
+  "er operation windows, and we we would have, yeah, higher higher latency because eventually, it's, more far than the the LEO ones."
+ ],
+ [
+  11,
+  391,
+  "But with LEO, we get, we get smaller windows, but we get lower latency because it's closer. And there is another way of of doing this commun"
+ ],
+ [
+  11,
+  402,
+  "ication and it's via another network. And this is what you see here in the middle, the LEO communication constellation. There are several co"
+ ],
+ [
+  11,
+  414,
+  "mpanies that basically spin up network"
+ ],
+ [
+  11,
+  417,
+  "in space, and they help to they they help other satellites to interact with each other, and we can also use that. And if we start with groun"
+ ],
+ [
+  11,
+  429,
+  "d stations, then, as I said, it's like periodical, operational windows that you can, interact with the satellite. And it has to do with, lik"
+ ],
+ [
+  11,
+  441,
+  "e, you as a builder, as a developer, you interact with some APIs,"
+ ],
+ [
+  11,
+  446,
+  "with some cloud systems, and it could get into some mailbox. This is like where the industry is at. And but eventually, the ground station i"
+ ],
+ [
+  11,
+  457,
+  "tself, what it does is to is to balance the entire demand that it has, and it uses the same like, it has slots that you can be part of them."
+ ],
+ [
+  11,
+  468,
+  " You need to pre allocate,"
+ ],
+ [
+  11,
+  470,
+  "but eventually, you can be part of some, at some specific point in time, your message will be sent. And the issue with that is that, yeah, o"
+ ],
+ [
+  11,
+  481,
+  "n peak demand, we have, we have too much, requests going on. With low demand, they actually, if they don't fill enough slots, so they don't "
+ ],
+ [
+  11,
+  491,
+  "send any any packet."
+ ],
+ [
+  11,
+  493,
+  "And basically, it's also another issue. And the bottom line is that we would have, delivery delays for sure. So we several, I didn't mention"
+ ],
+ [
+  11,
+  503,
+  ", but we have several we are working with several partners and basically being deployed on soon on multiple satellites. And in each satellit"
+ ],
+ [
+  11,
+  514,
+  "e, you have a different setup."
+ ],
+ [
+  11,
+  516,
+  "And if we try to look, specifically on the, RF bands that are used for, the ground stations interaction, Then we have the UHF, for command i"
+ ],
+ [
+  11,
+  529,
+  "nterface, and we have the s band. This is what, we are heavily using. Basically, our, our data goes through there. And,"
+ ],
+ [
+  11,
+  540,
+  "just to mention that the ground stations can handle larger data chunks, but it has the intermediate, connectivity. And if you compare to the"
+ ],
+ [
+  11,
+  550,
+  " layer networks, then, yes, we have maybe a smaller packet, but we have a more consistent, connection. These are the most common, constellat"
+ ],
+ [
+  11,
+  560,
+  "ions for these networks, basically, like the layout, how the how do they,"
+ ],
+ [
+  11,
+  565,
+  "align on the orbit. And you can see on the left, you have the Walker star with a good coverage of also the polar areas. And you have Walker "
+ ],
+ [
+  11,
+  577,
+  "delta. There you can see that the poles are less, covered. And you have a mixed geometry, which is everything, both both of them. If you loo"
+ ],
+ [
+  11,
+  589,
+  "k on Starlink,"
+ ],
+ [
+  11,
+  590,
+  "they are the most dominant player. For those who don't know, they have more than 10 k in the sky, and they use mixed geometry, from this fro"
+ ],
+ [
+  11,
+  601,
+  "m this picture. So they are highly available, but they are targeting the, let's say, the residential, markets. So it's more like for terrest"
+ ],
+ [
+  11,
+  612,
+  "rial"
+ ],
+ [
+  11,
+  612,
+  "networks to to operate rather than, networks between satellites or connectivity between satellites. And you can connect with them, yeah, on "
+ ],
+ [
+  11,
+  623,
+  "earth. You have these, these cool dishes that you can put everywhere, and basically would connect with RF to their satellites. And then, the"
+ ],
+ [
+  11,
+  635,
+  " the ISL, the inter satellite links within,"
+ ],
+ [
+  11,
+  638,
+  "Starlink, they would either go with RF, but, yeah, they are now switching over to, to laser beams. So this is this optical, inter satellite "
+ ],
+ [
+  11,
+  648,
+  "links. And this one is crazy, from numbers point of view, but it also introduced some hard challenges that if we put them like, if we try to"
+ ],
+ [
+  11,
+  657,
+  " look how they match to a small satellite, that just,"
+ ],
+ [
+  11,
+  661,
+  "not it. It's it's not there yet. Basically, there are too many integration challenges. The the high power and wave that I mentioned before, "
+ ],
+ [
+  11,
+  671,
+  "you would also have vendor lock in, meaning you would find it hard to work with other providers, with other networks, with other means. And "
+ ],
+ [
+  11,
+  681,
+  "it's optimized for for terrestrial networks."
+ ],
+ [
+  11,
+  684,
+  "And if you look at it for, space, for inter satellite communications, then it's something that is retrofitted rather than something that was"
+ ],
+ [
+  11,
+  693,
+  " organically, built this way. So they they they are, getting progress. Let's say if we compare to one year one year ago, then, yeah, they th"
+ ],
+ [
+  11,
+  703,
+  "ey are they already have some component that you can install on on a satellite."
+ ],
+ [
+  11,
+  708,
+  "But, it's still early. So if you look on, let's say, a more friendly project to work with with regards to to satellite communication is Irid"
+ ],
+ [
+  11,
+  721,
+  "ium. They also have a mesh network in the sky. They have less definitely less satellites,"
+ ],
+ [
+  11,
+  730,
+  "66, but it's a they operate since the nineties. They are they are long term players. And as I mentioned before, they have like good, because"
+ ],
+ [
+  11,
+  742,
+  " they do the Walker Star constellation, which is this one. They have good coverage of the entire globe, and they can operate in places where"
+ ],
+ [
+  11,
+  753,
+  "the terrestrial networks can't. So, their their band spectrum is a bit, you can see it's like it's mixed. There are bands that are used for,"
+ ],
+ [
+  11,
+  770,
+  " this is user from Earth, basically, messages, and being below"
+ ],
+ [
+  11,
+  778,
+  "their satellites. They are something like 700, kilometers height and we out below, like, in altitude, up to 500. And if you look on the ante"
+ ],
+ [
+  11,
+  789,
+  "nnas here, if you go to the details of the picture, you would see that the antenna is pointing up. So this is another thing. You need to hav"
+ ],
+ [
+  11,
+  800,
+  "e your antenna"
+ ],
+ [
+  11,
+  801,
+  "pointing to the right direction, whether it's up for, the communications or down from ground stations. So this is also something to consider"
+ ],
+ [
+  11,
+  811,
+  ". There could be multiple antennas. Yeah. But it's not always the case. That's the Okay. Okay. So you have to retire the satellites to There"
+ ],
+ [
+  11,
+  821,
+  " there there's a there's a compute unit on the satellite that takes care of that. It's, like, not in our jurisdiction, but"
+ ],
+ [
+  11,
+  829,
+  "because you have to move impacts, like so you you have the limited limited and limited. Yep. Yep. Fields now. So you cannot do it all the sa"
+ ],
+ [
+  11,
+  842,
+  "me? They do it, intelligently. Like yeah. So they do it only when they should. Like so Uridium exposes some services for for,"
+ ],
+ [
+  11,
+  853,
+  "users to to interact with. The most common one is called short burst data or CBD. SBD. Sorry. And, yeah, you're from Prague with all the so "
+ ],
+ [
+  11,
+  866,
+  "the, it's basically like a unicast, service. You just, send one package to a single device using some device ID,"
+ ],
+ [
+  11,
+  877,
+  "and it should get there. The latency, spans from dozens of seconds to minutes. And the payload is, yeah, as I wrote here. Like, this is the "
+ ],
+ [
+  11,
+  889,
+  "amount of bytes we have per payload. I assume, yeah, it's if you compare it to what we know and used to, today, then, yeah, it's, it's anoth"
+ ],
+ [
+  11,
+  900,
+  "er problem."
+ ],
+ [
+  11,
+  901,
+  "And the good thing is that, yeah, it it takes like, low power. And another service, it's called Burst. It's a broadcast service. Basically, "
+ ],
+ [
+  11,
+  910,
+  "you can broadcast to a group of satellites that are located in a specific area, And it would help you, yeah, to if you want to to deliver me"
+ ],
+ [
+  11,
+  920,
+  "ssage messages to to multiple parties at the same time or let's say with with low latency,"
+ ],
+ [
+  11,
+  926,
+  "then, yeah, maybe this is what you should use. And but it also has its own, latency issues. And for Iridium specifically, they have cloud ad"
+ ],
+ [
+  11,
+  937,
+  "apter. It's called Direct Connect. It's deployed on AWS. Their main connection is in The US, but they they they are available globally. So y"
+ ],
+ [
+  11,
+  947,
+  "ou can use it basically to work with some queue,"
+ ],
+ [
+  11,
+  951,
+  "to either push or pull or pull your your data. And the latency might be better than if you try to do it alone. But, yeah, it depends on what"
+ ],
+ [
+  11,
+  963,
+  " service is being used. And, currently, I'm I'm I haven't followed, yeah, again, because it's changing every time. So as of now, I think the"
+ ],
+ [
+  11,
+  974,
+  "y do support, only SBD and, some other services, but not Burst as of now."
+ ],
+ [
+  11,
+  980,
+  "So we saw like the the complexities we have with infrastructure and how space communication works. So Orbitport part of the story, well, it "
+ ],
+ [
+  11,
+  991,
+  "it has several things, on the play to do. First, it needs to to manage the the capacity in ground stations and things like that, eventually "
+ ],
+ [
+  11,
+  1002,
+  "to to pre allocate if it needs to. So it would have,"
+ ],
+ [
+  11,
+  1006,
+  "some some mean of sending a message at some specific point in time without waiting for the ground station to be ready. And we over allocate "
+ ],
+ [
+  11,
+  1019,
+  "sometimes in order to to make sure that some either peak or or low demand wouldn't, introduce major latency. So"
+ ],
+ [
+  11,
+  1029,
+  "on top of that, we also have aggregation, and batching, meaning that we don't send each and every messages as it comes to Orbit port, but wh"
+ ],
+ [
+  11,
+  1040,
+  "ether we are doing, some batching of several, several messages and basically sending packages of like, a set of messages together to to redu"
+ ],
+ [
+  11,
+  1051,
+  "ce the round trips and,"
+ ],
+ [
+  11,
+  1053,
+  "basically making it easier for us to to manage. This But this batching also is taking time, so is it a bit longer? It it takes time, but eve"
+ ],
+ [
+  11,
+  1063,
+  "ntually, you can plan better like this rather than just react on some incoming request that wants to send something to space and just do it."
+ ],
+ [
+  11,
+  1073,
+  " Because if you do it like that, eventually, you will be This batch configuration is controlled by you, I cannot batch myself? No. No. It's "
+ ],
+ [
+  11,
+  1083,
+  "on our side. Yeah."
+ ],
+ [
+  11,
+  1084,
+  "It's, it's not like transactions, like you need to to choose transactions. It's like, you can do something like more FIFO based, but eventua"
+ ],
+ [
+  11,
+  1092,
+  "lly you would see, okay, there are some requests that goes to the same service or something like that. So I would try to batch them together"
+ ],
+ [
+  11,
+  1101,
+  ". So I would interact with the service once, and I would get two responses from it once. You know? Something like that. And eventually, yeah"
+ ],
+ [
+  11,
+  1109,
+  ", that helps to to maximize"
+ ],
+ [
+  11,
+  1111,
+  "delivery, but we are also trying to to work with friends to send if if we have some some message that we want to transmit we type probabilit"
+ ],
+ [
+  11,
+  1122,
+  "y and it and we want it to arrive fast, then we can use several streams to send it and multiple providers and multiple types of communicatio"
+ ],
+ [
+  11,
+  1134,
+  "ns"
+ ],
+ [
+  11,
+  1134,
+  "in order to to make sure it would arrive fast. But it also comes with a cost, so on our side, we need to balance between the reliability and"
+ ],
+ [
+  11,
+  1144,
+  " the cost of the of the solution. So at the end, what what Orbitport does for for others is to streamline the connectivity with the with the"
+ ],
+ [
+  11,
+  1154,
+  " satellites. Basically, if you come from outside and you talk with Orbitport,"
+ ],
+ [
+  11,
+  1159,
+  "you wouldn't always tell that, yeah, okay, it talks with the space and waits for response. And it's actually, a pretty hard thing to do. We "
+ ],
+ [
+  11,
+  1169,
+  "are not there yet, but this is our goal and this is, where we aim to be at. And if we look on the entire story, so what we get here is if yo"
+ ],
+ [
+  11,
+  1180,
+  "u compare to the TCP IP stack,"
+ ],
+ [
+  11,
+  1182,
+  "then on the physical layer, we have the the RF link, and it could be either, from ground station coming or from, networks, but eventually, t"
+ ],
+ [
+  11,
+  1194,
+  "his is the first layer. On top of that, we have, I called it the embedded subsystems. Basically, on the satellite, Once you get some packet,"
+ ],
+ [
+  11,
+  1206,
+  "once the antenna reads some packet, it needs to send it to the right subsystem on the satellite. In our case, it would be us, the rest is su"
+ ],
+ [
+  11,
+  1217,
+  "bsystem. And the network side, that is what we just talked about. So again, it's like a complete layer that we need to do our logic there. W"
+ ],
+ [
+  11,
+  1228,
+  "e are running in a TEE. I would go into it very shortly."
+ ],
+ [
+  11,
+  1233,
+  "And we are utilizing multiple vendors and providers. So eventually, it's like, you can think of it like batching, aggregation, all those thi"
+ ],
+ [
+  11,
+  1243,
+  "ngs, but also routing and basically managing all the different providers. Then we have the transport layer, which on our side, it translates"
+ ],
+ [
+  11,
+  1253,
+  " to the we call it a test a tested transport."
+ ],
+ [
+  11,
+  1256,
+  "Basically, what we get is a secured connection between TE on earth and TE on in space. And, yeah, again, we we would, jump into it, very soo"
+ ],
+ [
+  11,
+  1268,
+  "n. And on the application there, we have our platform, what what we have on the satellite, which provides, it has, like, its own services an"
+ ],
+ [
+  11,
+  1279,
+  "d things like that. So we need to find our way within the satellite, within our our compute unit."
+ ],
+ [
+  11,
+  1287,
+  "So, yeah, I promised this. So what about the trust? I mentioned until now only like all the networking communication stuff, but eventually a"
+ ],
+ [
+  11,
+  1296,
+  "nd, yeah, we are doing the aggregation. It's a pretty let's say, if you have something, which, you want privacy for that action. If we are d"
+ ],
+ [
+  11,
+  1306,
+  "oing all this batching and things like that, we are losing that."
+ ],
+ [
+  11,
+  1310,
+  "And, basically, what we want is to run on TEs on both sides. And on Earth's side, we have, we are running on TDX. And if you'll do like a sh"
+ ],
+ [
+  11,
+  1324,
+  "ort, maybe, yeah, before we jump into other things, we'll do like a short introduction to to TEs. So TDX by Intel, it's"
+ ],
+ [
+  11,
+  1335,
+  "it's supporting visualization. That's like a cool feature of it. And, basically, what you get is isolated VMs running on a single machine wi"
+ ],
+ [
+  11,
+  1347,
+  "thout having, none of the VM access to other VMs. And also the hypervisor, none can no one can access, the memory of some, of some VM."
+ ],
+ [
+  11,
+  1359,
+  "And it has a remote attestation that allows us basically to verify what software was running on it and that the hardware also matches it. An"
+ ],
+ [
+  11,
+  1370,
+  "d if we look on the what we have in space, TDX, yeah, it's good for earth deployment but deployments, but it's not fit for embedded systems "
+ ],
+ [
+  11,
+  1382,
+  "and things that you want to,"
+ ],
+ [
+  11,
+  1384,
+  "be more, optimized with. And it has another, big drawback. We'll get into it. So with Arm Chart Zone, things works a bit differently. Basica"
+ ],
+ [
+  11,
+  1396,
+  "lly, it separates, single SKU into two main regions. One is the normal world, where we have it's it's also it should be like,"
+ ],
+ [
+  11,
+  1407,
+  "some trusted operation system, but at the end, this could be anything that's, distribution right now. And we have the secure world, and ther"
+ ],
+ [
+  11,
+  1419,
+  "e is, let's say, a mini operation system. And we have those two on the satellite. They are working on some device. We'll we'll see it soon. "
+ ],
+ [
+  11,
+  1430,
+  "But it's a single core device."
+ ],
+ [
+  11,
+  1433,
+  "So, basically, you have another component called the secure monitor that takes care of context switching between those two. The context swit"
+ ],
+ [
+  11,
+  1443,
+  "ching is done with didn't wrote here. It's done with exceptions. So whenever you have some exception, for example, in the normal world, you "
+ ],
+ [
+  11,
+  1453,
+  "go, up to the secure monitor and it can decide what to do from there, whether it's a real,"
+ ],
+ [
+  11,
+  1460,
+  "exception or you just need to context switch to the secure world. And you can pass like that parameters and everything. And eventually, you "
+ ],
+ [
+  11,
+  1469,
+  "have also like, you have ability to control the peripherals, let's say, the things that you connect to it, the devices, and basically ensure"
+ ],
+ [
+  11,
+  1479,
+  "s that if someone if some device is being used by the secure world, it won't be used by by anything in the normal world."
+ ],
+ [
+  11,
+  1487,
+  "So we have these two, Amtrak Zone and TDX. And if you look on the infrastructure for Orbit port, then again, it's a TDX based, runtime, on E"
+ ],
+ [
+  11,
+  1501,
+  "arth. And in Orbit, we are running on Armtrace Zone. Basically, we have a mutual remote attestation where"
+ ],
+ [
+  11,
+  1511,
+  "we validate that attestation from space on earth and vice versa. And we have a verifiability. So whatever is being sent, know that whatever "
+ ],
+ [
+  11,
+  1523,
+  "is being processed, we know that it was running on some specific software, on some specific hardware. And, yeah, we know the regions"
+ ],
+ [
+  11,
+  1534,
+  "where it came from. So if you look on the layers of trust for Orbit port, what we're doing is to have our own OS image. We use MCOSI to buil"
+ ],
+ [
+  11,
+  1549,
+  "d it. And on top of that, we are running k three s. And for that, we have our, our images,"
+ ],
+ [
+  11,
+  1558,
+  "our container images that are being built with Docker Ardent images. Basically, I'm not sure if you know it. It's a pretty new feature of Do"
+ ],
+ [
+  11,
+  1568,
+  "cker, but they they created some it's also like tools and repository and everything for, R and D images that basically you can track the ent"
+ ],
+ [
+  11,
+  1579,
+  "ire, SBOM, and you have all the"
+ ],
+ [
+  11,
+  1581,
+  "all the dependencies. Everything is pinned with versions. And it has some other, like, standards than the the normal Docker Docker file, tha"
+ ],
+ [
+  11,
+  1596,
+  "t we know. And, eventually, we connect these two things, these two pipelines. Then whenever we put some code into lower"
+ ],
+ [
+  11,
+  1608,
+  "Then, we get finally, we get a docker added image that sits on docker added image repository rather than docker. And what we do from there i"
+ ],
+ [
+  11,
+  1631,
+  "s on the call what we they call the all the images that we got. We create some"
+ ],
+ [
+  11,
+  1644,
+  "we create the service test, k three s. Behind the scenes, we use we use container d. And, eventually, we have the the output is that we have"
+ ],
+ [
+  11,
+  1655,
+  " a pretty we we strip off everything that we don't need from the from the operation system. So we have a pretty thin image that we can boot "
+ ],
+ [
+  11,
+  1666,
+  "on some,"
+ ],
+ [
+  11,
+  1667,
+  "on any VM. But in our case, we we go and run it on a confidential VM, on GCP. This is provided by them. Basically, you can think of it like,"
+ ],
+ [
+  11,
+  1681,
+  " having some spot of some compute that runs TDX, and therefore, we can run as a VM on this infrastructure."
+ ],
+ [
+  11,
+  1691,
+  "And within what we have running, specifically, we have Orbit port, of course, but specifically, we have some reverse proxy to to pull off th"
+ ],
+ [
+  11,
+  1707,
+  "e TLS termination and to have a more like the the space environment, what's going on there, how it looks like. So first, what we have there?"
+ ],
+ [
+  11,
+  1723,
+  " So our unit on the satellite,"
+ ],
+ [
+  11,
+  1726,
+  "it consists of a Raspberry Pi, USB armory. That's a cool, secure device with arm charge zone on it. If you look on the Echaton, you would se"
+ ],
+ [
+  11,
+  1738,
+  "e in our track, you will you can play with it in one of the tracks. So, yeah, take a look. And we have some TPM on it as well. And"
+ ],
+ [
+  11,
+  1750,
+  "you can see okay. So you can see here on the left, this is the actual board that we would have. Basically, it's a Raspberry Pi on top of som"
+ ],
+ [
+  11,
+  1762,
+  "e other board to have all the components integrated, in an optimized way. If you look on the left, this is a stack where eventually the boar"
+ ],
+ [
+  11,
+  1773,
+  "d sits and you can see that it it it has like these copper"
+ ],
+ [
+  11,
+  1778,
+  "stripes. This is what we use for, heat dissemination. And this is how it looks like as a box. And, eventually, it arrives to some small sate"
+ ],
+ [
+  11,
+  1790,
+  "llite. In this case, this is a CubeSat. And if we look what we have inside, then what I explained before with the normal world and secure wo"
+ ],
+ [
+  11,
+  1803,
+  "rld, this is the USB armory connected to the pi."
+ ],
+ [
+  11,
+  1807,
+  "On the Pi, I'm not showing you what everything that we have, but just so you know, we have an operation system that we also made our own usi"
+ ],
+ [
+  11,
+  1819,
+  "ng Yocto. And on top of that, we have some, it's not a real not just one single app, but we have several, relays, that helps you to get to,"
+ ],
+ [
+  11,
+  1830,
+  "to the secure world, eventually to the USB armory. And on the USB armory, we have another secure elements, another two secure elements that "
+ ],
+ [
+  11,
+  1841,
+  "we use. And I think we can see here. Okay. So the the setup once he wants to to set up some satellite in the sky and to be sure that"
+ ],
+ [
+  11,
+  1852,
+  "from our point of view, we know that we are talking to that satellite. We need some proof that the vendor didn't just put the Raspberry Pi i"
+ ],
+ [
+  11,
+  1863,
+  "n their garage and saying, yeah, it's in space. So, we want something stronger. So what we have is, let's say the once we launch something, "
+ ],
+ [
+  11,
+  1875,
+  "then we only in the sky, we generate,"
+ ],
+ [
+  11,
+  1878,
+  "two keys. And these two keys are generated from different devices, the ones that we see here, the SCO five o and the Tropic zero one. And we"
+ ],
+ [
+  11,
+  1889,
+  " use those keys in order to eventually participate in some protocol called SIP, security execution assurance protocol. This is a protocol th"
+ ],
+ [
+  11,
+  1900,
+  "at we worked with,"
+ ],
+ [
+  11,
+  1901,
+  "with, common prefix to to have some, defined flow for us whenever we want to boot or provision some satellite. And eventually, how it works "
+ ],
+ [
+  11,
+  1913,
+  "is that from the ground stations, you would have some form of a challenge response, ceremony with several ground stations."
+ ],
+ [
+  11,
+  1924,
+  "And there's a satellite you need to interact with several of these, and then you get a certificate. And this certificate, basically, this is"
+ ],
+ [
+  11,
+  1933,
+  " like the the attestation. Ongoing here, it says, still not there. We need to talk like about design stuff, but, yeah, we would also have li"
+ ],
+ [
+  11,
+  1942,
+  "ke something ongoing with regards to this proof. So it wouldn't be like just a one time. Currently, with the protocol, it's a one time thing"
+ ],
+ [
+  11,
+  1950,
+  ", just when we provision."
+ ],
+ [
+  11,
+  1952,
+  "But we plan to have it something more that occurs periodically. A nice picture, I already I think I mentioned most of it, but, yeah, just to"
+ ],
+ [
+  11,
+  1964,
+  " see the layers themselves. Here, I forgot to put Yocto at the beginning, but eventually, and I didn't mention Secure Boot. So what we would"
+ ],
+ [
+  11,
+  1976,
+  " have in our system is that,"
+ ],
+ [
+  11,
+  1978,
+  "besides that we would create the image, we would also, run Secure Boot to ensure that only image that we made can be run. And we would have "
+ ],
+ [
+  11,
+  1993,
+  "the same Secure Boot ceremony also with other up there is something that we have and signed,"
+ ],
+ [
+  11,
+  2003,
+  "and only this can be running. Like, no one can just put their stuff or manipulate our software. So, eventually, we get something, like a pro"
+ ],
+ [
+  11,
+  2014,
+  "of that, yeah, we know what's running, we know where. And, yeah, now we are good to go with regards to, security. So, yeah, we we've seen al"
+ ],
+ [
+  11,
+  2025,
+  "l that."
+ ],
+ [
+  11,
+  2026,
+  "And eventually, yeah, we want to, see what we can do with all these, with all these things. So if we look on the architecture of OrbitPort, "
+ ],
+ [
+  11,
+  2037,
+  "then if you look on the left side, we have some user that can interact with the gateway. The gateway would route their request to the right,"
+ ],
+ [
+  11,
+  2048,
+  " service."
+ ],
+ [
+  11,
+  2049,
+  "Currently, we support only CDRNG and KMS, but soon there would be more. And, in general, we have here more components, some of the authentic"
+ ],
+ [
+  11,
+  2060,
+  "ation, as I mentioned before. Currently, we have the account provider completely isolated from Orbit port. But, yeah, it's just to to get st"
+ ],
+ [
+  11,
+  2070,
+  "arted. Afterwards, we would connect it."
+ ],
+ [
+  11,
+  2073,
+  "And on the space infra side, so we have connectors which basically helps us to to differentiate between the different APIs, the different co"
+ ],
+ [
+  11,
+  2085,
+  "mponents of each provider. And it could be like the same provider, but different interface. So, yeah, it's also like very helpful on that fr"
+ ],
+ [
+  11,
+  2097,
+  "ont."
+ ],
+ [
+  11,
+  2097,
+  "And we will get yeah, there are several things here that I still need to mention with regards to CTR engine KMS. But we're having more compo"
+ ],
+ [
+  11,
+  2109,
+  "nents. For example, we are working with IPFS to have some distributed storage. And, yeah, I think that's it for this picture. So, CDRNG. CDR"
+ ],
+ [
+  11,
+  2120,
+  "NG stands for COSMIC"
+ ],
+ [
+  11,
+  2122,
+  "true random number generator. And, basically, it relies on entropy that we gather in space. There is some sensor that helps us to to track o"
+ ],
+ [
+  11,
+  2133,
+  "ver space radiation. And, I can't really tell how how it's really working, but, it's basically provide us some random number that is based o"
+ ],
+ [
+  11,
+  2145,
+  "n some phenomena"
+ ],
+ [
+  11,
+  2146,
+  "in in the sky, in space, no one can access to. And, basically, it gives us a real true random number. This is like a and we would see soon t"
+ ],
+ [
+  11,
+  2161,
+  "hat we also have, a way to validate it. So one second. So if we try to play a bit if we try to play a bit and"
+ ],
+ [
+  11,
+  2173,
+  "we can start with the docs, but let's open CTRNG. That's a bad link. In the docs, you can find some guides how to work with the with our SDK"
+ ],
+ [
+  11,
+  2184,
+  ". We have an SDK in TypeScript. And specific specifically for CTRNG, we have also in Rust. But generally, yeah, we plan to to support all th"
+ ],
+ [
+  11,
+  2195,
+  "e Rust, Go,"
+ ],
+ [
+  11,
+  2196,
+  "TypeScript, whatever. And as a user, you need to provide some a some client ID and client secret and you are good to go. Basically, you can "
+ ],
+ [
+  11,
+  2209,
+  "ask for Randall number and you will get something from space. We also have another option without credentials"
+ ],
+ [
+  11,
+  2219,
+  "and this would go to what we call a public randomness beacon. The the randomness beacon is a chain of blocks with random numbers in it. And "
+ ],
+ [
+  11,
+  2230,
+  "what happens is that you can you can access it from anywhere. You don't need any API keys. You don't need anything. And we post every, I thi"
+ ],
+ [
+  11,
+  2241,
+  "nk, five minutes. We post a new block there with new randomness"
+ ],
+ [
+  11,
+  2246,
+  "so you can basically use it as a seed for your system. And, yeah, and, you can manipulate the randomness because eventually it's public. But"
+ ],
+ [
+  11,
+  2257,
+  ", yeah, you can, you can work with it without anything. So these two cool options how do I get back? These two cool options are are availabl"
+ ],
+ [
+  11,
+  2268,
+  "e through the the SDK."
+ ],
+ [
+  11,
+  2270,
+  "And if you look one second on this project, basically, we have, we have integrated, the CTRNG as a seed for threshold libraries, and we use "
+ ],
+ [
+  11,
+  2285,
+  "this, this is the this is the library itself. What we did is to follow some interface,"
+ ],
+ [
+  11,
+  2294,
+  "so some trade, and basically be able to so others would be able to work with us. And basically, you can give our component as a RNG generato"
+ ],
+ [
+  11,
+  2307,
+  "r and it would it would work. And basically, what we are doing is to it's also related to the randomness beacon with IPFS."
+ ],
+ [
+  11,
+  2318,
+  "What we are doing with, with that is that we use mixed CTRNG and mixed in the sense that we are taking a real real CTRNG from space, and we "
+ ],
+ [
+  11,
+  2328,
+  "use it as a seed to generate more random numbers. We follow you can you can, I think it's writing written here somewhere, but whatever we ar"
+ ],
+ [
+  11,
+  2339,
+  "e doing is, we are based on we are doing the derivation based on ChaCha,"
+ ],
+ [
+  11,
+  2344,
+  "meaning that we are trying to, take some random seed, generate multiple numbers from it until until some, like, it was used too much or thin"
+ ],
+ [
+  11,
+  2356,
+  "gs like that? And eventually, the user would get a random number that is also based on, the the the cosmic one. So on our side, we did lots "
+ ],
+ [
+  11,
+  2367,
+  "of, investigations"
+ ],
+ [
+  11,
+  2369,
+  "on how how can we prove it, how can we prove it, through randomness. So we have integrated here several, statistical verification tests, and"
+ ],
+ [
+  11,
+  2379,
+  " you can run it, yourself and you can check the repository. We actually have a repository for statistical verification. In order to really d"
+ ],
+ [
+  11,
+  2389,
+  "o some real tests here, you need a lot of, you need lots of datasets."
+ ],
+ [
+  11,
+  2394,
+  "So with something from space, as you can imagine, it might be hard to to get, enough data. But if you have something, that you can provide m"
+ ],
+ [
+  11,
+  2406,
+  "illion or more items from it, then, yeah, you can run these tests and basically, you can, verify that your randomness is truly random. And I"
+ ],
+ [
+  11,
+  2419,
+  " think that's it with regards to CTRNG."
+ ],
+ [
+  11,
+  2422,
+  "If we look on KMS, then we we offer, like, a very special solution because if you look on existing KMS out there, on, cloud KMS or Ashi Ashi"
+ ],
+ [
+  11,
+  2433,
+  "ko Vault, things like that, eventually, you have the chicken and the egg problem where you need to store some root key for for this KMS. You"
+ ],
+ [
+  11,
+  2444,
+  " need to store it somewhere."
+ ],
+ [
+  11,
+  2446,
+  "So you either store it in some other KMS or several KMSs, but, yeah, eventually you're you're stuck in like some some sort of a a loop. So y"
+ ],
+ [
+  11,
+  2456,
+  "ou trust some cloud provider because they you don't need to worry about their root key. So they know how to worry about it. So you use some "
+ ],
+ [
+  11,
+  2467,
+  "cloud KMS or some HSM, but both introduce"
+ ],
+ [
+  11,
+  2470,
+  "introduce issues and eventually, have both like the if you look on the the cloud KMS, then you have a provider lock in, regulation issue. An"
+ ],
+ [
+  11,
+  2482,
+  "d if you look on HSM, then, yeah, you trust some operator. So eventually, this is a problem which we aim to solve with our version of KMS,"
+ ],
+ [
+  11,
+  2493,
+  "which, can run-in space. And, basically, we run on top of OpenBAW. And those who don't know, OpenBAW is the open source version of Hashgold "
+ ],
+ [
+  11,
+  2505,
+  "Vault, which has made, eastern business, business license since, twenty o three. So, yeah, OpenBAW, it works the same. It works with the sam"
+ ],
+ [
+  11,
+  2517,
+  "e architecture."
+ ],
+ [
+  11,
+  2518,
+  "So it has, it's it's called Go plug ins. They allow, allow you to extend their capabilities with Go code that you write and you follow some "
+ ],
+ [
+  11,
+  2528,
+  "interface. And, basically, you can be part running as part of OpenBAW your code. So what we did is to implement a plug in for Ethereum. So y"
+ ],
+ [
+  11,
+  2538,
+  "ou can do key management and signing."
+ ],
+ [
+  11,
+  2541,
+  "And we also we're also planning to do it for threshold, threshold DCDSA and for PQC. And, hopefully, we can do it for other things that we w"
+ ],
+ [
+  11,
+  2555,
+  "ould see in the future. And the Orbit port in this case is the orchestration layer of it. So you have"
+ ],
+ [
+  11,
+  2565,
+  "OpenBAW with plug ins and this deployment also it's it's, like both on earth and in the space. So in the space, we are also running OpenBAW."
+ ],
+ [
+  11,
+  2576,
+  " And basically, with OrbitPort, we can orchestrate all the all the processes that needs to happen. And in the future, we would have the MPC "
+ ],
+ [
+  11,
+  2587,
+  "flow orchestrated"
+ ],
+ [
+  11,
+  2588,
+  "from there. And we would have, as I mentioned, like an hybrid deployment where some of the nodes would be on earth and some, in space. And i"
+ ],
+ [
+  11,
+  2602,
+  "n both cases, yeah, we would be running within an enclave or at least some of the some of the processing would be done within an enclave. If"
+ ],
+ [
+  11,
+  2615,
+  " we open the docs,"
+ ],
+ [
+  11,
+  2617,
+  "Then in the docs, you would find a pretty detailed also like examples, but also what are our capabilities. Let me jump right into it, one se"
+ ],
+ [
+  11,
+  2631,
+  "cond. So, basically, you can see what we support. We support, of course, what comes by default from OpenBAW."
+ ],
+ [
+  11,
+  2642,
+  "This is this transmit scheme. You can see there are many many algorithms that are supported, and we also include Ethereum as well. And how i"
+ ],
+ [
+  11,
+  2654,
+  "t works as a user, again, through the the the SDK, but you can do it by yourself. It's just HTTP call. So, you need again here, this time yo"
+ ],
+ [
+  11,
+  2666,
+  "u must have a client ID"
+ ],
+ [
+  11,
+  2668,
+  "and a secret. And once you have those, you can connect. And, basically, you can discover what are the capabilities of the current deployment"
+ ],
+ [
+  11,
+  2678,
+  " of the KMS. It would change over time and it might support multiple KMSs, but for now, we have like a single entry point that should give y"
+ ],
+ [
+  11,
+  2688,
+  "ou back the existing capabilities. And according to that, you can take a decision"
+ ],
+ [
+  11,
+  2694,
+  "on your end. So whenever you you want to to interact with it, you need to create some key. Right? So, there's an API for that. Then whenever"
+ ],
+ [
+  11,
+  2705,
+  " you call, the key is completely generated, completely, out of your site. You as a user never see the key, and you never get it wrong. And i"
+ ],
+ [
+  11,
+  2716,
+  "n general, whenever you want to work with it,"
+ ],
+ [
+  11,
+  2720,
+  "you can perform the cryptographic operation within with our plugin plugins within OpenBAW. So it could be decrypt or encrypt, and it could b"
+ ],
+ [
+  11,
+  2736,
+  "e signing. And besides that, we allow you to rotate a key. And, basically,"
+ ],
+ [
+  11,
+  2744,
+  "let's move to another one. I'm just I'm just really sorry. We are running a little bit out of time. So in five minutes, if maybe just, feel "
+ ],
+ [
+  11,
+  2754,
+  "like, for questions, if Alright. So let's let's jump really quick. Let me just show you. So I don't know if there's, like, questions. Sorry."
+ ],
+ [
+  11,
+  2765,
+  " Maybe. Thank you for the presentation very much. So if you could clap us together."
+ ],
+ [
+  11,
+  2771,
+  "Anyone has a question for does anyone have a question? Thank you, Amir, for the presentation. Please, what are the challenges of having the "
+ ],
+ [
+  11,
+  2782,
+  "computational platform on the orbit regarding the radiation and deorbiting? Yeah. We didn't get into the satellite things too much. But, yea"
+ ],
+ [
+  11,
+  2793,
+  "h, whenever you're in space and we are using,"
+ ],
+ [
+  11,
+  2796,
+  "like, customer silicon, like, not hardened devices for space, so we need to have some coating and protection. You saw it with the aluminum b"
+ ],
+ [
+  11,
+  2806,
+  "ox. Eventually, space radiation, it has like several there are several types of things that can go wrong. One is the degradation of the hard"
+ ],
+ [
+  11,
+  2817,
+  "ware. So this is where the aluminum box helps."
+ ],
+ [
+  11,
+  2820,
+  "And afterwards, you have, phenomenas like bit flips. So it can actually flip some bit in your memory and then some computation sorry. Once a"
+ ],
+ [
+  11,
+  2829,
+  "gain. Some computation can be wrong, for example, and it would be corrupted. So you need to handle that on the software level. Like, you nee"
+ ],
+ [
+  11,
+  2838,
+  "d to either run a single computation multiple times or to have several components, exact components that would run the same computation,"
+ ],
+ [
+  11,
+  2846,
+  "so you would actually get you would actually be able to validate that this is the result. And, well, there are many things, around the the s"
+ ],
+ [
+  11,
+  2857,
+  "atellite things. So but if you focus only on on radiation, then I guess then, on our side, we also, take care of, let's say, the the storage"
+ ],
+ [
+  11,
+  2867,
+  ", whatever we we put in the memory,"
+ ],
+ [
+  11,
+  2870,
+  "we we take into account that it might get corrupted. So we redundancy is the is the king here. Like, you need to understand how you do your "
+ ],
+ [
+  11,
+  2880,
+  "redundancy in your architecture on both hardware and and software. That's the yeah. We You're running you're running your, like, software on"
+ ],
+ [
+  11,
+  2890,
+  ", like, the normal Raspberry Pi. So where is, like, a standard RAM memory. So where is no, like, memory which is try to avoid this bit bit f"
+ ],
+ [
+  11,
+  2899,
+  "lip and etcetera. You do everything on the software level. Right?"
+ ],
+ [
+  11,
+  2904,
+  "Let me go back here. Yeah. Yeah. So you can see here on the left, this is the actual board, a picture of our board, our PCB. Your PCB is on "
+ ],
+ [
+  11,
+  2913,
+  "top. Like, what what exactly is this doing? Because on the on the hood, it's Raspberry Pi classic one, but what is the top level? What is wh"
+ ],
+ [
+  11,
+  2923,
+  "at is this shield does? So you can see it's, it's connected to it here. Yeah. Yeah. And also via this USB"
+ ],
+ [
+  11,
+  2930,
+  "sharing dongle. And, basically, we have several peripherals that we connect to it, the USB armories, for example. Alright? We have two USB a"
+ ],
+ [
+  11,
+  2940,
+  "rmories. That's two USB connections that And we have we must have this set up proper for space. Okay. We mentioned radiation, so there's als"
+ ],
+ [
+  11,
+  2950,
+  "o vibration in space. Right? So USB, things like that, it it wouldn't work the best over there."
+ ],
+ [
+  11,
+  2957,
+  "Yeah. Yeah. Thank you really much for the presentation. We are unfortunately running out of time. So thank you again very much. Yeah. And, c"
+ ],
+ [
+  11,
+  2979,
+  "ome find us in the ACCO Room. And we're be moving to"
+ ],
+ [
   15,
   11,
   "Hello, everyone. Thank you very much for the introduction. My name is Fernando Robasco, and I'm a software engineer at OpenSeppelin. And tod"
