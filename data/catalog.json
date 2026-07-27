@@ -10,7 +10,9 @@
     "id": "1xpnwI5s5LEHjuAbUvbadUCNEhdvjaZzq",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "preview": "dead",
+    "folder": true
    }
   ],
   "transcript": null,
@@ -95,7 +97,8 @@
     "kind": "video",
     "size": 0,
     "stream": true,
-    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt.mp3"
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt.mp3",
+    "preview": "dead"
    }
   ],
   "transcript": "11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt",
@@ -202,7 +205,8 @@
     "kind": "video",
     "size": 0,
     "stream": true,
-    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO.mp3"
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO.mp3",
+    "preview": "dead"
    }
   ],
   "transcript": "18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO",
@@ -223,7 +227,8 @@
     "kind": "video",
     "size": 0,
     "stream": true,
-    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ.mp3"
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ.mp3",
+    "preview": "dead"
    }
   ],
   "transcript": "1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ",
@@ -264,7 +269,8 @@
     "kind": "video",
     "size": 0,
     "stream": true,
-    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi.mp3"
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi.mp3",
+    "preview": "dead"
    }
   ],
   "transcript": "1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi",
@@ -457,7 +463,8 @@
     "kind": "video",
     "size": 0,
     "stream": true,
-    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1wfq5x5zRItw4nWexoWLpNC3FnHRA683G.mp3"
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1wfq5x5zRItw4nWexoWLpNC3FnHRA683G.mp3",
+    "preview": "dead"
    }
   ],
   "transcript": "1wfq5x5zRItw4nWexoWLpNC3FnHRA683G",
