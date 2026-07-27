@@ -221,13 +221,14 @@
     "id": "1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ",
     "kind": "video",
     "size": 0,
-    "stream": true
+    "stream": true,
+    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ.mp3"
    }
   ],
-  "transcript": null,
-  "duration": null,
+  "transcript": "1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ",
+  "duration": "00:29:04",
   "quality": "ok",
-  "transponder": false,
+  "transponder": true,
   "featured": false
  },
  {
@@ -241,14 +242,13 @@
     "id": "1mqWp5tAk_o1NVmpocbOjaqztUjpZXrY7",
     "kind": "video",
     "size": 0,
-    "stream": true,
-    "hosted": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1mqWp5tAk_o1NVmpocbOjaqztUjpZXrY7.mp3"
+    "stream": true
    }
   ],
-  "transcript": "1mqWp5tAk_o1NVmpocbOjaqztUjpZXrY7",
-  "duration": "00:49:41",
+  "transcript": null,
+  "duration": null,
   "quality": "ok",
-  "transponder": true,
+  "transponder": false,
   "featured": false
  },
  {
