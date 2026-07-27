@@ -8140,6 +8140,916 @@
   " question? If not, then please let's all clap, Philippe, for a very impressive presentation of plank."
  ],
  [
+  9,
+  12,
+  "Good afternoon, everyone. So as mentioned, I'll be presenting a topic about prediction markets. And funny enough, I'm a lawyer in Switzerlan"
+ ],
+ [
+  9,
+  19,
+  "d, but over the last two years, I show up in Prague for completely nonlegal topics. So I always have this legal lens of let's see what may g"
+ ],
+ [
+  9,
+  27,
+  "o wrong and what are all the caveats somewhere, and then I present something that is not legal at all. This time, it's gonna be prediction m"
+ ],
+ [
+  9,
+  34,
+  "arkets because it's the biggest hype. Everyone is talking about polymarket,"
+ ],
+ [
+  9,
+  38,
+  "Khalshi. Can we bet on Trump whether he will say a specific word tomorrow in his speech or not? Where will the next missile land during, som"
+ ],
+ [
+  9,
+  47,
+  "e wars? This is the trend now. Now prediction markets also presented as a new source of truth. We're have crowd intelligence that gets out o"
+ ],
+ [
+  9,
+  57,
+  "f this. Now is it truly a source of truth, or is it just some bluff? That's the topic today."
+ ],
+ [
+  9,
+  63,
+  "Well, first of all, let's remind ourselves that it's a old idea in a new stack. Why an old idea? Because prediction markets are not new. Pol"
+ ],
+ [
+  9,
+  72,
+  "ymarket and culture, this is just a new implementation of something that existed before. And the real question is, are those new players add"
+ ],
+ [
+  9,
+  80,
+  "ing something to the landscape? Are they solving something? And that's the only legal reference I'll make. It depends, actually. So some of "
+ ],
+ [
+  9,
+  89,
+  "them are improving what we had before, while others are just rebuilding the same thing on Web three rails."
+ ],
+ [
+  9,
+  95,
+  "Now crazy times. Why is it important? Because as you'll see with the examples I'll mention afterwards, prediction markets were always tied t"
+ ],
+ [
+  9,
+  103,
+  "o things that stir our feelings. It has to be important enough that we want to bet on it. And it was always about politics, elections, sport"
+ ],
+ [
+  9,
+  111,
+  "s, and wars, unfortunately. And these last months, we have, like, so many events, like, even the last years. This is kinda what feeds also t"
+ ],
+ [
+  9,
+  119,
+  "he markets. If there's nothing interesting happening,"
+ ],
+ [
+  9,
+  122,
+  "what should I vote on? Just like the the next football match. So the old wave. Well, I was actually surprised myself when I was researching."
+ ],
+ [
+  9,
+  130,
+  " There's something that goes all the way back to 1868 and was already referred as a prediction market in The US regarding elections. And the"
+ ],
+ [
+  9,
+  139,
+  "n when you look at the other dates regarding, like, the Hollywood movie exchange or, like, the Iowa electric markets, well, we have eighty e"
+ ],
+ [
+  9,
+  147,
+  "ight ninety six two thousand fourteen. So really,"
+ ],
+ [
+  9,
+  150,
+  "not so fresh, not so new. It was just out there. Now what about the old wave? There are four things. The old model worked. I mean, there was"
+ ],
+ [
+  9,
+  159,
+  " traction. User people use it, but it was not as prominent as now. Like, polymarket is everywhere on the news. Same for Cauchy. How come tha"
+ ],
+ [
+  9,
+  168,
+  "t we haven't mentioned these examples instead? Well, first of all, regulatory uncertainty."
+ ],
+ [
+  9,
+  174,
+  "All of these examples were not big enough to really stir, like, the debate in terms of should we regulate it differently. Some of these play"
+ ],
+ [
+  9,
+  183,
+  "ers, as the Iowa example, they were operating on a nonprofit basis because it was mostly academic research. Not all of some of them had caps"
+ ],
+ [
+  9,
+  192,
+  ", for example, meaning that the regulator just, like, issued nonaction letters or, like, specific frames that work for this specific project"
+ ],
+ [
+  9,
+  201,
+  ","
+ ],
+ [
+  9,
+  201,
+  "and then it was just living like that. There was also, like, custodial risk. I mean, all of these platforms, if money was involved, well, th"
+ ],
+ [
+  9,
+  208,
+  "ey were holding the funds. There wasn't a web free infrastructure that allows all the noncustodial solutions. There's also resolution opacit"
+ ],
+ [
+  9,
+  216,
+  "y in a lot of cases, like how does it work behind it, like who is telling the truth, who is deciding on whether what is was the right outcom"
+ ],
+ [
+  9,
+  223,
+  "e, and how are things allocated. You had to trust the platform"
+ ],
+ [
+  9,
+  226,
+  "and limited access, but this is related to regulatory uncertainty. Because of this, like, it was probably just access, some of them in The U"
+ ],
+ [
+  9,
+  235,
+  "S, some elsewhere. It's, like, very local. Now the new wave, the new names, I mean, we've all heard about Polymarket, but you have Limitless"
+ ],
+ [
+  9,
+  244,
+  " as well, Augur, ExoMarket that also is like a new rising player. You have Kalshields. I added it here."
+ ],
+ [
+  9,
+  250,
+  "Well, the new wave is actually very eclectic. Not all of them are the same. I mean, all of them are referred to themselves as prediction mar"
+ ],
+ [
+  9,
+  258,
+  "kets. Some of them say conviction markets, as AXA market, but it's the same principle. Now old idea, new stack. So what changes with those m"
+ ],
+ [
+  9,
+  267,
+  "arkets? Well, before I dive into the details, the biggest thing that changes is the scale."
+ ],
+ [
+  9,
+  272,
+  "The previous example, some of them, like the Hollywood exchange, it was, like, about fake money. Others were just very local American politi"
+ ],
+ [
+  9,
+  280,
+  "cs. Others were also, like, focused on specific things like sports, for example. Here we have platforms that aim at being as broad as possib"
+ ],
+ [
+  9,
+  289,
+  "le. The slogan is bet on anything you want, basically. And what else is being improved? Are we reinventing the wheel or just doing something"
+ ],
+ [
+  9,
+  297,
+  " completely new?"
+ ],
+ [
+  9,
+  298,
+  "Well, they're kinda improving the past with some design choices. Well, first of all, custody. We shift from something that just we need to t"
+ ],
+ [
+  9,
+  306,
+  "rust the custodian to smart contract base. Market creation. Some of these example have permission less market creation. I can decide tomorro"
+ ],
+ [
+  9,
+  314,
+  "w to create a market. I could have created a market about how many people will show up in this room. This was not possible. Before, you had "
+ ],
+ [
+  9,
+  322,
+  "to,"
+ ],
+ [
+  9,
+  322,
+  "let's say, kind of pray that the market you're dreaming about is important enough that someone created it. Market resolution as well, we're "
+ ],
+ [
+  9,
+  330,
+  "moving towards more like decentralized or at least attempt to decentralized and more transparent manners of resolving markets. Settlement, w"
+ ],
+ [
+  9,
+  339,
+  "hich is on chain. You can see what happened there. You don't need to trust a centralized, entity. And then the access, the goal, especially "
+ ],
+ [
+  9,
+  347,
+  "for the permission less decentralized platforms, is to have everyone"
+ ],
+ [
+  9,
+  351,
+  "being able to participate and not just people from specific jurisdictions. Now this new stack and these new benefits also come with their ow"
+ ],
+ [
+  9,
+  360,
+  "n wave of risks because, obviously, custody if custody is with smart contracts, you add the technical risk because smart contracts could be "
+ ],
+ [
+  9,
+  369,
+  "drained. Market creation, if you have something that's permissionless,"
+ ],
+ [
+  9,
+  373,
+  "well, people could create markets on very shady things. This is something that was reminded in general. You're not supposed especially by th"
+ ],
+ [
+  9,
+  381,
+  "e CFTC in The US, you're not supposed to create in regulated setups markets on illegal and moral things. But on paper, if it's permissionles"
+ ],
+ [
+  9,
+  388,
+  "s, I could create something as, let's say, negative f, will this person get killed tomorrow? And nothing would prevent me from that. Same fo"
+ ],
+ [
+  9,
+  396,
+  "r market resolution. While having something that's decentralized and transparent,"
+ ],
+ [
+  9,
+  400,
+  "does it solve another problem that I will mention more in detail is is the data I'm relying on reliable and truthful in the first place? And"
+ ],
+ [
+  9,
+  408,
+  " I'll dive more into that, but the fact that, I don't know, a jury, for example, or several oracles are being used doesn't solve that issue "
+ ],
+ [
+  9,
+  417,
+  "fully. Settlement on chain, the same technical issues could arise. And in terms of access, I will see as we will see afterwards, it wasn't r"
+ ],
+ [
+  9,
+  425,
+  "eally solved."
+ ],
+ [
+  9,
+  426,
+  "So ways within a wave. Not all of these market as it does, like, very diverse landscape. All of them are prediction markets, but not all of "
+ ],
+ [
+  9,
+  434,
+  "them have the same approach. And some of them are simply centralized and regulated. That's the culture example. They're kinda just reinventi"
+ ],
+ [
+  9,
+  441,
+  "ng the wheel because it's the same thing that we had before, but at a larger scale. Some of them are using decentralization"
+ ],
+ [
+  9,
+  448,
+  "just in doses, not all of it, but part of it. So they are improving the wheel. I would say Polymarket is kinda a good example of that with t"
+ ],
+ [
+  9,
+  455,
+  "heir resolution system, but some other things are still, like, quite centralized. And then you have decentralization at the core, offering a"
+ ],
+ [
+  9,
+  463,
+  " completely new wheel design. And this is, I would say, mostly exome markets where all the layers are supposed to be decentralized,"
+ ],
+ [
+  9,
+  470,
+  "and they build everything on top of their own layer one. The new wave with old flaws. Well, this is the main thing. And for whatever reason,"
+ ],
+ [
+  9,
+  480,
+  " this does not appear. Yes. So one of the things that was wrong with the first wave, the old wave that didn't gain as much traction was regu"
+ ],
+ [
+  9,
+  490,
+  "latory uncertainty and limited access."
+ ],
+ [
+  9,
+  493,
+  "And when we see, well, for example, Kelshi, after all, I said they're just reinventing the wheel, but same thing. I tried to connect. I'm in"
+ ],
+ [
+  9,
+  501,
+  " the wrong jurisdiction. I cannot. I would need to be in The US because and I added the whole list. All of these countries, and you'll see a"
+ ],
+ [
+  9,
+  509,
+  "ll of the European countries included, cannot access it. It's US based, just accessible there. This comes from I should have remembered, but"
+ ],
+ [
+  9,
+  517,
+  " I don't remember which one anymore. I think it's limitless."
+ ],
+ [
+  9,
+  520,
+  "Same. A whole list of exclusion, and here's the opposite because they're not regulated in The US. They don't wanna touch that jurisdiction. "
+ ],
+ [
+  9,
+  528,
+  "You cannot access it from The US, and then there's a whole list of countries being, there because of sanctions. So we haven't really solved "
+ ],
+ [
+  9,
+  535,
+  "that thing except if you say you are completely redesigning the way prediction markets work and you are fully decentralized."
+ ],
+ [
+  9,
+  542,
+  "And this is the same thing as we're doing with DeFi. We are decentralized. We're not regulated. Narrative works only if you are fully decent"
+ ],
+ [
+  9,
+  549,
+  "ralized, and Polymarket kinda realized that there is there are limits to that because they got fined in The US because of how they operate. "
+ ],
+ [
+  9,
+  556,
+  "And I see increasingly projects who want to serve that way by saying, hey. These players are out there. They're not regulated. They are offs"
+ ],
+ [
+  9,
+  564,
+  "hore. They do this. They do that. And then what happens? Well, the minimal level, you're gonna get blacklisted in the country, and your webs"
+ ],
+ [
+  9,
+  571,
+  "ite will not be accessible from there. This is not too bad. Worst thing that could happen is actually that someone considers they have juris"
+ ],
+ [
+  9,
+  578,
+  "diction over you and files for criminal charges because a lot of countries have gambling regulations in place or financial regulations depen"
+ ],
+ [
+  9,
+  585,
+  "ding on which one is applicable."
+ ],
+ [
+  9,
+  587,
+  "And this depends on jurisdictions, but it's not the topic today. And then it may get worse. Now the prediction motley crew. Why did I call i"
+ ],
+ [
+  9,
+  595,
+  "t that way? Because as I said, all bill prediction markets, but not all of them are built the same. On top of, like, how they approach the w"
+ ],
+ [
+  9,
+  603,
+  "hole thing, well, it's more than just centralized versus decentralized. This will be too simplistic. There's, like, a whole lot of questions"
+ ],
+ [
+  9,
+  610,
+  " that there are not tackled the same way depending on the platform."
+ ],
+ [
+  9,
+  614,
+  "First, well, the permissionlessness. Well, this is very important in terms of scale moderation risk. If, it's permissionless, do I know whet"
+ ],
+ [
+  9,
+  622,
+  "her these markets were defined in the correct manner? Is there a moderation policy that makes sure that this market will be solved correctly"
+ ],
+ [
+  9,
+  630,
+  " because it was created correctly? Is the cost of decentralized or smart contract base? Not all of them are smart contract base. Some of the"
+ ],
+ [
+  9,
+  638,
+  "m just utilize FIATs."
+ ],
+ [
+  9,
+  639,
+  "Is settlement on chain or platform controlled? Also very important, and I'll come back to it. Like, what is the model? Is it an order book m"
+ ],
+ [
+  9,
+  646,
+  "odel, or is it an AMM? It influences a few factors as well in how you interact with them. Is the platform regulated? Does the information th"
+ ],
+ [
+  9,
+  654,
+  "at is kinda hard to see on most of them? If it's regulated, you'll see it as in plain sight. For all the other ones, what happens is, like, "
+ ],
+ [
+  9,
+  661,
+  "just guess where they are established."
+ ],
+ [
+  9,
+  663,
+  "Is there a centralized monitoring or moderation? Like, is it really just a decentralized wide west, or is there something in place to ensure"
+ ],
+ [
+  9,
+  672,
+  " that the bad seeds are taken away? How can users pay? This is also important. How are fees charged? What happens there? Is it, like, which "
+ ],
+ [
+  9,
+  680,
+  "share goes away? Often, the documentation of these projects hints on this information, but sometimes we really need to dig deeper to find it"
+ ],
+ [
+  9,
+  689,
+  ". And finally, how our markets resolved, and this is the most important because it will directly influence whether this thing you hope to ea"
+ ],
+ [
+  9,
+  698,
+  "rn at the end, if you're right on your prediction, goes to you or not."
+ ],
+ [
+  9,
+  702,
+  "Dangerous ways. Well, there's an intrinsic vulnerability in all prediction markets, and this is the the biggest flaw regardless of the desig"
+ ],
+ [
+  9,
+  710,
+  "n. It's basically the data that will solve for resolution. So the resolution requires data confirming whether the event occurred or not. Lik"
+ ],
+ [
+  9,
+  718,
+  "e, is it true, false? What was the price? What's the weather? And so on. Well, the data can be influenced. So first of all, not all events a"
+ ],
+ [
+  9,
+  726,
+  "re clear. And this happened in a few cases. For example,"
+ ],
+ [
+  9,
+  729,
+  "will Zelensky wear a suit? Well, was he wearing something that is actually defined as a suit or not? It raised, like, a whole debate just kn"
+ ],
+ [
+  9,
+  737,
+  "owing was this a suit. Same for something else. Like, there are some concepts that are just complex definition, and then you try to create a"
+ ],
+ [
+  9,
+  745,
+  " yes or no market out of it. How does that work? Data may be also preliminary or evolve. What are the numbers in terms of how many people wa"
+ ],
+ [
+  9,
+  753,
+  "tched a specific event? Well, you may have preliminary data and a few hours later, the final data. If it's resolved based on the first data,"
+ ],
+ [
+  9,
+  761,
+  " what happens?"
+ ],
+ [
+  9,
+  762,
+  "Data may be also tempered by third parties that actually just control the data feeds and this kind of things. But also events themselves may"
+ ],
+ [
+  9,
+  770,
+  " be tempered. And maybe you've heard the example of the guy with the the hair how do you call this again? The thing for the hair to dry the "
+ ],
+ [
+  9,
+  777,
+  "hair the hairdryer. Thank you. Could just use a hairdryer to influence the temperature on the sensor so it goes up. And And he want a lot of"
+ ],
+ [
+  9,
+  785,
+  " money out of it. I mean, if I can earn a few thousand just with a hair dryer, why not? So this is also something that's possible, and all o"
+ ],
+ [
+  9,
+  792,
+  "f these elements basically influence the risk factor of markets. So regardless of platform, when you access a market, you need to have this "
+ ],
+ [
+  9,
+  800,
+  "in in mind as okay. I may be putting a thousand bucks there, but the event is quite difficult to define. It may raise us give raise some con"
+ ],
+ [
+  9,
+  808,
+  "tentious"
+ ],
+ [
+  9,
+  808,
+  "discussions. So, potentially, it's gonna be resolved in a manner that doesn't align with how I understood it. Or the event depends on the de"
+ ],
+ [
+  9,
+  815,
+  "cision of one person, so it's kinda hard to know what happens there. Same for, like, football matches. We all know how, like, some teams may"
+ ],
+ [
+  9,
+  822,
+  " I mean, now less because there's a lot of control, but someone could be just set up and say, oh, I take the money. I'm gonna lose the the m"
+ ],
+ [
+  9,
+  829,
+  "atches because it allows someone to win. So are there solutions to that? Well, obviously, if there's, like, a good dispute resolution system"
+ ],
+ [
+  9,
+  835,
+  " or if, like, there's a way of contesting the results because something was solved too early or based on erroneous data, that's already a go"
+ ],
+ [
+  9,
+  842,
+  "od start. I mean, if there were cool off periods to avoid"
+ ],
+ [
+  9,
+  845,
+  "issues when there's, like, preliminary and, like, final data, that would also be nice. But I haven't seen examples implementing them. I mean"
+ ],
+ [
+  9,
+  853,
+  ", if you know some of them, please let me know at the end. Also shifting away from the betting on anything and or accepting the risk could b"
+ ],
+ [
+  9,
+  861,
+  "e a solution. Why do I mean by shifting away from betting on anything? I mean, some platforms as limitless, for example, have, like, specifi"
+ ],
+ [
+  9,
+  869,
+  "c topics that are put forward. If you just need to bet on whether the price of Bitcoin will hit a specific threshold tomorrow,"
+ ],
+ [
+  9,
+  876,
+  "there's some risk of manipulation, but it's way smaller than when you have a market that's defined in broad terms. So this may be a a way of"
+ ],
+ [
+  9,
+  883,
+  " just running those markets a bit more easy to comprehend and, like, less prone to disputes or just accepting the risk. We say we bet on any"
+ ],
+ [
+  9,
+  891,
+  " everything, but if something is resolved not according to my understanding, I'm fine with it. This would be the most reasonable approach, b"
+ ],
+ [
+  9,
+  898,
+  "ut as we've seen in a lot of things of, like, being noncustodial using DeFi and so on, people like to blame someone. So, obviously, I don't "
+ ],
+ [
+  9,
+  905,
+  "think this will be the the way of going forward."
+ ],
+ [
+  9,
+  908,
+  "Now dangerous waves. What else happens there? Well, there are also some key design elements that actually influence the risk beyond just how"
+ ],
+ [
+  9,
+  916,
+  " markets are presented. First of all, whether it's custodial or not and how things are being there. Like, I've mentioned it already before, "
+ ],
+ [
+  9,
+  924,
+  "smart contract risk or if you have, like, a regulated intermediary and so on. But you also have just the problem of resolution,"
+ ],
+ [
+  9,
+  931,
+  "and this is, like, the major thing. It's kinda opaque how it's gonna be solved, and it's not always as straightforward. And it's it's like a"
+ ],
+ [
+  9,
+  938,
+  " big tsunami coming and you'd be like, damn. I know this resolution will be completely messed up. No. You have, like, things in place. You h"
+ ],
+ [
+  9,
+  946,
+  "ave, Exomarket has a system called Modra, for example, of a jury and, like, AI agents also intervening first. So, basically, small markets, "
+ ],
+ [
+  9,
+  953,
+  "AI agents decide on the outcome. If there's a problem, it's escalated to a jury of people and so on. So they have, like, a whole thing that'"
+ ],
+ [
+  9,
+  960,
+  "s, like, AI agents and then decentralized setup."
+ ],
+ [
+  9,
+  963,
+  "Straightforward. Right? Same polymarket has also, like, a system. If it doesn't work out, you escalate it. But then, yeah, if it escalates a"
+ ],
+ [
+  9,
+  971,
+  "nd it's being then overruled just by a centralized entity, does it really work? And then what were also the things at stake there? Like, why"
+ ],
+ [
+  9,
+  978,
+  " was it overruled? Is it just because people complain, or was it because there was an actual system? And there were a few cases where basica"
+ ],
+ [
+  9,
+  986,
+  "lly people realized that they want to complain about the markets, and there's no clear procedure."
+ ],
+ [
+  9,
+  991,
+  "Or there is a clear procedure, but it can be overruled by someone. So this is like a whole thing that basically influences what money you ge"
+ ],
+ [
+  9,
+  1000,
+  "t in the end. Now surfing the waves, just quickly here. Well, beyond this first aspect, as I mentioned, how is the market defined? How is th"
+ ],
+ [
+  9,
+  1009,
+  "e market solver? All of this is also about liquidity and market makers being involved,"
+ ],
+ [
+  9,
+  1014,
+  "and just the model influences a lot for them. Like, market, so AMMs or order books have very different characteristics. And I've heard someo"
+ ],
+ [
+  9,
+  1022,
+  "ne say something very drastic by saying, basically, AMM based prediction markets don't make sense for market makers. Well, someone else told"
+ ],
+ [
+  9,
+  1030,
+  " me that, actually, it could make sense to a certain extent, but there's, like, a lot of differences. So saying, oh, be a market maker on a "
+ ],
+ [
+  9,
+  1038,
+  "prediction market. Well,"
+ ],
+ [
+  9,
+  1039,
+  "just tell me what kind and take all of these elements, into account. Now all in all, I'll not if you're interested in the market maker part,"
+ ],
+ [
+  9,
+  1048,
+  " just let me know. But I I think it let's get to the most interesting part. So, basically, do prediction markets actually tell the truth? We"
+ ],
+ [
+  9,
+  1056,
+  "ll, they don't really tell us what will happen. It's not like reading in a crystal ball, but what they can say is what a specific group of f"
+ ],
+ [
+  9,
+  1065,
+  "inancial incentivized participants actually believe will happen"
+ ],
+ [
+  9,
+  1069,
+  "under a specific design. The design directly influences that. If the wording is clear, it's easier to trust, but I highlighted three differe"
+ ],
+ [
+  9,
+  1076,
+  "nt points. The objection objective resolution, it's easier to enforce. So if the resolution is kinda like the system is weird, the wording i"
+ ],
+ [
+  9,
+  1083,
+  "s weird, like, how do we work out there? We will not get the truth in the end. We'll just get, like, something that's more like of a bluff o"
+ ],
+ [
+  9,
+  1091,
+  "utcome."
+ ],
+ [
+  9,
+  1091,
+  "The credible Oracle, very important as well. What Oracles are being used? Is this one? Is there a backup one? Is it several one? And data is"
+ ],
+ [
+  9,
+  1098,
+  " being combined. How does that work? It also influences whether we are more attending towards the truth or just, like, whatever outcome that"
+ ],
+ [
+  9,
+  1106,
+  "'s basically convenient to get some quick money. And, also, we tend to forget about just biased participants. Like, what about the fact that"
+ ],
+ [
+  9,
+  1113,
+  " people who vote are actually simply biased and they're not voting on what is the truth? They just vote on what they believe will be the tru"
+ ],
+ [
+  9,
+  1121,
+  "th."
+ ],
+ [
+  9,
+  1121,
+  "And, I mean, funny enough when they check the numbers, and I don't know to what extent we can rely on these numbers because most of these ma"
+ ],
+ [
+  9,
+  1129,
+  "rkets have are permissionless, not fully regulated, whatever. But a lot of these users are in The US. Then second comes Israel, and then you"
+ ],
+ [
+  9,
+  1136,
+  " have people in some other countries. Let's guess why. US, a lot of things are happening. Trump is creating a lot of traction. You can be ea"
+ ],
+ [
+  9,
+  1144,
+  "sily biased there. Israel, the same because of the whole situation in The Middle East. So to what extent are people voting their objective o"
+ ],
+ [
+  9,
+  1151,
+  "r bias? And we've heard about some inside the trading issues in both of these jurisdictions."
+ ],
+ [
+  9,
+  1156,
+  "So when these people vote, they just want to make some a quick buck. They don't want to tell us the truth on what is their actual conviction"
+ ],
+ [
+  9,
+  1164,
+  ". So because they don't tell us what will happen, well, this is kinda what we end up with, like, people just being betting there and being o"
+ ],
+ [
+  9,
+  1172,
+  "n what will be the best outcome for them financially. And like for news, at the end of the day, the question is always what is the source of"
+ ],
+ [
+  9,
+  1179,
+  " information?"
+ ],
+ [
+  9,
+  1180,
+  "Same for prediction. When we say those predictions are influencing, the truth and kind of giving us, like, some insights, crowd intelligence"
+ ],
+ [
+  9,
+  1188,
+  ", okay, just let's wait wait for a second and think about all of these design aspects. Okay. So the source is a prediction market where thin"
+ ],
+ [
+  9,
+  1196,
+  "gs are designed that way and, specifically, a market that was set up in a way that is very well designed, easy to solve. Okay. Maybe it's a "
+ ],
+ [
+  9,
+  1204,
+  "source of truth. If not, then, potentially, it's like the equivalent of, like, a shitty newspaper that is kinda interesting, but you need to"
+ ],
+ [
+  9,
+  1212,
+  " double check the information."
+ ],
+ [
+  9,
+  1214,
+  "So greatly designed beliefs certainly contribute to crowd intelligence, but poorly designed ones are merely depicting attempts at making som"
+ ],
+ [
+  9,
+  1223,
+  "e quick money. Now if this was of interest to you, let's keep in touch. Beyond talking about prediction markets, I'm also advising them and "
+ ],
+ [
+  9,
+  1232,
+  "advising other projects in DeFi. And it's also a pleasure to present to you. If you have any questions and I have time for questions, I don'"
+ ],
+ [
+  9,
+  1240,
+  "t know, maybe let me know."
+ ],
+ [
+  9,
+  1242,
+  "Yeah. Thank you for the presentation. And you got, like, questions about production market for Anna? Yep. If not, yeah, you get the we will "
+ ],
+ [
+  9,
+  1269,
+  "be moving for"
+ ],
+ [
   15,
   11,
   "Hello, everyone. Thank you very much for the introduction. My name is Fernando Robasco, and I'm a software engineer at OpenSeppelin. And tod"
