@@ -14570,6 +14570,871 @@
   "Okay. That's all. We can discuss it. Thank you for the presentation again. Okay."
  ],
  [
+  25,
+  11,
+  "Hey, guys. Great to have you all here. It's wonderful. Like, love it. Love it. So, yeah, I'm Kimo. I'm, like, originally, like, a founder of"
+ ],
+ [
+  25,
+  22,
+  " Orb, like, the biggest, app on Lens, like mobile only. And we got, like, a partnership with, Masque, like, a year ago. And, like, a few mon"
+ ],
+ [
+  25,
+  33,
+  "ths ago, we became the key stakeholder of Lens. So I'm, like, now leading Orb, but I'm also the head of product for Lens."
+ ],
+ [
+  25,
+  43,
+  "And, yeah, let's talk about, social. Like, if I can figure out how this works. Yeah. I have, like I made like, I spent the whole day making "
+ ],
+ [
+  25,
+  62,
+  "slides, so it's gonna be, like, ton of slides."
+ ],
+ [
+  25,
+  68,
+  "And, also, I have swag. So, like, there's gonna if there's time, like, let's see if I figure this out. So, like, if there's, like, time for "
+ ],
+ [
+  25,
+  78,
+  "two questions, there's, like, two caps. So, now I'm, like, super confused. But, perfect. No. Okay. Okay. So yeah. Like, I'm just gonna show,"
+ ],
+ [
+  25,
+  88,
+  " like, few things that, like, really annoy me myself. This is, like, one. Like, I have to like, somebody posted this, I think yesterday or s"
+ ],
+ [
+  25,
+  98,
+  "omething that, like, you have to accept terms of service service, like, until you get your data. So you are, like, using, like,"
+ ],
+ [
+  25,
+  107,
+  "classical tools, but, like, you're not, like, like, you're hostage to the platform. And that is, like, really painful personally. If like, I"
+ ],
+ [
+  25,
+  116,
+  "'m also, a developer, so it really pains me to see, like, things like this happening where, like, this is, like, in x where, like, they actu"
+ ],
+ [
+  25,
+  126,
+  "ally like, because of AI and OpenClaw, like, came out, they had to, like, start gatekeeping"
+ ],
+ [
+  25,
+  132,
+  "what can you actually programmatically post on the x API. And it sucks. And, like, we have had this, like, like, we have many instances like"
+ ],
+ [
+  25,
+  140,
+  " this in the past, like, with, like, Reddit, like, blocking all the third party services. And, it's just kinda, like, shows that, like, it d"
+ ],
+ [
+  25,
+  149,
+  "oesn't make any sense to, like like, trust Web two platforms, and we need to do something, like, else."
+ ],
+ [
+  25,
+  155,
+  "But then, at the same time, like, what can we actually trust? Like, Apple App Store is, like like, the hardest thing in the world to actuall"
+ ],
+ [
+  25,
+  163,
+  "y, like, get a build pass through. Like, I've been building there, like, like, like, going through the review process, like, three years mys"
+ ],
+ [
+  25,
+  171,
+  "elf, and it's really, like, a hit and miss if I get, like like, the app approved. But then at the same time, like, you can still, like, post"
+ ],
+ [
+  25,
+  179,
+  " scam stuff, and then, you"
+ ],
+ [
+  25,
+  180,
+  "are, like, trusting the App Store when you're downloading, like, let's say, like, a ledger and, yeah, you get scammed and, like, it really s"
+ ],
+ [
+  25,
+  188,
+  "ucks when you are, like, trusting something and then you get scammed. Then, at the same time, like, like, like, all of us, like, probably, l"
+ ],
+ [
+  25,
+  197,
+  "ike, developers use GitHub. So, like, you cannot like, when a cloud code got leaked, then, like, there's, like, a lot of malware came, like,"
+ ],
+ [
+  25,
+  205,
+  " was, like, released with the open versions of cloud code. So you cannot really like,"
+ ],
+ [
+  25,
+  210,
+  "nowadays, you cannot, like, download anything interesting from GitHub unless you know the user, unless you are the, like, the the uploader. "
+ ],
+ [
+  25,
+  218,
+  "So it's like like, why do we even have GitHub nowadays? Like, if you cannot like, I'm scared of downloading markdowns because I'm, yeah, not"
+ ],
+ [
+  25,
+  225,
+  " good. Then, you cannot even install anything. Like like, how do you, like, how do you build a like, there was, like, really interesting tal"
+ ],
+ [
+  25,
+  233,
+  "k yesterday about, like, dependency graphs and how Ethereum, like, should fund,"
+ ],
+ [
+  25,
+  237,
+  "like, the dependency graph going forward. But, like like, nowadays, like, I don't wanna have a dependency graph because, like, you I cannot "
+ ],
+ [
+  25,
+  246,
+  "even push, like, stuff, like, on the, like, like, NPM library for instance or even, like, like, the, like, pipi, like, for Python the same. "
+ ],
+ [
+  25,
+  255,
+  "Then, yeah, like, even if they're like, let's say, I like like, everything works, like like, always good, then, like, even, like, my own dom"
+ ],
+ [
+  25,
+  264,
+  "ain can be hijacked, and this just, like, sucks. So, like, how can we, like, really, like, like, we cannot really trust anything and kinda c"
+ ],
+ [
+  25,
+  273,
+  "rypto is, like, the"
+ ],
+ [
+  25,
+  274,
+  "kinda like like, Ethereum, like, principles are built on, like, a trustless, like like, basis. But we have still a lot of trust, and I think"
+ ],
+ [
+  25,
+  284,
+  " it's, like, it's not it's not the way, like, where we can just say that, like, like, we are, like, completely like, we are building somethi"
+ ],
+ [
+  25,
+  293,
+  "ng that is trustless. We do have a lot of trust enshrined into the the whole ecosystem."
+ ],
+ [
+  25,
+  299,
+  "So, like, yeah, one more for Farcaster. Like, this is just like a like, also, like, mini apps get hacked. But, kinda like you cannot, like, "
+ ],
+ [
+  25,
+  310,
+  "trust. Like, what can you, like do like, we need trust, but what can you trust? So, like, like, you have, like, a kinda like, you cannot tru"
+ ],
+ [
+  25,
+  321,
+  "st the identity. You cannot, like, like like,"
+ ],
+ [
+  25,
+  324,
+  "I'm gonna skip this slide. This is not interesting. What is interesting is, like, what like, how do we actually, like like, resolve all of t"
+ ],
+ [
+  25,
+  332,
+  "his? So this is kinda like what how I started, like, in crypto and what like, I think what where we need to go back, which is, like, chain. "
+ ],
+ [
+  25,
+  340,
+  "And this is this can be a blockchain. This can be, like, a graph or what like, a node and edges. And you can traverse this chain in, like, t"
+ ],
+ [
+  25,
+  348,
+  "wo ways. So you can build,"
+ ],
+ [
+  25,
+  350,
+  "like, a like a ledger so you can actually see what happened, and then you can actually, like, verify. You can create, like, proofs. And I th"
+ ],
+ [
+  25,
+  359,
+  "ink we have to go back to this route. And especially with, social, I think it's, like, super interesting. So, like, Lens, like, we this is l"
+ ],
+ [
+  25,
+  368,
+  "ike a rebranded website launched, like, yesterday. So, like, LENS is, like, like, now, like, like, from we are, like, now the stakeholders o"
+ ],
+ [
+  25,
+  377,
+  "f, like, LENS. And,"
+ ],
+ [
+  25,
+  378,
+  "there are, like, multiple apps building on these primitives. And I think, like, these are just, like, two examples, but this is, like, from "
+ ],
+ [
+  25,
+  386,
+  "the mask team. So my orb and then another team is developing FarFly. And, I think it's really interesting if we can, like, build something o"
+ ],
+ [
+  25,
+  395,
+  "n the same, like, primitives. So Lens is essentially just a few set of primitives. Like, you have accounts. You have a"
+ ],
+ [
+  25,
+  402,
+  "like, a you have, like, groups. You have, like, posts. Posts go into feeds. You can follow people in graphs, and then, like, you don't have "
+ ],
+ [
+  25,
+  412,
+  "to build on the same graph or same feed, but you can build, like, in any. So I think this enables us to do much more. If you think about it,"
+ ],
+ [
+  25,
+  422,
+  " it enables us to do much more than just building social apps."
+ ],
+ [
+  25,
+  426,
+  "So one thing that, like, where we need this, like like kinda like what is interesting is to see that, like, everybody is, like, like, going "
+ ],
+ [
+  25,
+  434,
+  "to this route. Like, Peter Steinberger, like, OpenCloud dev, like, he hates crypto because, like, he almost, like, stopped developing OpenCl"
+ ],
+ [
+  25,
+  442,
+  "aw because of crypto, like, of the token scams. But even he is, like, now, like, this is, like, from today, and he's saying that, like, he's"
+ ],
+ [
+  25,
+  450,
+  " adding, like, social signals because, like, the GitHub is, like, really poor. So if you wanna review, like, the peers, like, there has to b"
+ ],
+ [
+  25,
+  459,
+  "e other signals. And I think when we have this, like, on chain thinking where everything is, like, related and we can track this"
+ ],
+ [
+  25,
+  466,
+  "track this graph, forward and backward, then we can actually start finding interesting things. Like, we can maybe build more trust on, let's"
+ ],
+ [
+  25,
+  475,
+  " say, like, GitHub comments. One thing that was yesterday when we had some beers. There's this, yeah. There's, like, this, like, one user wh"
+ ],
+ [
+  25,
+  485,
+  "o like, like, when MakerDAO got hacked, like, like, five, six year like, six years ago, he donated money, like, to, like, recover MakerDAO."
+ ],
+ [
+  25,
+  494,
+  "And, this is a pull up he got from that, but he hasn't, like, really, like like, amazing. Like, he and, like, like, like, almost 200 people,"
+ ],
+ [
+  25,
+  503,
+  " like, donated. But, like, that hasn't really followed anyway when he's a crypto carrier. So how can we like, this is for me, it's, like, hu"
+ ],
+ [
+  25,
+  513,
+  "ge sign of trust. Like, I can trust this guy. So let's say if he would post something on GitHub,"
+ ],
+ [
+  25,
+  519,
+  "then I might trust more that commit, and I could maybe, like, maybe, like, like, like, download it or whatever. But, this, like it's super i"
+ ],
+ [
+  25,
+  529,
+  "nteresting that this doesn't follow, like, yet. And what we are, like, really trying to do is, like, with LENS is, like like like, the idea "
+ ],
+ [
+  25,
+  539,
+  "of LENS is just the set of primitives and, like, we, like, we need to build, like, trust,"
+ ],
+ [
+  25,
+  545,
+  "identity, accountability. Like, we can do it, like, with, positive things, like, attesting you as a donator. We can attest you, like, as a n"
+ ],
+ [
+  25,
+  555,
+  "egative thing, like as a like a hacker, scammer, whatever. And, we did this, like, recently with the, like, DeFi United stuff. Like so this "
+ ],
+ [
+  25,
+  565,
+  "is, like, DeFi United claims, DeFi United, like, Lens x y z website. And if you donate it to DeFi United,"
+ ],
+ [
+  25,
+  572,
+  "like, ETH, like, send any money there, like, you can claim a badge, like, on less. But it's pretty cool. Like, like, more than 200 people ha"
+ ],
+ [
+  25,
+  581,
+  "ve claimed it so far. So I think it's like people like like, credit. Like, they wanted like, they love taking credit for something they have"
+ ],
+ [
+  25,
+  591,
+  " done if it's good. And I think we need to enforce this, like,"
+ ],
+ [
+  25,
+  595,
+  "good feelings more. And, one like, I bought these socks today. This is crazy. So how can I, like, actually, like, start like, I have to come"
+ ],
+ [
+  25,
+  603,
+  " to Prague to buy these socks? So how can I actually, like, allow this user to, like, now, like, like, like, launch a like, his own website,"
+ ],
+ [
+  25,
+  612,
+  " and we can, like, actually, like, start selling things? And maybe if this this this is the pro app owner, maybe I can actually trust this w"
+ ],
+ [
+  25,
+  620,
+  "ebsite enough so I can actually buy these socks, like, like, through crypto."
+ ],
+ [
+  25,
+  625,
+  "So oh, this is like either I'm drunk or this is shaking. So so but kinda like what where I wanna take, like, what's my vision with LENS and "
+ ],
+ [
+  25,
+  634,
+  "in general with, crypto is that, like, we need to do something more than just DeFi. And I think right now we have the narrative to build som"
+ ],
+ [
+  25,
+  643,
+  "ething like a Wayback Machine, like like Internet archive on, like, crypto rails. And, I think Lens is, like, perfectly suited to do somethi"
+ ],
+ [
+  25,
+  652,
+  "ng like this."
+ ],
+ [
+  25,
+  653,
+  "Lens is perfectly suited to build a GitHub. And, I think where we wanna take Lens is this where we can just, like, replace here GitHub with,"
+ ],
+ [
+  25,
+  663,
+  " Lens, and we can say that millions of developers and businesses call, like, Lens Home. And the way we do it is really, like, rethinking abo"
+ ],
+ [
+  25,
+  673,
+  "ut, like, what makes, like, crypt like, what what is crypto? What is Ethereum?"
+ ],
+ [
+  25,
+  678,
+  "So for me, LENS and, this like, the whole social has gone too far away from the basic crypto narrative. It's like why I became like, why I j"
+ ],
+ [
+  25,
+  687,
+  "oined crypto myself. And, we need to take back work. We need to take Lens home. So Lens I want Lens to become more like Ethereum social rath"
+ ],
+ [
+  25,
+  696,
+  "er than, building something outside of the whole ecosystem. Like, we have here, like, a lot of talented hackers and and, like, builders. How"
+ ],
+ [
+  25,
+  705,
+  " do we get them? Like, how do we get bring everybody to build together?"
+ ],
+ [
+  25,
+  709,
+  "And I think that's the huge challenge now. Like, if you launch a whatever token launcher or what like, whatever, like, you wanna be an unkno"
+ ],
+ [
+  25,
+  717,
+  "wn, like, it doesn't really like, we have the like, it doesn't matter. We have the tools today. And even if you don't have the tools today, "
+ ],
+ [
+  25,
+  724,
+  "we should start thinking about, what we will have in next five years. And it's huge. Like, when like, '22, I started building Orb,"
+ ],
+ [
+  25,
+  731,
+  "we had to do a lot of thing. Like, we couldn't go on chain. Like, you cannot, like you can post like, do something on chain, but you cannot "
+ ],
+ [
+  25,
+  739,
+  "do everything on chain because of the gas is expensive. You have to leave the l one. Now the gas is cheaper. You have block space. You you c"
+ ],
+ [
+  25,
+  747,
+  "an actually, like, build a, like, like, a nodes like, node system on on the blob space, and you you don't even have to do, like, IPFS,"
+ ],
+ [
+  25,
+  755,
+  "like, like, other things that were, a thought, like, like, figured around, like, moving, like, out of the Ethereum scope. So I think a lot o"
+ ],
+ [
+  25,
+  764,
+  "f things, like, we should what have been done, like, I think we should really imagine how we can actually, like, redo them that again as Eth"
+ ],
+ [
+  25,
+  773,
+  "ereum is getting faster, cheaper, and more private. And, this is, like, my personal dream is that, like, one one day, this this forum as wel"
+ ],
+ [
+  25,
+  782,
+  "l as this Bitcoin Magazine forum, like, they actually will not be anymore like a like a peer to peer hosted forums. So"
+ ],
+ [
+  25,
+  789,
+  "these forums, like, need like, it's kind of we are building Ethereum, but we are, like like, we are building on chain. But, these guys are n"
+ ],
+ [
+  25,
+  799,
+  "ot posting things on chain. There's no identity. Like, we don't, like like, we don't know, like, really, like, what is their their, like, li"
+ ],
+ [
+  25,
+  809,
+  "ke, who are they? Like, maybe, like, the same with any"
+ ],
+ [
+  25,
+  813,
+  "any governance protocol. Like, how do we like, I think this is, like, easy easy way how we can actually start this system. Like, we take all"
+ ],
+ [
+  25,
+  822,
+  " the existing stuff, and we actually, like, try to, like, bring them to one place. And, cool. So, yeah, lens primitives. So, like, basic, ha"
+ ],
+ [
+  25,
+  831,
+  "ppy to talk more about that. Then, there is some lens users here. So before and, like, I wanna show some, some things we are, like like, coo"
+ ],
+ [
+  25,
+  840,
+  "king."
+ ],
+ [
+  25,
+  840,
+  "But, like, I just wanna, like, end at, like, like, the the future is, like, really, like, right now. And, like, we should really think about"
+ ],
+ [
+  25,
+  848,
+  ", like, where we wanna like, what kind of future we wanna have have, like, in next like, five years or ten years, and we need to really thin"
+ ],
+ [
+  25,
+  856,
+  "k about, like, out of the box for that. And, yeah, few things we have coming. Like, one that is not on Lens right now is encryption."
+ ],
+ [
+  25,
+  864,
+  "So this is like a like a p two p encryption stuff. It's coming. And we have Kate Moss here, And, she's also, like, actually, Orb user. So yo"
+ ],
+ [
+  25,
+  872,
+  "u can actually start doing, like, things like, privacy. Like, what is, like why cannot we build GitHub today, for instance, is that, like, y"
+ ],
+ [
+  25,
+  881,
+  "ou cannot build private repos because, like, Lens is, going on chain, so everything is public, and we don't have encryption. But this is com"
+ ],
+ [
+  25,
+  889,
+  "ing, dropping hopefully, like, in next couple of weeks."
+ ],
+ [
+  25,
+  892,
+  "And, you anybody can run their own node operator. They cannot like, they don't have to trust The Us or the existing node op like, providers."
+ ],
+ [
+  25,
+  900,
+  " And then you can start building, like, private, like, groups or clubs. You can start building, like, rules, like, only my friends can see w"
+ ],
+ [
+  25,
+  909,
+  "hat I post, and this is not like, something like this is not possible on Twitter, for instance. And then, you can ask do, like, things like "
+ ],
+ [
+  25,
+  917,
+  "pay to unlock."
+ ],
+ [
+  25,
+  918,
+  "And then, when we have all of this stuff, like, you can actually start like a so this is, like, just the Orb UI, but, like, anybody can buil"
+ ],
+ [
+  25,
+  926,
+  "d this. But you can actually start, like, then, like, like, launching things. Like, here is, like, a sticker pack. Like, we have, like, some"
+ ],
+ [
+  25,
+  933,
+  " like, this, a, like, a stickers on orb. Everybody can, like, create a sticker pack and then, like, submit that, and then, like, people can "
+ ],
+ [
+  25,
+  941,
+  "buy those and use them in the app. And maybe, like, soon, we will have some, like, physical stickers also."
+ ],
+ [
+  25,
+  947,
+  "But, like, this could be also the socks. Like, anybody can just, like, start selling something because what Lens is really all about is, lik"
+ ],
+ [
+  25,
+  956,
+  "e, you have a account, you have identity, you can log in, you can do payments. So it is, why why we wanna do it with accounts? Why don't we "
+ ],
+ [
+  25,
+  966,
+  "wanna do it with EOAs? Is that, like, if I have, let's say, like, Stani, Stani is too busy to post"
+ ],
+ [
+  25,
+  972,
+  "on Orb, so he might have a secretary or some, third party user who wants to post. So he definitely doesn't wanna give his EOA access to that"
+ ],
+ [
+  25,
+  980,
+  " user. So you have to have, like, delegation and whatnot. But Ethereum is going to go eventually there. So maybe in the future, like, accoun"
+ ],
+ [
+  25,
+  988,
+  "t abstract like, kinda like EOAs and accounts and account abstraction will be, like, even closer. But today, it's already possible to delega"
+ ],
+ [
+  25,
+  996,
+  "te. And what can you do with that. Like, can you spend money? Can you just post?"
+ ],
+ [
+  25,
+  1001,
+  "What not. Then, what is also, like, what I really like, this is just, we like a GitHub example. So, like, this is already live, you don't se"
+ ],
+ [
+  25,
+  1010,
+  "e the blue color that well. But, like, the idea is that, like, we can actually, like, build on chain GitHub already today, like, with the, l"
+ ],
+ [
+  25,
+  1019,
+  "ike, a diffs and whatnot. And, here's one thing we're doing, like, in the team. So we have dailies."
+ ],
+ [
+  25,
+  1025,
+  "This is, like, we call this a room, and it's like, don't see that well that but, yeah. Yeah. I think it's good. So it's, basically, this is "
+ ],
+ [
+  25,
+  1035,
+  "just, like a like a like a video call, but it's built on, like, on chain, like, x minus the the LiveKit integration. So, like so it's kinda "
+ ],
+ [
+  25,
+  1045,
+  "like LiveKit plus on chain, but, it's super cool. Like, you can do actually like, you can build whatever you want today,"
+ ],
+ [
+  25,
+  1054,
+  "like, on the like, crypto rails. And yeah. That's cool. And then, yeah, we have also, like, like, one this is just the proof of, like, a pro"
+ ],
+ [
+  25,
+  1063,
+  "of. Like, we have, like, a lot of music, like, on Lens, and, like, we have a lot of, like, love for music. And this is, our designer. He jus"
+ ],
+ [
+  25,
+  1071,
+  "t made this, Orb radio. We haven't, like, launched this yet. We don't know if we will. But, like, the idea is that, like, we don't have to b"
+ ],
+ [
+  25,
+  1080,
+  "uild these, like, universal clients."
+ ],
+ [
+  25,
+  1082,
+  "You can build like, take your niche, and you can build on top of that niche. So this is just, music. So, yeah, that's it. And then, yeah, ti"
+ ],
+ [
+  25,
+  1097,
+  "me for questions, hopefully. So That's a, like, really interesting question. But I think, like, the it it really depends on, like, what they"
+ ],
+ [
+  25,
+  1111,
+  " are looking for. Like, I think why crypto's like, social hasn't really, like, taken off yet is that, like, we don't have that thing."
+ ],
+ [
+  25,
+  1125,
+  "Like, right now, we are still building these, like, building blocks that enable you to build something new. And I think, like, let's say, li"
+ ],
+ [
+  25,
+  1134,
+  "ke, I can give that, POAP user who donated, like, many years ago money. I can maybe I can give that user some social status access, airdrop,"
+ ],
+ [
+  25,
+  1143,
+  " whatever. And, like, not today, it's, like, super easy, but, like, we haven't really thought about, like, what does it really mean to build"
+ ],
+ [
+  25,
+  1151,
+  " on chain,"
+ ],
+ [
+  25,
+  1152,
+  "like, us in terms of social yet. So I'm, like, like, challenging more and, like, really thinking about that, like, first. So maybe that frie"
+ ],
+ [
+  25,
+  1163,
+  "nd of yours is, like, a creator. Maybe they want to sell something. Like, it's super easy to build, like, a Shopify on Lens. Then, you can j"
+ ],
+ [
+  25,
+  1173,
+  "ust, like and kinda like"
+ ],
+ [
+  25,
+  1175,
+  "the really cool thing about, like, Onchain is that the identity, if you choose so, it will follow you. So you don't have to start from scrat"
+ ],
+ [
+  25,
+  1184,
+  "ch. Like, today, you wanna be LinkedIn. Tomorrow, you wanna be OnlyFans. You can like, if you want, like, that can follow you. So that's kin"
+ ],
+ [
+  25,
+  1192,
+  "da like the the really, like, interesting, like, aspect of the, like, building building of social. So you don't have to you from YouTube, Ti"
+ ],
+ [
+  25,
+  1201,
+  "kTok, like like, you yeah. You don't have to start from zero. And I think that's the the big promise, but we need to really, like, go, like,"
+ ],
+ [
+  25,
+  1209,
+  " 10 x, 100 x for what is like, we don't wanna build another TikTok or another"
+ ],
+ [
+  25,
+  1214,
+  "another Twitter. Like, we need to, like like, really go, like, far. Like, Ethereum magicians forum is, like, really good example. Is that, l"
+ ],
+ [
+  25,
+  1222,
+  "ike, like, why why should they move to on chain? Like, what is like, what can we offer them to come to on chain if we don't get the core dev"
+ ],
+ [
+  25,
+  1231,
+  "elopers coming coming on chain social? Like like, there has to be innovation coming."
+ ],
+ [
+  25,
+  1236,
+  "But first, before we get that innovation, we actually have to build, like, really, like, rethink the rails and really, like, rebuild that. C"
+ ],
+ [
+  25,
+  1255,
+  "ool. Any other questions? Sir? We are, like yeah."
+ ],
+ [
+  25,
+  1261,
+  "Yeah. So, like, we are, like, really think like, thinking about, like like, the way like, we have this, like this is, like, multi part answe"
+ ],
+ [
+  25,
+  1269,
+  "r, but, like, first of all, like, there's this big problem with, bots and new users. How do you differentiate, like, a a bot like, a SciBill"
+ ],
+ [
+  25,
+  1278,
+  " from a high quality user? So let's say we have Kate Moss. Like, when she came in, like, we didn't know if that that is a real Kate Moss or "
+ ],
+ [
+  25,
+  1286,
+  "not. So there has to be some kind of logic. And here, the blockchain is actually really interesting is that when you have an like, something"
+ ],
+ [
+  25,
+  1294,
+  " like invite, you can actually track that, okay. Like, I know you. I trust you, and you invited, like, Kate. So if she's Kate, then it's pro"
+ ],
+ [
+  25,
+  1302,
+  "bably Kate. And, like, I'm happy, so I can give it more trust to that new user."
+ ],
+ [
+  25,
+  1307,
+  "So, like, I think that's, like, really interesting, like, approach how we, like, separate, like, SciBills from, like, like, high quality use"
+ ],
+ [
+  25,
+  1315,
+  "rs. And I think we really need to build towards this, like, real users, not this not this bots, not this, like, like, people who don't bring"
+ ],
+ [
+  25,
+  1324,
+  " anything post like, net, like, to the ecosystem. We are working with a lot of, like, different projects right now, and they are, like, onbo"
+ ],
+ [
+  25,
+  1332,
+  "arding, like, a lot of these, like, lens primitives. So the really cool thing is that, like, this is not a monolithic,"
+ ],
+ [
+  25,
+  1339,
+  "like, like, system. This is, like, modular, so you can just, like, on like, like, bring some parts, some aspects. So there are, like, severa"
+ ],
+ [
+  25,
+  1348,
+  "l projects right now that we are, like, working with, and they are onboarding. Like or, like, we are onboarding them and, through them, we a"
+ ],
+ [
+  25,
+  1357,
+  "re acquiring users. Later on, once we have more mature, projects, then it's like, makes more interesting"
+ ],
+ [
+  25,
+  1364,
+  "to, like, double down on as a lens to, like, bring directly users. But lens is a protocol. Like, what needs to happen is, like, like, users "
+ ],
+ [
+  25,
+  1374,
+  "needs to come to the application, like, especially if they don't have any crypto knowledge. So we need to have those killer apps. I hope tha"
+ ],
+ [
+  25,
+  1384,
+  "t answers your question. Anything else?"
+ ],
+ [
+  25,
+  1387,
+  "No? Okay. In that case, let's give him another round of applause, please."
+ ],
+ [
   28,
   11,
   "Alright. Hey, guys. Thank you for coming. Really appreciate you guys all coming out, many of you after the hackathon. I know it's been a lon"

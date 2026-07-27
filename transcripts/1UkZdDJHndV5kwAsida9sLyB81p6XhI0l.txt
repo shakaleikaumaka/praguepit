@@ -1,0 +1,137 @@
+# Your Data Doesn't Die — It Becomes an Asset, an Agent, and a Governance Problem
+
+Date: 
+Source video: Your Data Doesn't Die — It Becomes an Asset, an Agent, and a Governance Problem
+Drive: https://drive.google.com/file/d/1UkZdDJHndV5kwAsida9sLyB81p6XhI0l/view
+Duration: 00:28:43
+Transcribed: 2026-07-27 · groq whisper-large-v3-turbo · PIT BOY harvest fleet v2
+
+---
+
+[00:00] . Hi, everyone. How is everyone doing today? I'm going to need your assistance twice per my keynote. So please be assistant when asking the
+
+[00:24] the question so I don't feel left alone here standing in front of you. So I have quite a different topic to bring to you today within the conference because this is important to me not because I built a tourney which touched this problem that I want to talk about today but also because it touches everyone here sitting in the room
+
+[00:51] and I'm sorry if this will get any uncomfortable during the speech because I will be talking about uncontrolled topics during this. So my name is Jitka and as I mentioned I'm a founder of Attorney and what started as a simply what became really quickly known as a risk governance because
+
+[01:16] governance is something that we need to talk about, especially when it comes to our data, our financial life and the continuity. And this is because we think that we've built advanced systems. And we did. We built a financial system, identity system, crypto system, obviously.
+
+[01:40] And we did it pretty well. I'm not saying it's not advanced, but almost all of the systems rely on one very simple assumption that the user is present. So what actually happens when the user disappears? The system stays. Accounts, data, a lot of finances, we know about a lot of crypto, we heard some stories,
+
+[02:08] we can talk about some stories that happened. And suddenly the access becomes a problem. The ownership becomes unclear and the continuity becomes manual. It really currently manual And this is the gap that I want to talk about today Because over the last decades we became very good when building the world when
+
+[02:38] you know, making transactions seamless, just making the systems and all the technology really great. But the continuity is something we still suck at. Honestly, it is. And how the system is handled over time is really just saying how it's going to be handled over the next decades when it's going to become critical.
+
+[03:06] So here's my first question for you. It's actually going to be two questions. So first question is raise your hand and be honest because I'm going to raise my hand as well. If you ever experienced you lost the key and we're at the ETH conference. And so just stop. Let's talk about the crypto key, not the key to your house. Have you ever lost or were looking for a key for a very long time?
+
+[03:31] Great. Thank you for the honesty. I did too. And second question that goes with it. I believe everyone here has some investment in cryptocurrencies, whatever they may be. And the question is, would your family know how to access it if something happens to you tomorrow?
+
+[03:56] Does anyone have a legacy plan? Raise a hand who has a legacy plan. Okay, so that's three of you. So what about the rest? So what happens to the crypto that you're investing over the last decade? that is going just simply a wall. Isn't it like shame that all these money
+
+[04:19] and all these assets are locked in the system? So yeah, so that's, you're not the only one, trust me. We know some, do you see it? We know some stories that have been like most talked about and there is going to be even more. We know the story of the Gerald, the founder of QuadrigaCX, who died unexpectedly and with him,
+
+[04:47] $190 million were locked into the system, inaccessible. Do you have a question? Is he really dead I think I read something else He actually not really dead and that it was a big scam and he actually ran away somewhere I cannot prove it 100%, but same for the death.
+
+[05:09] It's still very shady, let's say. It is shady, but it's not like, you know, it's a similar case. It's still locked, it's still inaccessible. Yeah, definitely. So the ownership relied back then on one person, which is obviously insane as well. So we're not talking about being attacked or being scammed, there's even more cases
+
+[05:33] like that when we know about the scammers. But we're talking about when it becomes inaccessible. And the important thing to mention is it's not a bug as we know, like a bug's one developing any kind of system. This is not system failing. This is the system where like R perfectly designed. We know that.
+
+[05:58] But the problem is that we don't really understand the ownership, and I'm not just talking about the crypto, just to make sure that we do understand ownership when it becomes the crypto, but we're not focusing on the continuity. And this is the estimated value of crypto loss today, inaccessible.
+
+[06:24] and as mentioned, I have somewhere a seat that I put somewhere like 10 years ago. And that was not a small amount 10 years ago that I invested in and I still cannot find it, unfortunately. I'm one of the losers and I'm really upset with it
+
+[06:47] and I'm afraid that I wouldn't be able to lose it because I moved like three times since then and it's not going to happen. I'm not going to find it. So how are we going to deal with this when it's locked in the functioning system that is built for protecting it? Just like the transfer are protected. Everything is greatly done. But when it comes to the continuity, it's still
+
+[07:14] lacking the system on top of that. And as I mentioned, this is not just a crypto because what we do with attorney, we're not focusing really on the crypto. The crypto is for us like low hanging fruit but we talking about like the whole financial system We talking about all your accounts all your investment when it comes to bank account, shareholding papers, anything that you invested in, anything that you're
+
+[07:40] liable to, it's not just about your financial life. It's about all your accounts that creates that digital footprint that you have behind and it's becoming a huge issue. Just talking about the numbers, this is the number for the US alone. Globally, the number is much bigger.
+
+[08:04] It's over $350 billion that is unmanaged and claimed worldwide. That's in laws, asset, dormant funds, dormant pension, forgotten bank accounts, forgotten insurance policies, and obviously as well as the crypto on top of that. Looking at it from the also number perspective to maybe follow on with another question is that we do
+
+[08:33] have during the life little over a hundred accounts per us. And as I said, it's not only the financial accounts, it's all everywhere we leave the footprint. And it's not an issue about having the accounts, but it's an issue how we're going to deal with it, not legally, but practically. So like when something happens again to you tomorrow, and I don't want to be
+
+[09:00] like really here depressing you all, then how is your family going to handle it? And as I mentioned, legally, not legally, but practically, it becomes like a very aggressive problem. It becomes like such an administrative problem. It takes so much time. It costs like when we were talking about the employees of like a big enterprise
+
+[09:22] companies, we have the number, how much it costs to the companies, because like, if we think about the percentage of how many employees of those big enterprises company deal with either inheritance problem or just like a probate problem, then it really costs the company a lot of money because they have to take time off to deal with this.
+
+[09:46] They have to deal with it because it's the law. The law says that they have to close all these accounts. And if they don't and they won't probably want because they don't have the instruction to do it, then it's brings these skeletons in the closets that will just come back, like returning in six months, in one year, in 18 months, etc.
+
+[10:10] And we are seeing it on an everyday basis because it is... 60 million people during the year, once a year, not once a year, during the year.
+
+[10:34] And I know it's an ugly number, but this is the number that leaves behind times those hundred accounts and it creates a massive digital behavioral footprint that the system actually just feeds on. And we don't need more because we have a lot of data on the behavioral patterns.
+
+[11:07] We have a lot of data on the financial patterns and transaction patterns. So this is not an edge case, it's an infrastructural problem. And it's going to be even a massive problem because we're looking into the biggest inheritance flow in the next two decades. By 2045, it's going to be really the biggest flow of the multi-generational transfer that
+
+[11:34] we have ever experienced. the system are not ready for it. I talked to the co-founder of Kraken a year ago at one conference and they did build some legacy system, like a feature I would say, for their users to handle this, but that's still not systematically done throughout the whole system.
+
+[12:01] it's really now it's a decision on you know who's gonna change the to address this issue for the long-term continuity and how you actually accumulated the dead users we know how for example there is no one from the We know how Facebook approached this I talked to one guy at the Warsaw Headquarter
+
+[12:35] and he's like, oh yeah, but we don't want to deal with that. We don't want to give easy access for the family to delete the accounts, because for us, the dead user is still the user. And once all the cases that when you lost someone from your circle or from the Facebook circle, once there is any anniversary close to the people, even though he's not with us anymore,
+
+[12:59] the algorithm just feeds on it because all the time someone will write on the post or their page that they're missed or anything like that and they will just keep on going the behavioural patterns. Actually, it's interesting that by the end of the century,
+
+[13:23] there's going to be 5 billion of people on the platforms, which means there's going to be more dead users than live. Who just actually is going to release a new book on this talk with like AI experts, etc.
+
+[13:52] and he's talking about, so he called information carbs, because when you're GAN, your information carbs stays. And as I mentioned, the system ...the interactions.
+
+[14:39] And I think I'm going to repeat myself a little bit. So when it stops becoming a technical problem as I mentioned at the beginning it becomes a government problem It really like who owns the persistent financial and identity records
+
+[15:06] who will get access, who authorize the transfer, and who decides the transfer or like the ownership or the continuity. So this is a really important question that we are seeing. We're talking especially with the banks and insurances. This is a repetitive pattern because even here in the Czech Republic,
+
+[15:33] and I'm not sure how many of you here are from Czech, just raise your hand quickly. Okay, a lot of you. So we have inheritance proceeding according to the law. It's a law that it's old like 30 years and it's very strict. it's being automated for the past three years over the bank accounts. But still, I'm not going to mention the bank, so I'm not going to make them feel
+
+[15:58] bad, but still they have banks that is like, oh yeah, we do still have a lot of accounts that are 120 years old and we're not in Japan to have 120 year old users or owners of the bank accounts. So the system, even though we have inheritance proceeding, other than in the US when it's
+
+[16:22] even more messy and the financial system and this inheritance system is much more fragmented, it still happens. We're still not having this infrastructure that is thinking about the continuity and the multigenerational wealth transfer. It's an issue because as I mentioned, we're talking about over 300 billion of dollars lost in assets,
+
+[16:48] but when it comes to this Czechosakové dítě or the generation now growing and reaching that 2045, then it's going to be in potentially billions that may be lost if this isn't changed. So, as I mentioned, we built the infrastructure for the ownership, but we're trying to solve
+
+[17:18] this as a new infrastructure layer just trying to connect the financial ecosystem I would say It definitely difficult talking about us what we do We honestly skipping Europe because of the regulations We not ready for it yet So we now live
+
+[17:44] in Ireland, UK and the US when it's easier to connect the fragmented data and fragmented financial accounts, but definitely Europe is a next step because a good example is I've been like a couple of weeks or a couple of months ago at the Czech National Bank at the
+
+[18:07] discussion. There was all kinds of discussion, like institutions and they invited some of the startup founders. And there was, I don't know if you heard about FIDA, which is like new regulatory, which would allow the banks, insurances and big financial enterprise companies to share the
+
+[18:30] financial data of the users between each other. So it would actually help like this sort of edge case like inheritance. And they had ability from the European Commission to have it connected throughout to Europe, which would definitely ease the system. And it's not any breach of the financial data of the users that they would just steal the
+
+[18:55] users or anything. But they declined it. Most of the countries declined it. still want to keep it within one country, because I don't know why actually they didn't explain it, but they voted for keep it within one country. So, talking about Europe, it's a huge issue, especially we know that everyone has a lot
+
+[19:23] of investment hidden somewhere and in other countries. And when there is no system or legacy plan, then your family won't be able to reach it because there is just no way how they will know unless you will be really, really prepared for it. So that's just my little advice and maybe a favor to ask
+
+[19:52] for your future family or your friends or family, whoever will have to deal with legally or practically with not only the digital footprint, but mainly with the liabilities and the wealth to ask these questions. What actually happens to your wealth when you can and think about it when building
+
+[20:19] on and earning the wealth on passing it also, right? So nothing gets lost. So that's all for now. happy to connect with anyone or answer any questions if you have any. Go ahead. Okay, thank you for the talk. I felt like you talked a lot about the problem,
+
+[20:48] but do you have a specific solution? Should we share our private keys with our families or something else? So there are different kinds of solution especially when it becomes the crypto and as I said like crypto is more of a long-hanger for it for us like in a product Maybe some guys who would confirm me.
+
+[21:21] Different kinds of approach to this kind of solution. I know like Kasa.io, for example, is really stepping hard in it, not only the multi-state transfer, but all these kinds of potential solutions, how to transfer the keys securely to the family. We don't like in attorney, we don't advise users to store the key.
+
+[21:46] We just have like connected crypto wallets in order for the family to have at least some instructions and then we devise them to keep the key like separately. But that doesn't solve the problem. But when it becomes the financial it something that we are working from the banks and insurers where the most wealth is still held and will be held And we building we integrating our AI we call it sorry we call it AI killer
+
+[22:20] our agent that sits on top of their whole document management system and it's connecting through their CRM or back office. And it's analyzing the risk and sends out the risk to their financial advisors or desks or whoever operates the back office and tells them there are potential risks and they should act on it within their users
+
+[22:43] to help actually their clients prevent any consequences before they even happen. So this is based on the agentic analysis on top of the financial portfolio when it comes to more traditional assets. with the crypto, I'm not going to lie, we were not there yet. Okay, thank you. Sure.
+
+[23:14] Or even feedback, opinion. I saw some eyebrows raised in the back line. Well, okay. You knew I was talking about you. Anyway, you can hear me fine.
+
+[23:38] Thank you for the talk. I'm not really honest. We all knew the problem before we entered this room. So we were looking for the solutions. That's it. Okay. Fair. The presentation we've seen, I can imagine it in many places, such as the bankers over at the Federal Bank of the Republic.
+
+[24:04] But this is not that for us. Fair, fair. I get some instruction not to talk about my startup. to talk. Okay, fair point. I would love to talk about my startup more, trust me, because it's also
+
+[24:35] for me more comfortable talk, how we are approaching the solutions and how we got into this detail of the issue as I mentioned at the beginning, I kind of squeezed it in at the beginning, that we started with a simple vault just for people to consolidate and aggregate all their
+
+[25:00] financial data. But we saw there is even like a bigger issue that needs to be addressed. So that's why we started a little bit pivoted and started to work on the agentic version when it actually also, we're not dependent only on the data sets that we're connecting on, like different kinds of data sets throughout the US. Also we just said it here in Czech throughout the US, like the mortgage rates, insurances,
+
+[25:28] et cetera. But now how actually also the war affects the taxpayers and how it affects their wealth in the future so it also like you know all these all these connected information of like the domain expertise in it talk like we're cooperating with several amounts of advisors on that to
+
+[25:51] validate these use cases so it's not just something that we come up with like just the idea and then we're gonna do it like this so we have a different kinds of advisor with like a huge domain expertise from the field on the legal side and on the financial side. And just moving on to the agentic side of solving this issue, it's really important for
+
+[26:15] us to integrate from the bigger institutions where they held the most well and where they still keep the bigger issue onto the smaller one and smaller one and the users And just talking maybe a little bit more in the detail of the solution it really just connect and not to sound wake or cliche it really just connecting
+
+[26:45] all the information that are out there on the financial data, from the financial data and from the regulatory data and from the user data and just knowing what to look in for. So knowing like the, so that was the main work, like for the past year to know what to look in for, like when it becomes the, when it comes to the issues, when it comes to the risks, especially, especially when it comes to those skeletons and the causes that I was talking about.
+
+[27:16] There's billions that are sitting in the banks and insurances that belongs to the users. Because most of the users have, most of the people have outdated contracts, outdated insurances, et cetera. And we do get that updated insurance policy or updated policy from the banks in the email. But who reads it? So we're just like reading through these like gaps that no one is going to like
+
+[27:45] inform you on and you have no ability to understand it if you're like not really like deeply just reading it through and just focusing on these and then hopefully moving on the investment platforms later. So that's why we're talking, for example, to Kraken and we're planning something with the guys from Trezor, from Satoshi, but as I mentioned to the guy here, that we're
+
+[28:14] not there yet. So we're focusing on the biggest leak of the finances now, where it sits at the banks and insurances. And I know that Vitalik is starting now soon, so I think... you
