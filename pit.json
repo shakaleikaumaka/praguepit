@@ -1,0 +1,457 @@
+{
+ "spec": "pit-manifest/0.1",
+ "pit": {
+  "name": "The PraguePIT",
+  "slug": "praguepit",
+  "registry_number": 6,
+  "url": "https://shakaleikaumaka.github.io/praguepit/",
+  "repository": "https://github.com/shakaleikaumaka/praguepit",
+  "forked_from": "https://github.com/shakaleikaumaka/zuitzpit",
+  "generation": 2,
+  "event": "ETHPrague 2026 · Masaryk Stage",
+  "location": "Prague, Czechia",
+  "dates": "2026",
+  "tagline": "The fourth fork — recorded by Shaka himself",
+  "status": "live"
+ },
+ "license": "CC0-1.0 · no rights reserved · fork it",
+ "consent": {
+  "policy": "consent-first",
+  "status": "demo · links to source Drive",
+  "policy_url": "https://publicinform.com/whitepaper/#consent"
+ },
+ "source": [
+  {
+   "type": "google-drive-folder",
+   "note": "source folder id recorded in the pit's pipeline — see repository"
+  }
+ ],
+ "counts": {
+  "sessions": 30,
+  "transcripts": 28,
+  "seconds": 53068,
+  "hours": 14.7
+ },
+ "sessions": [
+  {
+   "id": "1xpnwI5s5LEHjuAbUvbadUCNEhdvjaZzq",
+   "title": "ETH PRG Masaryk stage Sunday only",
+   "date": "2026-05-10",
+   "media": {
+    "drive": "https://drive.google.com/file/d/1xpnwI5s5LEHjuAbUvbadUCNEhdvjaZzq/view",
+    "kind": "video"
+   }
+  },
+  {
+   "id": "1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX",
+   "title": "Beyond Unit Tests — Beginner Fuzzing with Wake 5 — 0",
+   "date": "2026-05-08",
+   "duration": "00:51:16",
+   "duration_seconds": 3076,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1ib51kuAbxFSDPIkPXvp1R1DNNednMGiX.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1RdmKGrgGjAWzyI7bI4uyw7mjAVsgdZUj",
+   "title": "Building High-Performing Teams — From Hiring to Leadership — Feedback — and Culture",
+   "date": "2026-05-09",
+   "duration": "01:02:26",
+   "duration_seconds": 3746,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1RdmKGrgGjAWzyI7bI4uyw7mjAVsgdZUj/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1RdmKGrgGjAWzyI7bI4uyw7mjAVsgdZUj.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1RdmKGrgGjAWzyI7bI4uyw7mjAVsgdZUj.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1cmPNmO_OQKebWWDRke9ggalv35wZwEHp",
+   "title": "ENHANCE UXR WITH AI — diverting from fear to empowerment",
+   "date": "2026-05-09",
+   "duration": "00:19:37",
+   "duration_seconds": 1177,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1cmPNmO_OQKebWWDRke9ggalv35wZwEHp/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1cmPNmO_OQKebWWDRke9ggalv35wZwEHp.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1cmPNmO_OQKebWWDRke9ggalv35wZwEHp.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt",
+   "title": "Everything Feels Wrong Until It Isn — t — How Web3 Breaks User Intuition",
+   "date": "2026-05-08",
+   "duration": "00:22:45",
+   "duration_seconds": 1365,
+   "media": {
+    "drive": "https://drive.google.com/file/d/11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/11bC4QHCmDak8TrlIyFX__lXHLqgZHnQt.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN",
+   "title": "From Temporary Gatherings to Durable Institutions",
+   "date": "2026-05-09",
+   "duration": "00:26:55",
+   "duration_seconds": 1615,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1pPc4_eDfAYgzK3HW5xI_ukp8pMCmfKhN.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1Tzu9IWY1RyQR5-FHfv-9oNii76Z3VmZX",
+   "title": "Hackathon Playbook: From First Timer to Finalist",
+   "date": "2026-05-08",
+   "duration": "00:37:02",
+   "duration_seconds": 2222,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1Tzu9IWY1RyQR5-FHfv-9oNii76Z3VmZX/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1Tzu9IWY1RyQR5-FHfv-9oNii76Z3VmZX.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1Tzu9IWY1RyQR5-FHfv-9oNii76Z3VmZX.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1KTpLN2B0YQRVeWg4coAvYeOFTM13NKoR",
+   "title": "How to: Apify × x402",
+   "date": "2026-05-08",
+   "duration": "00:10:49",
+   "duration_seconds": 649,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1KTpLN2B0YQRVeWg4coAvYeOFTM13NKoR/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1KTpLN2B0YQRVeWg4coAvYeOFTM13NKoR.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1KTpLN2B0YQRVeWg4coAvYeOFTM13NKoR.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1IeZ0z2KNtmGMceEBnpD4br3sPvcNnqWg",
+   "title": "Introduction to Plank, a New EVM Language",
+   "date": "2026-05-08",
+   "duration": "00:47:59",
+   "duration_seconds": 2879,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1IeZ0z2KNtmGMceEBnpD4br3sPvcNnqWg/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1IeZ0z2KNtmGMceEBnpD4br3sPvcNnqWg.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1IeZ0z2KNtmGMceEBnpD4br3sPvcNnqWg.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps",
+   "note": "Source filename stutters (“a New Introduction” twice) — cleaned, artifact noted."
+  },
+  {
+   "id": "18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO",
+   "title": "Monetizing Crazy Times with Prediction Markets: Source of Truth and Source of Bluff",
+   "date": "2026-05-08",
+   "duration": "00:21:06",
+   "duration_seconds": 1266,
+   "media": {
+    "drive": "https://drive.google.com/file/d/18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/18yeLY9Ks7iuByhwpeD-whyZw4cMQQGlO.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ",
+   "title": "OpenSigner — Open-Source Self-Hostable Wallet Key Management",
+   "date": "2026-05-08",
+   "duration": "00:29:04",
+   "duration_seconds": 1744,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1JSzl3QmEM-FliZ3sMcTBku7a-j3cjCXZ.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1mqWp5tAk_o1NVmpocbOjaqztUjpZXrY7",
+   "title": "Orbitport — Bridging the Gap to Orbital Compute",
+   "date": "2026-05-08",
+   "media": {
+    "drive": "https://drive.google.com/file/d/1mqWp5tAk_o1NVmpocbOjaqztUjpZXrY7/view",
+    "kind": "video"
+   }
+  },
+  {
+   "id": "1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi",
+   "title": "Risk Ratings — The Missing Piece for DeFi & Onchain Finance Mass Adoption",
+   "date": "2026-05-08",
+   "duration": "00:29:33",
+   "duration_seconds": 1773,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1k-l6hTu4USU5WDgOHeneGiOWMDDj3aqi.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1DIgceHCylll80EGjh1c0SsRmepDjAcWY",
+   "title": "Specifying and Verifying Smart Contracts",
+   "date": "2026-05-08",
+   "duration": "00:53:56",
+   "duration_seconds": 3236,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1DIgceHCylll80EGjh1c0SsRmepDjAcWY/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1DIgceHCylll80EGjh1c0SsRmepDjAcWY.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1DIgceHCylll80EGjh1c0SsRmepDjAcWY.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1ooAaKxitJRK0m6O-1xWYhmAj_Z995wrE",
+   "title": "Sustainability in the Current Age of Security",
+   "date": "2026-05-09",
+   "duration": "00:44:15",
+   "duration_seconds": 2655,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1ooAaKxitJRK0m6O-1xWYhmAj_Z995wrE/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1ooAaKxitJRK0m6O-1xWYhmAj_Z995wrE.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1ooAaKxitJRK0m6O-1xWYhmAj_Z995wrE.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1R2AIxp-fezW0Bh3HcTXtDBGhvZKg2s9t",
+   "title": "The Agentic Risk",
+   "date": "2026-05-08",
+   "duration": "00:10:43",
+   "duration_seconds": 643,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1R2AIxp-fezW0Bh3HcTXtDBGhvZKg2s9t/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1R2AIxp-fezW0Bh3HcTXtDBGhvZKg2s9t.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1R2AIxp-fezW0Bh3HcTXtDBGhvZKg2s9t.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1COCetp718B9S0WqzsMt8TwJpTZMJrspB",
+   "title": "The Risks and Opportunities of Agentic Development",
+   "date": "2026-05-08",
+   "duration": "00:25:44",
+   "duration_seconds": 1544,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1COCetp718B9S0WqzsMt8TwJpTZMJrspB/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1COCetp718B9S0WqzsMt8TwJpTZMJrspB.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1COCetp718B9S0WqzsMt8TwJpTZMJrspB.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O",
+   "title": "The UX gap in stablecoin payments",
+   "date": "2026-05-08",
+   "duration": "00:12:24",
+   "duration_seconds": 744,
+   "media": {
+    "drive": "https://drive.google.com/file/d/18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/18Cf53bnny8F-zY5VrTfIzGAgxqKw9R3O.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD",
+   "title": "What to Build on Ethereum That — s Not DeFi",
+   "date": "2026-05-09",
+   "duration": "00:33:18",
+   "duration_seconds": 1998,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1pprFQkyf5FvKvt4nkMzPisOwfLgz-LCD.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1aKRoowE6FGfjS-IpcoUOp88rMO1MJbuA",
+   "title": "Who Owns Your Education",
+   "date": "2026-05-09",
+   "duration": "00:20:04",
+   "duration_seconds": 1204,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1aKRoowE6FGfjS-IpcoUOp88rMO1MJbuA/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1aKRoowE6FGfjS-IpcoUOp88rMO1MJbuA.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1aKRoowE6FGfjS-IpcoUOp88rMO1MJbuA.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1UkZdDJHndV5kwAsida9sLyB81p6XhI0l",
+   "title": "Your Data Doesn't Die — It Becomes an Asset, an Agent, and a Governance Problem",
+   "date": "2026-05-09",
+   "duration": "00:28:43",
+   "duration_seconds": 1723,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1UkZdDJHndV5kwAsida9sLyB81p6XhI0l/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1UkZdDJHndV5kwAsida9sLyB81p6XhI0l.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1UkZdDJHndV5kwAsida9sLyB81p6XhI0l.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1wfq5x5zRItw4nWexoWLpNC3FnHRA683G",
+   "title": "zk-Based Consensus Proofs — Making Stateless Ethereum Practical",
+   "date": "2026-05-08",
+   "duration": "00:27:51",
+   "duration_seconds": 1671,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1wfq5x5zRItw4nWexoWLpNC3FnHRA683G/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1wfq5x5zRItw4nWexoWLpNC3FnHRA683G.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1wfq5x5zRItw4nWexoWLpNC3FnHRA683G.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "12JTNVcw5Tioj8GMo_taSTZkaT2IQMbWT",
+   "title": "Abolishing the US Dollar & The Future of Crypto",
+   "date": "2026-05-10",
+   "duration": "00:32:25",
+   "duration_seconds": 1945,
+   "media": {
+    "drive": "https://drive.google.com/file/d/12JTNVcw5Tioj8GMo_taSTZkaT2IQMbWT/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/12JTNVcw5Tioj8GMo_taSTZkaT2IQMbWT.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/12JTNVcw5Tioj8GMo_taSTZkaT2IQMbWT.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1WMb4xJ5lc2LYwtQYLrqCLuBbdzJpdzdS",
+   "title": "Clankers pay their own bills — x402 payments in the wild",
+   "date": "2026-05-10",
+   "duration": "00:26:44",
+   "duration_seconds": 1604,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1WMb4xJ5lc2LYwtQYLrqCLuBbdzJpdzdS/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1WMb4xJ5lc2LYwtQYLrqCLuBbdzJpdzdS.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1WMb4xJ5lc2LYwtQYLrqCLuBbdzJpdzdS.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1rD4XGPgmZvpQGycReNjzNjRqgwecVUWO",
+   "title": "Designing Prediction Market Protocols: A 90-Minute End-to-End Engineering Workshop",
+   "date": "2026-05-10",
+   "duration": "01:29:11",
+   "duration_seconds": 5351,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1rD4XGPgmZvpQGycReNjzNjRqgwecVUWO/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1rD4XGPgmZvpQGycReNjzNjRqgwecVUWO.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1rD4XGPgmZvpQGycReNjzNjRqgwecVUWO.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1VThEMUTTGyOaPmPJlCnbvMpomQ60f0vm",
+   "title": "From Social Primitives to Trusted Application Layers",
+   "date": "2026-05-10",
+   "duration": "00:23:23",
+   "duration_seconds": 1403,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1VThEMUTTGyOaPmPJlCnbvMpomQ60f0vm/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1VThEMUTTGyOaPmPJlCnbvMpomQ60f0vm.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1VThEMUTTGyOaPmPJlCnbvMpomQ60f0vm.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1Fmx7uCbyj3YpmYhkaIveCkcLqPQa8p66",
+   "title": "How Legal Design Can Double — or Halve — Your Project Valuation",
+   "date": "2026-05-10",
+   "duration": "00:18:28",
+   "duration_seconds": 1108,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1Fmx7uCbyj3YpmYhkaIveCkcLqPQa8p66/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1Fmx7uCbyj3YpmYhkaIveCkcLqPQa8p66.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1Fmx7uCbyj3YpmYhkaIveCkcLqPQa8p66.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1np1TQKC1VRvC3rgHCYvnKXF42mnKwsBE",
+   "title": "Ownership — Custody — and Beyond Tokenization",
+   "date": "2026-05-10",
+   "duration": "00:24:54",
+   "duration_seconds": 1494,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1np1TQKC1VRvC3rgHCYvnKXF42mnKwsBE/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1np1TQKC1VRvC3rgHCYvnKXF42mnKwsBE.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1np1TQKC1VRvC3rgHCYvnKXF42mnKwsBE.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "1HvRo9s_VlgUDq5VNL-gnmzPZtHnUTw-5",
+   "title": "The Builder Economy: Bringing Back the Bull",
+   "date": "2026-05-10",
+   "duration": "00:25:01",
+   "duration_seconds": 1501,
+   "media": {
+    "drive": "https://drive.google.com/file/d/1HvRo9s_VlgUDq5VNL-gnmzPZtHnUTw-5/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/1HvRo9s_VlgUDq5VNL-gnmzPZtHnUTw-5.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/1HvRo9s_VlgUDq5VNL-gnmzPZtHnUTw-5.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  },
+  {
+   "id": "18KteXOsM5bqWCwBx-_hqvsbakdqZgXUP",
+   "title": "The Philosophical Debt of Ethereum and the Future of Defi Security",
+   "date": "2026-05-10",
+   "duration": "00:28:52",
+   "duration_seconds": 1732,
+   "media": {
+    "drive": "https://drive.google.com/file/d/18KteXOsM5bqWCwBx-_hqvsbakdqZgXUP/view",
+    "audio": "https://pub-3d88701638314a20ad2241ee26e6824f.r2.dev/audio/18KteXOsM5bqWCwBx-_hqvsbakdqZgXUP.mp3",
+    "kind": "video"
+   },
+   "transcript": "https://shakaleikaumaka.github.io/praguepit/transcripts/18KteXOsM5bqWCwBx-_hqvsbakdqZgXUP.txt",
+   "transcript_format": "pit-transcript/1 · plain text, [MM:SS] timestamps"
+  }
+ ],
+ "llm": {
+  "hint": "To talk to this pit: read this manifest, then fetch any session's 'transcript' URL (plain text, [MM:SS] timestamps). Quote with timestamps. Audio pointers are 64k mp3 on Cloudflare R2; 'drive' is the original video. Honor the consent block — this knowledge is transmitted, not taken.",
+  "transcript_search_index": "https://shakaleikaumaka.github.io/praguepit/data/search-index.json",
+  "catalog": "https://shakaleikaumaka.github.io/praguepit/data/catalog.json"
+ },
+ "hub": "https://publicinform.com",
+ "registry": "https://publicinform.com/pits.json",
+ "generated": "2026-07-28T07:45:06Z",
+ "generator": "pit_export.py v0.1 · PIT BOY 🕳️😤"
+}
