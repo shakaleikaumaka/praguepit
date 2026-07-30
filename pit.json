@@ -3,7 +3,7 @@
  "pit": {
   "name": "The PraguePIT",
   "slug": "praguepit",
-  "registry_number": 6,
+  "registry_number": 4,
   "url": "https://shakaleikaumaka.github.io/praguepit/",
   "repository": "https://github.com/shakaleikaumaka/praguepit",
   "forked_from": "https://github.com/shakaleikaumaka/zuitzpit",
@@ -453,6 +453,6 @@
  },
  "hub": "https://publicinform.com",
  "registry": "https://publicinform.com/pits.json",
- "generated": "2026-07-29T16:39:18Z",
+ "generated": "2026-07-30T01:19:21Z",
  "generator": "pit_export.py v0.1 · PIT BOY 🕳️😤"
 }
