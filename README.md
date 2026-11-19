@@ -24,7 +24,7 @@ institutions, and the builder economy. The bard's own recordings, kept in a pit 
 
 ## Fork it
 
-Everything is **CC0**. 👉 Protocol white paper & registry: **[publicinform.com](https://publicinform.com)**
+Everything is **copyleft**. 👉 Protocol white paper & registry: **[publicinform.com](https://publicinform.com)**
 
 ---
 
@@ -32,4 +32,4 @@ Everything is **CC0**. 👉 Protocol white paper & registry: **[publicinform.com
 
 ## License
 
-Code: GPL-3.0 (see LICENSE). Songs, lyrics, chords, words, art, links and pages: CC BY-SA 4.0 (see LICENSE-CONTENT). Credit: Shaka Lei Kaumaka and the ʻohana. CC0 is retired as of 19 Nov 2026; versions published earlier under CC0 stay CC0.
+Code: GPL-3.0 (see LICENSE). Songs, lyrics, chords, words, art, links and pages: CC BY-SA 4.0 (see LICENSE-CONTENT). Credit: Shaka Lei Kaumaka and the ʻohana. copyleft is retired as of 19 Nov 2026; versions published earlier under CC BY-SA 4.0 stay CC0.
